@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     'In-depth guides on software, app, SaaS, e-commerce, fintech, and healthcare development costs. Learn how projects are priced and how to budget accurately.',
   alternates: { canonical: `${SITE}/blog` },
   openGraph: {
+      images: ['/og-image.png'],
     title: `Blog — Software Development Cost Guides | ${BRAND}`,
     description:
       'In-depth guides on software, app, SaaS, e-commerce, fintech, and healthcare development costs.',
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
+      images: ['/og-image.png'],
     card: 'summary_large_image',
     title: `Blog — Software Development Cost Guides | ${BRAND}`,
     description:

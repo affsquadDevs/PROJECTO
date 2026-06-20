@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Projecto Calculator is an independent software project estimation tool that helps founders, agencies, and product teams estimate development cost, timeline, and team composition.',
   alternates: { canonical: `${SITE}/about` },
   openGraph: {
+      images: ['/og-image.png'],
     title: `About Us | ${BRAND}`,
     description:
       'Learn about Projecto Calculator — an independent software development cost estimation platform.',
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
+      images: ['/og-image.png'],
     card: 'summary_large_image',
     title: `About Us | ${BRAND}`,
     description:

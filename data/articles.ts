@@ -87,49 +87,49 @@ export const articles: Article[] = [
     title: 'Software Development Cost for Marketplace Platforms (2026 Guide)',
     date: '18/01/2026',
     excerpt: 'Learn what drives software development cost for marketplace platforms and how to choose the right calculator inputs for accurate cost estimation.',
-    heroImage: '/blog1.png'
+    heroImage: '/blog1.webp'
   },
   {
     slug: 'fintech-app-development-cost',
     title: 'Fintech App Development Cost (Banking, Forex, ETFs) | Projecto',
     date: '18/01/2026',
     excerpt: 'Estimate fintech development cost with recommended inputs for banking and investing apps (forex, CFDs, ETFs): team, screens, features, QA, stack.',
-    heroImage: '/blog2.png'
+    heroImage: '/blog2.webp'
   },
   {
     slug: 'ecommerce-website-development-cost',
     title: 'E-commerce Website Development Cost (Shopify & WooCommerce Guide)',
     date: '18/01/2026',
     excerpt: 'Learn how to estimate e-commerce website development costs. Compare Shopify, WooCommerce, and custom builds with real input recommendations.',
-    heroImage: '/blog3.png'
+    heroImage: '/blog3.webp'
   },
   {
     slug: 'hidden-costs-ecommerce-website',
     title: 'Hidden Costs of Building and Running an E-commerce Website (The Real Monthly Cost Breakdown)',
     date: '18/01/2026',
     excerpt: 'Learn the hidden costs of e-commerce websites: platform fees, apps, payment processing, hosting, maintenance, security, and real monthly cost examples.',
-    heroImage: '/blog4.png'
+    heroImage: '/blog4.webp'
   },
   {
     slug: 'shopify-vs-woocommerce-total-cost',
     title: 'Shopify vs WooCommerce Cost: Total Cost of Ownership (1 vs 3 Years)',
     date: '18/01/2026',
     excerpt: 'Compare Shopify vs WooCommerce total cost of ownership over 1 and 3 years. Real numbers for platform fees, apps, maintenance, and long-term costs.',
-    heroImage: '/blog5.png'
+    heroImage: '/blog5.webp'
   },
   {
     slug: 'healthcare-software-development-cost',
     title: 'Healthcare Software Development Cost (Medical App Estimation Guide)',
     date: '19/01/2026',
     excerpt: 'Learn how to estimate healthcare software development costs, including team setup, features, security, QA, and real-world budget ranges.',
-    heroImage: '/blog7.png'
+    heroImage: '/blog7.webp'
   },
   {
     slug: 'telemedicine-app-development-cost',
     title: 'Telemedicine App Development Cost (Virtual Healthcare Estimation Guide)',
     date: '19/01/2026',
     excerpt: 'Learn how to estimate telemedicine app development cost, including video, security, QA, features, and realistic budget ranges.',
-    heroImage: '/image8.png'
+    heroImage: '/image8.webp'
   },
   {
     slug: 'no-code-tools-saas-development-cost',
@@ -137,7 +137,7 @@ export const articles: Article[] = [
     date: '19/01/2026',
     excerpt:
       'Learn how no-code tools like Base44 affect SaaS development cost. See where you save money, hidden tradeoffs, and how to estimate no-code vs custom.',
-    heroImage: '/images/blog/no-code-tools-saas-development-cost-cover.png',
+    heroImage: '/images/blog/no-code-tools-saas-development-cost-cover.webp',
   },
   // Cost-to-Build App Estimates
   {

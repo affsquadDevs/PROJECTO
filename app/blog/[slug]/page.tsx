@@ -37,6 +37,7 @@ export async function generateMetadata({
     description,
     alternates: { canonical: url },
     openGraph: {
+      images: ['/og-image.png'],
       title,
       description,
       url,
@@ -44,6 +45,7 @@ export async function generateMetadata({
       type: 'article',
     },
     twitter: {
+      images: ['/og-image.png'],
       card: 'summary_large_image',
       title,
       description,

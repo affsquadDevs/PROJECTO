@@ -61,9 +61,11 @@ function BlogContent() {
           >
             {article.heroImage && (
               <div className="mb-6 -mx-6 -mt-6">
-                <img 
-                  src={article.heroImage} 
+                <img
+                  src={article.heroImage}
                   alt={article.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-64 sm:h-80 object-contain bg-gradient-to-br from-purple-50 to-blue-50 rounded-t-lg"
                 />
               </div>

@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     title: 'Projecto Calculator — Software Development Cost Calculator',
     description:
       'Estimate software development cost, timeline, and team for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects.',
-    images: [{ url: '/logo.png', width: 512, height: 512, alt: BRAND }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: BRAND }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Projecto Calculator — Software Development Cost Calculator',
     description:
       'Estimate software development cost, timeline, and team for software projects.',
-    images: ['/logo.png'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -136,7 +136,7 @@ export default function RootLayout({
                 '@type': 'Organization',
                 '@id': `${SITE}/#organization`,
               },
-              image: `${SITE}/logo.png`,
+              image: `${SITE}/og-image.png`,
               inLanguage: 'en',
             }),
           }}

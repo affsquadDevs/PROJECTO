@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     'How Projecto Calculator uses cookies and similar technologies, including Google AdSense advertising cookies, and how you can control your preferences.',
   alternates: { canonical: `${SITE}/cookie-policy` },
   openGraph: {
+      images: ['/og-image.png'],
     title: `Cookie Policy | ${BRAND}`,
     description:
       'How Projecto Calculator uses cookies, including Google AdSense advertising cookies, and how to manage them.',
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
+      images: ['/og-image.png'],
     card: 'summary_large_image',
     title: `Cookie Policy | ${BRAND}`,
     description: 'How Projecto Calculator uses cookies and how to manage them.',

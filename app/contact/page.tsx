@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Get in touch with the Projecto Calculator team. Questions about the platform, estimation features, privacy, or feedback — reach us by email.',
   alternates: { canonical: `${SITE}/contact` },
   openGraph: {
+      images: ['/og-image.png'],
     title: `Contact Us | ${BRAND}`,
     description: 'Get in touch with the Projecto Calculator team.',
     url: `${SITE}/contact`,
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
+      images: ['/og-image.png'],
     card: 'summary_large_image',
     title: `Contact Us | ${BRAND}`,
     description: 'Get in touch with the Projecto Calculator team.',

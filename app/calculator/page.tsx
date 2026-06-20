@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     'Free step-by-step calculator to estimate software development cost, timeline, and team. Configure roles, design, features, tech stack, QA, and buffers in minutes.',
   alternates: { canonical: `${SITE}/calculator` },
   openGraph: {
+      images: ['/og-image.png'],
     title: `Software Development Cost Calculator | ${BRAND}`,
     description:
       'Estimate software development cost, timeline, and team composition with a free step-by-step calculator.',
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
+      images: ['/og-image.png'],
     card: 'summary_large_image',
     title: `Software Development Cost Calculator | ${BRAND}`,
     description:

@@ -1,8 +1,5 @@
-'use client';
-
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { useEffect } from 'react';
 import * as Fi from 'react-icons/fi';
 import { SiFacebook, SiInstagram, SiThreads, SiYoutube } from 'react-icons/si';
 import NoCodeToolsSaasArticleContent from '@/components/blog/NoCodeToolsSaasArticleContent';
@@ -797,8 +794,8 @@ const articles = {
           Ignoring team structure is one of the fastest ways to miscalculate project cost.
         </p>
         <div className="my-6">
-          <img 
-            src="/image5.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image5.webp" 
             alt="Software project cost calculation tool showing team roles, hourly rates, and development effort setup"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -827,8 +824,8 @@ const articles = {
           A web app with 10 screens and medium complexity can require weeks of design effort, not days.
         </p>
         <div className="my-6">
-          <img 
-            src="/image1.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image1.webp" 
             alt="Design complexity and mockups selection in a software project cost calculation tool, including screens, branding, and responsive design"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -859,8 +856,8 @@ const articles = {
           Counting features without estimating effort is not estimation, it's guessing.
         </p>
         <div className="my-6">
-          <img 
-            src="/image6.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image6.webp" 
             alt="Feature selection step in a software project cost calculation tool showing authentication and security features with estimated frontend and backend hours"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -888,8 +885,8 @@ const articles = {
           A proper project cost calculation aligns technical decisions with business goals, not trends.
         </p>
         <div className="my-6">
-          <img 
-            src="/image2.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image2.webp" 
             alt="Technology stack selection modal in a software project cost calculation tool showing recommended frontend and backend stacks"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -912,8 +909,8 @@ const articles = {
           Industry benchmarks typically allocate 15–25% of development time to QA. Projects that skip this phase often pay much more later.
         </p>
         <div className="my-6">
-          <img 
-            src="/image3.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image3.webp" 
             alt="Testing and QA configuration in a software project cost calculation tool showing manual testing percentage and automated testing options"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -938,8 +935,8 @@ const articles = {
           A buffer of 15–25% is not pessimism — it's realism.
         </p>
         <div className="my-6">
-          <img 
-            src="/image4.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image4.webp" 
             alt="Additional costs configuration in a software project cost calculation tool showing support options, documentation, buffers, and third-party expenses"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -1281,8 +1278,8 @@ const articles = {
           <li>Project or product manager</li>
         </ul>
         <div className="my-6">
-          <img 
-            src="/image5.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image5.webp" 
             alt="Team and rates setup in a software development cost calculator showing project name, frontend developer role, hourly rate, and working hours"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -1304,8 +1301,8 @@ const articles = {
           Design cost depends on much more than visuals.
         </p>
         <div className="my-6">
-          <img 
-            src="/image1.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image1.webp" 
             alt="Software project cost calculation tool displaying design complexity options and UI design effort"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -1349,8 +1346,8 @@ const articles = {
           <li>Testing effort</li>
         </ul>
         <div className="my-6">
-          <img 
-            src="/image6.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image6.webp" 
             alt="Features and capabilities selection in a software development cost calculator showing authentication features with frontend and backend effort estimates"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -1379,8 +1376,8 @@ const articles = {
           <li>High-performance stacks for real-time applications</li>
         </ul>
         <div className="my-6">
-          <img 
-            src="/image2.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image2.webp" 
             alt="Technology stack selection in a software development cost calculator showing frontend and backend frameworks with estimated time impact"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -1403,8 +1400,8 @@ const articles = {
           <li>Performance and security checks</li>
         </ul>
         <div className="my-6">
-          <img 
-            src="/image3.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image3.webp" 
             alt="Testing and QA configuration in a software development cost calculator showing manual testing percentage and automated testing options"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -1717,8 +1714,8 @@ const articles = {
         </p>
 
         <div className="my-6">
-          <img 
-            src="/image1.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image1.webp" 
             alt="Design complexity and mockups selection in an application development cost calculator comparing web and mobile app requirements"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -2738,8 +2735,8 @@ const articles = {
         </p>
 
         <div className="my-6">
-          <img 
-            src="/image1.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image1.webp" 
             alt="Software development cost calculator interface"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -4183,8 +4180,8 @@ const articles = {
     content: (
       <div className="prose prose-lg max-w-none">
         <div className="mb-8 -mx-4 sm:mx-0">
-          <img 
-            src="/blog1.png" 
+          <img loading="lazy" decoding="async" 
+            src="/blog1.webp" 
             alt="Software Development Costs For Marketplace Platforms"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -4262,8 +4259,8 @@ const articles = {
         </ul>
 
         <div className="my-6">
-          <img 
-            src="/image3.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image3.webp" 
             alt="Marketplace project cost calculator showing recommended team setup with frontend developer, backend developer, UI/UX designer, and project manager roles configured with hourly rates"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -4297,8 +4294,8 @@ const articles = {
         </ul>
 
         <div className="my-6">
-          <img 
-            src="/image1.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image1.webp" 
             alt="Marketplace design and mockups settings showing medium design complexity, 20 screens, logo and branding enabled, and responsive design for mobile, tablet, and desktop"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -4692,8 +4689,8 @@ const articles = {
     content: (
       <div className="prose prose-lg max-w-none">
         <div className="mb-8 -mx-4 sm:mx-0">
-          <img 
-            src="/blog2.png" 
+          <img loading="lazy" decoding="async" 
+            src="/blog2.webp" 
             alt="Fintech App Development Cost - Recommended Inputs for Banking & Investing Products (Forex, CFDs, ETFs)"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -5243,8 +5240,8 @@ const articles = {
     content: (
       <div className="prose prose-lg max-w-none">
         <div className="mb-8 -mx-4 sm:mx-0">
-          <img 
-            src="/blog3.png" 
+          <img loading="lazy" decoding="async" 
+            src="/blog3.webp" 
             alt="E-commerce Website Development Cost (Shopify & WooCommerce Guide)"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -5761,8 +5758,8 @@ const articles = {
     content: (
       <div className="prose prose-lg max-w-none">
         <div className="mb-8 -mx-4 sm:mx-0">
-          <img 
-            src="/blog4.png" 
+          <img loading="lazy" decoding="async" 
+            src="/blog4.webp" 
             alt="Hidden Costs of Building and Running an E-commerce Website"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -6304,8 +6301,8 @@ const articles = {
     content: (
       <div className="prose prose-lg max-w-none">
         <div className="mb-8 -mx-4 sm:mx-0">
-          <img 
-            src="/blog5.png" 
+          <img loading="lazy" decoding="async" 
+            src="/blog5.webp" 
             alt="Shopify vs WooCommerce Total Cost of Ownership"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -6828,8 +6825,8 @@ const articles = {
     content: (
       <div className="prose prose-lg max-w-none">
         <div className="mb-8 -mx-4 sm:mx-0">
-          <img 
-            src="/blog7.png" 
+          <img loading="lazy" decoding="async" 
+            src="/blog7.webp" 
             alt="Healthcare Software Development Cost"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -7328,8 +7325,8 @@ const articles = {
     content: (
       <div className="prose prose-lg max-w-none">
         <div className="mb-8 -mx-4 sm:mx-0">
-          <img 
-            src="/image8.png" 
+          <img loading="lazy" decoding="async" 
+            src="/image8.webp" 
             alt="Telemedicine App Development Cost (Virtual Healthcare Estimation Guide)"
             className="w-full rounded-lg border border-jira-border"
           />
@@ -7924,7 +7921,7 @@ const articles = {
         'How No-Code Tools Like Base44 Affect SaaS Development Cost (What You Save — and What You Don’t)',
       description:
         'A detailed guide explaining how no-code tools like Base44 affect SaaS development cost, where they reduce budget, hidden tradeoffs, and how to estimate no-code vs custom vs hybrid approaches.',
-      image: 'https://projecto-calculator.com/images/blog/no-code-tools-saas-development-cost-cover.png',
+      image: 'https://projecto-calculator.com/images/blog/no-code-tools-saas-development-cost-cover.webp',
       author: {
         '@type': 'Organization',
         name: 'Projecto',
@@ -7966,87 +7963,17 @@ export default function BlogArticleContent({ slug }: { slug: string }) {
     notFound();
   }
 
-  // Add JSON-LD schemas and metadata to head
-  useEffect(() => {
-    if (typeof document === 'undefined') return;
-
-    // Set document title and meta description
-    const metaTitle = 'metaTitle' in article && article.metaTitle ? article.metaTitle : article.title;
-    const metaDescription = 'metaDescription' in article && article.metaDescription ? article.metaDescription : '';
-    
-    document.title = metaTitle;
-    
-    // Update or create meta description tag
-    let metaDescTag = document.querySelector('meta[name="description"]');
-    if (!metaDescTag) {
-      metaDescTag = document.createElement('meta');
-      metaDescTag.setAttribute('name', 'description');
-      document.head.appendChild(metaDescTag);
-    }
-    metaDescTag.setAttribute('content', metaDescription);
-
-    // Update or create og:title tag
-    let ogTitleTag = document.querySelector('meta[property="og:title"]');
-    if (!ogTitleTag) {
-      ogTitleTag = document.createElement('meta');
-      ogTitleTag.setAttribute('property', 'og:title');
-      document.head.appendChild(ogTitleTag);
-    }
-    ogTitleTag.setAttribute('content', metaTitle);
-
-    // Update or create og:description tag
-    let ogDescTag = document.querySelector('meta[property="og:description"]');
-    if (!ogDescTag) {
-      ogDescTag = document.createElement('meta');
-      ogDescTag.setAttribute('property', 'og:description');
-      document.head.appendChild(ogDescTag);
-    }
-    ogDescTag.setAttribute('content', metaDescription);
-
-    // Remove existing schema scripts if any
-    const existingScripts = document.head.querySelectorAll('script[type="application/ld+json"]');
-    existingScripts.forEach(script => {
-      if (script.id === 'faq-schema' || script.id === 'breadcrumb-schema' || script.id === 'blogposting-schema') {
-        script.remove();
-      }
-    });
-
-    // Add FAQ schema to head
-    if ('faqSchema' in article && article.faqSchema) {
-      const faqScript = document.createElement('script');
-      faqScript.id = 'faq-schema';
-      faqScript.type = 'application/ld+json';
-      faqScript.innerHTML = JSON.stringify(article.faqSchema);
-      document.head.appendChild(faqScript);
-    }
-
-    // Add Breadcrumb schema to head
-    if ('breadcrumbSchema' in article && article.breadcrumbSchema) {
-      const breadcrumbScript = document.createElement('script');
-      breadcrumbScript.id = 'breadcrumb-schema';
-      breadcrumbScript.type = 'application/ld+json';
-      breadcrumbScript.innerHTML = JSON.stringify(article.breadcrumbSchema);
-      document.head.appendChild(breadcrumbScript);
-    }
-
-    // Add BlogPosting schema to head
-    if ('blogPostingSchema' in article && article.blogPostingSchema) {
-      const blogPostingScript = document.createElement('script');
-      blogPostingScript.id = 'blogposting-schema';
-      blogPostingScript.type = 'application/ld+json';
-      blogPostingScript.innerHTML = JSON.stringify(article.blogPostingSchema);
-      document.head.appendChild(blogPostingScript);
-    }
-
-    // Cleanup function
-    return () => {
-      const scriptsToRemove = document.head.querySelectorAll('script[id="faq-schema"], script[id="breadcrumb-schema"], script[id="blogposting-schema"]');
-      scriptsToRemove.forEach(script => script.remove());
-    };
-  }, [article]);
-
   return (
     <div className="min-h-screen bg-jira-background">
+      {'faqSchema' in article && article.faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article.faqSchema) }} />
+      )}
+      {'breadcrumbSchema' in article && article.breadcrumbSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article.breadcrumbSchema) }} />
+      )}
+      {'blogPostingSchema' in article && article.blogPostingSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article.blogPostingSchema) }} />
+      )}
       {/* Header */}
       <header className="bg-white border-b border-jira-border sticky top-0 z-50 shadow-jira">
         <div className="container mx-auto px-4 py-4">

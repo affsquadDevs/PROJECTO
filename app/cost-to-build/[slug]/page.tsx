@@ -31,6 +31,7 @@ export async function generateMetadata({
     title,
     description,
     openGraph: {
+      images: ['/og-image.png'],
       title,
       description,
       url: `https://projecto-calculator.com/cost-to-build/${app.slug}`,
@@ -38,6 +39,7 @@ export async function generateMetadata({
       type: 'article',
     },
     twitter: {
+      images: ['/og-image.png'],
       card: 'summary_large_image',
       title,
       description,

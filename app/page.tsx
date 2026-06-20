@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Estimate software development costs for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects. Calculate budget, timeline, and team requirements in minutes.',
   alternates: { canonical: SITE },
   openGraph: {
+      images: ['/og-image.png'],
     title: 'Projecto Calculator — Software Development Cost Calculator',
     description:
       'Estimate software development cost, timeline, and team for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects.',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
+      images: ['/og-image.png'],
     card: 'summary_large_image',
     title: 'Projecto Calculator — Software Development Cost Calculator',
     description:
