@@ -24,7 +24,7 @@ export async function generateMetadata({
   const app = getAppEstimateBySlug(slug);
   if (!app) return {};
 
-  const title = `Cost to Build ${app.displayName} Like App in 2025 | Projekto`;
+  const title = `Cost to Build ${app.displayName} Like App in 2026 | Projecto Calculator`;
   const description = `Learn how much it costs to build ${app.displayName} like app. Detailed cost breakdown, team size, tech stack, timeline and estimated budget from $${(app.totalCostMin / 1000).toFixed(0)}K to $${(app.totalCostMax / 1000).toFixed(0)}K. Free cost calculator included.`;
 
   return {
@@ -34,7 +34,7 @@ export async function generateMetadata({
       title,
       description,
       url: `https://projecto-calculator.com/cost-to-build/${app.slug}`,
-      siteName: 'Projekto',
+      siteName: 'Projecto Calculator',
       type: 'article',
     },
     twitter: {
@@ -86,19 +86,19 @@ export default async function CostToBuildPage({
   const blogPostingSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: `Cost to Build ${app.displayName} Like App in 2025`,
+    headline: `Cost to Build ${app.displayName} Like App in 2026`,
     description: app.description,
     datePublished: publishDate,
     dateModified: publishDate,
     inLanguage: 'en',
     author: {
       '@type': 'Organization',
-      name: 'Projekto',
+      name: 'Projecto Calculator',
       url: 'https://projecto-calculator.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Projekto',
+      name: 'Projecto Calculator',
       logo: {
         '@type': 'ImageObject',
         url: 'https://projecto-calculator.com/logo.png',
@@ -163,12 +163,13 @@ export default async function CostToBuildPage({
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-jira-blue rounded flex items-center justify-center">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
               </div>
-              <span className="text-xl sm:text-2xl font-bold text-jira-darkBlue">Projekto</span>
+              <span className="text-xl sm:text-2xl font-bold text-jira-darkBlue">Projecto</span>
             </Link>
             <div className="hidden md:flex items-center space-x-6">
               <Link href="/" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Home</Link>
               <Link href="/calculator" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Calculator</Link>
               <Link href="/blog" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Blog</Link>
+              <Link href="/about" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">About</Link>
               <Link href="/contact" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Contact</Link>
             </div>
             <Link href="/calculator" className="md:hidden btn-primary text-sm px-3 py-1.5">
@@ -201,10 +202,10 @@ export default async function CostToBuildPage({
               {app.category}
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-jira-darkBlue mb-4 leading-tight" itemProp="headline">
-              Cost to Build {app.displayName} Like App in 2025
+              Cost to Build {app.displayName} Like App in 2026
             </h1>
             <div className="flex items-center gap-4 text-sm text-jira-textSecondary mb-6">
-              <span>By <strong className="text-jira-darkBlue">Projekto Team</strong></span>
+              <span>By <strong className="text-jira-darkBlue">Projecto Team</strong></span>
               <span>·</span>
               <time dateTime={publishDate}>March 8, 2026</time>
               <span>·</span>
@@ -317,7 +318,7 @@ export default async function CostToBuildPage({
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
                 The table below shows a detailed cost breakdown for building {app.displayName} like app from scratch. All figures are based on average market rates for development teams in North America and Western Europe ($40–$60/hr mid-market). Costs will vary by team location, seniority, and final feature scope. Use the{' '}
-                <Link href="/calculator" className="text-jira-blue hover:underline font-medium">Projekto development cost calculator</Link>{' '}
+                <Link href="/calculator" className="text-jira-blue hover:underline font-medium">Projecto development cost calculator</Link>{' '}
                 to model your specific configuration.
               </p>
               <div className="overflow-x-auto rounded border border-jira-border shadow-jira">
@@ -575,7 +576,7 @@ export default async function CostToBuildPage({
                 <div className="w-10 h-10 bg-jira-blue rounded flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
                 </div>
-                <span className="text-2xl font-bold text-jira-darkBlue">Projekto</span>
+                <span className="text-2xl font-bold text-jira-darkBlue">Projecto</span>
               </div>
               <p className="text-sm text-jira-textSecondary leading-relaxed max-w-xs">
                 Professional software project cost estimation and planning tool.
@@ -589,6 +590,7 @@ export default async function CostToBuildPage({
                 <li><Link href="/calculator" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Calculator</Link></li>
                 <li><Link href="/blog" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Blog</Link></li>
                 <li><Link href="/contact" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Contact</Link></li>
+                <li><Link href="/about" className="text-jira-textSecondary hover:text-jira-blue transition-colors">About</Link></li>
               </ul>
             </div>
 
@@ -597,6 +599,7 @@ export default async function CostToBuildPage({
               <ul className="space-y-3 text-sm">
                 <li><Link href="/blog/privacy-policy" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Privacy Policy</Link></li>
                 <li><Link href="/blog/terms-of-service" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Terms of Service</Link></li>
+                <li><Link href="/cookie-policy" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Cookie Policy</Link></li>
               </ul>
             </div>
 
@@ -623,7 +626,7 @@ export default async function CostToBuildPage({
           <div className="border-t border-jira-border my-6"></div>
 
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm text-jira-textSecondary gap-3 sm:gap-0">
-            <p>© 2025 Projekto. All rights reserved.</p>
+            <p>© 2025 Projecto. All rights reserved.</p>
             <div className="flex space-x-3 sm:space-x-4">
               <Link href="/blog/privacy-policy" className="hover:text-jira-blue transition-colors">Privacy</Link>
               <span className="text-jira-border" aria-hidden="true">•</span>

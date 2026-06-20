@@ -1,7 +1,7 @@
-# EstimateCalc Project Rules
+# Projecto Calculator Project Rules
 
 ## Project Overview
-EstimateCalc is a professional web calculator for estimating development costs and timelines for web and mobile projects. Built with Next.js, TypeScript, and Tailwind CSS.
+Projecto Calculator is a professional web calculator for estimating development costs and timelines for web and mobile projects. Built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Technology Stack
 - Next.js 14 (App Router)

@@ -294,12 +294,12 @@ export default function NoCodeToolsSaasArticleContent() {
       </ul>
 
       <h2 className="text-2xl font-bold text-jira-darkBlue mb-4 mt-10">
-        How to Model This in Projekto (Practical Input Recommendations)
+        How to Model This in Projecto (Practical Input Recommendations)
       </h2>
       <p className="text-jira-textSecondary leading-relaxed mb-6">
         To estimate properly, you need to model three scenarios. Start from the{' '}
         <Link href="/" className="text-jira-blue font-medium hover:underline">
-          Projekto home page
+          Projecto home page
         </Link>{' '}
         for context, then open the{' '}
         <Link href="/calculator" className="text-jira-blue font-medium hover:underline">
@@ -354,7 +354,7 @@ export default function NoCodeToolsSaasArticleContent() {
           </ul>
         </li>
       </ul>
-      <p className="text-jira-textSecondary leading-relaxed mb-2">In the Projekto calculator:</p>
+      <p className="text-jira-textSecondary leading-relaxed mb-2">In the Projecto calculator:</p>
       <ul className="list-disc list-inside text-jira-textSecondary mb-6 space-y-2 ml-4">
         <li>keep the team moderate</li>
         <li>add higher QA</li>
@@ -416,7 +416,7 @@ export default function NoCodeToolsSaasArticleContent() {
       <p className="text-jira-textSecondary leading-relaxed mb-8 text-base">
         👉 Use{' '}
         <Link href="/calculator" className="text-jira-blue font-semibold hover:underline">
-          Projekto
+          Projecto
         </Link>{' '}
         on{' '}
         <Link href="/" className="text-jira-blue font-semibold hover:underline">

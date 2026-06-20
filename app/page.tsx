@@ -1,9 +1,32 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import * as Fi from 'react-icons/fi';
 import { SiFacebook, SiInstagram, SiThreads, SiYoutube } from 'react-icons/si';
 import OpenSourceCta from '@/components/OpenSourceCta';
+
+const SITE = 'https://projecto-calculator.com';
+const BRAND = 'Projecto Calculator';
+
+export const metadata: Metadata = {
+  title: `Projecto Calculator — Software Development Cost Calculator`,
+  description:
+    'Estimate software development costs for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects. Calculate budget, timeline, and team requirements in minutes.',
+  alternates: { canonical: SITE },
+  openGraph: {
+    title: 'Projecto Calculator — Software Development Cost Calculator',
+    description:
+      'Estimate software development cost, timeline, and team for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects.',
+    url: SITE,
+    siteName: BRAND,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Projecto Calculator — Software Development Cost Calculator',
+    description:
+      'Estimate software development cost, timeline, and team for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects.',
+  },
+};
 
 export default function Home() {
   return (
@@ -15,7 +38,7 @@ export default function Home() {
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-jira-blue rounded flex items-center justify-center">
                 <Fi.FiGrid className="text-xl sm:text-2xl text-white" />
               </div>
-              <span className="text-xl sm:text-2xl font-bold text-jira-darkBlue">Projekto</span>
+              <span className="text-xl sm:text-2xl font-bold text-jira-darkBlue">Projecto</span>
             </Link>
             <div className="hidden md:flex items-center space-x-6">
               <Link href="/" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">
@@ -24,6 +47,7 @@ export default function Home() {
               <Link href="/blog" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">
                 Blog
               </Link>
+              <Link href="/about" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">About</Link>
               <Link href="/contact" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">
                 Contact
               </Link>
@@ -171,7 +195,7 @@ export default function Home() {
                 How accurate are the estimates?
               </h3>
               <p className="text-jira-textSecondary text-sm leading-relaxed">
-                Projekto estimates are based on role-based effort benchmarks and typical development workloads. They provide a realistic planning range, but final cost and delivery time may vary depending on scope, requirements, technical choices, and execution.
+                Projecto estimates are based on role-based effort benchmarks and typical development workloads. They provide a realistic planning range, but final cost and delivery time may vary depending on scope, requirements, technical choices, and execution.
               </p>
             </div>
 
@@ -186,10 +210,10 @@ export default function Home() {
 
             <div className="card">
               <h3 className="text-lg font-semibold mb-2 text-jira-darkBlue">
-                What types of projects does Projekto support?
+                What types of projects does Projecto support?
               </h3>
               <p className="text-jira-textSecondary text-sm leading-relaxed mb-2">
-                Projekto is suitable for:
+                Projecto is suitable for:
               </p>
               <ul className="list-disc list-inside text-jira-textSecondary text-sm space-y-1 ml-4">
                 <li>Web applications</li>
@@ -205,7 +229,7 @@ export default function Home() {
                 Can I use this for client proposals?
               </h3>
               <p className="text-jira-textSecondary text-sm leading-relaxed">
-                Yes. Many agencies and freelancers use Projekto for early estimates and internal planning. For client-facing proposals, we recommend validating the output with detailed scoping before finalizing price and timeline.
+                Yes. Many agencies and freelancers use Projecto for early estimates and internal planning. For client-facing proposals, we recommend validating the output with detailed scoping before finalizing price and timeline.
               </p>
             </div>
 
@@ -214,7 +238,7 @@ export default function Home() {
                 Do you store my project data?
               </h3>
               <p className="text-jira-textSecondary text-sm leading-relaxed">
-                Projekto does not require you to submit sensitive project data. Calculator inputs are used only to generate estimates and improve the experience. If you contact us directly, your contact details are used solely to respond to your inquiry.
+                Projecto does not require you to submit sensitive project data. Calculator inputs are used only to generate estimates and improve the experience. If you contact us directly, your contact details are used solely to respond to your inquiry.
               </p>
             </div>
 
@@ -223,7 +247,7 @@ export default function Home() {
                 Will the calculator improve over time?
               </h3>
               <p className="text-jira-textSecondary text-sm leading-relaxed">
-                Yes. Projekto is continuously refined using updated benchmarks, industry trends, and feedback to improve accuracy and usability.
+                Yes. Projecto is continuously refined using updated benchmarks, industry trends, and feedback to improve accuracy and usability.
               </p>
             </div>
 
@@ -232,7 +256,7 @@ export default function Home() {
                 How are the estimates calculated?
               </h3>
               <p className="text-jira-textSecondary text-sm leading-relaxed">
-                Projekto uses role-based effort modeling combined with feature-level complexity scoring and design scope inputs. Total effort is converted into cost using role-specific rates and the selected team composition. Planning buffers are applied to reflect real-world delivery, and results are presented as ranges rather than fixed numbers.
+                Projecto uses role-based effort modeling combined with feature-level complexity scoring and design scope inputs. Total effort is converted into cost using role-specific rates and the selected team composition. Planning buffers are applied to reflect real-world delivery, and results are presented as ranges rather than fixed numbers.
               </p>
             </div>
           </div>
@@ -249,7 +273,7 @@ export default function Home() {
                 <div className="w-10 h-10 bg-jira-blue rounded flex items-center justify-center">
                   <Fi.FiGrid className="text-2xl text-white" />
                 </div>
-                <span className="text-2xl font-bold text-jira-darkBlue">Projekto</span>
+                <span className="text-2xl font-bold text-jira-darkBlue">Projecto</span>
               </div>
               <p className="text-sm text-jira-textSecondary leading-relaxed max-w-xs mb-4">
                 Professional software project cost estimation and planning tool.
@@ -317,6 +341,7 @@ export default function Home() {
                     Contact
                   </Link>
                 </li>
+                <li><Link href="/about" className="text-jira-textSecondary hover:text-jira-blue transition-colors">About</Link></li>
               </ul>
             </div>
 
@@ -333,6 +358,7 @@ export default function Home() {
                     Terms of Service
                   </Link>
                 </li>
+                <li><Link href="/cookie-policy" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Cookie Policy</Link></li>
               </ul>
             </div>
 
@@ -379,7 +405,7 @@ export default function Home() {
 
           <div className="border-t border-jira-border pt-6 mb-6">
             <p className="text-xs text-jira-textSecondary leading-relaxed max-w-4xl">
-              <strong className="text-jira-darkBlue">Disclaimer:</strong> Projekto provides high-level estimates for web and mobile application development based on typical industry practices, average market rates, and the inputs you provide. All calculations are indicative only and should not be interpreted as fixed quotes, contractual offers, or professional advice. Actual project cost and delivery time may vary depending on: scope changes; technical complexity; team structure and experience; third-party services and integrations; project management and execution approach. Projekto is designed to support early planning, budgeting, and decision-making, not to replace detailed technical scoping or formal proposals. Use of this calculator is at your own discretion.
+              <strong className="text-jira-darkBlue">Disclaimer:</strong> Projecto provides high-level estimates for web and mobile application development based on typical industry practices, average market rates, and the inputs you provide. All calculations are indicative only and should not be interpreted as fixed quotes, contractual offers, or professional advice. Actual project cost and delivery time may vary depending on: scope changes; technical complexity; team structure and experience; third-party services and integrations; project management and execution approach. Projecto is designed to support early planning, budgeting, and decision-making, not to replace detailed technical scoping or formal proposals. Use of this calculator is at your own discretion.
             </p>
           </div>
 
@@ -387,7 +413,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm text-jira-textSecondary gap-3 sm:gap-0">
             <div>
-              <p>© 2025 Projekto. All rights reserved.</p>
+              <p>© 2025 Projecto. All rights reserved.</p>
             </div>
             <div className="flex space-x-3 sm:space-x-4">
               <Link href="/blog/privacy-policy" className="hover:text-jira-blue transition-colors">
@@ -414,7 +440,7 @@ export default function Home() {
                 "name": "How accurate are the estimates?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Projekto estimates are based on role-based effort benchmarks and typical development workloads. They provide a realistic planning range, but final cost and delivery time can vary depending on scope, requirements, technical choices, and execution."
+                  "text": "Projecto estimates are based on role-based effort benchmarks and typical development workloads. They provide a realistic planning range, but final cost and delivery time can vary depending on scope, requirements, technical choices, and execution."
                 }
               },
               {
@@ -427,10 +453,10 @@ export default function Home() {
               },
               {
                 "@type": "Question",
-                "name": "What types of projects does Projekto support?",
+                "name": "What types of projects does Projecto support?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Projekto is suitable for web applications, mobile apps (iOS and Android), MVPs, internal tools and dashboards, and SaaS platforms."
+                  "text": "Projecto is suitable for web applications, mobile apps (iOS and Android), MVPs, internal tools and dashboards, and SaaS platforms."
                 }
               },
               {
@@ -438,7 +464,7 @@ export default function Home() {
                 "name": "Can I use this for client proposals?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. Many agencies and freelancers use Projekto for early estimates and internal planning. For client proposals, it's recommended to validate the output with detailed scoping before finalizing a price and timeline."
+                  "text": "Yes. Many agencies and freelancers use Projecto for early estimates and internal planning. For client proposals, it's recommended to validate the output with detailed scoping before finalizing a price and timeline."
                 }
               },
               {
@@ -446,7 +472,7 @@ export default function Home() {
                 "name": "Do you store my project data?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Projekto does not require you to submit sensitive project data. Calculator inputs are used to generate estimates and improve the experience. If you contact us directly, we only use your contact details to respond."
+                  "text": "Projecto does not require you to submit sensitive project data. Calculator inputs are used to generate estimates and improve the experience. If you contact us directly, we only use your contact details to respond."
                 }
               },
               {
@@ -454,7 +480,7 @@ export default function Home() {
                 "name": "Will the calculator improve over time?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. Projekto is continuously refined using updated benchmarks, industry trends, and feedback to improve accuracy and usability."
+                  "text": "Yes. Projecto is continuously refined using updated benchmarks, industry trends, and feedback to improve accuracy and usability."
                 }
               },
               {
@@ -462,7 +488,7 @@ export default function Home() {
                 "name": "How are the estimates calculated?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Projekto uses role-based effort modeling combined with feature complexity scoring and design scope inputs. Total effort is converted into cost using role-specific rates and team composition, with planning buffers applied to reflect real-world delivery. Results are presented as ranges rather than fixed numbers."
+                  "text": "Projecto uses role-based effort modeling combined with feature complexity scoring and design scope inputs. Total effort is converted into cost using role-specific rates and team composition, with planning buffers applied to reflect real-world delivery. Results are presented as ranges rather than fixed numbers."
                 }
               }
             ]

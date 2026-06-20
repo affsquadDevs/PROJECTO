@@ -33,7 +33,7 @@ export default function OpenSourceCta() {
                 100% Open Source &amp; Free Forever
               </h2>
               <p className="mt-3 text-jira-textSecondary text-sm sm:text-base leading-relaxed max-w-3xl">
-                Projekto (open-source repo{' '}
+                Projecto (open-source repo{' '}
                 <span className="text-jira-darkBlue font-semibold">Planify-Dev</span>) is published under the{' '}
                 <strong className="text-jira-darkBlue">MIT License</strong>. It is built with Next.js, TypeScript,
                 React, Tailwind CSS, Zustand, and jsPDF. View the code, open an issue, improve docs, or fork it for

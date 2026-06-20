@@ -60,7 +60,7 @@ key_blog_articles:
 - https://projecto-calculator.com/blog/hidden-costs-ecommerce-website
 - https://projecto-calculator.com/blog/healthcare-software-development-cost
 - https://projecto-calculator.com/blog/telemedicine-app-development-cost
-- https://projecto-calculator.com/blog/fintech-software-development-cost
+- https://projecto-calculator.com/blog/fintech-app-development-cost
 - https://projecto-calculator.com/blog/no-code-tools-saas-development-cost
 
 high_value_topics:
