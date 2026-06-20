@@ -84,6 +84,17 @@ export default async function CostToBuildPage({
   const sections = appContent[app.slug] ?? [];
   const publishDate = '2026-03-08';
 
+  // ── Derived, app-specific metrics ─────────────────────────────────
+  // Used to interpolate each guide's prose so no two pages share identical
+  // boilerplate sentences (reduces templated / "scaled content" footprint).
+  const totalHoursMin = app.costBreakdown.reduce((s: number, i: CostBreakdownItem) => s + i.hoursMin, 0);
+  const totalHoursMax = app.costBreakdown.reduce((s: number, i: CostBreakdownItem) => s + i.hoursMax, 0);
+  const mvpSavingsPct = Math.max(1, Math.round((1 - app.mvpCostMax / app.totalCostMax) * 100));
+  const featureCount = app.keyFeatures.length;
+  const driverCount = app.complexityFactors.length;
+  const categoryLower = app.category.toLowerCase();
+  const complexityLower = app.complexityLevel.toLowerCase();
+
   // ── BlogPosting structured data (for Google rich results) ─────────
   const blogPostingSchema = {
     '@context': 'https://schema.org',
@@ -287,7 +298,7 @@ export default async function CostToBuildPage({
                 Key Features of {app.displayName} Like App
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                The following features are typically required for a production-ready {app.appName.toLowerCase()} like application. An MVP can be delivered with a focused subset of these; the remaining features are added in subsequent releases based on user feedback and business priorities.
+                A production-ready {app.appName.toLowerCase()} like app in the {categoryLower} category usually spans the {featureCount} core feature areas below. For a {complexityLower}-complexity build like this, an MVP launches with a focused subset first; the rest are added release by release as real {app.appName.toLowerCase()} users show you which functionality actually drives retention and revenue.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {app.keyFeatures.map((feature: string, i: number) => (
@@ -319,7 +330,7 @@ export default async function CostToBuildPage({
                 Development Cost Breakdown
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                The table below shows a detailed cost breakdown for building {app.displayName} like app from scratch. All figures are based on average market rates for development teams in North America and Western Europe ($40–$60/hr mid-market). Costs will vary by team location, seniority, and final feature scope. Use the{' '}
+                Building {app.displayName} like app from scratch takes roughly {totalHoursMin.toLocaleString()}–{totalHoursMax.toLocaleString()} engineering hours for a {complexityLower}-complexity {categoryLower} product. The table below splits those hours and costs by category. All figures use average mid-market rates for teams in North America and Western Europe ($40–$60/hr) and shift with team location, seniority, and final feature scope. Use the{' '}
                 <Link href="/calculator" className="text-jira-blue hover:underline font-medium">Projecto development cost calculator</Link>{' '}
                 to model your specific configuration.
               </p>
@@ -385,8 +396,8 @@ export default async function CostToBuildPage({
                 What Makes Building {app.displayName} Like App Complex?
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                Building {app.displayName} like app is rated as <strong className="text-jira-darkBlue">{app.complexityLevel} complexity</strong>.
-                These are the primary technical and business challenges that drive development effort, cost, and timeline:
+                Building {app.displayName} like app is rated as <strong className="text-jira-darkBlue">{app.complexityLevel} complexity</strong>{' '}
+                for a {categoryLower} product. These {driverCount} technical and business challenges are what push the estimate toward the {formatCurrency(app.totalCostMax)} end of the range and stretch the timeline to {app.totalTimeMax} months:
               </p>
               <div className="space-y-3">
                 {app.complexityFactors.map((factor: string, i: number) => (
@@ -434,7 +445,7 @@ export default async function CostToBuildPage({
                 MVP vs Full Build: Which Approach Is Right?
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                For most founders, starting with an MVP is the right strategic decision. An MVP validates whether users actually want the product before committing to the full development budget — reducing financial risk and enabling faster learning. Here is how the two approaches compare for building {app.displayName} like app:
+                For a {categoryLower} product like {app.displayName}, an MVP runs {formatCurrency(app.mvpCostMin)}–{formatCurrency(app.mvpCostMax)} — about {mvpSavingsPct}% below the full {formatCurrency(app.totalCostMin)}–{formatCurrency(app.totalCostMax)} build — and reaches real users in {app.mvpTimeMin}–{app.mvpTimeMax} months instead of {app.totalTimeMin}–{app.totalTimeMax}. For most founders, that validation-first path de-risks the budget before committing to the full {app.appName.toLowerCase()} feature set. Here is how the two approaches compare:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="card border-l-4 border-l-jira-success">
@@ -442,9 +453,9 @@ export default async function CostToBuildPage({
                   <ul className="space-y-2 text-sm text-jira-textSecondary">
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span><strong>Cost:</strong> {formatCurrency(app.mvpCostMin)} – {formatCurrency(app.mvpCostMax)}</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span><strong>Timeline:</strong> {app.mvpTimeMin}–{app.mvpTimeMax} months</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Core features only — faster time to market</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Core {categoryLower} features only — roughly {mvpSavingsPct}% cheaper to launch</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Validate product-market fit before full investment</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Iterate based on real user feedback</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Iterate based on real {app.appName.toLowerCase()} user feedback</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Ideal for early-stage startups and first-time founders</span></li>
                   </ul>
                 </div>
@@ -453,9 +464,9 @@ export default async function CostToBuildPage({
                   <ul className="space-y-2 text-sm text-jira-textSecondary">
                     <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span><strong>Cost:</strong> {formatCurrency(app.totalCostMin)} – {formatCurrency(app.totalCostMax)}</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span><strong>Timeline:</strong> {app.totalTimeMin}–{app.totalTimeMax} months</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Complete feature set with advanced capabilities</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Production-ready with scalable architecture</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Comprehensive testing and security implementation</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>All {featureCount}+ {categoryLower} feature areas with advanced capabilities</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Production-ready architecture built for {categoryLower} scale</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Handles the {driverCount} main complexity drivers below at production scale</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Best for funded startups with validated demand</span></li>
                   </ul>
                 </div>
@@ -482,7 +493,7 @@ export default async function CostToBuildPage({
                 Get a Custom Estimate for Your {app.appName}-Like Project
               </h2>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto leading-relaxed">
-                Configure your team, feature set, design complexity, and tech stack in our free calculator — and get a detailed cost and timeline estimate tailored to your specific project in under 5 minutes.
+                The {formatCurrency(app.totalCostMin)}–{formatCurrency(app.totalCostMax)} range above is a starting point. Configure your own team, feature set, design complexity, and tech stack in the free calculator to get a cost and timeline estimate tailored to your {app.appName}-like {categoryLower} project in under 5 minutes.
               </p>
               <Link
                 href="/calculator"

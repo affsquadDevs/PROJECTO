@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import GoogleTagManager from '@/components/GoogleTagManager';
-import CookieConsent from '@/components/CookieConsent';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] });
@@ -85,6 +84,18 @@ export default function RootLayout({
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
         />
+        {/* Google Funding Choices — Google-certified CMP (IAB TCF v2). Renders the
+            GDPR/consent message configured in AdSense → Privacy & messaging, and
+            relays the choice into Consent Mode above. */}
+        <script
+          async
+          src={`https://fundingchoicesmessages.google.com/i/${ADSENSE_CLIENT}?ers=1`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}} signalGooglefcPresent();})();`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -153,7 +164,6 @@ export default function RootLayout({
           />
         </noscript>
         {children}
-        <CookieConsent />
       </body>
     </html>
   );

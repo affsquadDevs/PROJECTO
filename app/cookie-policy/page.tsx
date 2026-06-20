@@ -100,7 +100,7 @@ export default function CookiePolicyPage() {
 
             <h2 className="text-2xl font-bold text-jira-darkBlue mb-4 mt-8">4. Your Consent &amp; Choices</h2>
             <p className="text-jira-textSecondary leading-relaxed mb-4">
-              When you first visit the site, a consent banner lets you accept or reject
+              When you first visit the site, a consent message (provided through Google’s certified Consent Management Platform) lets you accept or reject
               non-essential (analytics and advertising) cookies. We apply Google Consent Mode and
               default advertising and analytics storage to <em>denied</em> until you opt in. For
               visitors in the EEA, UK, and Switzerland, personalized ads are only enabled with your

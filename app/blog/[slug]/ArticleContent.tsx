@@ -212,7 +212,7 @@ const articles = {
           <li>Serve and measure advertising through Google AdSense and its partners</li>
         </ul>
         <p className="text-jira-textSecondary leading-relaxed mb-4">
-          When you first visit the site, a consent banner lets you accept or reject non-essential
+          When you first visit the site, a consent message (provided through Google’s certified Consent Management Platform) lets you accept or reject non-essential
           (analytics and advertising) cookies. We apply Google Consent Mode and default advertising
           and analytics storage to denied until you opt in. You may also control or disable cookies
           through your browser settings at any time. For full details, see our{' '}
