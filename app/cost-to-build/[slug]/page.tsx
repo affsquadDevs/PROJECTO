@@ -24,20 +24,22 @@ export async function generateMetadata({
   const app = getAppEstimateBySlug(slug);
   if (!app) return {};
 
-  const title = `Cost to Build ${app.displayName} Like App in 2025 | Projekto`;
+  const title = `Cost to Build ${app.displayName} Like App in 2026 | Projecto Calculator`;
   const description = `Learn how much it costs to build ${app.displayName} like app. Detailed cost breakdown, team size, tech stack, timeline and estimated budget from $${(app.totalCostMin / 1000).toFixed(0)}K to $${(app.totalCostMax / 1000).toFixed(0)}K. Free cost calculator included.`;
 
   return {
     title,
     description,
     openGraph: {
+      images: ['/og-image.png'],
       title,
       description,
       url: `https://projecto-calculator.com/cost-to-build/${app.slug}`,
-      siteName: 'Projekto',
+      siteName: 'Projecto Calculator',
       type: 'article',
     },
     twitter: {
+      images: ['/og-image.png'],
       card: 'summary_large_image',
       title,
       description,
@@ -82,23 +84,34 @@ export default async function CostToBuildPage({
   const sections = appContent[app.slug] ?? [];
   const publishDate = '2026-03-08';
 
+  // ── Derived, app-specific metrics ─────────────────────────────────
+  // Used to interpolate each guide's prose so no two pages share identical
+  // boilerplate sentences (reduces templated / "scaled content" footprint).
+  const totalHoursMin = app.costBreakdown.reduce((s: number, i: CostBreakdownItem) => s + i.hoursMin, 0);
+  const totalHoursMax = app.costBreakdown.reduce((s: number, i: CostBreakdownItem) => s + i.hoursMax, 0);
+  const mvpSavingsPct = Math.max(1, Math.round((1 - app.mvpCostMax / app.totalCostMax) * 100));
+  const featureCount = app.keyFeatures.length;
+  const driverCount = app.complexityFactors.length;
+  const categoryLower = app.category.toLowerCase();
+  const complexityLower = app.complexityLevel.toLowerCase();
+
   // ── BlogPosting structured data (for Google rich results) ─────────
   const blogPostingSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: `Cost to Build ${app.displayName} Like App in 2025`,
+    headline: `Cost to Build ${app.displayName} Like App in 2026`,
     description: app.description,
     datePublished: publishDate,
     dateModified: publishDate,
     inLanguage: 'en',
     author: {
       '@type': 'Organization',
-      name: 'Projekto',
+      name: 'Projecto Calculator',
       url: 'https://projecto-calculator.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Projekto',
+      name: 'Projecto Calculator',
       logo: {
         '@type': 'ImageObject',
         url: 'https://projecto-calculator.com/logo.png',
@@ -163,12 +176,13 @@ export default async function CostToBuildPage({
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-jira-blue rounded flex items-center justify-center">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
               </div>
-              <span className="text-xl sm:text-2xl font-bold text-jira-darkBlue">Projekto</span>
+              <span className="text-xl sm:text-2xl font-bold text-jira-darkBlue">Projecto</span>
             </Link>
             <div className="hidden md:flex items-center space-x-6">
               <Link href="/" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Home</Link>
               <Link href="/calculator" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Calculator</Link>
               <Link href="/blog" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Blog</Link>
+              <Link href="/about" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">About</Link>
               <Link href="/contact" className="text-sm font-medium text-jira-textSecondary hover:text-jira-blue transition-colors">Contact</Link>
             </div>
             <Link href="/calculator" className="md:hidden btn-primary text-sm px-3 py-1.5">
@@ -201,10 +215,10 @@ export default async function CostToBuildPage({
               {app.category}
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-jira-darkBlue mb-4 leading-tight" itemProp="headline">
-              Cost to Build {app.displayName} Like App in 2025
+              Cost to Build {app.displayName} Like App in 2026
             </h1>
             <div className="flex items-center gap-4 text-sm text-jira-textSecondary mb-6">
-              <span>By <strong className="text-jira-darkBlue">Projekto Team</strong></span>
+              <span>By <strong className="text-jira-darkBlue">Projecto Team</strong></span>
               <span>·</span>
               <time dateTime={publishDate}>March 8, 2026</time>
               <span>·</span>
@@ -284,7 +298,7 @@ export default async function CostToBuildPage({
                 Key Features of {app.displayName} Like App
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                The following features are typically required for a production-ready {app.appName.toLowerCase()} like application. An MVP can be delivered with a focused subset of these; the remaining features are added in subsequent releases based on user feedback and business priorities.
+                A production-ready {app.appName.toLowerCase()} like app in the {categoryLower} category usually spans the {featureCount} core feature areas below. For a {complexityLower}-complexity build like this, an MVP launches with a focused subset first; the rest are added release by release as real {app.appName.toLowerCase()} users show you which functionality actually drives retention and revenue.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {app.keyFeatures.map((feature: string, i: number) => (
@@ -316,8 +330,8 @@ export default async function CostToBuildPage({
                 Development Cost Breakdown
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                The table below shows a detailed cost breakdown for building {app.displayName} like app from scratch. All figures are based on average market rates for development teams in North America and Western Europe ($40–$60/hr mid-market). Costs will vary by team location, seniority, and final feature scope. Use the{' '}
-                <Link href="/calculator" className="text-jira-blue hover:underline font-medium">Projekto development cost calculator</Link>{' '}
+                Building {app.displayName} like app from scratch takes roughly {totalHoursMin.toLocaleString()}–{totalHoursMax.toLocaleString()} engineering hours for a {complexityLower}-complexity {categoryLower} product. The table below splits those hours and costs by category. All figures use average mid-market rates for teams in North America and Western Europe ($40–$60/hr) and shift with team location, seniority, and final feature scope. Use the{' '}
+                <Link href="/calculator" className="text-jira-blue hover:underline font-medium">Projecto development cost calculator</Link>{' '}
                 to model your specific configuration.
               </p>
               <div className="overflow-x-auto rounded border border-jira-border shadow-jira">
@@ -382,8 +396,8 @@ export default async function CostToBuildPage({
                 What Makes Building {app.displayName} Like App Complex?
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                Building {app.displayName} like app is rated as <strong className="text-jira-darkBlue">{app.complexityLevel} complexity</strong>.
-                These are the primary technical and business challenges that drive development effort, cost, and timeline:
+                Building {app.displayName} like app is rated as <strong className="text-jira-darkBlue">{app.complexityLevel} complexity</strong>{' '}
+                for a {categoryLower} product. These {driverCount} technical and business challenges are what push the estimate toward the {formatCurrency(app.totalCostMax)} end of the range and stretch the timeline to {app.totalTimeMax} months:
               </p>
               <div className="space-y-3">
                 {app.complexityFactors.map((factor: string, i: number) => (
@@ -431,7 +445,7 @@ export default async function CostToBuildPage({
                 MVP vs Full Build: Which Approach Is Right?
               </h2>
               <p className="text-jira-textSecondary mb-6 leading-relaxed">
-                For most founders, starting with an MVP is the right strategic decision. An MVP validates whether users actually want the product before committing to the full development budget — reducing financial risk and enabling faster learning. Here is how the two approaches compare for building {app.displayName} like app:
+                For a {categoryLower} product like {app.displayName}, an MVP runs {formatCurrency(app.mvpCostMin)}–{formatCurrency(app.mvpCostMax)} — about {mvpSavingsPct}% below the full {formatCurrency(app.totalCostMin)}–{formatCurrency(app.totalCostMax)} build — and reaches real users in {app.mvpTimeMin}–{app.mvpTimeMax} months instead of {app.totalTimeMin}–{app.totalTimeMax}. For most founders, that validation-first path de-risks the budget before committing to the full {app.appName.toLowerCase()} feature set. Here is how the two approaches compare:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="card border-l-4 border-l-jira-success">
@@ -439,9 +453,9 @@ export default async function CostToBuildPage({
                   <ul className="space-y-2 text-sm text-jira-textSecondary">
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span><strong>Cost:</strong> {formatCurrency(app.mvpCostMin)} – {formatCurrency(app.mvpCostMax)}</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span><strong>Timeline:</strong> {app.mvpTimeMin}–{app.mvpTimeMax} months</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Core features only — faster time to market</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Core {categoryLower} features only — roughly {mvpSavingsPct}% cheaper to launch</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Validate product-market fit before full investment</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Iterate based on real user feedback</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Iterate based on real {app.appName.toLowerCase()} user feedback</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-success font-bold mt-0.5">•</span><span>Ideal for early-stage startups and first-time founders</span></li>
                   </ul>
                 </div>
@@ -450,9 +464,9 @@ export default async function CostToBuildPage({
                   <ul className="space-y-2 text-sm text-jira-textSecondary">
                     <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span><strong>Cost:</strong> {formatCurrency(app.totalCostMin)} – {formatCurrency(app.totalCostMax)}</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span><strong>Timeline:</strong> {app.totalTimeMin}–{app.totalTimeMax} months</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Complete feature set with advanced capabilities</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Production-ready with scalable architecture</span></li>
-                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Comprehensive testing and security implementation</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>All {featureCount}+ {categoryLower} feature areas with advanced capabilities</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Production-ready architecture built for {categoryLower} scale</span></li>
+                    <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Handles the {driverCount} main complexity drivers below at production scale</span></li>
                     <li className="flex items-start space-x-2"><span className="text-jira-blue font-bold mt-0.5">•</span><span>Best for funded startups with validated demand</span></li>
                   </ul>
                 </div>
@@ -479,7 +493,7 @@ export default async function CostToBuildPage({
                 Get a Custom Estimate for Your {app.appName}-Like Project
               </h2>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto leading-relaxed">
-                Configure your team, feature set, design complexity, and tech stack in our free calculator — and get a detailed cost and timeline estimate tailored to your specific project in under 5 minutes.
+                The {formatCurrency(app.totalCostMin)}–{formatCurrency(app.totalCostMax)} range above is a starting point. Configure your own team, feature set, design complexity, and tech stack in the free calculator to get a cost and timeline estimate tailored to your {app.appName}-like {categoryLower} project in under 5 minutes.
               </p>
               <Link
                 href="/calculator"
@@ -575,7 +589,7 @@ export default async function CostToBuildPage({
                 <div className="w-10 h-10 bg-jira-blue rounded flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
                 </div>
-                <span className="text-2xl font-bold text-jira-darkBlue">Projekto</span>
+                <span className="text-2xl font-bold text-jira-darkBlue">Projecto</span>
               </div>
               <p className="text-sm text-jira-textSecondary leading-relaxed max-w-xs">
                 Professional software project cost estimation and planning tool.
@@ -589,6 +603,7 @@ export default async function CostToBuildPage({
                 <li><Link href="/calculator" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Calculator</Link></li>
                 <li><Link href="/blog" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Blog</Link></li>
                 <li><Link href="/contact" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Contact</Link></li>
+                <li><Link href="/about" className="text-jira-textSecondary hover:text-jira-blue transition-colors">About</Link></li>
               </ul>
             </div>
 
@@ -597,6 +612,7 @@ export default async function CostToBuildPage({
               <ul className="space-y-3 text-sm">
                 <li><Link href="/blog/privacy-policy" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Privacy Policy</Link></li>
                 <li><Link href="/blog/terms-of-service" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Terms of Service</Link></li>
+                <li><Link href="/cookie-policy" className="text-jira-textSecondary hover:text-jira-blue transition-colors">Cookie Policy</Link></li>
               </ul>
             </div>
 
@@ -623,7 +639,7 @@ export default async function CostToBuildPage({
           <div className="border-t border-jira-border my-6"></div>
 
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm text-jira-textSecondary gap-3 sm:gap-0">
-            <p>© 2025 Projekto. All rights reserved.</p>
+            <p>© 2025 Projecto. All rights reserved.</p>
             <div className="flex space-x-3 sm:space-x-4">
               <Link href="/blog/privacy-policy" className="hover:text-jira-blue transition-colors">Privacy</Link>
               <span className="text-jira-border" aria-hidden="true">•</span>
