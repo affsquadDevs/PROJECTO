@@ -1,0 +1,194 @@
+{
+  "category": "Streaming de vídeo y contenido",
+  "description": "Una plataforma de vídeo como YouTube requiere subida de vídeos, transcodificación, streaming adaptativo, gestión de contenido, canales de usuario, comentarios, recomendaciones y funciones de monetización.",
+  "introText": "Las plataformas de vídeo como YouTube han revolucionado el consumo de contenido; el propio YouTube aloja más de 500 horas de vídeo subidas cada minuto. Construir una plataforma similar a YouTube requiere infraestructura de subida de vídeos, canalizaciones de transcodificación, streaming adaptativo, sistemas de gestión de contenido, canales de usuario, funciones de interacción (comentarios, me gusta, suscripciones), algoritmos de recomendación y herramientas de monetización. La complejidad técnica es considerable, sobre todo en el procesamiento y la entrega de vídeo a escala.",
+  "keyFeatures": [
+    "Subida y procesamiento de vídeos",
+    "Transcodificación de vídeo (múltiples resoluciones)",
+    "Streaming de tasa de bits adaptativa (HLS/DASH)",
+    "Reproductor de vídeo con controles de reproducción",
+    "Canales y perfiles de usuario",
+    "Categorización y búsqueda de vídeos",
+    "Comentarios y funciones de interacción",
+    "Suscripciones y notificaciones",
+    "Recomendaciones de vídeos",
+    "Panel de analíticas para creadores",
+    "Monetización (anuncios, suscripciones)",
+    "Capacidad de emisión en directo"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Diseño UI/UX",
+      "description": "Reproductor de vídeo, páginas de canal, interfaz de subida"
+    },
+    {
+      "category": "Desarrollo frontend",
+      "description": "Aplicación web, apps móviles, reproductor de vídeo"
+    },
+    {
+      "category": "Desarrollo backend",
+      "description": "Gestión de contenido, API, sistema de usuarios"
+    },
+    {
+      "category": "Procesamiento de vídeo",
+      "description": "Canalización de transcodificación, configuración de codificación"
+    },
+    {
+      "category": "Infraestructura de streaming de vídeo",
+      "description": "Configuración de CDN, streaming adaptativo"
+    },
+    {
+      "category": "Gestión de contenido",
+      "description": "Metadatos de vídeo, categorización, búsqueda"
+    },
+    {
+      "category": "Funciones de interacción",
+      "description": "Comentarios, me gusta, suscripciones, notificaciones"
+    },
+    {
+      "category": "Sistema de recomendaciones",
+      "description": "Desarrollo del algoritmo, integración de ML"
+    },
+    {
+      "category": "Analíticas y monetización",
+      "description": "Panel para creadores, integración de anuncios"
+    },
+    {
+      "category": "QA y testing",
+      "description": "Pruebas de calidad de vídeo, pruebas de carga"
+    },
+    {
+      "category": "DevOps e infraestructura",
+      "description": "Alojamiento de vídeo, CDN, monitorización"
+    }
+  ],
+  "complexityFactors": [
+    "Transcodificación y procesamiento de vídeo a escala (uso intensivo de CPU)",
+    "Streaming de tasa de bits adaptativa para distintas condiciones de red",
+    "Costes de CDN para la entrega de vídeo (pueden ser de $1,000–$10,000+/mo)",
+    "Costes de almacenamiento de vídeo (archivos grandes, múltiples resoluciones)",
+    "Desarrollo del algoritmo de recomendación e integración de ML",
+    "Moderación de contenido y gestión de derechos de autor",
+    "Escalabilidad para gestionar millones de reproducciones de vídeo al día"
+  ],
+  "timeline": [
+    {
+      "phase": "Descubrimiento y planificación",
+      "duration": "2–4 semanas",
+      "description": "Diseño de la arquitectura de vídeo, estrategia de transcodificación y priorización de funciones."
+    },
+    {
+      "phase": "Diseño UI/UX",
+      "duration": "4–6 semanas",
+      "description": "Diseño del reproductor de vídeo, las páginas de canal, la interfaz de subida y las pantallas de la app móvil."
+    },
+    {
+      "phase": "Configuración de la infraestructura de vídeo",
+      "duration": "4–8 semanas",
+      "description": "Configuración de la subida de vídeos, la canalización de transcodificación y la integración de CDN."
+    },
+    {
+      "phase": "Desarrollo backend",
+      "duration": "6–12 semanas",
+      "description": "Construcción del sistema de gestión de contenido, la API, los canales de usuario y las funciones de interacción."
+    },
+    {
+      "phase": "Desarrollo frontend",
+      "duration": "6–10 semanas",
+      "description": "Desarrollo del reproductor de vídeo, la aplicación web y las aplicaciones móviles."
+    },
+    {
+      "phase": "Sistema de recomendaciones",
+      "duration": "4–8 semanas",
+      "description": "Construcción del algoritmo de recomendación de vídeos y las funciones de personalización."
+    },
+    {
+      "phase": "Funciones de interacción",
+      "duration": "3–5 semanas",
+      "description": "Implementación de comentarios, me gusta, suscripciones y notificaciones."
+    },
+    {
+      "phase": "Analíticas y monetización",
+      "duration": "3–5 semanas",
+      "description": "Construcción del panel de analíticas para creadores y las herramientas de monetización."
+    },
+    {
+      "phase": "Testing y QA",
+      "duration": "4–6 semanas",
+      "description": "Pruebas de calidad de vídeo, pruebas de carga y optimización del rendimiento."
+    },
+    {
+      "phase": "Despliegue y lanzamiento",
+      "duration": "2–3 semanas",
+      "description": "Despliegue en producción, configuración de CDN y puesta en marcha de la monitorización."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Cuánto cuesta desarrollar una app similar a YouTube?",
+      "answer": "Una plataforma de vídeo con todas las funciones, como YouTube, cuesta entre $80,000–$250,000. Un MVP con subida de vídeos, reproducción, canales y funciones básicas de interacción puede desarrollarse por $35,000–$80,000 en 3–6 meses."
+    },
+    {
+      "question": "¿Cuánto se tarda en desarrollar una plataforma de vídeo?",
+      "answer": "El desarrollo completo tarda entre 6–15 meses según las funciones. Un MVP con la funcionalidad de vídeo esencial puede estar listo en 3–6 meses."
+    },
+    {
+      "question": "¿Cuáles son los costes continuos de la infraestructura de vídeo?",
+      "answer": "Los costes de alojamiento y entrega de vídeo son considerables: CDN para el streaming ($500–$10,000+/mo según el tráfico), almacenamiento de vídeo ($200–$2,000/mo), servicios de transcodificación ($300–$3,000/mo) y alojamiento de base de datos ($200–$1,500/mo). Los costes escalan drásticamente con las reproducciones de vídeo."
+    },
+    {
+      "question": "¿Debería usar un servicio de alojamiento de vídeo o construir el mío propio?",
+      "answer": "Para el MVP, se recomienda usar servicios gestionados (Mux, Cloudflare Stream, Vimeo OTT). Se encargan de la transcodificación, la CDN y la infraestructura del reproductor. Construir una infraestructura de vídeo personalizada añade 3–6 meses y $20,000–$50,000+ a los costes de desarrollo."
+    },
+    {
+      "question": "¿Necesito un algoritmo de recomendación para el MVP?",
+      "answer": "No, puedes lanzarlo con una navegación sencilla por categorías y vídeos en tendencia. Los algoritmos de recomendación pueden añadirse en la versión 2.0 una vez que dispongas de datos de visualización para entrenar los modelos."
+    },
+    {
+      "question": "¿Qué formatos y resoluciones de vídeo debería admitir?",
+      "answer": "Para el MVP, admite formatos habituales (MP4, WebM) y 3–4 resoluciones (1080p, 720p, 480p, 360p). Las plataformas completas admiten 8K, HDR y múltiples códecs, pero esto añade una complejidad y un coste significativos."
+    }
+  ],
+  "content": [
+    {
+      "heading": "¿Qué es una plataforma de vídeo como YouTube?",
+      "paragraphs": [
+        "Una plataforma de vídeo como YouTube es un servicio de alojamiento y streaming de contenido que permite a los usuarios subir, compartir y ver vídeos. El propio YouTube aloja más de 500 horas de vídeo subidas cada minuto y sirve miles de millones de reproducciones de vídeo al día. Construir una plataforma similar a YouTube requiere infraestructura de subida de vídeos, canalizaciones de transcodificación para convertir los vídeos en múltiples resoluciones, streaming adaptativo para distintas condiciones de red, sistemas de gestión de contenido, canales de usuario, funciones de interacción (comentarios, me gusta, suscripciones), algoritmos de recomendación y herramientas de monetización.",
+        "El aspecto técnicamente más complejo de una plataforma de vídeo es el procesamiento y la entrega de vídeo. Cuando un usuario sube un vídeo, este debe transcodificarse en múltiples resoluciones (1080p, 720p, 480p, 360p) y formatos (HLS, DASH) para habilitar el streaming de tasa de bits adaptativa. Esto permite que el reproductor seleccione automáticamente la mejor calidad en función de la velocidad de red del espectador, garantizando una reproducción fluida. La transcodificación de vídeo hace un uso intensivo de la CPU y requiere mucho tiempo: un vídeo de 10 minutos puede tardar entre 30–60 minutos en procesarse a todos los formatos necesarios. Esto exige una infraestructura especializada y considerables recursos de cómputo.",
+        "La gestión de contenido en las plataformas de vídeo es mucho más compleja que en las plataformas basadas en texto. Cada vídeo requiere metadatos (título, descripción, etiquetas, categoría, miniatura), métricas de interacción (reproducciones, me gusta, comentarios), información del creador, ajustes de monetización y estado de moderación de contenido. La plataforma debe gestionar la búsqueda de vídeos, la categorización, las recomendaciones, los algoritmos de tendencias y las analíticas para creadores. Construir un sistema de gestión de contenido escalable capaz de gestionar millones de vídeos y miles de millones de reproducciones requiere un diseño cuidadoso de la base de datos y estrategias de caché."
+      ]
+    },
+    {
+      "heading": "¿Por qué construir una plataforma de vídeo en 2025?",
+      "paragraphs": [
+        "El mercado global del streaming de vídeo sigue creciendo, y las plataformas de vídeo de nicho están teniendo éxito en categorías de contenido especializadas. Aunque YouTube domina el contenido de vídeo general, las plataformas verticales específicas han construido audiencias considerables. Twitch domina las emisiones de videojuegos en directo. Vimeo da servicio a creadores y empresas profesionales. Dailymotion se centra en los mercados europeos. Plataformas educativas como Coursera y Khan Academy alojan cursos de vídeo estructurados. Cada vertical tiene requisitos únicos que las plataformas generales no pueden abordar por completo.",
+        "Las plataformas de la economía de creadores son un área de gran crecimiento, ya que los creadores buscan plataformas que ofrezcan un mejor reparto de ingresos, más control sobre el contenido y herramientas especializadas para su nicho. El reparto de ingresos del 45–55% de YouTube ha llevado a muchos creadores a explorar alternativas. Las plataformas que ofrecen un reparto de ingresos del 70–90%, apoyo directo de los seguidores o herramientas de monetización especializadas pueden atraer a creadores consolidados. Construir una plataforma centrada en el creador, con mejor economía y herramientas, representa una oportunidad significativa.",
+        "Las plataformas de vídeo empresariales y B2B dan servicio a empresas que necesitan alojamiento de vídeo para formación, marketing, demostraciones de producto o comunicación interna. Estas plataformas aplican precios premium ($50–$500+ al mes por organización) en comparación con las plataformas de vídeo de consumo. Funciones como analíticas avanzadas, marca blanca, autenticación SSO y certificaciones de cumplimiento justifican precios más altos. El mercado de plataformas de vídeo B2B está menos saturado que el del vídeo de consumo y ofrece una mejor economía unitaria."
+      ]
+    },
+    {
+      "heading": "Stack tecnológico recomendado para una plataforma similar a YouTube",
+      "paragraphs": [
+        "Para el frontend, se recomienda Next.js en las plataformas de vídeo porque las páginas individuales de vídeo necesitan estar indexadas para SEO con el fin de favorecer el descubrimiento orgánico. El renderizado en el servidor garantiza que los metadatos, las descripciones y las miniaturas de los vídeos sean rastreables por los motores de búsqueda. Para el reproductor de vídeo, Video.js o Shaka Player ofrecen soporte de streaming adaptativo con los protocolos HLS y DASH. React Native puede usarse para las apps móviles, aunque para el MVP se recomienda un desarrollo web-first para reducir el coste inicial.",
+        "El procesamiento de vídeo es el componente backend más crítico. AWS MediaConvert, Azure Media Services o Mux ofrecen servicios gestionados de transcodificación de vídeo que se encargan de la conversión de formatos, la generación de resoluciones y la creación de streaming adaptativo. Construir una infraestructura de transcodificación personalizada añade entre 200–500 horas de desarrollo y requiere mantenimiento continuo. Para el MVP, se recomienda encarecidamente usar servicios gestionados. Para el almacenamiento y la entrega de vídeo, AWS S3 con CDN de CloudFront o CDNs de vídeo especializadas como Cloudflare Stream proporcionan una infraestructura escalable.",
+        "La arquitectura de la base de datos debe gestionar grandes volúmenes de lectura (consultas de metadatos de vídeo) y de escritura (nuevas subidas, métricas de interacción). PostgreSQL gestiona los datos transaccionales (usuarios, canales, comentarios), mientras que Elasticsearch o Algolia impulsan la búsqueda y el descubrimiento de vídeos. Redis almacena en caché los metadatos de vídeo a los que se accede con frecuencia y las listas de tendencias. Para las analíticas y las recomendaciones, un data warehouse (Snowflake, BigQuery) almacena el comportamiento de visualización para entrenar el algoritmo. El sistema de recomendaciones puede empezar siendo sencillo (basado en categorías, en tendencias) y evolucionar hacia una personalización basada en ML a medida que se acumulan datos de visualización."
+      ]
+    },
+    {
+      "heading": "Cómo reducir los costes de desarrollo de una plataforma de vídeo",
+      "paragraphs": [
+        "La reducción de costes más eficaz consiste en usar una infraestructura de vídeo gestionada en lugar de construir sistemas personalizados de transcodificación y entrega. Servicios como Mux, Cloudflare Stream o Vimeo OTT ofrecen alojamiento de vídeo completo, transcodificación, streaming adaptativo e infraestructura de reproductor a través de APIs. Aunque estos servicios cobran por gigabyte de almacenamiento y por minuto entregado, eliminan entre 300–600 horas de desarrollo de infraestructura de vídeo y reducen la complejidad operativa continua. Para validar el MVP, los servicios gestionados son esenciales.",
+        "Aplazar el algoritmo de recomendación a la versión 2.0 reduce significativamente el alcance del desarrollo. Lanzar con una navegación sencilla por categorías, vídeos en tendencia y funcionalidad de búsqueda es suficiente para el MVP. Los algoritmos de recomendación requieren datos de visualización para entrenarse de forma eficaz: construirlos antes de tener usuarios es una optimización prematura. Muchas plataformas de vídeo de éxito se lanzaron con curación manual y algoritmos sencillos, y después añadieron recomendaciones basadas en ML tras acumular datos de visualización.",
+        "Comenzar sin emisión en directo reduce la complejidad y el coste. La emisión en directo requiere infraestructura adicional (ingesta RTMP, transcodificación en tiempo real, entrega de baja latencia) que añade entre 200–400 horas de desarrollo. La subida y reproducción de vídeo pregrabado es el caso de uso principal que valida el encaje producto-mercado. La emisión en directo puede añadirse en la versión 2.0 una vez que la plataforma haya consolidado una base de creadores y una audiencia de espectadores."
+      ]
+    },
+    {
+      "heading": "Estrategias de monetización para una plataforma de vídeo",
+      "paragraphs": [
+        "La publicidad es el principal modelo de ingresos para las plataformas de vídeo de consumo; las plataformas suelen quedarse con el 45–55% de los ingresos por publicidad y comparten el resto con los creadores. El Programa de Socios de YouTube comparte el 55% de los ingresos por publicidad con los creadores. Para una nueva plataforma que compite por los creadores, ofrecer un reparto de ingresos mayor (60–70%) puede atraer a creadores consolidados. Sin embargo, los ingresos por publicidad requieren una escala considerable (millones de reproducciones mensuales) para generar ingresos significativos, lo que lo convierte en un modelo de monetización para plataformas en etapas más avanzadas y no para el MVP.",
+        "Los modelos de suscripción crean ingresos recurrentes predecibles y pueden implementarse a menor escala que la publicidad. Las plataformas pueden ofrecer suscripciones premium que desbloquean la visualización sin anuncios, contenido exclusivo o acceso anticipado. Alternativamente, los programas de suscripción a creadores (como las Membresías de YouTube) permiten a los espectadores pagar directamente a los creadores por contenido exclusivo o ventajas. Los ingresos por suscripción suelen tener una mejor economía unitaria que la publicidad en las etapas iniciales.",
+        "La monetización basada en transacciones incluye el pago por visión de contenido premium, los alquileres digitales o las compras únicas. Este modelo funciona bien para contenido educativo, formación profesional o eventos exclusivos. Las comisiones por transacción (normalmente entre el 10–30% del precio de compra) generan ingresos sin necesidad de una infraestructura de publicidad. Para plataformas de nicho con contenido de alto valor, la monetización basada en transacciones puede ser más viable que la publicidad en las etapas iniciales."
+      ]
+    }
+  ]
+}

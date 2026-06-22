@@ -1,0 +1,170 @@
+{
+  "category": "Servicios bajo demanda",
+  "description": "Una app de reparto de comida como DoorDash requiere listados de restaurantes, gestión de pedidos, seguimiento en tiempo real, procesamiento de pagos, asignación de repartidores e interfaces multirrol.",
+  "introText": "Las apps de reparto de comida se han vuelto imprescindibles, y DoorDash procesa millones de pedidos al día. Crear una plataforma de reparto de comida exige gestión de restaurantes, procesamiento de pedidos, seguimiento de repartidores en tiempo real, integración de pagos e interfaces independientes para clientes, restaurantes y repartidores. La complejidad aumenta con funciones como pedidos programados, pedidos en grupo y programas de fidelización.",
+  "keyFeatures": [
+    "Listados de restaurantes y menús",
+    "Realización y gestión de pedidos",
+    "Seguimiento de pedidos en tiempo real",
+    "Asignación y enrutamiento de repartidores",
+    "Procesamiento de pagos (tarjetas, monederos digitales)",
+    "Notificaciones push para actualizaciones de pedidos",
+    "Sistema de valoraciones y reseñas",
+    "Panel de control para restaurantes",
+    "App para repartidores con navegación",
+    "Panel de administración para la gestión de pedidos"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Diseño UI/UX",
+      "description": "App de cliente, panel de restaurante, app de repartidor"
+    },
+    {
+      "category": "Desarrollo frontend",
+      "description": "Tres apps móviles (cliente, restaurante, repartidor)"
+    },
+    {
+      "category": "Desarrollo backend",
+      "description": "Gestión de pedidos, API, seguimiento en tiempo real"
+    },
+    {
+      "category": "Seguimiento en tiempo real",
+      "description": "Seguimiento por GPS, actualizaciones del estado del pedido"
+    },
+    {
+      "category": "Integración de pagos",
+      "description": "Stripe, PayPal, pagos dentro de la app"
+    },
+    {
+      "category": "Gestión de restaurantes",
+      "description": "Gestión de menús, procesamiento de pedidos"
+    },
+    {
+      "category": "Gestión de repartidores",
+      "description": "Alta de repartidores, algoritmo de asignación"
+    },
+    {
+      "category": "Control de calidad y pruebas",
+      "description": "Pruebas del flujo de pedidos, validación del seguimiento en tiempo real"
+    },
+    {
+      "category": "DevOps e infraestructura",
+      "description": "Infraestructura escalable para el procesamiento de pedidos"
+    }
+  ],
+  "complexityFactors": [
+    "Tres apps independientes (cliente, restaurante, repartidor)",
+    "Seguimiento de pedidos y actualizaciones de estado en tiempo real",
+    "Optimización de la asignación y el enrutamiento de repartidores",
+    "Alta de restaurantes y gestión de menús",
+    "Procesamiento de pagos y liquidaciones a repartidores",
+    "Escalabilidad en horas punta (picos de comida y cena)",
+    "Gestión de pedidos de varios restaurantes"
+  ],
+  "timeline": [
+    {
+      "phase": "Descubrimiento y planificación",
+      "duration": "2–3 semanas",
+      "description": "Diseño del flujo de pedidos, estrategia de alta de restaurantes y arquitectura técnica."
+    },
+    {
+      "phase": "Diseño UI/UX",
+      "duration": "4–6 semanas",
+      "description": "Diseño de las interfaces de la app de cliente, el panel de restaurante y la app de repartidor."
+    },
+    {
+      "phase": "Desarrollo backend",
+      "duration": "6–12 semanas",
+      "description": "Creación del sistema de gestión de pedidos, la API y el seguimiento en tiempo real."
+    },
+    {
+      "phase": "Desarrollo frontend",
+      "duration": "6–10 semanas",
+      "description": "Desarrollo de tres apps móviles con funciones de gestión de pedidos."
+    },
+    {
+      "phase": "Seguimiento en tiempo real",
+      "duration": "3–5 semanas",
+      "description": "Implementación del seguimiento por GPS y las actualizaciones del estado del pedido."
+    },
+    {
+      "phase": "Integración de pagos",
+      "duration": "2–3 semanas",
+      "description": "Integración de pasarelas de pago y procesamiento."
+    },
+    {
+      "phase": "Pruebas y control de calidad",
+      "duration": "3–5 semanas",
+      "description": "Pruebas del flujo de pedidos, validación del seguimiento en tiempo real y pruebas de carga."
+    },
+    {
+      "phase": "Despliegue y lanzamiento",
+      "duration": "1–2 semanas",
+      "description": "Envío a las tiendas de aplicaciones y lanzamiento piloto con restaurantes de prueba."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Cuánto cuesta crear una app de reparto de comida?",
+      "answer": "Una app de reparto de comida con todas las funciones cuesta entre $70,000 y $200,000. Un MVP con pedidos básicos, seguimiento y asignación de repartidores puede crearse por entre $30,000 y $70,000 en 3–5 meses."
+    },
+    {
+      "question": "¿Cuánto tiempo lleva crear una plataforma de reparto de comida?",
+      "answer": "El desarrollo completo lleva entre 5 y 12 meses. Un MVP con las funciones esenciales de pedidos y seguimiento puede estar listo en 3–5 meses."
+    },
+    {
+      "question": "¿Necesito apps independientes para clientes, restaurantes y repartidores?",
+      "answer": "Sí, cada tipo de usuario tiene necesidades distintas. No obstante, puedes empezar con una app de cliente y paneles web para restaurantes y repartidores, y desarrollar apps nativas más adelante."
+    },
+    {
+      "question": "¿Cuál es el mayor reto del reparto de comida?",
+      "answer": "El alta de restaurantes y el mantenimiento de la oferta de repartidores. Necesitas suficientes restaurantes para atraer clientes y suficientes repartidores para entregar los pedidos con rapidez. Esto exige un esfuerzo operativo considerable más allá del desarrollo."
+    },
+    {
+      "question": "¿Cómo ganan dinero las apps de reparto de comida?",
+      "answer": "Las apps de reparto de comida suelen cobrar a los restaurantes una comisión (15–30 % del valor del pedido) y pueden cobrar a los clientes una tarifa de envío. Algunas apps también cobran a los restaurantes por una posición destacada o por publicidad."
+    }
+  ],
+  "content": [
+    {
+      "heading": "¿Qué es una app de reparto de comida como DoorDash?",
+      "paragraphs": [
+        "Una app de reparto de comida como DoorDash es un mercado de tres lados que conecta a clientes, restaurantes y repartidores a través de una única plataforma. El propio DoorDash procesa millones de pedidos al día en miles de ciudades, lo que demuestra tanto la magnitud de la oportunidad como la complejidad operativa necesaria para crear un producto competitivo. Crear una app de reparto de comida requiere listados de restaurantes con menús, realización y gestión de pedidos, seguimiento de repartidores en tiempo real, procesamiento de pagos e interfaces independientes para clientes, restaurantes y repartidores.",
+        "El principal reto técnico de una app de reparto de comida es orquestar simultáneamente tres recorridos de usuario distintos. Los clientes exploran restaurantes, realizan pedidos y siguen la entrega en tiempo real. Los restaurantes reciben pedidos, preparan la comida y gestionan su menú y su disponibilidad. Los repartidores aceptan asignaciones de entrega, navegan hasta los restaurantes y los clientes, y completan las entregas. Estos tres flujos deben sincronizarse en tiempo real, con actualizaciones del estado del pedido que se propaguen al instante por las tres interfaces. Esto exige una arquitectura backend sofisticada con conexiones WebSocket, seguimiento de ubicación en tiempo real y una gestión del estado de los pedidos basada en eventos.",
+        "Las apps de reparto de comida afrontan retos operativos únicos que van más allá de la mera complejidad técnica. El alta de restaurantes requiere un importante esfuerzo comercial y una gestión continua de la relación. La oferta de repartidores debe mantenerse mediante tarifas competitivas y horarios flexibles. Las horas punta (comida y cena) generan picos de tráfico repentinos que pueden saturar la infraestructura si no se ha diseñado para escalar. El tiempo meteorológico, el tráfico y los tiempos de preparación de los restaurantes introducen una variabilidad que dificulta estimar con precisión los tiempos de entrega. Estos factores exigen tanto soluciones técnicas como procesos operativos que se extienden más allá de la propia app."
+      ]
+    },
+    {
+      "heading": "¿Por qué crear una plataforma de reparto de comida en 2025?",
+      "paragraphs": [
+        "El mercado global del reparto de comida sigue creciendo, con unos ingresos que se prevé que alcancen los $200 mil millones en 2025. Aunque DoorDash, Uber Eats y Grubhub dominan Norteamérica, existen oportunidades significativas en mercados regionales y nichos verticales. Las apps de reparto de comida centradas en cocinas concretas, preferencias dietéticas (vegana, keto, halal) o tipos de comida (desayunos, comidas saludables, postres) han conseguido hacerse con una cuota de mercado al ofrecer una mejor curación para públicos especializados.",
+        "La expansión geográfica sigue siendo una gran oportunidad. Aunque el reparto de comida está maduro en las grandes áreas metropolitanas, muchas ciudades más pequeñas y mercados de las afueras tienen menos competencia. Las apps locales de reparto de comida que comprenden los ecosistemas regionales de restaurantes, la logística de entrega y las preferencias de los clientes pueden competir con eficacia frente a las plataformas nacionales. La integración con métodos de pago locales, las relaciones con restaurantes y las redes de reparto crea una diferenciación significativa.",
+        "El reparto de comida B2B representa un segmento desatendido. El catering corporativo, los programas de comidas para oficinas y el catering para eventos requieren flujos de trabajo distintos a los del reparto de comida para consumidores. Crear una plataforma optimizada para estos casos de uso —con facturación, pedidos al por mayor, entregas programadas y gestión de gastos— crea un nicho defendible, con un valor medio de pedido más alto y unos ingresos más predecibles que el reparto al consumidor."
+      ]
+    },
+    {
+      "heading": "Stack tecnológico recomendado para una app de reparto de comida",
+      "paragraphs": [
+        "Para el desarrollo móvil, React Native o Flutter son las opciones más rentables para la app de cliente, ya que permiten que una única base de código sirva tanto para iOS como para Android. No obstante, las apps de repartidor a menudo se benefician del desarrollo nativo (Swift para iOS, Kotlin para Android) por la necesidad de un seguimiento por GPS preciso, actualizaciones de ubicación en segundo plano e integración con apps de navegación. Para el MVP, empezar con React Native en las tres apps y optimizar más adelante el rendimiento de la app de repartidor es un enfoque pragmático.",
+        "La arquitectura backend de las apps de reparto de comida gira en torno a la gestión y el seguimiento de pedidos en tiempo real. Node.js es la opción más habitual por su arquitectura basada en eventos, que gestiona de forma eficiente las conexiones en tiempo real de alta concurrencia. Go se utiliza cada vez más para componentes críticos en cuanto a rendimiento, como el algoritmo de asignación de repartidores. Para la base de datos, PostgreSQL gestiona los pedidos, los restaurantes y los datos de usuario, mientras que Redis actúa como caché en memoria para los pedidos activos y el estado del seguimiento en tiempo real. Para la comunicación en tiempo real, Socket.IO o los WebSockets de AWS API Gateway proporcionan flujos de eventos bidireccionales.",
+        "Los servicios de mapas y geolocalización son esenciales para el seguimiento de repartidores y la optimización de rutas. Google Maps Platform proporciona navegación giro a giro, datos de tráfico en tiempo real y APIs de geocodificación. No obstante, los costes de la API de mapas pueden dispararse a volúmenes de producción: cuenta con $5,000–$20,000+ al mes una vez que alcances decenas de miles de pedidos diarios. Para el procesamiento de pagos, Stripe Connect gestiona transacciones multipartito (pago del cliente, liquidación al restaurante, comisión de la plataforma) con reparto automático de tarifas, lo que elimina la necesidad de crear una infraestructura de pagos a medida."
+      ]
+    },
+    {
+      "heading": "Cómo reducir los costes de desarrollo de una app de reparto de comida",
+      "paragraphs": [
+        "La reducción de costes con mayor impacto es empezar por una sola ciudad o región en lugar de construir para una escala global desde el primer día. Una app de reparto de comida dirigida a una única ciudad requiere una infraestructura más sencilla, unos costes de servidor más bajos y un proceso de alta de restaurantes más manejable. Muchas plataformas de reparto de comida de éxito se lanzaron ciudad por ciudad, dando de alta manualmente sus primeros 50–100 restaurantes e iterando el producto a partir de datos reales de pedidos antes de escalar la tecnología. Este enfoque mantiene reducido el alcance inicial del desarrollo, acelera la validación del encaje producto-mercado y reduce el consumo de capital.",
+        "Posponer la app de repartidor a una etapa posterior supone un ahorro de costes de gran impacto. Puedes empezar con reparto gestionado por el restaurante (los restaurantes usan sus propios repartidores) o con servicios de reparto de terceros, y crear una app de repartidor específica una vez que hayas validado la demanda. Esto elimina entre 200 y 400 horas de desarrollo de la app de repartidor y te permite centrarte primero en la experiencia esencial del cliente y del restaurante.",
+        "Usar servicios gestionados para el procesamiento de pagos, las notificaciones push y los SMS elimina una complejidad considerable del backend. Stripe Connect gestiona los pagos multipartito y el reparto automático de tarifas. Twilio impulsa las confirmaciones de pedidos por SMS y las notificaciones a repartidores. Firebase Cloud Messaging gestiona las notificaciones push. Cada integración cuesta entre $2,000 y $5,000 de implementación, pero ahorra entre $10,000 y $30,000 frente a desarrollar la misma funcionalidad internamente."
+      ]
+    },
+    {
+      "heading": "Estrategias de monetización para una plataforma de reparto de comida",
+      "paragraphs": [
+        "El principal modelo de ingresos de las apps de reparto de comida es una comisión por cada pedido, normalmente del 15–30 % del valor del pedido. DoorDash cobra a los restaurantes aproximadamente un 20–30 % por pedido, lo que cubre las operaciones de la plataforma, el pago a los repartidores y el margen de beneficio. Para una plataforma nueva que compite por atraer restaurantes, empezar con una comisión más baja del 10–18 % es una estrategia probada para captar oferta de las plataformas establecidas. A medida que tu red de restaurantes crece y mejora tu reputación, la comisión puede aumentarse de forma gradual.",
+        "Las tarifas de envío representan una fuente de ingresos secundaria. Cobrar a los clientes entre $2 y $5 por entrega (además de la comisión del restaurante) ayuda a cubrir el pago a los repartidores y los costes logísticos de la entrega. Algunas plataformas ofrecen envío gratuito para pedidos por encima de un umbral mínimo ($15–$25) para fomentar pedidos de mayor tamaño. Los programas de suscripción premium (DashPass, Uber Eats Pass), que ofrecen envío gratuito y tarifas de servicio reducidas por una cuota mensual ($9.99/mes), generan ingresos recurrentes predecibles y mejoran la retención de clientes.",
+        "La publicidad de restaurantes y la posición destacada generan ingresos adicionales. Cobrar a los restaurantes por una posición premium en los resultados de búsqueda, por listados patrocinados o por anuncios de banner crea un inventario publicitario por el que los restaurantes pagarán para aumentar su visibilidad. Esta fuente de ingresos cobra más valor a medida que tu plataforma crece y los restaurantes compiten por la atención de los clientes."
+      ]
+    }
+  ]
+}

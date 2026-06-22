@@ -1,0 +1,156 @@
+{
+  "category": "Marketplace online",
+  "description": "Una aplicación de marketplace general conecta a compradores y vendedores con anuncios de productos, mensajería, transacciones seguras, reseñas y un robusto panel de administración para la gestión de la plataforma.",
+  "introText": "Los marketplaces online son uno de los modelos de negocio más populares de la economía digital. Tanto si vas a crear un marketplace de servicios, de productos físicos o de bienes digitales, la plataforma central requiere gestión de anuncios, búsqueda y descubrimiento, pagos seguros, mensajería entre usuarios y funciones de confianza como reseñas y verificación. El coste depende del tipo de marketplace, del alcance de las funciones y de la complejidad de los pagos.",
+  "keyFeatures": [
+    "Registro de vendedores y compradores",
+    "Creación de anuncios con categorías y etiquetas",
+    "Búsqueda con filtros y ordenación",
+    "Pagos seguros dentro de la plataforma",
+    "Mensajería entre comprador y vendedor",
+    "Reseñas y valoraciones",
+    "Gestión y seguimiento de pedidos",
+    "Verificación e incorporación de vendedores",
+    "Panel de administración con analíticas",
+    "Sistema de notificaciones"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Diseño UI/UX",
+      "description": "Escaparate del marketplace, panel del vendedor y administración"
+    },
+    {
+      "category": "Desarrollo frontend",
+      "description": "Plataforma web responsive o aplicaciones móviles"
+    },
+    {
+      "category": "Desarrollo backend",
+      "description": "API, anuncios, pagos, mensajería y pedidos"
+    },
+    {
+      "category": "Búsqueda y descubrimiento",
+      "description": "Motor de búsqueda, filtros y navegación por categorías"
+    },
+    {
+      "category": "Integración de pagos",
+      "description": "Depósito en garantía, pagos a vendedores y reembolsos"
+    },
+    {
+      "category": "Sistema de mensajería",
+      "description": "Comunicación entre comprador y vendedor dentro de la plataforma"
+    },
+    {
+      "category": "QA y pruebas",
+      "description": "Pruebas de flujos de transacción, búsqueda y experiencia de usuario"
+    },
+    {
+      "category": "DevOps e infraestructura",
+      "description": "Hosting, CI/CD y monitorización"
+    }
+  ],
+  "complexityFactors": [
+    "Lógica de marketplace de dos caras (compradores y vendedores)",
+    "Sistemas de depósito en garantía y reparto de pagos",
+    "Infraestructura de confianza y seguridad (verificación, resolución de disputas)",
+    "Optimización de la relevancia de la búsqueda para tipos de anuncios diversos",
+    "Sistema de notificaciones escalable en varios canales (correo electrónico, push, SMS)",
+    "Moderación de contenido de los anuncios generados por usuarios",
+    "Modelos dinámicos de comisión y de precios"
+  ],
+  "timeline": [
+    {
+      "phase": "Descubrimiento y planificación",
+      "duration": "1–3 semanas",
+      "description": "Definición del modelo de marketplace, priorización de funciones y planificación de la arquitectura."
+    },
+    {
+      "phase": "Diseño UI/UX",
+      "duration": "3–5 semanas",
+      "description": "Diseño de los flujos del marketplace para compradores, vendedores y administradores."
+    },
+    {
+      "phase": "Desarrollo backend",
+      "duration": "6–10 semanas",
+      "description": "Construcción de la gestión de anuncios, los pagos, la mensajería y los sistemas de pedidos."
+    },
+    {
+      "phase": "Desarrollo frontend",
+      "duration": "6–9 semanas",
+      "description": "Desarrollo del escaparate, la búsqueda, el proceso de pago y el panel del vendedor."
+    },
+    {
+      "phase": "Pruebas y QA",
+      "duration": "2–4 semanas",
+      "description": "Pruebas de transacciones de extremo a extremo, auditorías de seguridad y pruebas de usabilidad."
+    },
+    {
+      "phase": "Despliegue y lanzamiento",
+      "duration": "1–2 semanas",
+      "description": "Despliegue en producción, incorporación de vendedores y lanzamiento beta."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Cuánto cuesta desarrollar una aplicación de marketplace?",
+      "answer": "Una plataforma de marketplace con todas las funciones cuesta entre $50,000 y $180,000. Un MVP de marketplace con anuncios básicos, búsqueda, pagos y mensajería puede desarrollarse por $20,000–$55,000."
+    },
+    {
+      "question": "¿Cuánto se tarda en desarrollar un marketplace?",
+      "answer": "El desarrollo completo lleva de 4 a 9 meses. Un MVP de marketplace puede estar listo en 2–4 meses."
+    },
+    {
+      "question": "¿Qué tipo de marketplace debería crear?",
+      "answer": "Entre los tipos más habituales están los marketplaces de productos (como Etsy), los marketplaces de servicios (como Fiverr), los marketplaces de alquiler (como Airbnb) y los marketplaces B2B. Elige en función de tu mercado objetivo y tu modelo de negocio."
+    },
+    {
+      "question": "¿Cómo ganan dinero las plataformas de marketplace?",
+      "answer": "Entre los modelos de ingresos más comunes están las comisiones por transacción (comisión por venta), las tarifas de publicación, los planes de suscripción para vendedores, los anuncios/destacados y las herramientas premium para vendedores."
+    },
+    {
+      "question": "¿Cuáles son los principales retos de crear un marketplace?",
+      "answer": "Los principales retos son resolver el problema del huevo y la gallina (conseguir los primeros compradores y vendedores), el depósito en garantía de los pagos y la confianza, el control de la calidad del contenido y lograr liquidez en tu nicho de mercado."
+    }
+  ],
+  "content": [
+    {
+      "heading": "¿Qué es una plataforma de marketplace online?",
+      "paragraphs": [
+        "Un marketplace online es una plataforma digital que conecta a compradores y vendedores, facilitando las transacciones sin que la plataforma sea propietaria de los bienes o servicios que se venden. A diferencia de una tienda de comercio electrónico tradicional, en la que una única marca vende sus propios productos, un marketplace agrega la oferta de muchos vendedores independientes y crea valor a través de la selección, la infraestructura de confianza y la eficiencia de las transacciones. El modelo de marketplace ha dado lugar a algunas de las empresas más valiosas del mundo —Amazon, Airbnb, Uber, Etsy, Fiverr— porque la dinámica de \"el ganador se lleva la mayor parte\" de las redes de oferta y demanda crea poderosas barreras competitivas una vez que se establece la liquidez.",
+        "Los marketplaces se presentan en varias categorías diferenciadas, cada una con requisitos técnicos y de negocio distintos. Los marketplaces de productos (Etsy, Amazon) conectan a compradores de productos con vendedores independientes. Los marketplaces de servicios (Fiverr, Upwork, TaskRabbit) ponen en contacto a clientes con autónomos o proveedores de servicios locales. Los marketplaces de alquiler (Airbnb, Turo) facilitan el uso temporal de activos: propiedades, vehículos, equipamiento. Los marketplaces B2B (Faire, Ankorstore) atienden las necesidades de compra de las empresas con funciones como aplazamiento de pago, precios por volumen y gestión de catálogos. Entender qué tipo de marketplace estás creando determina la arquitectura técnica, la complejidad de los pagos y los mecanismos de confianza necesarios.",
+        "El reto fundamental de cualquier marketplace nuevo es el problema del arranque en frío: los compradores no usarán un marketplace sin una oferta suficiente de vendedores, y los vendedores no invertirán en publicar en un marketplace sin una demanda suficiente de compradores. Esta dinámica del huevo y la gallina es la principal razón por la que tantos negocios de marketplace fracasan en sus primeras etapas. Los lanzamientos de marketplace de éxito suelen resolverlo centrándose en un único mercado geográfico o categoría de producto hasta lograr liquidez, sembrando la oferta de forma manual (reclutando vendedores directamente antes del lanzamiento) o aplicando una estrategia de \"tomar el lado difícil\", subvencionando mediante incentivos, comisiones más bajas o ingresos garantizados el lado del marketplace que resulte más difícil de captar."
+      ]
+    },
+    {
+      "heading": "¿Por qué crear un marketplace online en 2025?",
+      "paragraphs": [
+        "A pesar de la aparente madurez de los modelos de marketplace, sigue existiendo una oportunidad significativa en la especialización vertical, la expansión geográfica y la digitalización de sectores que aún operan a través de canales de distribución tradicionales. Muchos sectores —servicios locales, mayoristas B2B, servicios profesionales, productos especializados— todavía procesan la gran mayoría de sus transacciones de forma offline, mediante llamadas telefónicas, correos electrónicos y relaciones presenciales. Cada uno de estos sectores representa una oportunidad sin explotar para un marketplace que digitalice los flujos de transacción y reduzca la fricción a la hora de hacer negocios.",
+        "La infraestructura para crear marketplaces ha mejorado drásticamente en los últimos cinco años, reduciendo el coste y el tiempo necesarios para lanzar productos viables. Stripe Connect impulsa ahora los pagos, la incorporación y los pagos a vendedores de miles de plataformas sin necesidad de ninguna ingeniería financiera a medida. Algolia y Elasticsearch hacen accesible una búsqueda de productos de calidad profesional para equipos pequeños. AWS y GCP proporcionan infraestructura escalable sin inversión de capital inicial. Twilio permite la mensajería dentro de la plataforma manteniendo la privacidad del número de teléfono. El resultado es que lo que antes requería un equipo de 15 ingenieros y 2 millones de dólares de financiación ahora puede construirlo un equipo de 5 ingenieros por $150,000–$300,000: sigue siendo una cifra importante, pero alcanzable en la fase semilla.",
+        "El factor más importante para el éxito de un marketplace es el enfoque por encima de la amplitud. Los fundadores suelen sentir la tentación de crear funciones para todos los tipos posibles de vendedores, necesidades de compradores y escenarios de transacción a la vez, lo que da como resultado un producto que no hace nada especialmente bien y que tiene dificultades para atraer a cualquiera de los dos lados del mercado. Los lanzamientos de marketplace más exitosos se caracterizan por un enfoque extremo: una ciudad, una categoría de producto, un segmento de cliente y un caso de uso. Una vez que logras una liquidez genuina y una sólida experiencia de usuario en ese ámbito acotado, expandirse horizontalmente resulta mucho más fácil porque cuentas con un punto de referencia y con los aprendizajes de un mercado que ya funciona."
+      ]
+    },
+    {
+      "heading": "Stack tecnológico recomendado para una aplicación de marketplace",
+      "paragraphs": [
+        "Next.js es la opción estándar para los frontends de marketplace porque las páginas de anuncios deben renderizarse en el servidor para el SEO. Las páginas de anuncios individuales de productos o servicios necesitan ser indexadas por Google para impulsar el descubrimiento orgánico, que es el principal canal de captación para la mayoría de los negocios de marketplace. React Query o SWR gestionan la obtención de datos en el lado del cliente para contenido dinámico como la disponibilidad, los precios y las reseñas. Tailwind CSS permite un desarrollo rápido de la interfaz con un diseño coherente. Para el móvil, empezar con una aplicación web responsive y añadir aplicaciones móviles en React Native en una fase posterior es el enfoque más rentable para los productos de marketplace en los que el uso inicial es predominantemente de escritorio.",
+        "PostgreSQL es la base de datos elegida para las plataformas de marketplace por su compatibilidad con consultas relacionales complejas (joins entre usuarios, anuncios, reservas y reseñas), su integridad transaccional para las operaciones de reserva y pago, y su excelente búsqueda de texto completo para consultas de catálogo sencillas. A medida que el catálogo crece más allá de los 50.000 anuncios, añadir Elasticsearch o Algolia para la búsqueda manteniendo PostgreSQL como sistema de registro proporciona tanto calidad de búsqueda como fiabilidad transaccional. Redis gestiona la administración de sesiones, la limitación de peticiones y el almacenamiento en caché de consultas costosas del marketplace, como los anuncios destacados de la página de inicio y los recuentos de navegación por categorías.",
+        "Stripe Connect es la infraestructura de pagos esencial para las transacciones de marketplace de dos caras. Se encarga de la incorporación de vendedores con verificación de identidad KYC (exigida por la normativa financiera a las plataformas que facilitan pagos a terceros), la deducción automática de la comisión de la plataforma, los pagos a las cuentas bancarias de los vendedores, las transferencias internacionales y la gestión de disputas de pago. La alternativa —crear un procesamiento de pagos a medida para un marketplace— requiere una considerable experiencia en cumplimiento financiero y expone a tu plataforma a un riesgo regulatorio sustancial. El precio de Stripe Connect (0.25% + $0.25 por pago) compensa con creces la complejidad que elimina para cualquier marketplace que opere con un volumen de transacciones relevante."
+      ]
+    },
+    {
+      "heading": "Cómo reducir los costes de desarrollo de tu marketplace",
+      "paragraphs": [
+        "Crear un MVP de tipo concierge —facilitando manualmente las transacciones entre compradores y vendedores antes de desarrollar ninguna tecnología— es la forma más eficiente en cuanto a capital de validar un concepto de marketplace. Al conectar manualmente la oferta y la demanda (mediante llamadas telefónicas, correo electrónico, hojas de cálculo o incluso aplicaciones de mensajería como WhatsApp), puedes verificar que ambos lados del mercado quieren el servicio, identificar los puntos clave de fricción en el flujo de transacción y establecer tus primeras relaciones con clientes antes de escribir una sola línea de código. Muchos negocios de marketplace de éxito, como Thumbtack, Airbnb y DoorDash, utilizaron enfoques de MVP concierge en sus primeras etapas. Este enfoque reduce significativamente el riesgo de la inversión en desarrollo.",
+        "Para el MVP técnico, centrarse en un único bucle de anuncio-reserva-pago en lugar de desarrollar simultáneamente analíticas para vendedores, algoritmos de recomendación, herramientas promocionales y búsqueda avanzada reduce el tiempo de desarrollo entre un 40 y un 60%. Un MVP de marketplace necesita: registro y perfiles de usuario, creación y navegación de anuncios, un mecanismo de contacto o reserva, procesamiento de pagos y reseñas básicas. Todo lo demás —filtros de búsqueda avanzados, paneles de analíticas para vendedores, algoritmos de recomendación, sistemas de mensajería, funciones promocionales— aporta un valor real, pero es mejor priorizarlo en función de lo que aprendas del comportamiento real de compradores y vendedores en el MVP inicial.",
+        "Los frameworks de marketplace de código abierto como Sharetribe (para marketplaces de alquiler y servicios) o Medusa.js (para marketplaces de productos) proporcionan una base que puede reducir significativamente el tiempo de desarrollo inicial frente a construir desde cero. La plataforma alojada de Sharetribe puede lanzar un marketplace funcional en semanas con un coste de desarrollo mínimo; su código también puede ejecutarse de forma autoalojada para equipos que necesiten una personalización más profunda. Usar un framework para el MVP y reconstruir componentes concretos a medida que la plataforma escala es un enfoque pragmático que te lleva al mercado más rápido, preservando al mismo tiempo la opción de pasar a una arquitectura totalmente a medida cuando los requisitos del negocio lo exijan."
+      ]
+    },
+    {
+      "heading": "Estrategias de monetización para marketplaces online",
+      "paragraphs": [
+        "La comisión por transacción —quedarse con un porcentaje de cada venta o reserva facilitada a través de la plataforma— es el modelo de ingresos más alineado para los marketplaces, porque los ingresos de la plataforma escalan directamente con el valor que crea para los participantes. Los tipos de comisión van desde el 3% (plataformas B2B con importes de transacción elevados) hasta el 30% (plataformas de aplicaciones móviles que capturan comisiones equivalentes a las de las tiendas de aplicaciones). Establecer el tipo adecuado requiere un análisis competitivo de tu categoría específica, modelar los márgenes netos resultantes para los vendedores y evaluar qué porcentaje de las transacciones sacarían los vendedores fuera de la plataforma para evitar comisiones si se les diera la opción. Un tipo que empuje a los vendedores a hacer transacciones directamente con compradores que encontraron a través de tu plataforma destruye el valor del marketplace a largo plazo.",
+        "Las tarifas de publicación —cobrar a los vendedores una tarifa fija por publicar cada artículo o servicio— generan ingresos por adelantado que no dependen de que se complete la transacción, pero reducen la disposición de los vendedores a experimentar con nuevos anuncios y pueden suprimir artificialmente la oferta. Un modelo híbrido que cobre tarifas de publicación bajas o nulas para fomentar la profundidad de la oferta, combinado con comisiones sobre las transacciones exitosas, es el enfoque que utilizan la mayoría de los marketplaces modernos. Las mejoras promocionales de los anuncios (posición destacada en los resultados de búsqueda, espacios en la página de inicio de la categoría, anuncios resaltados) crean productos de visibilidad de pago opcionales que los vendedores adquieren voluntariamente cuando quieren acelerar las ventas.",
+        "Las suscripciones de vendedores al estilo SaaS con precios por niveles ($29/mes, $79/mes, $199/mes) para acceder a herramientas avanzadas para vendedores, analíticas, comisiones más bajas o una duración mínima garantizada de los anuncios son cada vez más habituales en los marketplaces verticales. Este modelo crea ingresos recurrentes predecibles, incentiva a los vendedores a comprometerse a largo plazo con la plataforma y filtra a los vendedores con alta intención que se toman en serio su rendimiento. Combinadas con una estructura de niveles de rendimiento (Plata, Oro, Platino en función del volumen de transacciones y las valoraciones), las suscripciones crean una dinámica de implicación orientada al estatus que mejora tanto el rendimiento de los vendedores como los ingresos de la plataforma."
+      ]
+    }
+  ]
+}

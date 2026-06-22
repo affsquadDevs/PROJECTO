@@ -1,0 +1,195 @@
+{
+  "appName": "YouTube",
+  "category": "Video Streaming & Content",
+  "description": "A video platform like YouTube requires video upload, transcoding, adaptive streaming, content management, user channels, comments, recommendations, and monetization features.",
+  "introText": "Video platforms like YouTube have revolutionized content consumption, with YouTube itself hosting over 500 hours of video uploaded every minute. Building a YouTube-like platform requires video upload infrastructure, transcoding pipelines, adaptive streaming, content management systems, user channels, engagement features (comments, likes, subscriptions), recommendation algorithms, and monetization tools. The technical complexity is significant, especially for video processing and delivery at scale.",
+  "keyFeatures": [
+    "Video upload and processing",
+    "Video transcoding (multiple resolutions)",
+    "Adaptive bitrate streaming (HLS/DASH)",
+    "Video player with playback controls",
+    "User channels and profiles",
+    "Video categorization and search",
+    "Comments and engagement features",
+    "Subscriptions and notifications",
+    "Video recommendations",
+    "Analytics dashboard for creators",
+    "Monetization (ads, subscriptions)",
+    "Live streaming capability"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX Design",
+      "description": "Video player, channel pages, upload interface"
+    },
+    {
+      "category": "Frontend Development",
+      "description": "Web app, mobile apps, video player"
+    },
+    {
+      "category": "Backend Development",
+      "description": "Content management, API, user system"
+    },
+    {
+      "category": "Video Processing",
+      "description": "Transcoding pipeline, encoding setup"
+    },
+    {
+      "category": "Video Streaming Infrastructure",
+      "description": "CDN setup, adaptive streaming"
+    },
+    {
+      "category": "Content Management",
+      "description": "Video metadata, categorization, search"
+    },
+    {
+      "category": "Engagement Features",
+      "description": "Comments, likes, subscriptions, notifications"
+    },
+    {
+      "category": "Recommendation System",
+      "description": "Algorithm development, ML integration"
+    },
+    {
+      "category": "Analytics & Monetization",
+      "description": "Creator dashboard, ad integration"
+    },
+    {
+      "category": "QA & Testing",
+      "description": "Video quality testing, load testing"
+    },
+    {
+      "category": "DevOps & Infrastructure",
+      "description": "Video hosting, CDN, monitoring"
+    }
+  ],
+  "complexityFactors": [
+    "Video transcoding and processing at scale (CPU-intensive)",
+    "Adaptive bitrate streaming for different network conditions",
+    "CDN costs for video delivery (can be $1,000–$10,000+/mo)",
+    "Video storage costs (large files, multiple resolutions)",
+    "Recommendation algorithm development and ML integration",
+    "Content moderation and copyright management",
+    "Scalability to handle millions of video views per day"
+  ],
+  "timeline": [
+    {
+      "phase": "Discovery & Planning",
+      "duration": "2–4 weeks",
+      "description": "Video architecture design, transcoding strategy, and feature prioritization."
+    },
+    {
+      "phase": "UI/UX Design",
+      "duration": "4–6 weeks",
+      "description": "Designing video player, channel pages, upload interface, and mobile app screens."
+    },
+    {
+      "phase": "Video Infrastructure Setup",
+      "duration": "4–8 weeks",
+      "description": "Setting up video upload, transcoding pipeline, and CDN integration."
+    },
+    {
+      "phase": "Backend Development",
+      "duration": "6–12 weeks",
+      "description": "Building content management system, API, user channels, and engagement features."
+    },
+    {
+      "phase": "Frontend Development",
+      "duration": "6–10 weeks",
+      "description": "Developing video player, web app, and mobile applications."
+    },
+    {
+      "phase": "Recommendation System",
+      "duration": "4–8 weeks",
+      "description": "Building video recommendation algorithm and personalization features."
+    },
+    {
+      "phase": "Engagement Features",
+      "duration": "3–5 weeks",
+      "description": "Implementing comments, likes, subscriptions, and notifications."
+    },
+    {
+      "phase": "Analytics & Monetization",
+      "duration": "3–5 weeks",
+      "description": "Building creator analytics dashboard and monetization tools."
+    },
+    {
+      "phase": "Testing & QA",
+      "duration": "4–6 weeks",
+      "description": "Video quality testing, load testing, and performance optimization."
+    },
+    {
+      "phase": "Deployment & Launch",
+      "duration": "2–3 weeks",
+      "description": "Production deployment, CDN configuration, and monitoring setup."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much does it cost to build a YouTube-like app?",
+      "answer": "A full-featured video platform like YouTube costs $80,000–$250,000. An MVP with video upload, playback, channels, and basic engagement features can be built for $35,000–$80,000 in 3–6 months."
+    },
+    {
+      "question": "How long does it take to build a video platform?",
+      "answer": "Full development takes 6–15 months depending on features. An MVP with core video functionality can be ready in 3–6 months."
+    },
+    {
+      "question": "What are the ongoing video infrastructure costs?",
+      "answer": "Video hosting and delivery costs are significant: CDN for streaming ($500–$10,000+/mo depending on traffic), video storage ($200–$2,000/mo), transcoding services ($300–$3,000/mo), and database hosting ($200–$1,500/mo). Costs scale dramatically with video views."
+    },
+    {
+      "question": "Should I use a video hosting service or build my own?",
+      "answer": "For MVP, using managed services (Mux, Cloudflare Stream, Vimeo OTT) is recommended. They handle transcoding, CDN, and player infrastructure. Building custom video infrastructure adds 3–6 months and $20,000–$50,000+ to development costs."
+    },
+    {
+      "question": "Do I need a recommendation algorithm for MVP?",
+      "answer": "No, you can launch with simple category-based browsing and trending videos. Recommendation algorithms can be added in version 2.0 once you have viewing data to train models."
+    },
+    {
+      "question": "What video formats and resolutions should I support?",
+      "answer": "For MVP, support common formats (MP4, WebM) and 3–4 resolutions (1080p, 720p, 480p, 360p). Full platforms support 8K, HDR, and multiple codecs, but this adds significant complexity and cost."
+    }
+  ],
+  "content": [
+    {
+      "heading": "What Is a Video Platform Like YouTube?",
+      "paragraphs": [
+        "A video platform like YouTube is a content hosting and streaming service that allows users to upload, share, and watch videos. YouTube itself hosts over 500 hours of video uploaded every minute and serves billions of video views daily. Building a YouTube-like platform requires video upload infrastructure, transcoding pipelines to convert videos into multiple resolutions, adaptive streaming for different network conditions, content management systems, user channels, engagement features (comments, likes, subscriptions), recommendation algorithms, and monetization tools.",
+        "The most technically complex aspect of a video platform is video processing and delivery. When a user uploads a video, it must be transcoded into multiple resolutions (1080p, 720p, 480p, 360p) and formats (HLS, DASH) to enable adaptive bitrate streaming. This allows the player to automatically select the best quality based on the viewer's network speed, ensuring smooth playback. Video transcoding is CPU-intensive and time-consuming — a 10-minute video can take 30–60 minutes to process into all required formats. This requires specialized infrastructure and significant compute resources.",
+        "Content management for video platforms is far more complex than text-based platforms. Each video requires metadata (title, description, tags, category, thumbnail), engagement metrics (views, likes, comments), creator information, monetization settings, and content moderation status. The platform must handle video search, categorization, recommendations, trending algorithms, and creator analytics. Building a scalable content management system that can handle millions of videos and billions of views requires careful database design and caching strategies."
+      ]
+    },
+    {
+      "heading": "Why Build a Video Platform in 2025?",
+      "paragraphs": [
+        "The global video streaming market continues to grow, with niche video platforms finding success in specialized content categories. While YouTube dominates general video content, vertical-specific platforms have built significant audiences. Twitch owns live gaming streams. Vimeo serves professional creators and businesses. Dailymotion focuses on European markets. Educational platforms like Coursera and Khan Academy host structured video courses. Each vertical has unique requirements that general platforms cannot fully address.",
+        "Creator economy platforms are a major growth area, with creators seeking platforms that offer better revenue sharing, more control over content, and specialized tools for their niche. YouTube's 45–55% revenue share has driven many creators to explore alternatives. Platforms offering 70–90% revenue share, direct fan support, or specialized monetization tools can attract established creators. Building a creator-first platform with better economics and tools represents a significant opportunity.",
+        "Enterprise and B2B video platforms serve businesses that need video hosting for training, marketing, product demos, or internal communication. These platforms command premium pricing ($50–$500+ per month per organization) compared to consumer video platforms. Features like advanced analytics, white-labeling, SSO authentication, and compliance certifications justify higher pricing. The B2B video platform market is less crowded than consumer video and offers better unit economics."
+      ]
+    },
+    {
+      "heading": "Recommended Tech Stack for a YouTube-Like Platform",
+      "paragraphs": [
+        "For the frontend, Next.js is recommended for video platforms because individual video pages need to be SEO-indexed for organic discovery. Server-side rendering ensures video metadata, descriptions, and thumbnails are crawlable by search engines. For the video player, Video.js or Shaka Player provide adaptive streaming support with HLS and DASH protocols. React Native can be used for mobile apps, though web-first development is recommended for MVP to reduce initial cost.",
+        "Video processing is the most critical backend component. AWS MediaConvert, Azure Media Services, or Mux provide managed video transcoding services that handle format conversion, resolution generation, and adaptive streaming creation. Building custom transcoding infrastructure adds 200–500 hours of development and requires ongoing maintenance. For MVP, using managed services is strongly recommended. For video storage and delivery, AWS S3 with CloudFront CDN or specialized video CDNs like Cloudflare Stream provide scalable infrastructure.",
+        "The database architecture must handle high read volumes (video metadata queries) and write volumes (new uploads, engagement metrics). PostgreSQL handles transactional data (users, channels, comments), while Elasticsearch or Algolia powers video search and discovery. Redis caches frequently accessed video metadata and trending lists. For analytics and recommendations, a data warehouse (Snowflake, BigQuery) stores viewing behavior for algorithm training. The recommendation system can start simple (category-based, trending) and evolve to ML-based personalization as viewing data accumulates."
+      ]
+    },
+    {
+      "heading": "How to Reduce Development Costs for a Video Platform",
+      "paragraphs": [
+        "The most effective cost reduction is using managed video infrastructure instead of building custom transcoding and delivery systems. Services like Mux, Cloudflare Stream, or Vimeo OTT provide complete video hosting, transcoding, adaptive streaming, and player infrastructure through APIs. While these services charge per storage gigabyte and per delivered minute, they eliminate 300–600 hours of video infrastructure development and reduce ongoing operational complexity. For MVP validation, managed services are essential.",
+        "Deferring the recommendation algorithm to version 2.0 significantly reduces development scope. Launching with simple category-based browsing, trending videos, and search functionality is sufficient for MVP. Recommendation algorithms require viewing data to train effectively — building them before you have users is premature optimization. Many successful video platforms launched with manual curation and simple algorithms, then added ML-based recommendations after accumulating viewing data.",
+        "Starting without live streaming reduces complexity and cost. Live streaming requires additional infrastructure (RTMP ingest, real-time transcoding, low-latency delivery) that adds 200–400 hours of development. Pre-recorded video upload and playback is the core use case that validates product-market fit. Live streaming can be added in version 2.0 once the platform has established a creator base and viewing audience."
+      ]
+    },
+    {
+      "heading": "Monetization Strategies for a Video Platform",
+      "paragraphs": [
+        "Advertising is the primary revenue model for consumer video platforms, with platforms typically taking 45–55% of ad revenue and sharing the remainder with creators. YouTube's Partner Program shares 55% of ad revenue with creators. For a new platform competing for creators, offering a higher revenue share (60–70%) can attract established creators. However, ad revenue requires significant scale (millions of monthly views) to generate meaningful income, making it a monetization model for later-stage platforms rather than MVP.",
+        "Subscription models create predictable recurring revenue and can be implemented at smaller scale than advertising. Platforms can offer premium subscriptions that unlock ad-free viewing, exclusive content, or early access. Alternatively, creator subscription programs (like YouTube Memberships) allow viewers to pay creators directly for exclusive content or perks. Subscription revenue typically has better unit economics than advertising at early stages.",
+        "Transaction-based monetization includes pay-per-view for premium content, digital rentals, or one-time purchases. This model works well for educational content, professional training, or exclusive events. Transaction fees (typically 10–30% of purchase price) generate revenue without requiring advertising infrastructure. For niche platforms with high-value content, transaction-based monetization can be more viable than advertising at early stages."
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { PROJECT_TYPE_RECOMMENDATIONS, RECOMMENDED_STACKS } from '@/data/recommendations';
 import { useCalculatorStore } from '@/store/calculator';
 import { TeamMember } from '@/types/calculator';
@@ -16,6 +17,7 @@ interface Props {
 }
 
 export default function ProjectTypeSelector({ onSkip }: Props) {
+  const t = useTranslations('calculator');
   const { updateDesign, updateTechStack, addTeamMember, setCurrentStep } = useCalculatorStore();
 
   const selectProjectType = (typeId: string) => {
@@ -140,9 +142,9 @@ export default function ProjectTypeSelector({ onSkip }: Props) {
         <div className="inline-flex items-center justify-center w-16 h-16 bg-jira-blue rounded-lg mb-4 shadow-jira-md mx-auto">
           <FiTarget className="text-3xl text-white" />
         </div>
-        <h2 className="text-2xl font-bold mb-3 text-jira-darkBlue">Quick Start Templates</h2>
+        <h2 className="text-2xl font-bold mb-3 text-jira-darkBlue">{t('projectTypeSelector.title')}</h2>
         <p className="text-jira-textSecondary">
-          Choose a template to automatically configure your team, tech stack, and settings
+          {t('projectTypeSelector.subtitle')}
         </p>
       </div>
 
@@ -153,16 +155,16 @@ export default function ProjectTypeSelector({ onSkip }: Props) {
             onClick={() => selectProjectType(project.type)}
             className="card hover:shadow-jira-md transition-all text-left border border-jira-border hover:border-jira-blue"
           >
-            <h3 className="text-lg font-semibold mb-2 text-jira-darkBlue">{project.name}</h3>
-            <p className="text-jira-textSecondary text-xs mb-4">{project.description}</p>
-            
+            <h3 className="text-lg font-semibold mb-2 text-jira-darkBlue">{t('projectTypes.' + project.type + '.name')}</h3>
+            <p className="text-jira-textSecondary text-xs mb-4">{t('projectTypes.' + project.type + '.description')}</p>
+
             <div className="flex items-center gap-3 text-xs mb-3">
               <span className={`px-2 py-1 rounded font-medium ${
                 project.estimatedComplexity === 'simple' ? 'bg-green-50 text-jira-success border border-jira-success' :
                 project.estimatedComplexity === 'medium' ? 'bg-primary-50 text-jira-blue border border-jira-blue' :
                 'bg-yellow-50 text-jira-warning border border-jira-warning'
               }`}>
-                {project.estimatedComplexity.charAt(0).toUpperCase() + project.estimatedComplexity.slice(1)}
+                {t('complexityLabels.' + project.estimatedComplexity)}
               </span>
               <span className="text-jira-textSecondary flex items-center space-x-1">
                 <FiClock />
@@ -171,11 +173,11 @@ export default function ProjectTypeSelector({ onSkip }: Props) {
             </div>
 
             <div className="border-t border-jira-border pt-3 mt-3">
-              <div className="text-xs text-jira-textSecondary mb-2 font-medium uppercase tracking-wide">Key features:</div>
+              <div className="text-xs text-jira-textSecondary mb-2 font-medium uppercase tracking-wide">{t('projectTypeSelector.keyFeaturesLabel')}</div>
               <div className="flex flex-wrap gap-1.5">
                 {project.keyFeatures.slice(0, 3).map((feature, idx) => (
                   <span key={idx} className="text-xs bg-gray-100 text-jira-textSecondary px-2 py-1 rounded">
-                    {feature}
+                    {t('projectTypes.' + project.type + '.feature' + idx)}
                   </span>
                 ))}
               </div>
@@ -190,7 +192,7 @@ export default function ProjectTypeSelector({ onSkip }: Props) {
           className="btn-secondary flex items-center space-x-2 mx-auto"
         >
           <FiArrowLeft />
-          <span>Back to Manual Configuration</span>
+          <span>{t('projectTypeSelector.backToManual')}</span>
         </button>
       </div>
 
@@ -198,10 +200,9 @@ export default function ProjectTypeSelector({ onSkip }: Props) {
         <div className="flex items-start space-x-3">
           <FiInfo className="text-lg text-jira-blue flex-shrink-0 mt-0.5" />
           <div>
-            <h3 className="font-semibold text-jira-darkBlue mb-1 text-sm">How it works</h3>
+            <h3 className="font-semibold text-jira-darkBlue mb-1 text-sm">{t('projectTypeSelector.howItWorksTitle')}</h3>
             <p className="text-xs text-jira-textSecondary">
-              Selecting a project type will pre-configure your team, design complexity, and technology stack 
-              with recommended settings. You can still customize everything later!
+              {t('projectTypeSelector.howItWorksBody')}
             </p>
           </div>
         </div>

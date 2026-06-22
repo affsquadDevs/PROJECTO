@@ -1,0 +1,170 @@
+{
+  "category": "Recrutement et emploi",
+  "description": "Un site d'offres d'emploi comme LinkedIn Jobs nécessite des annonces d'emploi, des profils de candidats, la recherche et la mise en relation, le suivi des candidatures et des tableaux de bord pour les employeurs.",
+  "introText": "Les sites d'offres d'emploi mettent en relation des millions de chercheurs d'emploi avec des employeurs, LinkedIn Jobs traitant des millions de candidatures chaque mois. Créer un site d'offres d'emploi nécessite des annonces d'emploi, des profils de candidats, une recherche et une mise en relation avancées, le suivi des candidatures, des tableaux de bord pour les employeurs, l'analyse de CV et des systèmes de notification. La complexité augmente avec des fonctionnalités telles que les évaluations de compétences, les entretiens vidéo et la mise en relation assistée par IA.",
+  "keyFeatures": [
+    "Annonces et publication d'offres d'emploi",
+    "Profils de candidats et CV",
+    "Recherche et filtres avancés",
+    "Système de suivi des candidatures",
+    "Tableau de bord employeur",
+    "Tableau de bord candidat",
+    "Analyse de CV et mise en relation",
+    "Notifications par e-mail et push",
+    "Évaluations de compétences",
+    "Analyses et rapports"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Conception UI/UX",
+      "description": "Annonces d'emploi, profils de candidats, tableaux de bord"
+    },
+    {
+      "category": "Développement front-end",
+      "description": "Application web et applications mobiles"
+    },
+    {
+      "category": "Développement back-end",
+      "description": "Base de données d'emplois, moteur de recherche, API"
+    },
+    {
+      "category": "Moteur de recherche",
+      "description": "Elasticsearch, mise en relation d'emplois, filtres"
+    },
+    {
+      "category": "Analyse de CV",
+      "description": "Algorithmes d'analyse de CV et de mise en relation"
+    },
+    {
+      "category": "Suivi des candidatures",
+      "description": "Fonctionnalités ATS, pipeline de candidats"
+    },
+    {
+      "category": "Système de notification",
+      "description": "Notifications par e-mail et push"
+    },
+    {
+      "category": "Assurance qualité et tests",
+      "description": "Tests de précision de la recherche, validation de la mise en relation"
+    },
+    {
+      "category": "DevOps et infrastructure",
+      "description": "Base de données d'emplois et infrastructure de recherche"
+    }
+  ],
+  "complexityFactors": [
+    "Acquisition et gestion des données d'emploi",
+    "Algorithmes d'analyse de CV et de mise en relation",
+    "Place de marché bilatérale (employeurs et candidats)",
+    "Complexité du système de suivi des candidatures",
+    "Précision de la recherche et du filtrage",
+    "Intégration des employeurs et des candidats",
+    "Mise en relation d'emplois en temps réel"
+  ],
+  "timeline": [
+    {
+      "phase": "Découverte et planification",
+      "duration": "2–3 semaines",
+      "description": "Structure des données d'emploi, exigences de mise en relation et définition du périmètre des fonctionnalités."
+    },
+    {
+      "phase": "Conception UI/UX",
+      "duration": "3–5 semaines",
+      "description": "Conception des annonces d'emploi, des profils de candidats et des tableaux de bord."
+    },
+    {
+      "phase": "Développement back-end",
+      "duration": "5–10 semaines",
+      "description": "Création de la base de données d'emplois, du moteur de recherche et de l'API."
+    },
+    {
+      "phase": "Développement front-end",
+      "duration": "5–8 semaines",
+      "description": "Développement de l'application web et des applications mobiles avec les fonctionnalités d'emploi."
+    },
+    {
+      "phase": "Analyse de CV",
+      "duration": "3–5 semaines",
+      "description": "Mise en œuvre des algorithmes d'analyse de CV et de mise en relation."
+    },
+    {
+      "phase": "Suivi des candidatures",
+      "duration": "3–4 semaines",
+      "description": "Création des fonctionnalités ATS et du pipeline de candidats."
+    },
+    {
+      "phase": "Tests et assurance qualité",
+      "duration": "2–4 semaines",
+      "description": "Tests de précision de la recherche et validation de la mise en relation."
+    },
+    {
+      "phase": "Déploiement et lancement",
+      "duration": "1–2 semaines",
+      "description": "Déploiement en production et lancement progressif."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Combien coûte la création d'un site d'offres d'emploi ?",
+      "answer": "Un site d'offres d'emploi complet coûte entre 50 000 $ et 150 000 $. Un MVP avec des annonces d'emploi, des profils de candidats et une recherche de base peut être réalisé pour 25 000 $ à 60 000 $ en 2 à 4 mois."
+    },
+    {
+      "question": "Combien de temps faut-il pour créer un site d'offres d'emploi ?",
+      "answer": "Le développement complet prend de 4 à 10 mois. Un MVP avec les fonctionnalités essentielles de recherche d'emploi peut être prêt en 2 à 4 mois."
+    },
+    {
+      "question": "Ai-je besoin de l'analyse de CV pour un MVP ?",
+      "answer": "Non, vous pouvez commencer par des téléchargements manuels de CV et ajouter l'analyse dans la version 2.0. Cependant, l'analyse de CV améliore considérablement la mise en relation des candidats et l'expérience utilisateur."
+    },
+    {
+      "question": "Quel est le plus grand défi des sites d'offres d'emploi ?",
+      "answer": "Créer une place de marché bilatérale avec suffisamment d'offres pour attirer les candidats et suffisamment de candidats pour attirer les employeurs. Cela nécessite un marketing important et des effets de réseau."
+    },
+    {
+      "question": "Comment les sites d'offres d'emploi génèrent-ils des revenus ?",
+      "answer": "Les sites d'offres d'emploi tirent généralement leurs revenus des abonnements employeurs, des frais de publication d'annonces, des annonces mises en avant et des fonctionnalités premium pour les candidats. Certains facturent également l'accès aux bases de données de candidats."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Qu'est-ce qu'un site d'offres d'emploi comme LinkedIn Jobs ?",
+      "paragraphs": [
+        "Un site d'offres d'emploi comme LinkedIn Jobs est une plateforme qui met en relation les chercheurs d'emploi avec les employeurs, permettant aux entreprises de publier des offres d'emploi pendant que les candidats recherchent, postulent et suivent leurs candidatures. LinkedIn Jobs traite à lui seul des millions de candidatures chaque mois, illustrant à la fois l'ampleur de l'opportunité et le défi de la place de marché bilatérale nécessaire pour créer un produit compétitif. Créer un site d'offres d'emploi nécessite des annonces d'emploi, des profils de candidats, une recherche et une mise en relation avancées, le suivi des candidatures, des tableaux de bord pour les employeurs, l'analyse de CV et des systèmes de notification.",
+        "Le principal défi technique d'un site d'offres d'emploi est de créer une place de marché bilatérale avec suffisamment d'offres pour attirer les candidats et suffisamment de candidats pour attirer les employeurs. Ce problème de l'œuf et de la poule nécessite un marketing important et des effets de réseau. L'algorithme de recherche et de mise en relation doit connecter efficacement les candidats avec des opportunités pertinentes tout en fournissant aux employeurs des candidats qualifiés. Cela nécessite une architecture back-end sophistiquée avec des moteurs de recherche, des algorithmes de recommandation et des systèmes de notification en temps réel.",
+        "Les sites d'offres d'emploi font face à des défis opérationnels uniques qui vont au-delà de la simple complexité technique. La qualité des données d'emploi est essentielle : des annonces obsolètes, des publications en double ou des offres frauduleuses nuisent à la confiance des utilisateurs. Entretenir les relations avec les employeurs est indispensable pour l'accès aux annonces et les revenus. La précision de l'analyse de CV varie considérablement, nécessitant un affinage continu des algorithmes. Ces facteurs exigent à la fois des solutions techniques et des processus opérationnels qui dépassent le cadre de la plateforme elle-même."
+      ]
+    },
+    {
+      "heading": "Pourquoi créer un site d'offres d'emploi en 2025 ?",
+      "paragraphs": [
+        "Le marché mondial du recrutement en ligne continue de croître, les sites d'offres d'emploi et les réseaux professionnels gagnant des parts de marché au détriment des méthodes de recrutement traditionnelles. Si LinkedIn, Indeed et Glassdoor dominent la recherche d'emploi généraliste, des opportunités importantes existent dans les niches verticales. Les sites d'offres d'emploi axés sur des secteurs spécifiques (emplois tech, santé, finance), des niveaux de compétences (débutant, cadre dirigeant) ou des types d'emploi (télétravail, freelance, contrat) ont réussi à se tailler des parts de marché en offrant une meilleure mise en relation pour des publics spécialisés.",
+        "L'expansion géographique reste une opportunité majeure. Si la recherche d'emploi est mature en Amérique du Nord et en Europe occidentale, de nombreux marchés internationaux présentent moins de concurrence et une adoption en ligne croissante. Les sites d'offres d'emploi locaux qui comprennent les marchés du travail régionaux, les attentes salariales et les pratiques de recrutement peuvent rivaliser efficacement avec les plateformes mondiales.",
+        "Les nouveaux formats d'emploi créent de nouvelles opportunités. Les plateformes de télétravail, les places de marché de l'économie des petits boulots et la mise en relation basée sur les compétences représentent autant d'innovations que les sites d'offres d'emploi traditionnels ne prennent pas bien en charge. Créer une plateforme optimisée pour ces formats peut capter les publics précurseurs avant que les grandes plateformes ne s'adaptent."
+      ]
+    },
+    {
+      "heading": "Stack technique recommandée pour un site d'offres d'emploi",
+      "paragraphs": [
+        "Pour le développement mobile, React Native ou Flutter sont les choix les plus économiques, permettant à une seule base de code de cibler à la fois iOS et Android. Pour le web, Next.js ou Remix offrent un excellent rendu côté serveur pour le référencement, ce qui est essentiel pour la découverte des offres d'emploi et le trafic de recherche organique provenant des chercheurs d'emploi.",
+        "L'architecture back-end des sites d'offres d'emploi est centrée sur la recherche et la mise en relation. Node.js ou Python sont des choix courants pour la couche API. Pour la base de données, PostgreSQL gère les annonces d'emploi, les profils de candidats et les candidatures. Elasticsearch offre des capacités de recherche avancées avec filtrage à facettes, recherche en texte intégral et classement par pertinence. Redis sert de cache en mémoire pour les données d'emploi et les résultats de recherche.",
+        "L'analyse de CV est un défi de taille. Créer une analyse de CV sur mesure est complexe, c'est pourquoi le recours à des services comme Sovren, RChilli ou Affinda permet d'effectuer l'analyse de CV via des API. Bien que ces services facturent par CV analysé (0,10 $ à 0,50 $ par CV), ils éliminent 100 à 200 heures de développement et la maintenance continue des algorithmes."
+      ]
+    },
+    {
+      "heading": "Comment réduire les coûts de développement d'un site d'offres d'emploi",
+      "paragraphs": [
+        "La réduction de coûts la plus efficace consiste à utiliser des services managés pour la recherche et l'analyse de CV. Elasticsearch Cloud fournit une infrastructure de recherche managée. Les services d'analyse de CV comme Sovren ou RChilli effectuent l'analyse via des API. Bien que ces services facturent par appel d'API, ils éliminent 200 à 400 heures de développement back-end et de gestion continue de l'infrastructure.",
+        "Reporter les algorithmes de mise en relation avancés à la version 2.0 réduit considérablement le périmètre de développement initial. Lancer avec une simple recherche par mots-clés et des filtres de base (lieu, salaire, type d'emploi) est suffisant pour un MVP. Les algorithmes de mise en relation basés sur l'apprentissage automatique, qui apprennent à partir des données de candidature, nécessitent une grande quantité de données d'entraînement pour être efficaces : les développer avant d'avoir des utilisateurs relève de l'optimisation prématurée.",
+        "Commencer par un seul marché ou secteur plutôt que de viser une envergure mondiale dès le premier jour réduit la complexité et vous permet de nouer progressivement des relations avec les employeurs. De nombreux sites d'offres d'emploi prospères ont été lancés secteur par secteur ou ville par ville, intégrant manuellement leurs 50 à 100 premiers employeurs et faisant évoluer le produit sur la base de données d'emploi réelles avant de mettre la technologie à l'échelle."
+      ]
+    },
+    {
+      "heading": "Stratégies de monétisation pour un site d'offres d'emploi",
+      "paragraphs": [
+        "Les abonnements employeurs constituent le principal modèle de revenus pour la plupart des sites d'offres d'emploi. LinkedIn Recruiter facture de 99,99 $ à plus de 825 $ par mois pour l'accès aux bases de données de candidats et la publication d'offres. Indeed facture de 5 $ à 10 $ par annonce d'emploi ou plus de 300 $ par mois pour des publications illimitées. Pour les nouvelles plateformes qui se disputent les employeurs, démarrer avec des frais d'abonnement plus bas ou une tarification à la publication est une stratégie éprouvée pour attirer l'offre des plateformes établies.",
+        "Les placements d'offres mises en avant génèrent des revenus supplémentaires. Facturer aux employeurs un placement premium dans les résultats de recherche, des annonces sponsorisées ou des bannières publicitaires crée un inventaire publicitaire. Cette source de revenus prend de la valeur à mesure que votre plateforme se développe et que les offres se disputent l'attention des candidats.",
+        "Les fonctionnalités premium pour candidats génèrent des revenus auprès des chercheurs d'emploi. Facturer aux candidats des filtres de recherche avancés, le suivi des candidatures ou la visibilité du CV crée des revenus auprès des utilisateurs engagés. Cependant, ce modèle peut créer des frictions dans le processus de recherche d'emploi, il doit donc être mis en œuvre avec soin pour éviter de réduire la valeur de la plateforme."
+      ]
+    }
+  ]
+}

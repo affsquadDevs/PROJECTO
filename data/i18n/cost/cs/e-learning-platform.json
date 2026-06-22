@@ -1,0 +1,170 @@
+{
+  "category": "Vzdělávání a výuka",
+  "description": "E-learningová platforma jako Udemy vyžaduje nástroje pro tvorbu kurzů, hostování videí, zápis studentů, sledování pokroku, testování a zpracování plateb.",
+  "introText": "E-learningové platformy proměnily vzdělávání — Udemy hostuje přes 200 000 kurzů. Vytvoření e-learningové platformy vyžaduje nástroje pro tvorbu kurzů, hostování a streamování videí, zápis studentů a sledování pokroku, testy a kvízy, certifikáty, zpracování plateb a panely pro lektory. Složitost roste s funkcemi, jako jsou živé hodiny, diskuzní fóra a mobilní aplikace.",
+  "keyFeatures": [
+    "Tvorba a správa kurzů",
+    "Hostování a streamování videí",
+    "Zápis studentů a sledování pokroku",
+    "Testy a kvízy",
+    "Certifikáty a ocenění",
+    "Zpracování plateb a předplatné",
+    "Panel pro lektory",
+    "Panel pro studenty",
+    "Diskuzní fóra",
+    "Mobilní aplikace pro výuku"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX design",
+      "description": "Stránky kurzů, panel studenta, nástroje pro lektory"
+    },
+    {
+      "category": "Vývoj frontendu",
+      "description": "Webová aplikace a mobilní aplikace"
+    },
+    {
+      "category": "Vývoj backendu",
+      "description": "Správa kurzů, sledování pokroku, API"
+    },
+    {
+      "category": "Video infrastruktura",
+      "description": "Hostování, transkódování a streamování videí"
+    },
+    {
+      "category": "Sledování pokroku",
+      "description": "Pokrok studentů, sledování dokončení"
+    },
+    {
+      "category": "Systém testování",
+      "description": "Kvízy, úkoly, hodnocení"
+    },
+    {
+      "category": "Integrace plateb",
+      "description": "Nákupy kurzů, předplatné"
+    },
+    {
+      "category": "QA a testování",
+      "description": "Testování přehrávání videí, ověření sledování pokroku"
+    },
+    {
+      "category": "DevOps a infrastruktura",
+      "description": "Infrastruktura pro hostování videí"
+    }
+  ],
+  "complexityFactors": [
+    "Infrastruktura pro hostování a streamování videí",
+    "Sledování pokroku napříč více kurzy",
+    "Automatizace testování a hodnocení",
+    "Onboarding a nástroje pro lektory",
+    "Zpracování plateb a sdílení výnosů",
+    "Mobilní zážitek z výuky",
+    "Škálovatelnost pro tisíce kurzů"
+  ],
+  "timeline": [
+    {
+      "phase": "Průzkum a plánování",
+      "duration": "2–3 týdny",
+      "description": "Návrh struktury kurzů, video strategie a vymezení rozsahu funkcí."
+    },
+    {
+      "phase": "UI/UX design",
+      "duration": "4–6 týdnů",
+      "description": "Návrh stránek kurzů, panelu studenta a nástrojů pro lektory."
+    },
+    {
+      "phase": "Vývoj backendu",
+      "duration": "6–12 týdnů",
+      "description": "Vytvoření správy kurzů, sledování pokroku a API."
+    },
+    {
+      "phase": "Video infrastruktura",
+      "duration": "4–8 týdnů",
+      "description": "Nastavení hostování, transkódování a streamování videí."
+    },
+    {
+      "phase": "Vývoj frontendu",
+      "duration": "6–10 týdnů",
+      "description": "Vývoj webové aplikace a mobilních aplikací."
+    },
+    {
+      "phase": "Systém testování",
+      "duration": "3–5 týdnů",
+      "description": "Vytvoření kvízů, úkolů a systému hodnocení."
+    },
+    {
+      "phase": "Testování a QA",
+      "duration": "3–5 týdnů",
+      "description": "Testování přehrávání videí, ověření sledování pokroku."
+    },
+    {
+      "phase": "Nasazení a spuštění",
+      "duration": "1–2 týdny",
+      "description": "Produkční nasazení a měkké spuštění."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kolik stojí vytvoření e-learningové platformy?",
+      "answer": "Plně vybavená e-learningová platforma stojí $60,000–$180,000. MVP s tvorbou kurzů, hostováním videí a zápisem studentů lze vytvořit za $30,000–$70,000 během 3–5 měsíců."
+    },
+    {
+      "question": "Jak dlouho trvá vytvoření e-learningové platformy?",
+      "answer": "Plný vývoj trvá 5–12 měsíců. MVP se základními výukovými funkcemi může být hotové za 3–5 měsíců."
+    },
+    {
+      "question": "Potřebuji infrastrukturu pro hostování videí?",
+      "answer": "Ano, ale místo budování vlastní infrastruktury můžete využít spravované služby jako Mux, Cloudflare Stream nebo Vimeo OTT. To ušetří značné množství času a nákladů na vývoj."
+    },
+    {
+      "question": "Jaká je největší výzva u e-learningových platforem?",
+      "answer": "Získávání lektorů a kvalita kurzů. Potřebujete dostatek kvalitních kurzů, abyste přilákali studenty, což vyžaduje značné úsilí při tvorbě obsahu a náboru lektorů."
+    },
+    {
+      "question": "Jak e-learningové platformy vydělávají?",
+      "answer": "Většina platforem si bere provizi (30–50 %) z prodeje kurzů. Některé také nabízejí modely předplatného nebo účtují lektorům za přístup k platformě."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Co je e-learningová platforma jako Udemy?",
+      "paragraphs": [
+        "E-learningová platforma jako Udemy je tržiště, které propojuje studenty s online kurzy a umožňuje lektorům vytvářet a prodávat vzdělávací obsah, zatímco studenti se učí vlastním tempem. Samotná Udemy hostuje přes 200 000 kurzů a slouží milionům studentů po celém světě, což ukazuje jak rozsah příležitosti, tak náročnost tvorby obsahu potřebnou k vybudování konkurenceschopného produktu. Vytvoření e-learningové platformy vyžaduje nástroje pro tvorbu kurzů, hostování a streamování videí, zápis studentů a sledování pokroku, testy a kvízy, certifikáty, zpracování plateb a panely pro lektory.",
+        "Hlavní technickou výzvou e-learningové platformy je video infrastruktura. Kurzy se obvykle skládají z hodin videoobsahu, což vyžaduje škálovatelné hostování videí, transkódování pro různá zařízení a šířky pásma, adaptivní streamování pro plynulé přehrávání a doručování přes CDN pro celosvětový výkon. Tato video infrastruktura je nákladná na vybudování i údržbu — většina platforem proto využívá spravované služby jako Mux, Cloudflare Stream nebo Vimeo OTT namísto budování vlastní video infrastruktury.",
+        "E-learningové platformy čelí jedinečným provozním výzvám nad rámec čistě technické složitosti. Získávání lektorů vyžaduje značné prodejní úsilí a průběžnou správu vztahů. Kvalita kurzů se velmi liší, což vyžaduje kurátorské a kontrolní procesy. Zapojení studentů a míra dokončení jsou obvykle nízké (běžná je míra dokončení 10–20 %), což vyžaduje funkce jako sledování pokroku, připomínky a gamifikaci pro zlepšení výsledků. Tyto faktory vyžadují jak technická řešení, tak provozní procesy, které přesahují samotnou platformu."
+      ]
+    },
+    {
+      "heading": "Proč budovat e-learningovou platformu v roce 2025?",
+      "paragraphs": [
+        "Globální trh e-learningu nadále roste a jeho výnosy mají do roku 2025 dosáhnout $350 miliard. Zatímco Udemy, Coursera a Skillshare dominují obecným tržištím kurzů, významné příležitosti existují v úzce zaměřených vertikálách. E-learningové platformy zaměřené na konkrétní dovednosti (programátorské bootcampy, designové kurzy, obchodní dovednosti), obory (školení ve zdravotnictví, realitní licence) nebo demografické skupiny (vzdělávání K-12, firemní školení) si úspěšně získaly podíl na trhu tím, že nabídly lepší kurátorství pro specializované publikum.",
+        "Velkou příležitostí je B2B e-learning. Firemní školení, onboarding zaměstnanců a programy profesního rozvoje vyžadují odlišné pracovní postupy než spotřebitelská tržiště kurzů. Vybudování platformy optimalizované pro tyto případy použití — se sledováním pokroku pro manažery, reportováním souladu s předpisy, integrací jednotného přihlášení (single sign-on) a vlastním brandingem — vytváří obhajitelnou niku s vyšší průměrnou hodnotou smluv a předvídatelnějšími výnosy než spotřebitelská tržiště.",
+        "Nově vznikající výukové formáty vytvářejí nové příležitosti. Interaktivní programovací prostředí, virtuální laboratoře, AI tutoring a mikrovýukové formáty (krátké lekce, rozložené opakování) představují inovace, které tradiční platformy kurzů dobře nepodporují. Vybudování platformy optimalizované pro konkrétní výukový formát může zachytit publikum prvních uživatelů dříve, než se větší platformy přizpůsobí."
+      ]
+    },
+    {
+      "heading": "Doporučený technologický stack pro e-learningovou platformu",
+      "paragraphs": [
+        "Pro vývoj mobilních aplikací jsou React Native nebo Flutter nákladově nejefektivnější volbou, protože umožňují cílit na iOS i Android pomocí jediné kódové základny. Výukové aplikace s velkým podílem videa však mohou těžit z nativního vývoje kvůli lepšímu výkonu přehrávání. Pro web nabízejí Next.js nebo Remix vynikající serverové vykreslování (server-side rendering) pro SEO, které je klíčové pro objevitelnost kurzů a získávání studentů.",
+        "Backendová architektura e-learningových platforem se soustředí na správu kurzů a doručování videí. Pro vrstvu API jsou běžnou volbou Node.js nebo Python. Pro databázi PostgreSQL zvládá kurzy, studenty, zápisy a data o pokroku. Redis slouží jako in-memory cache pro metadata kurzů a relace studentů. Pro hostování videí poskytují spravované služby jako Mux, Cloudflare Stream nebo Vimeo OTT transkódování, adaptivní streamování a doručování přes CDN, aniž by vyžadovaly vlastní infrastrukturu.",
+        "Funkce testů a kvízů vyžaduje specializovanou infrastrukturu. Vytváření vlastních systémů kvízů je složité, takže využití služeb jako Typeform, SurveyMonkey nebo stavění na open-source řešeních jako H5P může vývoj urychlit. U certifikátů vytvářejí knihovny pro generování PDF (jsPDF, PDFKit) certifikáty ke stažení, zatímco certifikáty založené na blockchainu (s využitím služeb jako Blockcerts) poskytují ověřitelné kvalifikace."
+      ]
+    },
+    {
+      "heading": "Jak snížit náklady na vývoj e-learningové platformy",
+      "paragraphs": [
+        "Nejvýraznějším způsobem snížení nákladů je využití spravovaných video služeb namísto budování vlastní video infrastruktury. Služby jako Mux, Cloudflare Stream nebo Vimeo OTT poskytují kompletní hostování videí, transkódování, adaptivní streamování a doručování přes CDN prostřednictvím API. Tyto služby sice účtují poplatky za každou minutu zpracovaného a doručeného videa, ale eliminují 200–400 hodin vývoje backendu a průběžnou správu infrastruktury. Pro ověření MVP jsou spravované služby nejrychlejší cestou na trh.",
+        "Odložení pokročilých funkcí, jako jsou doporučení poháněná AI, interaktivní programovací prostředí nebo virtuální laboratoře, do verze 2.0 výrazně sníží počáteční rozsah vývoje. Spuštění se základními video kurzy, jednoduchými kvízy a sledováním pokroku je pro MVP dostačující. Pokročilé funkce lze přidat po ověření, že lektoři budou vytvářet obsah a studenti se budou do kurzů zapisovat.",
+        "Začít s jedinou platformou (web nebo mobil) namísto obou snižuje náklady na vývoj o 40–50 %. Mnoho úspěšných e-learningových platforem se spustilo jako produkty pouze pro web a mobilní aplikace přidaly až po ověření shody produktu s trhem (product-market fit). Případně použití React Native od začátku poskytuje podporu pro více platforem s jedinou kódovou základnou."
+      ]
+    },
+    {
+      "heading": "Strategie monetizace e-learningové platformy",
+      "paragraphs": [
+        "Provize z tržiště je primárním modelem výnosů pro většinu e-learningových platforem, přičemž platformy si berou 30–50 % z prodeje kurzů. Udemy si bere 50 % výnosů lektorů, zatímco Skillshare používá model předplatného, kde lektoři vydělávají na základě doby sledování. Pro nové platformy soutěžící o lektory je ověřenou strategií, jak přilákat tvůrce obsahu od zavedených platforem, začít s nižší provizí 20–30 %.",
+        "Modely předplatného vytvářejí předvídatelné opakující se výnosy. Platformy jako Skillshare ($19/mo) nebo MasterClass ($15/mo) nabízejí neomezený přístup ke všem kurzům za měsíční poplatek. Tento model dobře funguje u platforem s širokým katalogem kurzů a motivuje studenty k prozkoumávání více kurzů. Vyžaduje však značné množství obsahu, aby cena předplatného byla opodstatněná.",
+        "B2B licencování generuje vyšší výnosy na zákazníka. Platformy pro firemní školení účtují $5,000–$50,000+ ročně za organizaci a poskytují přístup pro všechny zaměstnance, sledování pokroku pro manažery, reportování souladu s předpisy a vlastní branding. Tento model vytváří předvídatelné opakující se výnosy a vyšší celoživotní hodnotu zákazníka než spotřebitelská předplatná."
+      ]
+    }
+  ]
+}

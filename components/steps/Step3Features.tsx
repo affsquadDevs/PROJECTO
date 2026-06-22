@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { useCalculatorStore } from '@/store/calculator';
 import { FEATURE_CATEGORIES } from '@/data/features';
 import * as FiIcons from 'react-icons/fi';
@@ -12,7 +13,13 @@ const FiCheck = FiIcons.FiCheck;
 const FiClock = FiIcons.FiClock;
 const FiCode = FiIcons.FiCode;
 
+// Map the English category value (stored on each feature) back to its FEATURE_CATEGORIES key
+const CATEGORY_KEY_BY_VALUE: Record<string, string> = Object.fromEntries(
+  Object.entries(FEATURE_CATEGORIES).map(([key, value]) => [value, key])
+);
+
 export default function Step3Features() {
+  const t = useTranslations('calculator');
   const { features, toggleFeature, updateFeatureHours } = useCalculatorStore();
   const [expandedCategories, setExpandedCategories] = useState<string[]>([
     FEATURE_CATEGORIES.AUTH,
@@ -39,9 +46,9 @@ export default function Step3Features() {
       <div className="flex items-center space-x-2">
         <FiTarget className="text-xl text-jira-blue" />
         <div>
-          <h2 className="text-lg font-semibold text-jira-darkBlue">Features & Capabilities</h2>
+          <h2 className="text-lg font-semibold text-jira-darkBlue">{t('features.title')}</h2>
           <p className="text-jira-textSecondary text-xs">
-            Select the required features for your project
+            {t('features.subtitle')}
           </p>
         </div>
       </div>
@@ -51,7 +58,7 @@ export default function Step3Features() {
           <div className="flex items-center space-x-3">
             <FiCheck className="text-xl text-jira-blue" />
             <p className="text-jira-darkBlue font-medium text-sm">
-              Selected features: <span className="text-xl font-bold ml-2">{selectedCount}</span>
+              {t('features.selectedCount', { count: selectedCount })}
             </p>
           </div>
         </div>
@@ -75,10 +82,10 @@ export default function Step3Features() {
                     <FiChevronRight className="text-base sm:text-lg text-jira-textSecondary flex-shrink-0" />
                   )}
                   <div className="min-w-0 flex-1">
-                    <h3 className="font-semibold text-sm sm:text-base text-jira-darkBlue truncate">{category}</h3>
+                    <h3 className="font-semibold text-sm sm:text-base text-jira-darkBlue truncate">{t('featureCategories.' + (CATEGORY_KEY_BY_VALUE[category] || category))}</h3>
                     {selectedInCategory > 0 && (
                       <span className="text-xs text-jira-blue font-medium">
-                        {selectedInCategory} selected
+                        {t('features.selectedInCategory', { count: selectedInCategory })}
                       </span>
                     )}
                   </div>
@@ -109,21 +116,21 @@ export default function Step3Features() {
                           className="checkbox-field mt-0.5 flex-shrink-0"
                         />
                         <div className="flex-1 min-w-0">
-                          <div className="font-medium text-xs sm:text-sm text-jira-darkBlue mb-2 break-words">{feature.name}</div>
-                          
+                          <div className="font-medium text-xs sm:text-sm text-jira-darkBlue mb-2 break-words">{t('featureItems.' + feature.id)}</div>
+
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                             <div className="flex items-center space-x-1.5">
                               <FiCode className="text-jira-textSecondary flex-shrink-0" />
-                              <span className="text-jira-textSecondary">Frontend: </span>
+                              <span className="text-jira-textSecondary">{t('features.frontendLabel')}</span>
                               <span className="font-medium text-jira-darkBlue">
-                                {feature.frontendHours.min}-{feature.frontendHours.max} hrs
+                                {t('features.hoursSuffix', { min: feature.frontendHours.min, max: feature.frontendHours.max })}
                               </span>
                             </div>
                             <div className="flex items-center space-x-1.5">
                               <FiCode className="text-jira-textSecondary flex-shrink-0" />
-                              <span className="text-jira-textSecondary">Backend: </span>
+                              <span className="text-jira-textSecondary">{t('features.backendLabel')}</span>
                               <span className="font-medium text-jira-darkBlue">
-                                {feature.backendHours.min}-{feature.backendHours.max} hrs
+                                {t('features.hoursSuffix', { min: feature.backendHours.min, max: feature.backendHours.max })}
                               </span>
                             </div>
                           </div>
@@ -132,11 +139,11 @@ export default function Step3Features() {
                             <div className="mt-3 pt-3 border-t border-jira-border">
                               <div className="text-xs text-jira-textSecondary mb-2 flex items-center space-x-1">
                                 <FiClock className="text-xs" />
-                                <span>Customize hours (optional):</span>
+                                <span>{t('features.customizeHours')}</span>
                               </div>
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                 <div>
-                                  <label className="text-xs text-jira-textSecondary mb-1 block">Frontend hours</label>
+                                  <label className="text-xs text-jira-textSecondary mb-1 block">{t('features.frontendHoursLabel')}</label>
                                   <input
                                     type="number"
                                     placeholder={`${feature.frontendHours.min}-${feature.frontendHours.max}`}
@@ -153,7 +160,7 @@ export default function Step3Features() {
                                   />
                                 </div>
                                 <div>
-                                  <label className="text-xs text-jira-textSecondary mb-1 block">Backend hours</label>
+                                  <label className="text-xs text-jira-textSecondary mb-1 block">{t('features.backendHoursLabel')}</label>
                                   <input
                                     type="number"
                                     placeholder={`${feature.backendHours.min}-${feature.backendHours.max}`}
@@ -188,7 +195,7 @@ export default function Step3Features() {
           <div className="w-16 h-16 bg-gray-100 rounded-lg mx-auto mb-4 flex items-center justify-center">
             <FiTarget className="text-3xl text-gray-400" />
           </div>
-          <p className="font-medium">Select the features you need for your project</p>
+          <p className="font-medium">{t('features.emptyTitle')}</p>
         </div>
       )}
     </div>

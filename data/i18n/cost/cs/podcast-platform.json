@@ -1,0 +1,170 @@
+{
+  "category": "Audio a podcasty",
+  "description": "Podcastová platforma vyžaduje správu epizod, streamování zvuku, předplatná, objevování obsahu a analytiku.",
+  "introText": "Podcastové platformy rychle rostou a k dispozici jsou miliony pořadů a epizod. Vytvoření podcastové platformy vyžaduje správu epizod, infrastrukturu pro streamování zvuku, funkce předplatného, algoritmy pro objevování obsahu a analytiku. Složitost roste s funkcemi, jako jsou živé pořady, monetizační nástroje a panely pro tvůrce.",
+  "keyFeatures": [
+    "Správa a nahrávání epizod",
+    "Streamování zvuku",
+    "Předplatná podcastů",
+    "Objevování obsahu a vyhledávání",
+    "Playlisty a kolekce",
+    "Stažení pro offline poslech",
+    "Analytický panel",
+    "Nástroje pro tvůrce",
+    "Sdílení na sociálních sítích",
+    "Mobilní aplikace"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX design",
+      "description": "Rozhraní přehrávače, stránky podcastů, objevování obsahu"
+    },
+    {
+      "category": "Vývoj frontendu",
+      "description": "Webová aplikace a mobilní aplikace"
+    },
+    {
+      "category": "Vývoj backendu",
+      "description": "Správa epizod, streamování, API"
+    },
+    {
+      "category": "Audio infrastruktura",
+      "description": "Zpracování zvuku, streamování, CDN"
+    },
+    {
+      "category": "Objevování obsahu",
+      "description": "Vyhledávání, doporučení, kategorie"
+    },
+    {
+      "category": "Systém předplatného",
+      "description": "Předplatná podcastů, notifikace"
+    },
+    {
+      "category": "Analytika",
+      "description": "Počty poslechů, analytika epizod"
+    },
+    {
+      "category": "QA a testování",
+      "description": "Testování přehrávání zvuku, validace streamování"
+    },
+    {
+      "category": "DevOps a infrastruktura",
+      "description": "Hosting zvuku a infrastruktura pro streamování"
+    }
+  ],
+  "complexityFactors": [
+    "Infrastruktura pro streamování zvuku",
+    "Správa epizod a RSS kanály",
+    "Algoritmy pro objevování obsahu a vyhledávání",
+    "Systémy předplatného a notifikací",
+    "Funkce stahování pro offline použití",
+    "Analytika a nástroje pro tvůrce",
+    "Optimalizace přehrávání zvuku na mobilních zařízeních"
+  ],
+  "timeline": [
+    {
+      "phase": "Analýza a plánování",
+      "duration": "1–2 týdny",
+      "description": "Návrh audio infrastruktury, strategie objevování obsahu a vymezení funkcí."
+    },
+    {
+      "phase": "UI/UX design",
+      "duration": "3–4 týdny",
+      "description": "Návrh rozhraní přehrávače, stránek podcastů a objevování obsahu."
+    },
+    {
+      "phase": "Vývoj backendu",
+      "duration": "5–9 týdnů",
+      "description": "Vytvoření správy epizod, streamování a API."
+    },
+    {
+      "phase": "Audio infrastruktura",
+      "duration": "3–5 týdnů",
+      "description": "Nastavení zpracování zvuku, streamování a CDN."
+    },
+    {
+      "phase": "Vývoj frontendu",
+      "duration": "5–8 týdnů",
+      "description": "Vývoj webové aplikace a mobilních aplikací."
+    },
+    {
+      "phase": "Systém objevování obsahu",
+      "duration": "2–3 týdny",
+      "description": "Implementace vyhledávání a doporučení."
+    },
+    {
+      "phase": "Testování a QA",
+      "duration": "2–3 týdny",
+      "description": "Testování přehrávání zvuku a validace streamování."
+    },
+    {
+      "phase": "Nasazení a spuštění",
+      "duration": "1–2 týdny",
+      "description": "Nasazení do produkce a tiché spuštění."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kolik stojí vytvoření podcastové platformy?",
+      "answer": "Plně vybavená podcastová platforma stojí $45,000–$130,000. MVP se správou epizod, streamováním a základním objevováním obsahu lze vytvořit za $25,000–$55,000 během 2–4 měsíců."
+    },
+    {
+      "question": "Jak dlouho trvá vytvoření podcastové platformy?",
+      "answer": "Plný vývoj trvá 4–9 měsíců. MVP se základními funkcemi podcastu může být hotové za 2–4 měsíce."
+    },
+    {
+      "question": "Potřebuji podporu RSS kanálů?",
+      "answer": "Ano, RSS kanály jsou pro distribuci podcastů zásadní. Většina podcastových platforem podporuje RSS kanály, aby si posluchači mohli pořady předplatit pomocí libovolné podcastové aplikace."
+    },
+    {
+      "question": "Co je největší výzva u podcastových platforem?",
+      "answer": "Objevování obsahu a získávání uživatelů. S miliony dostupných podcastů vyžaduje pomoc posluchačům objevit nové pořady efektivní vyhledávání, doporučení a kurátorství."
+    },
+    {
+      "question": "Jak podcastové platformy vydělávají peníze?",
+      "answer": "Podcastové platformy obvykle získávají příjmy z prémiových předplatných, reklamy a sdílení příjmů s tvůrci. Některé také účtují tvůrcům za hosting nebo prémiové funkce."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Co je podcastová platforma?",
+      "paragraphs": [
+        "Podcastová platforma je služba, která umožňuje podcasterům hostovat, distribuovat a monetizovat jejich zvukový obsah, zatímco posluchači objevují, předplácí si a streamují epizody. Platformy jako Spotify, Apple Podcasts a Anchor slouží milionům podcasterů a posluchačů, což ukazuje jak rozsah příležitosti, tak výzvu spojenou s obsahovou infrastrukturou, kterou je nutné zvládnout pro vytvoření konkurenceschopného produktu. Vytvoření podcastové platformy vyžaduje správu epizod, infrastrukturu pro streamování zvuku, funkce předplatného, algoritmy pro objevování obsahu a analytiku.",
+        "Hlavní technickou výzvou podcastové platformy je audio infrastruktura. Epizody podcastů jsou velké (obvykle 20–100 MB na epizodu), což vyžaduje škálovatelné úložiště, transkódování do více formátů a datových toků, adaptivní streamování pro plynulé přehrávání a doručování přes CDN pro globální výkon. Podpora RSS kanálů je pro distribuci podcastů zásadní a umožňuje posluchačům předplatit si pořady pomocí libovolné podcastové aplikace. Tato audio infrastruktura je nákladná na vybudování i údržbu — většina platforem používá spravované služby jako AWS CloudFront, Cloudflare Stream nebo specializované audio CDN, místo aby budovaly vlastní infrastrukturu.",
+        "Podcastové platformy čelí jedinečným provozním výzvám nad rámec čistě technické složitosti. Objevování obsahu je náročné — s miliony dostupných podcastů vyžaduje pomoc posluchačům objevit nové pořady efektivní vyhledávání, doporučení a kurátorství. Získávání podcasterů vyžaduje značné úsilí v oblasti marketingu a budování vztahů. Monetizační nástroje (reklama, předplatná, dary) vyžadují platební infrastrukturu a panely pro tvůrce. Tyto faktory vyžadují jak technická řešení, tak provozní procesy, které přesahují samotnou platformu."
+      ]
+    },
+    {
+      "heading": "Proč vytvořit podcastovou platformu v roce 2025?",
+      "paragraphs": [
+        "Globální trh s podcasty nadále rychle roste a očekává se, že jeho příjmy dosáhnou do roku 2025 výše $4 billion. Počet posluchačů podcastů se v posledních letech výrazně zvýšil a miliony nových posluchačů objevují podcasty každoročně. Zatímco Spotify, Apple Podcasts a Google Podcasts dominují obecné distribuci podcastů, významné příležitosti existují v úzce zaměřených vertikálách. Podcastové platformy zaměřené na konkrétní žánry (true crime, byznys, vzdělávání), formáty (krátké formáty, živé podcasty) nebo publikum (B2B podcasty, úzké komunity) úspěšně získaly podíl na trhu tím, že nabídly lepší zážitky pro specializované publikum.",
+        "Geografická expanze zůstává velkou příležitostí. Zatímco podcasting je v Severní Americe a západní Evropě vyzrálý, mnoho mezinárodních trhů má menší konkurenci a rostoucí míru používání chytrých telefonů. Lokální podcastové platformy, které rozumějí regionálním preferencím obsahu, platebním metodám a kulturním normám, mohou efektivně konkurovat globálním platformám.",
+        "Vznikající formáty podcastů vytvářejí nové příležitosti. Interaktivní podcasty, video podcasty a živé streamování podcastů představují inovace, které tradiční platformy dobře nepodporují. Vytvoření platformy optimalizované pro tyto formáty může získat publikum z řad prvních uživatelů ještě dříve, než se větší platformy přizpůsobí."
+      ]
+    },
+    {
+      "heading": "Doporučený technologický stack pro podcastovou platformu",
+      "paragraphs": [
+        "Pro vývoj mobilních aplikací jsou React Native nebo Flutter nejekonomičtějšími volbami, které umožňují cílit jednou kódovou základnou na iOS i Android. Podcastové aplikace však často těží z nativního vývoje kvůli potřebě přesného přehrávání zvuku, přehrávání na pozadí a integrace se systémovými ovládacími prvky médií. Pro MVP je React Native dostačující, ale počítejte s nativními moduly pro pokročilé zvukové funkce.",
+        "Architektura backendu podcastových platforem se soustředí na správu zvuku a generování RSS kanálů. Node.js nebo Python jsou běžnou volbou pro vrstvu API. Pro databázi PostgreSQL spravuje podcasty, epizody a uživatelská data. Redis slouží jako in-memory cache pro metadata epizod a playlisty. Pro hosting zvuku poskytuje AWS S3 s CDN CloudFront škálovatelné úložiště a globální doručování. U RSS kanálů zajišťuje generování standardních RSS XML kanálů kompatibilitu se všemi podcastovými aplikacemi.",
+        "Algoritmy pro objevování obsahu a doporučení jsou pro zapojení uživatelů klíčové. Vytvoření vlastních doporučovacích systémů s využitím strojového učení (kolaborativní filtrování, filtrování založené na obsahu) vyžaduje značné množství dat a odbornost. Alternativně může vývoj urychlit použití služeb jako Amazon Personalize nebo stavění na open-source doporučovacích knihovnách."
+      ]
+    },
+    {
+      "heading": "Jak snížit náklady na vývoj podcastové platformy",
+      "paragraphs": [
+        "Nejvýraznější snížení nákladů přináší použití spravovaných audio služeb namísto budování vlastní audio infrastruktury. Služby jako AWS CloudFront, Cloudflare Stream nebo specializované audio CDN poskytují kompletní hosting zvuku, transkódování, adaptivní streamování a doručování přes CDN prostřednictvím API. Ačkoli si tyto služby účtují za každý přenesený GB dat, eliminují 200–400 hodin vývoje backendu a průběžnou správu infrastruktury.",
+        "Odložení pokročilých funkcí, jako jsou AI doporučení, živé streamování nebo video podcasty, do verze 2.0 výrazně snižuje počáteční rozsah vývoje. Spuštění se základní správou epizod, podporou RSS kanálů a jednoduchým objevováním obsahu je pro MVP dostačující. Pokročilé funkce lze přidat po ověření, že podcasteři budou nahrávat obsah a posluchači si budou předplácet pořady.",
+        "Začátek s jediným žánrem nebo formátem namísto budování pro globální měřítko od prvního dne snižuje složitost a umožňuje budovat vztahy s podcastery postupně. Mnoho úspěšných podcastových platforem se spustilo žánr po žánru (počínaje byznys podcasty, poté přidáním true crime, poté přidáním vzdělávání) nebo formát po formátu, ručně onboardovaly svých prvních 50–100 podcasterů a iterovaly produkt na základě reálných dat o poslechu, než začaly škálovat technologii."
+      ]
+    },
+    {
+      "heading": "Monetizační strategie pro podcastovou platformu",
+      "paragraphs": [
+        "Prémiová předplatná jsou primárním modelem příjmů většiny podcastových platforem. Spotify Premium účtuje $9.99 měsíčně za streamování bez reklam a offline stahování. Apple Podcasts nabízí předplatná prostřednictvím systému nákupů v aplikaci od Apple. Pro nové platformy soutěžící o posluchače je začátek s konkurenceschopnými cenami předplatného a bezplatnými úrovněmi osvědčenou strategií, jak přilákat uživatele od zavedených platforem.",
+        "Monetizační nástroje pro tvůrce generují příjmy a zároveň motivují k tvorbě obsahu. Platformy si berou procento (obvykle 10–30 %) z výdělků tvůrců z předplatných, spropitného nebo placeného obsahu. Tento model sjednocuje zájmy platformy s úspěchem tvůrců a může generovat značné příjmy, jak roste ekonomika tvůrců. Vyžaduje však vybudování platební infrastruktury a panelů pro tvůrce.",
+        "Reklama vytváří dodatečné příjmy od uživatelů bezplatné úrovně. Dynamické vkládání reklam, reklamy čtené moderátory a programatická reklama se integrují do zážitku z poslechu podcastů. Vybudování reklamní platformy však vyžaduje značnou infrastrukturu — zobrazování reklam, cílení, aukce a analytiku. Pro nové platformy je začátek s jednoduchými display reklamami nebo sponzorovaným obsahem proveditelnější než budování plně programatické reklamní platformy."
+      ]
+    }
+  ]
+}

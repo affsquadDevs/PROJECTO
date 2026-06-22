@@ -1,0 +1,170 @@
+{
+  "category": "Rekrutacja i praca",
+  "description": "Portal z ofertami pracy taki jak LinkedIn Jobs wymaga ogłoszeń o pracę, profili kandydatów, wyszukiwania i dopasowywania, śledzenia aplikacji oraz paneli dla pracodawców.",
+  "introText": "Portale z ofertami pracy łączą miliony osób poszukujących zatrudnienia z pracodawcami — LinkedIn Jobs obsługuje miesięcznie miliony aplikacji. Budowa portalu z ofertami pracy wymaga ogłoszeń o pracę, profili kandydatów, zaawansowanego wyszukiwania i dopasowywania, śledzenia aplikacji, paneli dla pracodawców, parsowania CV oraz systemów powiadomień. Złożoność rośnie wraz z funkcjami takimi jak testy kompetencji, rozmowy wideo i dopasowywanie oparte na AI.",
+  "keyFeatures": [
+    "Ogłoszenia i publikowanie ofert pracy",
+    "Profile kandydatów i CV",
+    "Zaawansowane wyszukiwanie i filtry",
+    "System śledzenia aplikacji",
+    "Panel pracodawcy",
+    "Panel kandydata",
+    "Parsowanie i dopasowywanie CV",
+    "Powiadomienia e-mail i push",
+    "Testy kompetencji",
+    "Analityka i raportowanie"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Projektowanie UI/UX",
+      "description": "Ogłoszenia o pracę, profile kandydatów, panele"
+    },
+    {
+      "category": "Rozwój frontendu",
+      "description": "Aplikacja webowa i aplikacje mobilne"
+    },
+    {
+      "category": "Rozwój backendu",
+      "description": "Baza ofert pracy, wyszukiwarka, API"
+    },
+    {
+      "category": "Wyszukiwarka",
+      "description": "Elasticsearch, dopasowywanie ofert, filtry"
+    },
+    {
+      "category": "Parsowanie CV",
+      "description": "Parsowanie CV i algorytmy dopasowywania"
+    },
+    {
+      "category": "Śledzenie aplikacji",
+      "description": "Funkcje ATS, ścieżka kandydata"
+    },
+    {
+      "category": "System powiadomień",
+      "description": "Powiadomienia e-mail i push"
+    },
+    {
+      "category": "QA i testowanie",
+      "description": "Testowanie trafności wyszukiwania, walidacja dopasowań"
+    },
+    {
+      "category": "DevOps i infrastruktura",
+      "description": "Infrastruktura bazy ofert pracy i wyszukiwania"
+    }
+  ],
+  "complexityFactors": [
+    "Pozyskiwanie i zarządzanie danymi o ofertach pracy",
+    "Parsowanie CV i algorytmy dopasowywania",
+    "Dwustronny rynek (pracodawcy i kandydaci)",
+    "Złożoność systemu śledzenia aplikacji",
+    "Trafność wyszukiwania i filtrowania",
+    "Wdrażanie pracodawców i kandydatów",
+    "Dopasowywanie ofert pracy w czasie rzeczywistym"
+  ],
+  "timeline": [
+    {
+      "phase": "Analiza i planowanie",
+      "duration": "2–3 tygodnie",
+      "description": "Struktura danych o ofertach pracy, wymagania dotyczące dopasowywania i określenie zakresu funkcji."
+    },
+    {
+      "phase": "Projektowanie UI/UX",
+      "duration": "3–5 tygodni",
+      "description": "Projektowanie ogłoszeń o pracę, profili kandydatów i paneli."
+    },
+    {
+      "phase": "Rozwój backendu",
+      "duration": "5–10 tygodni",
+      "description": "Budowa bazy ofert pracy, wyszukiwarki i API."
+    },
+    {
+      "phase": "Rozwój frontendu",
+      "duration": "5–8 tygodni",
+      "description": "Tworzenie aplikacji webowej i aplikacji mobilnych z funkcjami związanymi z ofertami pracy."
+    },
+    {
+      "phase": "Parsowanie CV",
+      "duration": "3–5 tygodni",
+      "description": "Wdrożenie parsowania CV i algorytmów dopasowywania."
+    },
+    {
+      "phase": "Śledzenie aplikacji",
+      "duration": "3–4 tygodnie",
+      "description": "Budowa funkcji ATS i ścieżki kandydata."
+    },
+    {
+      "phase": "Testowanie i QA",
+      "duration": "2–4 tygodnie",
+      "description": "Testowanie trafności wyszukiwania i walidacja dopasowań."
+    },
+    {
+      "phase": "Wdrożenie i uruchomienie",
+      "duration": "1–2 tygodnie",
+      "description": "Wdrożenie produkcyjne i miękkie uruchomienie."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Ile kosztuje zbudowanie portalu z ofertami pracy?",
+      "answer": "W pełni funkcjonalny portal z ofertami pracy kosztuje $50,000–$150,000. Wersję MVP z ogłoszeniami o pracę, profilami kandydatów i podstawowym wyszukiwaniem można zbudować za $25,000–$60,000 w ciągu 2–4 miesięcy."
+    },
+    {
+      "question": "Ile czasu zajmuje zbudowanie portalu z ofertami pracy?",
+      "answer": "Pełny rozwój trwa 4–10 miesięcy. Wersja MVP z podstawowymi funkcjami wyszukiwania ofert pracy może być gotowa w 2–4 miesiące."
+    },
+    {
+      "question": "Czy parsowanie CV jest potrzebne w MVP?",
+      "answer": "Nie, możesz zacząć od ręcznego przesyłania CV i dodać parsowanie w wersji 2.0. Parsowanie CV znacząco poprawia jednak dopasowywanie kandydatów i komfort użytkowania."
+    },
+    {
+      "question": "Jakie jest największe wyzwanie w portalach z ofertami pracy?",
+      "answer": "Zbudowanie dwustronnego rynku z wystarczającą liczbą ofert pracy, aby przyciągnąć kandydatów, i wystarczającą liczbą kandydatów, aby przyciągnąć pracodawców. Wymaga to znacznych nakładów marketingowych i efektów sieciowych."
+    },
+    {
+      "question": "W jaki sposób portale z ofertami pracy zarabiają?",
+      "answer": "Portale z ofertami pracy zwykle czerpią przychody z subskrypcji pracodawców, opłat za publikację ogłoszeń, wyróżnionych ofert oraz funkcji premium dla kandydatów. Niektóre pobierają również opłaty za dostęp do baz kandydatów."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Czym jest portal z ofertami pracy taki jak LinkedIn Jobs?",
+      "paragraphs": [
+        "Portal z ofertami pracy taki jak LinkedIn Jobs to platforma łącząca osoby poszukujące pracy z pracodawcami, umożliwiająca firmom publikowanie ofert, a kandydatom wyszukiwanie, aplikowanie i śledzenie złożonych aplikacji. Sam LinkedIn Jobs obsługuje miesięcznie miliony aplikacji, co pokazuje zarówno skalę możliwości, jak i wyzwanie dwustronnego rynku, które trzeba pokonać, aby zbudować konkurencyjny produkt. Budowa portalu z ofertami pracy wymaga ogłoszeń o pracę, profili kandydatów, zaawansowanego wyszukiwania i dopasowywania, śledzenia aplikacji, paneli dla pracodawców, parsowania CV oraz systemów powiadomień.",
+        "Głównym wyzwaniem technicznym portalu z ofertami pracy jest zbudowanie dwustronnego rynku z wystarczającą liczbą ofert, aby przyciągnąć kandydatów, i wystarczającą liczbą kandydatów, aby przyciągnąć pracodawców. Ten problem jajka i kury wymaga znacznych nakładów marketingowych i efektów sieciowych. Algorytm wyszukiwania i dopasowywania musi skutecznie łączyć kandydatów z odpowiednimi ofertami, jednocześnie dostarczając pracodawcom wykwalifikowanych aplikujących. Wymaga to zaawansowanej architektury backendu z wyszukiwarkami, algorytmami rekomendacji i systemami powiadomień w czasie rzeczywistym.",
+        "Portale z ofertami pracy stają przed wyjątkowymi wyzwaniami operacyjnymi wykraczającymi poza samą złożoność techniczną. Jakość danych o ofertach pracy ma kluczowe znaczenie — nieaktualne ogłoszenia, zduplikowane wpisy czy oferty będące spamem podważają zaufanie użytkowników. Utrzymywanie relacji z pracodawcami jest niezbędne dla dostępu do ofert i przychodów. Dokładność parsowania CV znacznie się różni, co wymaga ciągłego udoskonalania algorytmów. Czynniki te wymagają zarówno rozwiązań technicznych, jak i procesów operacyjnych wykraczających poza samą platformę."
+      ]
+    },
+    {
+      "heading": "Dlaczego warto zbudować portal z ofertami pracy w 2025 roku?",
+      "paragraphs": [
+        "Globalny rynek rekrutacji online wciąż rośnie, a portale z ofertami pracy i sieci zawodowe przejmują udział w rynku od tradycyjnych metod rekrutacji. Choć LinkedIn, Indeed i Glassdoor dominują w ogólnym wyszukiwaniu ofert pracy, znaczące możliwości istnieją w niszowych segmentach. Portale skupione na konkretnych branżach (praca w IT, ochrona zdrowia, finanse), poziomach kompetencji (stanowiska początkowe, kadra kierownicza) czy rodzajach pracy (praca zdalna, freelance, kontrakty) skutecznie zdobyły udział w rynku, oferując lepsze dopasowanie dla wyspecjalizowanych odbiorców.",
+        "Ekspansja geograficzna pozostaje dużą szansą. Choć wyszukiwanie ofert pracy jest dojrzałe w Ameryce Północnej i Europie Zachodniej, wiele rynków międzynarodowych charakteryzuje się mniejszą konkurencją i rosnącą adopcją rozwiązań online. Lokalne portale z ofertami pracy, które rozumieją regionalne rynki pracy, oczekiwania płacowe i praktyki rekrutacyjne, mogą skutecznie konkurować z platformami globalnymi.",
+        "Nowe formaty pracy tworzą kolejne możliwości. Platformy pracy zdalnej, rynki gospodarki gig oraz dopasowywanie oparte na kompetencjach to innowacje, które tradycyjne portale z ofertami pracy słabo wspierają. Budowa platformy zoptymalizowanej pod te formaty pozwala pozyskać odbiorców z grona wczesnych użytkowników, zanim większe platformy się dostosują."
+      ]
+    },
+    {
+      "heading": "Rekomendowany stack technologiczny dla portalu z ofertami pracy",
+      "paragraphs": [
+        "W przypadku rozwoju mobilnego React Native lub Flutter to najbardziej opłacalne wybory, pozwalające na obsługę zarówno iOS, jak i Androida z jednej bazy kodu. Dla wersji webowej Next.js lub Remix zapewniają doskonały rendering po stronie serwera dla SEO, co jest kluczowe dla odkrywalności ofert pracy i ruchu organicznego z wyszukiwarek pochodzącego od osób poszukujących pracy.",
+        "Architektura backendu portali z ofertami pracy koncentruje się na wyszukiwaniu i dopasowywaniu. Node.js lub Python to częste wybory dla warstwy API. W przypadku bazy danych PostgreSQL obsługuje ogłoszenia o pracę, profile kandydatów i aplikacje. Elasticsearch zapewnia zaawansowane możliwości wyszukiwania z filtrowaniem fasetowym, wyszukiwaniem pełnotekstowym i rankingiem trafności. Redis pełni rolę pamięci podręcznej in-memory dla danych o ofertach pracy i wyników wyszukiwania.",
+        "Parsowanie CV stanowi istotne wyzwanie. Budowa własnego parsowania CV jest złożona, dlatego korzystanie z usług takich jak Sovren, RChilli czy Affinda zapewnia parsowanie CV poprzez API. Choć usługi te pobierają opłatę za każde przetworzone CV ($0.10–$0.50 za CV), eliminują 100–200 godzin programowania i bieżącego utrzymania algorytmów."
+      ]
+    },
+    {
+      "heading": "Jak obniżyć koszty rozwoju portalu z ofertami pracy",
+      "paragraphs": [
+        "Najbardziej znaczącą redukcję kosztów daje korzystanie z usług zarządzanych do wyszukiwania i parsowania CV. Elasticsearch Cloud zapewnia zarządzaną infrastrukturę wyszukiwania. Usługi parsowania CV, takie jak Sovren czy RChilli, zapewniają parsowanie poprzez API. Choć usługi te pobierają opłatę za każde wywołanie API, eliminują 200–400 godzin rozwoju backendu oraz bieżące zarządzanie infrastrukturą.",
+        "Odłożenie zaawansowanych algorytmów dopasowywania do wersji 2.0 znacząco zmniejsza początkowy zakres prac. Uruchomienie z prostym wyszukiwaniem opartym na słowach kluczowych i podstawowymi filtrami (lokalizacja, wynagrodzenie, rodzaj pracy) jest wystarczające dla MVP. Algorytmy dopasowywania oparte na uczeniu maszynowym, które uczą się na podstawie danych z aplikacji, wymagają znacznej ilości danych treningowych, aby były skuteczne — budowanie ich, zanim zdobędziesz użytkowników, to przedwczesna optymalizacja.",
+        "Rozpoczęcie od jednego rynku lub branży zamiast budowania od pierwszego dnia z myślą o globalnej skali zmniejsza złożoność i pozwala budować relacje z pracodawcami stopniowo. Wiele odnoszących sukcesy portali z ofertami pracy startowało branża po branży lub miasto po mieście, ręcznie wdrażając pierwszych 50–100 pracodawców i iterując produkt w oparciu o rzeczywiste dane o ofertach pracy, zanim skalowali technologię."
+      ]
+    },
+    {
+      "heading": "Strategie monetyzacji portalu z ofertami pracy",
+      "paragraphs": [
+        "Subskrypcje pracodawców to podstawowy model przychodowy większości portali z ofertami pracy. LinkedIn Recruiter pobiera $99.99–$825+ miesięcznie za dostęp do baz kandydatów i publikację ofert. Indeed pobiera $5–$10 za publikację oferty lub $300+ miesięcznie za nieograniczoną liczbę ogłoszeń. Dla nowych platform konkurujących o pracodawców rozpoczęcie od niższych opłat subskrypcyjnych lub modelu płatności za publikację to sprawdzona strategia pozyskiwania podaży od platform o ugruntowanej pozycji.",
+        "Wyróżnione oferty pracy generują dodatkowe przychody. Pobieranie od pracodawców opłat za premium umieszczenie w wynikach wyszukiwania, sponsorowane ogłoszenia lub reklamy banerowe tworzy przestrzeń reklamową. To źródło przychodów staje się cenniejsze wraz ze wzrostem platformy i rywalizacją ofert o uwagę kandydatów.",
+        "Funkcje premium dla kandydatów generują przychody od osób poszukujących pracy. Pobieranie od kandydatów opłat za zaawansowane filtry wyszukiwania, śledzenie aplikacji czy widoczność CV tworzy przychody od zaangażowanych użytkowników. Model ten może jednak wprowadzać tarcia w procesie poszukiwania pracy, dlatego należy go wdrażać ostrożnie, aby nie obniżyć wartości platformy."
+      ]
+    }
+  ]
+}

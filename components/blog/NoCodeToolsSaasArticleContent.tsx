@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 
 /** Replace query params with your official Base44 affiliate URL from the partner dashboard if different. */
 const BASE44_AFFILIATE_HREF =

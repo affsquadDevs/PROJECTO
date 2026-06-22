@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { useCalculatorStore } from '@/store/calculator';
 import { FrontendFramework, BackendStack, Database, MobilePlatform, UILibrary, HostingPlatform } from '@/types/calculator';
 import { RECOMMENDED_STACKS, TECH_COMPATIBILITY } from '@/data/recommendations';
@@ -19,8 +20,24 @@ const FiLayout = FiIcons.FiLayout;
 const FiGlobe = FiIcons.FiGlobe;
 
 export default function Step4TechStack() {
+  const t = useTranslations('calculator');
   const { techStack, updateTechStack } = useCalculatorStore();
   const [showRecommendations, setShowRecommendations] = useState(false);
+
+  // Translate the option "note" strings (e.g. "Base time", "+10% time", "+2% cost")
+  // while keeping the technology labels (React, Node.js, ...) as literals.
+  const formatNote = (note: string): string => {
+    if (note === 'Base time') return t('techStack.noteBase');
+    if (note === 'Web only') return t('techStack.webOnly');
+    const match = note.match(/^([+-])(\d+)%\s+(time|cost)$/);
+    if (match) {
+      const [, sign, percent, kind] = match;
+      return kind === 'cost'
+        ? t('techStack.noteCost', { sign, percent: Number(percent) })
+        : t('techStack.noteTime', { sign, percent: Number(percent) });
+    }
+    return note;
+  };
 
   const frontendOptions: { value: FrontendFramework; label: string; note: string }[] = [
     { value: 'react', label: 'React', note: 'Base time' },
@@ -94,20 +111,11 @@ export default function Step4TechStack() {
                           backendCompat.goodWith.includes(techStack.database);
 
       if (isBestMatch) {
-        return {
-          type: 'excellent',
-          message: 'Excellent combination! These technologies work great together.',
-        };
+        return { type: 'excellent' };
       } else if (isGoodMatch) {
-        return {
-          type: 'good',
-          message: 'Good combination. These technologies are compatible.',
-        };
+        return { type: 'good' };
       } else {
-        return {
-          type: 'okay',
-          message: 'This combination works but may not be optimal.',
-        };
+        return { type: 'okay' };
       }
     } catch {
       return null;
@@ -121,9 +129,9 @@ export default function Step4TechStack() {
       <div className="flex items-center space-x-2">
         <FiCpu className="text-xl text-jira-blue" />
         <div>
-          <h2 className="text-lg font-semibold text-jira-darkBlue">Technologies & Infrastructure</h2>
+          <h2 className="text-lg font-semibold text-jira-darkBlue">{t('techStack.title')}</h2>
           <p className="text-jira-textSecondary text-xs">
-            Choose the technology stack for your project
+            {t('techStack.subtitle')}
           </p>
         </div>
       </div>
@@ -133,9 +141,9 @@ export default function Step4TechStack() {
           <div className="flex items-start sm:items-center space-x-2 sm:space-x-3 flex-1 min-w-0">
             <FiInfo className="text-lg sm:text-xl text-jira-blue flex-shrink-0 mt-0.5 sm:mt-0" />
             <div className="min-w-0 flex-1">
-              <h3 className="font-semibold text-jira-darkBlue mb-1 text-xs sm:text-sm">Need Help Choosing?</h3>
+              <h3 className="font-semibold text-jira-darkBlue mb-1 text-xs sm:text-sm">{t('techStack.needHelpTitle')}</h3>
               <p className="text-xs text-jira-textSecondary">
-                Not sure which technologies to pick? We can recommend the best stack for your project.
+                {t('techStack.needHelpBody')}
               </p>
             </div>
           </div>
@@ -143,7 +151,7 @@ export default function Step4TechStack() {
             onClick={() => setShowRecommendations(true)}
             className="btn-primary w-full sm:w-auto whitespace-nowrap text-xs sm:text-sm px-4 py-2"
           >
-            View Recommendations
+            {t('techStack.viewRecommendations')}
           </button>
         </div>
       </div>
@@ -166,13 +174,17 @@ export default function Step4TechStack() {
             compatNote.type === 'good' ? 'text-jira-darkBlue' :
             'text-yellow-900'
           }`}>
-            {compatNote.message}
+            {compatNote.type === 'excellent'
+              ? t('techStack.compatExcellent')
+              : compatNote.type === 'good'
+              ? t('techStack.compatGood')
+              : t('techStack.compatOkay')}
           </p>
         </div>
       )}
 
       <div className="card">
-        <label className="label text-xs">Frontend Framework</label>
+        <label className="label text-xs">{t('techStack.frontendFrameworkLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
           {frontendOptions.map((option) => (
             <button
@@ -185,14 +197,14 @@ export default function Step4TechStack() {
               }`}
             >
               <div className="font-medium mb-0.5">{option.label}</div>
-              <div className="text-xs opacity-75">{option.note}</div>
+              <div className="text-xs opacity-75">{formatNote(option.note)}</div>
             </button>
           ))}
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">Backend Stack</label>
+        <label className="label text-xs">{t('techStack.backendStackLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
           {backendOptions.map((option) => (
             <button
@@ -205,14 +217,14 @@ export default function Step4TechStack() {
               }`}
             >
               <div className="font-medium mb-0.5">{option.label}</div>
-              <div className="text-xs opacity-75">{option.note}</div>
+              <div className="text-xs opacity-75">{formatNote(option.note)}</div>
             </button>
           ))}
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">Database</label>
+        <label className="label text-xs">{t('techStack.databaseLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
           {databaseOptions.map((option) => (
             <button
@@ -225,17 +237,17 @@ export default function Step4TechStack() {
               }`}
             >
               <div className="font-medium mb-0.5">{option.label}</div>
-              <div className="text-xs opacity-75">{option.note}</div>
+              <div className="text-xs opacity-75">{formatNote(option.note)}</div>
             </button>
           ))}
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">Mobile Platform (Optional)</label>
+        <label className="label text-xs">{t('techStack.mobilePlatformLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
           {[
-            { value: 'none' as MobilePlatform, label: 'No Mobile', note: 'Web only' },
+            { value: 'none' as MobilePlatform, label: t('techStack.noMobile'), note: 'Web only' },
             { value: 'react-native' as MobilePlatform, label: 'React Native', note: '+30% time' },
             { value: 'flutter' as MobilePlatform, label: 'Flutter', note: '+25% time' },
             { value: 'swift' as MobilePlatform, label: 'Swift (iOS)', note: '+40% time' },
@@ -252,14 +264,14 @@ export default function Step4TechStack() {
               }`}
             >
               <div className="font-medium mb-0.5">{option.label}</div>
-              <div className="text-xs opacity-75">{option.note}</div>
+              <div className="text-xs opacity-75">{formatNote(option.note)}</div>
             </button>
           ))}
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">UI Library/Framework</label>
+        <label className="label text-xs">{t('techStack.uiLibraryLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
           {[
             { value: 'tailwind' as UILibrary, label: 'Tailwind CSS', note: '-5% time' },
@@ -269,7 +281,7 @@ export default function Step4TechStack() {
             { value: 'chakra-ui' as UILibrary, label: 'Chakra UI', note: 'Base time' },
             { value: 'shadcn-ui' as UILibrary, label: 'shadcn/ui', note: '-5% time' },
             { value: 'mantine' as UILibrary, label: 'Mantine', note: 'Base time' },
-            { value: 'none' as UILibrary, label: 'Custom CSS', note: 'Base time' },
+            { value: 'none' as UILibrary, label: t('techStack.customCss'), note: 'Base time' },
           ].map((option) => (
             <button
               key={option.value}
@@ -281,14 +293,14 @@ export default function Step4TechStack() {
               }`}
             >
               <div className="font-medium mb-0.5">{option.label}</div>
-              <div className="text-xs opacity-75">{option.note}</div>
+              <div className="text-xs opacity-75">{formatNote(option.note)}</div>
             </button>
           ))}
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">Hosting Platform</label>
+        <label className="label text-xs">{t('techStack.hostingLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
           {[
             { value: 'vercel' as HostingPlatform, label: 'Vercel', note: '+2% cost' },
@@ -310,14 +322,14 @@ export default function Step4TechStack() {
               }`}
             >
               <div className="font-medium mb-0.5">{option.label}</div>
-              <div className="text-xs opacity-75">{option.note}</div>
+              <div className="text-xs opacity-75">{formatNote(option.note)}</div>
             </button>
           ))}
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">DevOps & Infrastructure</label>
+        <label className="label text-xs">{t('techStack.devOpsLabel')}</label>
         <div className="space-y-1.5 mt-2">
           <label className="flex items-center space-x-2 cursor-pointer p-2 hover:bg-gray-50 rounded transition-colors text-sm">
             <input
@@ -327,8 +339,8 @@ export default function Step4TechStack() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-jira-darkBlue">Cloud Storage (S3, GCS)</div>
-              <div className="text-xs text-jira-textSecondary">+10 hours setup</div>
+              <div className="font-medium text-jira-darkBlue">{t('techStack.cloudTitle')}</div>
+              <div className="text-xs text-jira-textSecondary">{t('techStack.cloudHint')}</div>
             </div>
           </label>
 
@@ -340,8 +352,8 @@ export default function Step4TechStack() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-jira-darkBlue">CDN (CloudFlare, Fastly)</div>
-              <div className="text-xs text-jira-textSecondary">+8 hours setup</div>
+              <div className="font-medium text-jira-darkBlue">{t('techStack.cdnTitle')}</div>
+              <div className="text-xs text-jira-textSecondary">{t('techStack.cdnHint')}</div>
             </div>
           </label>
 
@@ -353,8 +365,8 @@ export default function Step4TechStack() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-jira-darkBlue">CI/CD Pipeline (GitHub Actions, Jenkins)</div>
-              <div className="text-xs text-jira-textSecondary">+20 hours setup</div>
+              <div className="font-medium text-jira-darkBlue">{t('techStack.cicdTitle')}</div>
+              <div className="text-xs text-jira-textSecondary">{t('techStack.cicdHint')}</div>
             </div>
           </label>
 
@@ -366,8 +378,8 @@ export default function Step4TechStack() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-jira-darkBlue">Docker Containerization</div>
-              <div className="text-xs text-jira-textSecondary">+15 hours setup</div>
+              <div className="font-medium text-jira-darkBlue">{t('techStack.dockerTitle')}</div>
+              <div className="text-xs text-jira-textSecondary">{t('techStack.dockerHint')}</div>
             </div>
           </label>
 
@@ -379,8 +391,8 @@ export default function Step4TechStack() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-jira-darkBlue">Kubernetes Orchestration</div>
-              <div className="text-xs text-jira-textSecondary">+40 hours setup</div>
+              <div className="font-medium text-jira-darkBlue">{t('techStack.kubernetesTitle')}</div>
+              <div className="text-xs text-jira-textSecondary">{t('techStack.kubernetesHint')}</div>
             </div>
           </label>
         </div>
@@ -390,7 +402,7 @@ export default function Step4TechStack() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-3 sm:p-4 overflow-y-auto">
           <div className="bg-white rounded shadow-jira-lg max-w-4xl w-full p-4 sm:p-6 my-4 sm:my-8 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between mb-3 sm:mb-4 gap-2">
-              <h3 className="text-lg sm:text-xl font-semibold text-jira-darkBlue">Recommended Technology Stacks</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-jira-darkBlue">{t('techStack.recommendedTitle')}</h3>
               <button
                 onClick={() => setShowRecommendations(false)}
                 className="text-jira-textSecondary hover:text-jira-error transition-colors flex-shrink-0"
@@ -400,7 +412,7 @@ export default function Step4TechStack() {
             </div>
             
             <p className="text-jira-textSecondary text-xs sm:text-sm mb-4 sm:mb-6">
-              Choose a proven combination that works well together
+              {t('techStack.recommendedSubtitle')}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -409,20 +421,21 @@ export default function Step4TechStack() {
                   key={stack.id}
                   className="border border-jira-border rounded p-4 hover:shadow-jira-md transition-all"
                 >
-                  <h4 className="font-semibold text-jira-darkBlue mb-2">{stack.name}</h4>
+                  <h4 className="font-semibold text-jira-darkBlue mb-2">{t('stacks.' + stack.id + '.name')}</h4>
                   <p className="text-xs text-jira-textSecondary mb-3">{stack.description}</p>
-                  
+
                   <div className="text-xs mb-3 text-jira-textSecondary break-words">
-                    <strong className="text-jira-darkBlue">Best for:</strong> {stack.bestFor.join(', ')}
+                    <strong className="text-jira-darkBlue">{t('techStack.bestForLabel')}</strong>{' '}
+                    {stack.bestFor.map((_, idx) => t('stacks.' + stack.id + '.bestFor' + idx)).join(', ')}
                   </div>
 
                   <div className="mb-3">
-                    <div className="text-xs font-semibold text-jira-success mb-1 uppercase tracking-wide">Pros:</div>
+                    <div className="text-xs font-semibold text-jira-success mb-1 uppercase tracking-wide">{t('techStack.prosLabel')}</div>
                     <ul className="text-xs text-jira-textSecondary space-y-1">
-                      {stack.pros.slice(0, 2).map((pro, idx) => (
+                      {stack.pros.slice(0, 2).map((_, idx) => (
                         <li key={idx} className="flex items-start space-x-1">
                           <span className="text-jira-success">•</span>
-                          <span>{pro}</span>
+                          <span>{t('stacks.' + stack.id + '.pros' + idx)}</span>
                         </li>
                       ))}
                     </ul>
@@ -430,12 +443,12 @@ export default function Step4TechStack() {
 
                   {stack.cons.length > 0 && (
                     <div className="mb-3">
-                      <div className="text-xs font-semibold text-jira-warning mb-1 uppercase tracking-wide">Cons:</div>
+                      <div className="text-xs font-semibold text-jira-warning mb-1 uppercase tracking-wide">{t('techStack.consLabel')}</div>
                       <ul className="text-xs text-jira-textSecondary space-y-1">
-                        {stack.cons.slice(0, 2).map((con, idx) => (
+                        {stack.cons.slice(0, 2).map((_, idx) => (
                           <li key={idx} className="flex items-start space-x-1">
                             <span className="text-jira-warning">•</span>
-                            <span>{con}</span>
+                            <span>{t('stacks.' + stack.id + '.cons' + idx)}</span>
                           </li>
                         ))}
                       </ul>
@@ -446,7 +459,7 @@ export default function Step4TechStack() {
                     onClick={() => applyRecommendedStack(stack.id)}
                     className="w-full btn-primary text-sm"
                   >
-                    Use This Stack
+                    {t('techStack.useThisStack')}
                   </button>
                 </div>
               ))}
@@ -456,10 +469,11 @@ export default function Step4TechStack() {
               <div className="flex items-start space-x-2 sm:space-x-3">
                 <FiInfo className="text-base sm:text-lg text-jira-blue flex-shrink-0 mt-0.5" />
                 <div className="min-w-0 flex-1">
-                  <h4 className="font-semibold text-jira-darkBlue mb-1 text-xs sm:text-sm">Still not sure?</h4>
+                  <h4 className="font-semibold text-jira-darkBlue mb-1 text-xs sm:text-sm">{t('techStack.stillNotSureTitle')}</h4>
                   <p className="text-xs text-jira-textSecondary break-words">
-                    The <strong>Modern JavaScript Stack</strong> (React + Node.js + PostgreSQL) is the most popular choice 
-                    and works great for 80% of projects. It's a safe bet if you're unsure!
+                    {t.rich('techStack.stillNotSureBody', {
+                      strong: (chunks) => <strong>{chunks}</strong>,
+                    })}
                   </p>
                 </div>
               </div>

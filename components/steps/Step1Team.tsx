@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { useCalculatorStore } from '@/store/calculator';
 import { TeamMember, Role, Level } from '@/types/calculator';
 import { ROLE_NAMES, LEVEL_NAMES, RECOMMENDED_RATES } from '@/data/features';
@@ -14,6 +15,7 @@ const FiInfo = FiIcons.FiInfo;
 const FiEdit = FiIcons.FiEdit;
 
 export default function Step1Team() {
+  const t = useTranslations('calculator');
   const { team, projectName, setProjectName, addTeamMember, updateTeamMember, removeTeamMember } = useCalculatorStore();
   const [showAddForm, setShowAddForm] = useState(false);
 
@@ -35,25 +37,25 @@ export default function Step1Team() {
       <div className="flex items-center space-x-2">
         <FiUsers className="text-xl text-jira-blue" />
         <div>
-          <h2 className="text-lg font-semibold text-jira-darkBlue">Team & Rates</h2>
+          <h2 className="text-lg font-semibold text-jira-darkBlue">{t('team.title')}</h2>
           <p className="text-jira-textSecondary text-xs">
-            Add team members and specify their hourly rates
+            {t('team.subtitle')}
           </p>
         </div>
       </div>
 
       <div className="card bg-primary-50 border border-jira-blue">
-        <label className="label text-jira-darkBlue text-xs">Project Name</label>
+        <label className="label text-jira-darkBlue text-xs">{t('team.projectNameLabel')}</label>
         <input
           type="text"
           value={projectName}
           onChange={(e) => setProjectName(e.target.value)}
-          placeholder="e.g., E-commerce Platform, Mobile App, etc."
+          placeholder={t('team.projectNamePlaceholder')}
           className="input-field mt-1 text-sm"
         />
         <div className="flex items-center space-x-1.5 mt-1.5 text-xs text-jira-textSecondary">
           <FiInfo className="flex-shrink-0 text-xs" />
-          <p>This name will be used in the PDF export</p>
+          <p>{t('team.projectNameHint')}</p>
         </div>
       </div>
 
@@ -64,7 +66,7 @@ export default function Step1Team() {
               <div className="flex-1">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   <div className="md:col-span-2">
-                    <label className="label text-xs">Role Type</label>
+                    <label className="label text-xs">{t('team.roleTypeLabel')}</label>
                     <div className="flex space-x-2">
                       <button
                         type="button"
@@ -87,16 +89,16 @@ export default function Step1Team() {
                             : 'bg-white text-jira-text border-jira-border hover:bg-primary-50'
                         }`}
                       >
-                        Standard Role
+                        {t('team.standardRole')}
                       </button>
                       <button
                         type="button"
                         onClick={() => {
                           if (!member.isCustomRole) {
                             // Switch to custom role
-                            updateTeamMember(member.id, { 
+                            updateTeamMember(member.id, {
                               isCustomRole: true,
-                              customRoleName: member.customRoleName || 'Custom Role'
+                              customRoleName: member.customRoleName || t('team.customRoleDefault')
                             });
                           }
                         }}
@@ -106,14 +108,14 @@ export default function Step1Team() {
                             : 'bg-white text-jira-text border-jira-border hover:bg-primary-50'
                         }`}
                       >
-                        Custom Role
+                        {t('team.customRole')}
                       </button>
                     </div>
                   </div>
 
                   {!member.isCustomRole ? (
                     <div>
-                      <label className="label text-xs">Role</label>
+                      <label className="label text-xs">{t('team.roleLabel')}</label>
                       <Select
                         value={member.role}
                         onChange={(value) => {
@@ -121,29 +123,29 @@ export default function Step1Team() {
                           const newRate = RECOMMENDED_RATES[newRole]?.[member.level] || member.hourlyRate;
                           updateTeamMember(member.id, { role: newRole, hourlyRate: newRate });
                         }}
-                        options={Object.entries(ROLE_NAMES).map(([value, label]) => ({
+                        options={Object.keys(ROLE_NAMES).map((value) => ({
                           value,
-                          label,
+                          label: t('roles.' + value),
                         }))}
                       />
                     </div>
                   ) : (
                     <div>
-                      <label className="label text-xs">Custom Role Name</label>
+                      <label className="label text-xs">{t('team.customRoleNameLabel')}</label>
                       <input
                         type="text"
                         value={member.customRoleName || ''}
                         onChange={(e) =>
                           updateTeamMember(member.id, { customRoleName: e.target.value })
                         }
-                        placeholder="e.g., Data Scientist, ML Engineer"
+                        placeholder={t('team.customRoleNamePlaceholder')}
                         className="input-field text-sm"
                       />
                     </div>
                   )}
 
                   <div>
-                    <label className="label text-xs">Level</label>
+                    <label className="label text-xs">{t('team.levelLabel')}</label>
                     <Select
                       value={member.level}
                       onChange={(value) => {
@@ -151,15 +153,15 @@ export default function Step1Team() {
                         const newRate = RECOMMENDED_RATES[member.role][newLevel];
                         updateTeamMember(member.id, { level: newLevel, hourlyRate: newRate });
                       }}
-                      options={Object.entries(LEVEL_NAMES).map(([value, label]) => ({
+                      options={Object.keys(LEVEL_NAMES).map((value) => ({
                         value,
-                        label,
+                        label: t('levels.' + value),
                       }))}
                     />
                   </div>
 
                   <div>
-                    <label className="label text-xs">Hourly Rate ($)</label>
+                    <label className="label text-xs">{t('team.hourlyRateLabel')}</label>
                     <input
                       type="number"
                       value={member.hourlyRate}
@@ -172,7 +174,7 @@ export default function Step1Team() {
                   </div>
 
                   <div>
-                    <label className="label text-xs">Hours per Day</label>
+                    <label className="label text-xs">{t('team.hoursPerDayLabel')}</label>
                     <input
                       type="number"
                       value={member.hoursPerDay}
@@ -183,11 +185,11 @@ export default function Step1Team() {
                       min="1"
                       max="16"
                     />
-                    <p className="text-xs text-jira-textSecondary mt-0.5">Usually 6-8 hours</p>
+                    <p className="text-xs text-jira-textSecondary mt-0.5">{t('team.hoursPerDayHint')}</p>
                   </div>
 
                   <div>
-                    <label className="label text-xs">Number of Workers</label>
+                    <label className="label text-xs">{t('team.workersLabel')}</label>
                     <input
                       type="number"
                       value={member.quantity}
@@ -203,16 +205,16 @@ export default function Step1Team() {
                 <div className="mt-2 p-2 bg-primary-50 rounded border border-jira-border">
                   <div className="font-medium text-jira-darkBlue text-xs">
                     {member.isCustomRole ? (
-                      <span>{member.customRoleName || 'Custom Role'}</span>
+                      <span>{member.customRoleName || t('team.customRoleDefault')}</span>
                     ) : (
-                      <span>{ROLE_NAMES[member.role] || member.role}</span>
+                      <span>{t('roles.' + member.role)}</span>
                     )}
                     {' - '}
-                    Rate: ${member.hourlyRate}/hr
-                    {member.quantity > 1 && ` × ${member.quantity} people`}
+                    {t('team.rateSummary', { rate: member.hourlyRate })}
+                    {member.quantity > 1 && ` ${t('team.peopleSuffix', { count: member.quantity })}`}
                   </div>
                   <div className="text-xs text-jira-textSecondary mt-0.5">
-                    ~${(member.hourlyRate * member.hoursPerDay).toLocaleString()}/day per person
+                    {t('team.perDayPerPerson', { amount: (member.hourlyRate * member.hoursPerDay).toLocaleString() })}
                   </div>
                 </div>
               </div>
@@ -220,7 +222,7 @@ export default function Step1Team() {
               <button
                 onClick={() => removeTeamMember(member.id)}
                 className="ml-2 p-1.5 text-jira-error hover:bg-red-50 rounded transition-colors"
-                title="Delete"
+                title={t('team.deleteTitle')}
               >
                 <FiTrash2 className="text-base" />
               </button>
@@ -234,16 +236,16 @@ export default function Step1Team() {
         className="w-full py-2.5 sm:py-2 border-2 border-dashed border-jira-border rounded text-jira-blue text-xs sm:text-sm font-medium hover:bg-primary-50 hover:border-jira-blue transition-all flex items-center justify-center space-x-2"
       >
         <FiPlus className="text-sm sm:text-base" />
-        <span>Add Team Member</span>
+        <span>{t('team.addMember')}</span>
       </button>
 
       {team.length > 0 && (
         <div className="card bg-jira-blue text-white shadow-jira-md">
           <div className="text-center px-2">
-            <div className="text-xs uppercase tracking-wide opacity-90 mb-1">Team Configured</div>
-            <div className="text-lg sm:text-xl font-bold mb-1">{team.length} {team.length === 1 ? 'role' : 'roles'}</div>
+            <div className="text-xs uppercase tracking-wide opacity-90 mb-1">{t('team.configuredLabel')}</div>
+            <div className="text-lg sm:text-xl font-bold mb-1">{t('team.rolesCount', { count: team.length })}</div>
             <div className="text-xs opacity-90">
-              Cost and time will be calculated after selecting features
+              {t('team.configuredHint')}
             </div>
           </div>
         </div>
@@ -254,8 +256,8 @@ export default function Step1Team() {
           <div className="w-12 h-12 bg-gray-100 rounded mx-auto mb-3 flex items-center justify-center">
             <FiUsers className="text-2xl text-gray-400" />
           </div>
-          <p className="font-medium text-sm">Add team members to start calculation</p>
-          <p className="text-xs mt-1">Cost will be calculated automatically based on selected features</p>
+          <p className="font-medium text-sm">{t('team.emptyTitle')}</p>
+          <p className="text-xs mt-1">{t('team.emptyHint')}</p>
         </div>
       )}
     </div>

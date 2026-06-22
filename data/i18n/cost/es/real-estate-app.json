@@ -1,0 +1,170 @@
+{
+  "category": "Inmobiliaria y propiedades",
+  "description": "Una aplicación inmobiliaria como Zillow requiere anuncios de propiedades, búsqueda y filtros, integración de mapas, visitas virtuales, conexión con agentes y calculadoras de hipotecas.",
+  "introText": "Las aplicaciones inmobiliarias ayudan a millones de personas a encontrar vivienda, y Zillow procesa miles de millones de búsquedas de propiedades al año. Crear una aplicación inmobiliaria requiere anuncios de propiedades, búsqueda y filtros avanzados, integración de mapas, visitas virtuales, conexión con agentes, calculadoras de hipotecas y búsquedas guardadas. La complejidad aumenta con funciones como la tasación de propiedades, los datos del vecindario y la gestión de transacciones.",
+  "keyFeatures": [
+    "Anuncios de propiedades con fotos",
+    "Búsqueda y filtros avanzados",
+    "Integración de mapas y búsqueda por ubicación",
+    "Visitas virtuales y vistas en 360°",
+    "Perfiles de agentes y conexiones",
+    "Calculadoras de hipotecas",
+    "Búsquedas guardadas y favoritos",
+    "Herramientas de comparación de propiedades",
+    "Datos e información del vecindario",
+    "Notificaciones push de nuevos anuncios"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Diseño UI/UX",
+      "description": "Anuncios de propiedades, interfaz de búsqueda y vistas de mapa"
+    },
+    {
+      "category": "Desarrollo Frontend",
+      "description": "Aplicación web y aplicaciones móviles"
+    },
+    {
+      "category": "Desarrollo Backend",
+      "description": "Base de datos de propiedades, motor de búsqueda y API"
+    },
+    {
+      "category": "Integración de mapas",
+      "description": "Google Maps, marcadores de propiedades y agrupación (clustering)"
+    },
+    {
+      "category": "Motor de búsqueda",
+      "description": "Elasticsearch, filtros avanzados y búsqueda por facetas"
+    },
+    {
+      "category": "Visitas virtuales",
+      "description": "Visitas en 360° e integración de vídeo"
+    },
+    {
+      "category": "Gestión de imágenes",
+      "description": "Fotos de propiedades, compresión y CDN"
+    },
+    {
+      "category": "QA y pruebas",
+      "description": "Pruebas de precisión de la búsqueda y validación de la integración de mapas"
+    },
+    {
+      "category": "DevOps e infraestructura",
+      "description": "Infraestructura de base de datos de propiedades y de búsqueda"
+    }
+  ],
+  "complexityFactors": [
+    "Adquisición y gestión de datos de propiedades",
+    "Algoritmos avanzados de búsqueda y filtrado",
+    "Integración de mapas y servicios de localización",
+    "Integración de tecnología de visitas virtuales",
+    "Actualizaciones de datos de propiedades en tiempo real",
+    "Creación de una red de agentes",
+    "Experiencia de usuario centrada en el móvil (mobile-first)"
+  ],
+  "timeline": [
+    {
+      "phase": "Análisis y planificación",
+      "duration": "2–3 semanas",
+      "description": "Estructura de los datos de propiedades, requisitos de búsqueda y definición del alcance de las funciones."
+    },
+    {
+      "phase": "Diseño UI/UX",
+      "duration": "4–6 semanas",
+      "description": "Diseño de los anuncios de propiedades, la interfaz de búsqueda y las vistas de mapa."
+    },
+    {
+      "phase": "Desarrollo Backend",
+      "duration": "6–12 semanas",
+      "description": "Creación de la base de datos de propiedades, el motor de búsqueda y la API."
+    },
+    {
+      "phase": "Integración de mapas",
+      "duration": "3–5 semanas",
+      "description": "Integración de Google Maps con marcadores de propiedades y agrupación (clustering)."
+    },
+    {
+      "phase": "Desarrollo Frontend",
+      "duration": "6–10 semanas",
+      "description": "Desarrollo de la aplicación web y las aplicaciones móviles con las funciones de propiedades."
+    },
+    {
+      "phase": "Visitas virtuales",
+      "duration": "3–5 semanas",
+      "description": "Implementación de visitas en 360° e integración de vídeo."
+    },
+    {
+      "phase": "Pruebas y QA",
+      "duration": "3–5 semanas",
+      "description": "Pruebas de precisión de la búsqueda y validación de la integración de mapas."
+    },
+    {
+      "phase": "Despliegue y lanzamiento",
+      "duration": "1–2 semanas",
+      "description": "Despliegue en producción y lanzamiento suave (soft launch)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Cuánto cuesta crear una aplicación inmobiliaria?",
+      "answer": "Una aplicación inmobiliaria con todas las funciones cuesta entre $60,000 y $180,000. Un MVP con anuncios de propiedades, búsqueda e integración de mapas puede crearse por entre $30,000 y $70,000 en 3–5 meses."
+    },
+    {
+      "question": "¿Cuánto se tarda en crear una aplicación inmobiliaria?",
+      "answer": "El desarrollo completo lleva entre 5 y 12 meses. Un MVP con las funciones esenciales de búsqueda de propiedades puede estar listo en 3–5 meses."
+    },
+    {
+      "question": "¿De dónde se obtienen los datos de los anuncios de propiedades?",
+      "answer": "Los datos de las propiedades proceden de feeds de MLS (Multiple Listing Service), de API inmobiliarias o de la introducción manual. Acceder a los datos de MLS suele requerir licencias inmobiliarias y acuerdos con los proveedores de MLS."
+    },
+    {
+      "question": "¿Cuál es el mayor desafío en las aplicaciones inmobiliarias?",
+      "answer": "La adquisición de datos de propiedades y mantener los anuncios actualizados. Los datos inmobiliarios cambian con frecuencia, y mantener una información de propiedades precisa y actualizada requiere una gestión de datos continua."
+    },
+    {
+      "question": "¿Cómo ganan dinero las aplicaciones inmobiliarias?",
+      "answer": "Las aplicaciones inmobiliarias suelen obtener ingresos a partir de suscripciones de agentes, ubicaciones destacadas de anuncios, comisiones por generación de leads y publicidad de empresas hipotecarias y aseguradoras."
+    }
+  ],
+  "content": [
+    {
+      "heading": "¿Qué es una aplicación inmobiliaria como Zillow?",
+      "paragraphs": [
+        "Una aplicación inmobiliaria como Zillow es una plataforma que ayuda a los usuarios a buscar propiedades, ver anuncios, conectar con agentes y acceder a información de propiedades a través de interfaces basadas en mapas y en listas. La propia Zillow procesa miles de millones de búsquedas de propiedades al año, lo que demuestra tanto la magnitud de la oportunidad como el desafío de adquisición de datos que conlleva crear un producto competitivo. Crear una aplicación inmobiliaria requiere anuncios de propiedades, búsqueda y filtros avanzados, integración de mapas, visitas virtuales, conexión con agentes, calculadoras de hipotecas y búsquedas guardadas.",
+        "El principal reto técnico de una aplicación inmobiliaria es la adquisición y gestión de los datos de propiedades. Los anuncios de propiedades proceden de feeds de MLS (Multiple Listing Service), de API inmobiliarias o de la introducción manual. Estos datos cambian con frecuencia (nuevos anuncios, cambios de precio, actualizaciones de estado), lo que requiere sincronización en tiempo real y gestión de la calidad de los datos. Acceder a los datos de MLS suele requerir licencias inmobiliarias y acuerdos con los proveedores de MLS, lo que crea una barrera de entrada que exige establecer relaciones importantes.",
+        "Las aplicaciones inmobiliarias se enfrentan a desafíos operativos únicos que van más allá de la mera complejidad técnica. La precisión de los datos de las propiedades es fundamental: los precios incorrectos, las fotos que faltan o la información de estado desactualizada dañan la confianza de los usuarios. Mantener relaciones con agentes inmobiliarios y agencias es esencial para acceder a los anuncios y generar ingresos. El conocimiento del mercado local y las redes de agentes varían significativamente según la región, lo que requiere estrategias localizadas para cada mercado en el que entres."
+      ]
+    },
+    {
+      "heading": "¿Por qué crear una aplicación inmobiliaria en 2025?",
+      "paragraphs": [
+        "El mercado inmobiliario global sigue creciendo, y la búsqueda de propiedades en línea se ha convertido en el principal método para compradores e inquilinos. Aunque Zillow, Realtor.com y Redfin dominan en EE. UU., existen oportunidades significativas en mercados internacionales y nichos verticales. Las aplicaciones inmobiliarias centradas en tipos de propiedad específicos (viviendas de lujo, alquileres, comercial), en mercados concretos (ciudades o regiones específicas) o en segmentos de comprador (compradores primerizos, inversores) han logrado hacerse con cuota de mercado al ofrecer mejores experiencias a públicos especializados.",
+        "La expansión geográfica sigue siendo una gran oportunidad. Aunque la búsqueda inmobiliaria está madura en Norteamérica, muchos mercados internacionales tienen menos competencia y una creciente adopción en línea. Las aplicaciones inmobiliarias locales que comprenden los mercados de propiedades regionales, los requisitos legales y las preferencias de los clientes pueden competir eficazmente contra las plataformas globales.",
+        "Las tecnologías emergentes crean nuevas oportunidades. Las visitas virtuales, la visualización 3D de propiedades, las tasaciones de propiedades con IA y la visualización de propiedades en RA/RV representan innovaciones que las plataformas tradicionales no admiten bien. Crear una plataforma optimizada para estas tecnologías puede captar a los públicos pioneros antes de que las plataformas más grandes se adapten."
+      ]
+    },
+    {
+      "heading": "Stack tecnológico recomendado para una aplicación inmobiliaria",
+      "paragraphs": [
+        "Para el desarrollo móvil, React Native o Flutter son las opciones más rentables, ya que permiten usar una única base de código para iOS y Android. Sin embargo, las aplicaciones inmobiliarias con mucho uso de mapas pueden beneficiarse del desarrollo nativo para lograr un mejor rendimiento de los mapas. Para la web, Next.js o Remix ofrecen un excelente renderizado del lado del servidor para el SEO, algo fundamental para el descubrimiento de propiedades y el tráfico de búsqueda orgánica.",
+        "La arquitectura de backend de las aplicaciones inmobiliarias se centra en la gestión de los datos de propiedades y en la búsqueda. Node.js o Python son opciones habituales para la capa de API. Para la base de datos, PostgreSQL gestiona los anuncios de propiedades, los datos de los usuarios y las búsquedas guardadas. Elasticsearch proporciona capacidades de búsqueda avanzada con filtrado por facetas, consultas geoespaciales y búsqueda de texto completo. Redis actúa como caché en memoria para los datos de las propiedades y los resultados de búsqueda.",
+        "La integración de mapas es esencial. Google Maps Platform o Mapbox proporcionan marcadores de propiedades, agrupación (clustering) y API de geocodificación. Sin embargo, los costes de las API de mapas pueden escalar de forma significativa con volúmenes de producción: cuenta con $2,000–$10,000+ al mes una vez que alcances decenas de miles de usuarios activos diarios. Para las visitas virtuales, servicios como Matterport o las API de escaneo 3D ofrecen una visualización inmersiva de las propiedades."
+      ]
+    },
+    {
+      "heading": "Cómo reducir los costes de desarrollo de una aplicación inmobiliaria",
+      "paragraphs": [
+        "La reducción de costes más impactante consiste en empezar por un único mercado o región en lugar de construir para una escala global desde el primer día. Una aplicación inmobiliaria dirigida a una ciudad o región requiere una infraestructura más sencilla, menores costes de datos y un proceso de relación con los agentes más manejable. Muchas plataformas inmobiliarias de éxito se lanzaron ciudad por ciudad, incorporando manualmente a sus primeros 50–100 agentes e iterando el producto a partir de datos reales de anuncios antes de escalar la tecnología.",
+        "Utilizar servicios gestionados para la búsqueda y los mapas elimina una complejidad de infraestructura considerable. Elasticsearch Cloud proporciona una infraestructura de búsqueda gestionada. Google Maps Platform o Mapbox ofrecen servicios de mapas a través de API. Aunque estos servicios cobran por llamada a la API o por datos procesados, eliminan entre 150 y 300 horas de desarrollo de backend y de gestión continua de la infraestructura.",
+        "Aplazar funciones avanzadas como las visitas virtuales, las tasaciones con IA o la visualización en RA/RV a la versión 2.0 reduce significativamente el alcance del desarrollo inicial. Lanzar con anuncios de propiedades básicos, búsqueda e integración de mapas es suficiente para un MVP. Las funciones avanzadas pueden añadirse tras validar que los usuarios buscarán propiedades y que los agentes anunciarán en tu plataforma."
+      ]
+    },
+    {
+      "heading": "Estrategias de monetización para una aplicación inmobiliaria",
+      "paragraphs": [
+        "Las suscripciones de agentes son el modelo de ingresos principal de la mayoría de las plataformas inmobiliarias. Zillow Premier Agent cobra a los agentes entre $20 y $60+ al mes por código postal por la ubicación destacada y la generación de leads. Realtor.com cobra tarifas similares. Para las nuevas plataformas que compiten por los agentes, empezar con cuotas de suscripción más bajas o con anuncios gratuitos es una estrategia probada para atraer oferta desde las plataformas establecidas.",
+        "Las ubicaciones destacadas de anuncios generan ingresos adicionales. Cobrar a los propietarios o agentes por una ubicación premium en los resultados de búsqueda, por anuncios patrocinados o por banners crea inventario publicitario. Esta fuente de ingresos se vuelve más valiosa a medida que tu plataforma crece y las propiedades compiten por la atención de los compradores.",
+        "Las comisiones por generación de leads generan ingresos a partir de conexiones exitosas. Cobrar a los agentes una comisión (normalmente entre $50 y $500) cuando logran conectar con un comprador a través de tu plataforma crea ingresos alineados con el éxito del agente. Sin embargo, este modelo requiere hacer seguimiento de las conexiones y gestionar el procesamiento de pagos, lo que añade complejidad operativa."
+      ]
+    }
+  ]
+}

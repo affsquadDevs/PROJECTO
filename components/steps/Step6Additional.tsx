@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useCalculatorStore } from '@/store/calculator';
 import * as FiIcons from 'react-icons/fi';
 
@@ -9,14 +10,15 @@ const FiSliders = FiIcons.FiSliders;
 const FiPackage = FiIcons.FiPackage;
 
 export default function Step6Additional() {
+  const t = useTranslations('calculator');
   const { additional, updateAdditional } = useCalculatorStore();
 
   const supportOptions: { value: 0 | 1 | 3 | 6 | 12; label: string; percent: string }[] = [
-    { value: 0, label: 'No support', percent: '0%' },
-    { value: 1, label: '1 month', percent: '15%' },
-    { value: 3, label: '3 months', percent: '25%' },
-    { value: 6, label: '6 months', percent: '40%' },
-    { value: 12, label: '1 year', percent: '60%' },
+    { value: 0, label: t('additional.supportNone'), percent: '0%' },
+    { value: 1, label: t('additional.supportMonths', { count: 1 }), percent: '15%' },
+    { value: 3, label: t('additional.supportMonths', { count: 3 }), percent: '25%' },
+    { value: 6, label: t('additional.supportMonths', { count: 6 }), percent: '40%' },
+    { value: 12, label: t('additional.supportYear'), percent: '60%' },
   ];
 
   return (
@@ -24,15 +26,15 @@ export default function Step6Additional() {
       <div className="flex items-center space-x-2">
         <FiDollarSign className="text-xl text-jira-blue" />
         <div>
-          <h2 className="text-lg font-semibold text-jira-darkBlue">Additional Costs</h2>
+          <h2 className="text-lg font-semibold text-jira-darkBlue">{t('additional.title')}</h2>
           <p className="text-jira-textSecondary text-xs">
-            Configure support, documentation, and other costs
+            {t('additional.subtitle')}
           </p>
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">Post-launch Support</label>
+        <label className="label text-xs">{t('additional.supportLabel')}</label>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 mt-2">
           {supportOptions.map((option) => (
             <button
@@ -50,14 +52,14 @@ export default function Step6Additional() {
           ))}
         </div>
         <p className="text-xs text-jira-textSecondary mt-2">
-          Percentage of base project cost (bugfixes, updates, consultations)
+          {t('additional.supportHint')}
         </p>
       </div>
 
       <div className="card">
         <div className="flex items-center space-x-2 mb-3">
           <FiFileText className="text-lg text-jira-textSecondary" />
-          <label className="label mb-0">Documentation</label>
+          <label className="label mb-0">{t('additional.documentationLabel')}</label>
         </div>
         <div className="space-y-2">
           <label className="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded transition-colors border border-transparent hover:border-jira-border">
@@ -75,9 +77,9 @@ export default function Step6Additional() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-sm text-jira-darkBlue">Technical Documentation</div>
+              <div className="font-medium text-sm text-jira-darkBlue">{t('additional.technicalDocTitle')}</div>
               <div className="text-xs text-jira-textSecondary">
-                API docs, architecture, deployment guides (~30 hours)
+                {t('additional.technicalDocDesc')}
               </div>
             </div>
           </label>
@@ -97,9 +99,9 @@ export default function Step6Additional() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-sm text-jira-darkBlue">User Guide</div>
+              <div className="font-medium text-sm text-jira-darkBlue">{t('additional.userGuideTitle')}</div>
               <div className="text-xs text-jira-textSecondary">
-                Instructions for end users (~15 hours)
+                {t('additional.userGuideDesc')}
               </div>
             </div>
           </label>
@@ -109,7 +111,7 @@ export default function Step6Additional() {
       <div className="card">
         <div className="flex items-center space-x-2 mb-2">
           <FiSliders className="text-lg text-jira-textSecondary" />
-          <label className="label mb-0">Buffer for Unexpected Costs</label>
+          <label className="label mb-0">{t('additional.bufferLabel')}</label>
         </div>
         <div className="flex items-center space-x-4 mt-3">
           <input
@@ -126,14 +128,14 @@ export default function Step6Additional() {
           </span>
         </div>
         <p className="text-xs text-jira-textSecondary mt-2">
-          Recommended: 15-25% (requirement changes, additional revisions, unforeseen complexities)
+          {t('additional.bufferHint')}
         </p>
       </div>
 
       <div className="card">
         <div className="flex items-center space-x-2 mb-3">
           <FiPackage className="text-lg text-jira-textSecondary" />
-          <label className="label mb-0">Other Costs</label>
+          <label className="label mb-0">{t('additional.otherLabel')}</label>
         </div>
         <div className="space-y-2">
           <label className="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded transition-colors border border-transparent hover:border-jira-border">
@@ -148,8 +150,8 @@ export default function Step6Additional() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-sm text-jira-darkBlue">Domain and SSL Certificate</div>
-              <div className="text-xs text-jira-textSecondary">~$100-300/year</div>
+              <div className="font-medium text-sm text-jira-darkBlue">{t('additional.domainTitle')}</div>
+              <div className="text-xs text-jira-textSecondary">{t('additional.domainDesc')}</div>
             </div>
           </label>
 
@@ -165,9 +167,9 @@ export default function Step6Additional() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-sm text-jira-darkBlue">API Keys and Third-party Services</div>
+              <div className="font-medium text-sm text-jira-darkBlue">{t('additional.apisTitle')}</div>
               <div className="text-xs text-jira-textSecondary">
-                Stripe, SendGrid, Firebase, Google Maps, etc. (~$500)
+                {t('additional.apisDesc')}
               </div>
             </div>
           </label>
@@ -184,9 +186,9 @@ export default function Step6Additional() {
               className="checkbox-field"
             />
             <div className="flex-1">
-              <div className="font-medium text-sm text-jira-darkBlue">Software Licenses</div>
+              <div className="font-medium text-sm text-jira-darkBlue">{t('additional.licensesTitle')}</div>
               <div className="text-xs text-jira-textSecondary">
-                Fonts, libraries, tools (~$1,000)
+                {t('additional.licensesDesc')}
               </div>
             </div>
           </label>

@@ -1,0 +1,170 @@
+{
+  "category": "Sociální sítě",
+  "description": "Sociální síť jako Facebook vyžaduje uživatelské profily, novinkový kanál, propojení mezi přáteli, sdílení obsahu, zasílání zpráv a funkce pro zapojení uživatelů.",
+  "introText": "Sociální sítě propojují miliardy uživatelů po celém světě. Vybudování sociální sítě vyžaduje uživatelské profily, propojení mezi přáteli, algoritmy novinkového kanálu, sdílení obsahu (text, fotografie, videa), zasílání zpráv v reálném čase, funkce pro zapojení (líbí se mi, komentáře, sdílení) a nastavení soukromí. Složitost roste s funkcemi, jako jsou skupiny, události, tržiště a živé vysílání.",
+  "keyFeatures": [
+    "Uživatelské profily a autentizace",
+    "Propojení mezi přáteli a sledování",
+    "Novinkový kanál s algoritmem",
+    "Sdílení obsahu (příspěvky, fotografie, videa)",
+    "Funkce pro zapojení (líbí se mi, komentáře, sdílení)",
+    "Zasílání zpráv v reálném čase",
+    "Skupiny a komunity",
+    "Události a správa událostí",
+    "Nastavení soukromí a zabezpečení",
+    "Nástroje pro moderování pro administrátory"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX design",
+      "description": "Stránky profilů, novinkový kanál, rozhraní pro zasílání zpráv"
+    },
+    {
+      "category": "Frontendový vývoj",
+      "description": "Webová aplikace a mobilní aplikace"
+    },
+    {
+      "category": "Backendový vývoj",
+      "description": "Sociální graf, algoritmus kanálu, API"
+    },
+    {
+      "category": "Algoritmus novinkového kanálu",
+      "description": "Řazení a personalizace obsahu"
+    },
+    {
+      "category": "Funkce v reálném čase",
+      "description": "Zasílání zpráv, oznámení, živé aktualizace"
+    },
+    {
+      "category": "Práce s médii",
+      "description": "Nahrávání obrázků/videí, komprese, CDN"
+    },
+    {
+      "category": "Moderování obsahu",
+      "description": "Automatizované a manuální nástroje pro moderování"
+    },
+    {
+      "category": "QA a testování",
+      "description": "Testování algoritmu kanálu, zátěžové testování"
+    },
+    {
+      "category": "DevOps a infrastruktura",
+      "description": "Škálovatelná infrastruktura sociální sítě"
+    }
+  ],
+  "complexityFactors": [
+    "Vývoj a optimalizace algoritmu novinkového kanálu",
+    "Správa sociálního grafu ve velkém měřítku",
+    "Infrastruktura pro zasílání zpráv v reálném čase",
+    "Moderování obsahu a bezpečnost",
+    "Nastavení soukromí a ochrana dat",
+    "Práce s médii a náklady na CDN",
+    "Škálovatelnost pro miliony uživatelů"
+  ],
+  "timeline": [
+    {
+      "phase": "Analýza a plánování",
+      "duration": "2–4 týdny",
+      "description": "Návrh sociálního grafu, strategie algoritmu kanálu a vymezení rozsahu funkcí."
+    },
+    {
+      "phase": "UI/UX design",
+      "duration": "4–6 týdnů",
+      "description": "Návrh stránek profilů, novinkového kanálu a rozhraní pro zasílání zpráv."
+    },
+    {
+      "phase": "Backendový vývoj",
+      "duration": "8–14 týdnů",
+      "description": "Vybudování sociálního grafu, algoritmu kanálu a infrastruktury API."
+    },
+    {
+      "phase": "Frontendový vývoj",
+      "duration": "8–12 týdnů",
+      "description": "Vývoj webové aplikace a mobilních aplikací se sociálními funkcemi."
+    },
+    {
+      "phase": "Algoritmus novinkového kanálu",
+      "duration": "4–8 týdnů",
+      "description": "Implementace řazení a personalizace obsahu."
+    },
+    {
+      "phase": "Funkce v reálném čase",
+      "duration": "4–6 týdnů",
+      "description": "Vybudování zasílání zpráv, oznámení a živých aktualizací."
+    },
+    {
+      "phase": "Testování a QA",
+      "duration": "4–6 týdnů",
+      "description": "Testování algoritmu kanálu, zátěžové testování a testování zabezpečení."
+    },
+    {
+      "phase": "Nasazení a spuštění",
+      "duration": "2–3 týdny",
+      "description": "Nasazení do produkce a měkké spuštění."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kolik stojí vybudování sociální sítě?",
+      "answer": "Plně vybavená sociální síť stojí $80,000–$250,000. MVP s profily, kanálem a základním zasíláním zpráv lze vytvořit za $35,000–$80,000 během 3–6 měsíců."
+    },
+    {
+      "question": "Jak dlouho trvá vybudování sociální sítě?",
+      "answer": "Kompletní vývoj trvá 6–15 měsíců. MVP se základními sociálními funkcemi může být hotové za 3–6 měsíců."
+    },
+    {
+      "question": "Potřebuji pro MVP algoritmus novinkového kanálu?",
+      "answer": "Můžete začít s jednoduchým chronologickým kanálem. Pokročilé algoritmy lze přidat ve verzi 2.0, jakmile budete mít data o zapojení uživatelů pro trénování modelů."
+    },
+    {
+      "question": "Co je největší výzvou u sociálních sítí?",
+      "answer": "Moderování obsahu a udržení bezpečné komunity. Sociální sítě vyžadují značné zdroje na moderování, bezpečnostní funkce a vyřizování hlášení o zneužití."
+    },
+    {
+      "question": "Jak sociální sítě vydělávají peníze?",
+      "answer": "Většina sociálních sítí používá jako hlavní zdroj příjmů reklamu. Některé také nabízejí prémiová předplatná, poplatky z tržiště nebo nástroje pro monetizaci tvůrců."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Co je sociální síť jako Facebook?",
+      "paragraphs": [
+        "Sociální síť jako Facebook je platforma, která uživatelům umožňuje vytvářet profily, propojovat se s přáteli, sdílet obsah (text, fotografie, videa) a zapojovat se do obsahu prostřednictvím líbí se mi, komentářů a sdílení. Samotný Facebook má více než 3 miliardy měsíčně aktivních uživatelů, což demonstruje obrovské měřítko a síťové efekty možné v této kategorii. Vybudování sociální sítě vyžaduje uživatelské profily, propojení mezi přáteli, algoritmy novinkového kanálu, infrastrukturu pro sdílení obsahu, zasílání zpráv v reálném čase, funkce pro zapojení a nastavení soukromí.",
+        "Hlavní technickou výzvou sociální sítě je správa sociálního grafu — složité sítě propojení mezi uživateli — a generování personalizovaných kanálů obsahu pro každého uživatele. Algoritmus novinkového kanálu musí vyvážit zobrazování obsahu od přátel, upřednostňování poutavého obsahu a respektování preferencí soukromí uživatele. To vyžaduje sofistikovanou backendovou architekturu s grafovými databázemi, doporučovacími systémy a systémy pro doručování obsahu v reálném čase, které dokážou obsloužit miliony souběžných uživatelů prohlížejících si personalizované kanály.",
+        "Sociální sítě čelí jedinečným výzvám, které přesahují čistě technickou složitost. Moderování obsahu je klíčové pro udržení bezpečné komunity a vyžaduje jak automatizované systémy (filtrování obsahu poháněné umělou inteligencí), tak lidské moderátory. Nastavení soukromí musí být podrobné a intuitivní, aby uživatelům umožnilo řídit, kdo vidí jejich obsah. Platforma musí splňovat předpisy o ochraně dat, jako je GDPR, a zacházet s uživatelskými daty zodpovědně. Tyto faktory vyžadují značné průběžné investice do moderování, infrastruktury soukromí a právního souladu."
+      ]
+    },
+    {
+      "heading": "Proč budovat sociální síť v roce 2025?",
+      "paragraphs": [
+        "Zatímco Facebook, Instagram a Twitter dominují obecnému sociálnímu propojování, významné příležitosti existují v úzce zaměřených vertikálách a nově vznikajících případech použití. Profesionální sociální sítě (LinkedIn), kreativní komunity (Behance, Dribbble) a sítě založené na zájmech (Reddit, Discord) si úspěšně získaly podíl na trhu tím, že nabídly lepší zážitky specializovaným cílovým skupinám. Klíčem je identifikovat nedostatečně obslouženou komunitu se specifickými potřebami, které obecné platformy dobře neřeší.",
+        "Nově vznikající sociální formáty představují nové příležitosti. Sociální sítě založené na zvuku (Clubhouse), platformy zaměřené primárně na video (TikTok) a pomíjivý obsah (Snapchat Stories) všechny vytvořily nové vzorce zapojení. Vybudování sociální sítě kolem nového formátu obsahu nebo vzorce interakce může zaujmout publikum z řad raných osvojitelů dříve, než se přizpůsobí větší platformy. Klíčem je identifikovat formát, který vytváří skutečnou hodnotu pro konkrétní komunitu.",
+        "Geografické a kulturní niky zůstávají nedostatečně obslouženy. Zatímco globální platformy dominují, lokální sociální sítě, které rozumějí regionálním jazykům, kulturním normám a platebním metodám, mohou efektivně konkurovat. Vybudování sociální sítě pro konkrétní zemi, region nebo kulturní komunitu vytváří přirozené síťové efekty a obranyschopnost, kterou globální platformy jen těžko napodobují."
+      ]
+    },
+    {
+      "heading": "Doporučený technologický stack pro sociální síť",
+      "paragraphs": [
+        "Pro mobilní vývoj jsou React Native nebo Flutter nejhospodárnějšími volbami, které umožňují cílit na iOS i Android pomocí jediné kódové základny. Nativní vývoj poskytuje nejlepší výkon pro kanály náročné na média, ale React Native je dostačující pro většinu případů použití sociálních sítí. Pro web poskytují Next.js nebo Remix vynikající vykreslování na straně serveru pro SEO a rychlé počáteční načítání stránek, což je klíčové pro objevování obsahu.",
+        "Backendová architektura sociálních sítí se soustředí na sociální graf a generování kanálu. Node.js je běžný pro funkce v reálném čase, zatímco Python se často používá pro doporučovací algoritmy a zpracování dat. Pro databázi PostgreSQL spravuje uživatelská data a obsah, zatímco Neo4j nebo Amazon Neptune poskytují možnosti grafové databáze pro správu propojení mezi přáteli a dotazů na sociální graf. Redis slouží jako mezipaměť v paměti pro generování kanálu a funkce v reálném čase.",
+        "Práce s médii je pro sociální sítě klíčová. AWS S3 s CloudFront CDN poskytuje škálovatelné úložiště obrázků a videí. Pro zpracování videa služby jako Mux nebo Cloudflare Stream zajišťují transkódování a adaptivní streamování. Pro zasílání zpráv v reálném čase poskytují Socket.IO nebo AWS API Gateway WebSockets obousměrnou komunikaci. Pro push oznámení zajišťují Firebase Cloud Messaging nebo OneSignal doručování napříč platformami."
+      ]
+    },
+    {
+      "heading": "Jak snížit náklady na vývoj sociální sítě",
+      "paragraphs": [
+        "Nejvýznamnějším snížením nákladů je odložení pokročilých doporučovacích algoritmů na verzi 2.0. Spuštění s jednoduchým chronologickým kanálem nebo základním algoritmem (zobrazování obsahu od přátel, upřednostňování nedávných příspěvků) je pro MVP dostačující. Algoritmy kanálu založené na strojovém učení, které se učí z chování uživatelů, vyžadují k efektivnímu fungování značné množství trénovacích dat — jejich budování dříve, než máte uživatele, je předčasná optimalizace. Mnoho úspěšných sociálních sítí bylo spuštěno s jednoduchými kanály a algoritmy strojového učení přidaly až po nashromáždění uživatelských dat.",
+        "Použití spravovaných služeb pro práci s médii eliminuje značnou složitost infrastruktury. Služby jako Cloudinary nebo ImageKit poskytují nahrávání, zpracování, optimalizaci a doručování obrázků přes CDN prostřednictvím API. Ačkoli si tyto služby účtují poplatek za každý zpracovaný obrázek, eliminují 150–300 hodin backendového vývoje a průběžnou správu infrastruktury. Pro ověření MVP jsou spravované služby nejrychlejší cestou na trh.",
+        "Začít s jedinou platformou (web nebo mobil) místo obou snižuje náklady na vývoj o 40–50 %. Mnoho úspěšných sociálních sítí bylo spuštěno jako produkty pouze pro web a mobilní aplikace přidaly až po ověření souladu produktu s trhem. Případně použití React Native od začátku poskytuje podporu napříč platformami s jedinou kódovou základnou, i když to vyžaduje více času na počáteční nastavení ve srovnání s nativním vývojem."
+      ]
+    },
+    {
+      "heading": "Strategie monetizace sociální sítě",
+      "paragraphs": [
+        "Reklama je hlavním zdrojem příjmů většiny sociálních sítí, přičemž platformy jako Facebook generují z reklamy ročně miliardy. Display reklama, sponzorovaný obsah a nativní reklama se integrují do zážitku z kanálu. Vybudování reklamní platformy však vyžaduje značnou infrastrukturu — zobrazování reklam, cílení, dražby a analytiku. Pro nové platformy je realističtější začít s jednoduchou display reklamou nebo sponzorovanými příspěvky než budovat plnohodnotnou platformu programatické reklamy.",
+        "Prémiová předplatná vytvářejí předvídatelné opakující se příjmy. LinkedIn Premium ($29.99–$59.99/month) nabízí pokročilé vyhledávání, zasílání zpráv a přehledy. Twitter Blue ($8/month) nabízí ověření, úpravy a zážitek bez reklam. Pro úzce zaměřené sociální sítě mohou prémiová předplatná, která odemykají pokročilé funkce, analytiku nebo exkluzivní obsah, generovat smysluplné příjmy od zapojených uživatelů.",
+        "Nástroje pro monetizaci tvůrců generují příjmy a zároveň motivují k tvorbě obsahu. Platformy si berou procentuální podíl (typicky 10–30 %) z výdělků tvůrců z předplatných, příspěvků (tipů) nebo placeného obsahu. Tento model sjednocuje zájmy platformy s úspěchem tvůrců a může generovat významné příjmy s tím, jak roste ekonomika tvůrců. Vyžaduje to však vybudování platební infrastruktury a panelů pro tvůrce."
+      ]
+    }
+  ]
+}

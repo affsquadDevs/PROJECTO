@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useCalculatorStore } from '@/store/calculator';
 import * as FiIcons from 'react-icons/fi';
 
@@ -8,6 +9,7 @@ const FiSliders = FiIcons.FiSliders;
 const FiInfo = FiIcons.FiInfo;
 
 export default function Step5Testing() {
+  const t = useTranslations('calculator');
   const { testing, updateTesting } = useCalculatorStore();
 
   return (
@@ -15,9 +17,9 @@ export default function Step5Testing() {
       <div className="flex items-center space-x-2">
         <FiCheckSquare className="text-xl text-jira-blue" />
         <div>
-          <h2 className="text-lg font-semibold text-jira-darkBlue">Testing & QA</h2>
+          <h2 className="text-lg font-semibold text-jira-darkBlue">{t('testing.title')}</h2>
           <p className="text-jira-textSecondary text-xs">
-            Configure testing and quality assurance parameters
+            {t('testing.subtitle')}
           </p>
         </div>
       </div>
@@ -31,16 +33,16 @@ export default function Step5Testing() {
             className="checkbox-field"
           />
           <div>
-            <div className="font-semibold text-sm text-jira-darkBlue">Manual Testing</div>
+            <div className="font-semibold text-sm text-jira-darkBlue">{t('testing.manualTitle')}</div>
             <div className="text-xs text-jira-textSecondary">
-              Functionality testing by QA engineer
+              {t('testing.manualDesc')}
             </div>
           </div>
         </label>
 
         {testing.manualTesting && (
           <div className="mt-4 pl-7">
-            <label className="label">Percentage of development time</label>
+            <label className="label">{t('testing.percentLabel')}</label>
             <div className="flex items-center space-x-4 mt-2">
               <input
                 type="range"
@@ -58,7 +60,7 @@ export default function Step5Testing() {
               </span>
             </div>
             <p className="text-xs text-jira-textSecondary mt-2">
-              Recommended: 15-25% of total development time
+              {t('testing.manualPercentHint')}
             </p>
           </div>
         )}
@@ -73,26 +75,26 @@ export default function Step5Testing() {
             className="checkbox-field"
           />
           <div>
-            <div className="font-semibold text-sm text-jira-darkBlue">Automated Testing</div>
+            <div className="font-semibold text-sm text-jira-darkBlue">{t('testing.automatedTitle')}</div>
             <div className="text-xs text-jira-textSecondary">
-              Writing automated tests
+              {t('testing.automatedDesc')}
             </div>
           </div>
         </label>
 
         {testing.automatedTesting && (
           <div className="mt-4 pl-7">
-            <label className="label">Additional hours for automated tests</label>
+            <label className="label">{t('testing.automatedHoursLabel')}</label>
             <input
               type="number"
               value={testing.automatedHours}
               onChange={(e) => updateTesting({ automatedHours: Number(e.target.value) })}
               className="input-field mt-2"
               min="0"
-              placeholder="Enter number of hours"
+              placeholder={t('testing.automatedHoursPlaceholder')}
             />
             <p className="text-xs text-jira-textSecondary mt-2">
-              Typical: 40-80 hours for basic coverage
+              {t('testing.automatedHoursHint')}
             </p>
 
             <div className="mt-4 space-y-2">
@@ -103,7 +105,7 @@ export default function Step5Testing() {
                   onChange={(e) => updateTesting({ unitTests: e.target.checked })}
                   className="checkbox-field"
                 />
-                <span className="text-jira-darkBlue">Unit tests</span>
+                <span className="text-jira-darkBlue">{t('testing.unitTests')}</span>
               </label>
 
               <label className="flex items-center space-x-2 text-xs cursor-pointer">
@@ -113,7 +115,7 @@ export default function Step5Testing() {
                   onChange={(e) => updateTesting({ integrationTests: e.target.checked })}
                   className="checkbox-field"
                 />
-                <span className="text-jira-darkBlue">Integration tests</span>
+                <span className="text-jira-darkBlue">{t('testing.integrationTests')}</span>
               </label>
 
               <label className="flex items-center space-x-2 text-xs cursor-pointer">
@@ -123,7 +125,7 @@ export default function Step5Testing() {
                   onChange={(e) => updateTesting({ e2eTests: e.target.checked })}
                   className="checkbox-field"
                 />
-                <span className="text-jira-darkBlue">E2E tests (End-to-End)</span>
+                <span className="text-jira-darkBlue">{t('testing.e2eTests')}</span>
               </label>
 
               <label className="flex items-center space-x-2 text-xs cursor-pointer">
@@ -133,7 +135,7 @@ export default function Step5Testing() {
                   onChange={(e) => updateTesting({ performanceTests: e.target.checked })}
                   className="checkbox-field"
                 />
-                <span className="text-jira-darkBlue">Performance tests</span>
+                <span className="text-jira-darkBlue">{t('testing.performanceTests')}</span>
               </label>
             </div>
           </div>
@@ -144,23 +146,23 @@ export default function Step5Testing() {
         <div className="flex items-start space-x-3">
           <FiInfo className="text-lg text-jira-blue flex-shrink-0 mt-0.5" />
           <div>
-            <h3 className="font-semibold text-jira-darkBlue mb-2 text-sm">Recommendations</h3>
+            <h3 className="font-semibold text-jira-darkBlue mb-2 text-sm">{t('testing.recommendationsTitle')}</h3>
             <ul className="text-xs text-jira-textSecondary space-y-1.5">
               <li className="flex items-start space-x-1.5">
                 <span className="text-jira-blue">•</span>
-                <span>Manual testing: required for all projects</span>
+                <span>{t('testing.recManual')}</span>
               </li>
               <li className="flex items-start space-x-1.5">
                 <span className="text-jira-blue">•</span>
-                <span>Automated tests: recommended for medium and large projects</span>
+                <span>{t('testing.recAutomated')}</span>
               </li>
               <li className="flex items-start space-x-1.5">
                 <span className="text-jira-blue">•</span>
-                <span>Unit tests: basic coverage of critical business logic</span>
+                <span>{t('testing.recUnit')}</span>
               </li>
               <li className="flex items-start space-x-1.5">
                 <span className="text-jira-blue">•</span>
-                <span>E2E tests: verification of main user flows</span>
+                <span>{t('testing.recE2e')}</span>
               </li>
             </ul>
           </div>

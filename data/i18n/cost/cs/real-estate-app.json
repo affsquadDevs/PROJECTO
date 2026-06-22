@@ -1,0 +1,170 @@
+{
+  "category": "Reality a nemovitosti",
+  "description": "Realitní aplikace jako Zillow vyžaduje inzeráty nemovitostí, vyhledávání a filtry, integraci map, virtuální prohlídky, propojení s makléři a hypoteční kalkulačky.",
+  "introText": "Realitní aplikace pomáhají milionům lidí najít bydlení, přičemž Zillow ročně zpracuje miliardy vyhledávání nemovitostí. Vytvoření realitní aplikace vyžaduje inzeráty nemovitostí, pokročilé vyhledávání a filtry, integraci map, virtuální prohlídky, propojení s makléři, hypoteční kalkulačky a uložená vyhledávání. Složitost roste s funkcemi, jako jsou oceňování nemovitostí, data o okolí a správa transakcí.",
+  "keyFeatures": [
+    "Inzeráty nemovitostí s fotografiemi",
+    "Pokročilé vyhledávání a filtry",
+    "Integrace map a vyhledávání podle lokality",
+    "Virtuální prohlídky a 360° pohledy",
+    "Profily makléřů a propojení",
+    "Hypoteční kalkulačky",
+    "Uložená vyhledávání a oblíbené položky",
+    "Nástroje pro porovnávání nemovitostí",
+    "Data a přehledy o okolí",
+    "Push oznámení o nových inzerátech"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX design",
+      "description": "Inzeráty nemovitostí, vyhledávací rozhraní, zobrazení map"
+    },
+    {
+      "category": "Vývoj frontendu",
+      "description": "Webová aplikace a mobilní aplikace"
+    },
+    {
+      "category": "Vývoj backendu",
+      "description": "Databáze nemovitostí, vyhledávací engine, API"
+    },
+    {
+      "category": "Integrace map",
+      "description": "Google Maps, značky nemovitostí, shlukování"
+    },
+    {
+      "category": "Vyhledávací engine",
+      "description": "Elasticsearch, pokročilé filtry, fasetové vyhledávání"
+    },
+    {
+      "category": "Virtuální prohlídky",
+      "description": "360° prohlídky, integrace videa"
+    },
+    {
+      "category": "Správa obrázků",
+      "description": "Fotografie nemovitostí, komprese, CDN"
+    },
+    {
+      "category": "QA a testování",
+      "description": "Testování přesnosti vyhledávání, ověření integrace map"
+    },
+    {
+      "category": "DevOps a infrastruktura",
+      "description": "Databáze nemovitostí a vyhledávací infrastruktura"
+    }
+  ],
+  "complexityFactors": [
+    "Získávání a správa dat o nemovitostech",
+    "Algoritmy pokročilého vyhledávání a filtrování",
+    "Integrace map a lokalizačních služeb",
+    "Integrace technologie virtuálních prohlídek",
+    "Aktualizace dat o nemovitostech v reálném čase",
+    "Budování sítě makléřů",
+    "Uživatelský zážitek zaměřený primárně na mobil"
+  ],
+  "timeline": [
+    {
+      "phase": "Průzkum a plánování",
+      "duration": "2–3 týdny",
+      "description": "Struktura dat o nemovitostech, požadavky na vyhledávání a vymezení funkcí."
+    },
+    {
+      "phase": "UI/UX design",
+      "duration": "4–6 týdnů",
+      "description": "Návrh inzerátů nemovitostí, vyhledávacího rozhraní a zobrazení map."
+    },
+    {
+      "phase": "Vývoj backendu",
+      "duration": "6–12 týdnů",
+      "description": "Vytvoření databáze nemovitostí, vyhledávacího enginu a API."
+    },
+    {
+      "phase": "Integrace map",
+      "duration": "3–5 týdnů",
+      "description": "Integrace Google Maps se značkami nemovitostí a shlukováním."
+    },
+    {
+      "phase": "Vývoj frontendu",
+      "duration": "6–10 týdnů",
+      "description": "Vývoj webové a mobilních aplikací s funkcemi pro nemovitosti."
+    },
+    {
+      "phase": "Virtuální prohlídky",
+      "duration": "3–5 týdnů",
+      "description": "Implementace 360° prohlídek a integrace videa."
+    },
+    {
+      "phase": "Testování a QA",
+      "duration": "3–5 týdnů",
+      "description": "Testování přesnosti vyhledávání a ověření integrace map."
+    },
+    {
+      "phase": "Nasazení a spuštění",
+      "duration": "1–2 týdny",
+      "description": "Produkční nasazení a měkký start."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kolik stojí vytvoření realitní aplikace?",
+      "answer": "Plně vybavená realitní aplikace stojí $60,000–$180,000. MVP s inzeráty nemovitostí, vyhledáváním a integrací map lze vytvořit za $30,000–$70,000 během 3–5 měsíců."
+    },
+    {
+      "question": "Jak dlouho trvá vytvoření realitní aplikace?",
+      "answer": "Kompletní vývoj trvá 5–12 měsíců. MVP se základními funkcemi vyhledávání nemovitostí může být hotové za 3–5 měsíců."
+    },
+    {
+      "question": "Kde získám data o inzerovaných nemovitostech?",
+      "answer": "Data o nemovitostech pocházejí z feedů MLS (Multiple Listing Service), realitních API nebo z ručního zadávání. Přístup k datům MLS obvykle vyžaduje realitní licence a partnerství s poskytovateli MLS."
+    },
+    {
+      "question": "Jaká je největší výzva u realitních aplikací?",
+      "answer": "Získávání dat o nemovitostech a udržování inzerátů aktuálních. Realitní data se často mění a udržování přesných, aktuálních informací o nemovitostech vyžaduje průběžnou správu dat."
+    },
+    {
+      "question": "Jak realitní aplikace vydělávají peníze?",
+      "answer": "Realitní aplikace obvykle získávají příjmy z předplatného makléřů, zvýrazněného umístění inzerátů, poplatků za generování leadů a inzerce od hypotečních a pojišťovacích společností."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Co je realitní aplikace jako Zillow?",
+      "paragraphs": [
+        "Realitní aplikace jako Zillow je platforma, která uživatelům pomáhá vyhledávat nemovitosti, prohlížet si inzeráty, spojit se s makléři a získávat informace o nemovitostech prostřednictvím mapových i seznamových rozhraní. Samotný Zillow ročně zpracuje miliardy vyhledávání nemovitostí, což dokládá jak rozsah příležitosti, tak i náročnost získávání dat potřebnou k vytvoření konkurenceschopného produktu. Vytvoření realitní aplikace vyžaduje inzeráty nemovitostí, pokročilé vyhledávání a filtry, integraci map, virtuální prohlídky, propojení s makléři, hypoteční kalkulačky a uložená vyhledávání.",
+        "Hlavní technickou výzvou realitní aplikace je získávání a správa dat o nemovitostech. Inzeráty nemovitostí pocházejí z feedů MLS (Multiple Listing Service), realitních API nebo z ručního zadávání. Tato data se často mění (nové inzeráty, změny cen, aktualizace stavu), což vyžaduje synchronizaci v reálném čase a řízení kvality dat. Přístup k datům MLS obvykle vyžaduje realitní licence a partnerství s poskytovateli MLS, což vytváří bariéru vstupu, která si žádá značné budování vztahů.",
+        "Realitní aplikace čelí jedinečným provozním výzvám nad rámec čistě technické složitosti. Přesnost dat o nemovitostech je zásadní — nesprávné ceny, chybějící fotografie nebo zastaralé informace o stavu poškozují důvěru uživatelů. Udržování vztahů s realitními makléři a brokery je nezbytné pro přístup k inzerátům i pro příjmy. Znalost místního trhu a sítě makléřů se výrazně liší podle regionu, což vyžaduje lokalizované strategie pro každý trh, na který vstupujete."
+      ]
+    },
+    {
+      "heading": "Proč v roce 2025 vytvořit realitní aplikaci?",
+      "paragraphs": [
+        "Globální realitní trh nadále roste a online vyhledávání nemovitostí se stává hlavní metodou pro kupující a nájemce. Zatímco v USA dominují Zillow, Realtor.com a Redfin, významné příležitosti existují na mezinárodních trzích a v úzce zaměřených segmentech. Realitní aplikace zaměřené na konkrétní typy nemovitostí (luxusní domy, pronájmy, komerční prostory), trhy (konkrétní města nebo regiony) či segmenty kupujících (kupující první nemovitosti, investoři) si úspěšně vydobyly podíl na trhu tím, že nabízejí lepší zážitek pro specializované publikum.",
+        "Geografická expanze zůstává zásadní příležitostí. Zatímco v Severní Americe je vyhledávání nemovitostí vyzrálé, mnoho mezinárodních trhů má menší konkurenci a rostoucí míru online adopce. Místní realitní aplikace, které rozumějí regionálním trhům s nemovitostmi, právním požadavkům a preferencím zákazníků, mohou efektivně konkurovat globálním platformám.",
+        "Vznikající technologie vytvářejí nové příležitosti. Virtuální prohlídky, 3D vizualizace nemovitostí, oceňování nemovitostí poháněné AI a prohlížení nemovitostí v AR/VR — to vše představuje inovace, které tradiční platformy příliš nepodporují. Vytvoření platformy optimalizované pro tyto technologie může zachytit publikum z řad raných uživatelů dříve, než se větší platformy přizpůsobí."
+      ]
+    },
+    {
+      "heading": "Doporučený technologický stack pro realitní aplikaci",
+      "paragraphs": [
+        "Pro vývoj mobilních aplikací jsou React Native nebo Flutter nákladově nejefektivnější volbou, protože umožňují cílit jediným kódem na iOS i Android. Realitní aplikace s velkým důrazem na mapy však mohou těžit z nativního vývoje kvůli lepšímu výkonu map. Pro web poskytují Next.js nebo Remix vynikající serverové renderování pro SEO, což je klíčové pro objevitelnost nemovitostí a organickou návštěvnost z vyhledávání.",
+        "Architektura backendu pro realitní aplikace se soustředí na správu dat o nemovitostech a vyhledávání. Node.js nebo Python jsou běžnou volbou pro API vrstvu. Jako databáze zvládá PostgreSQL inzeráty nemovitostí, uživatelská data a uložená vyhledávání. Elasticsearch poskytuje pokročilé možnosti vyhledávání s fasetovým filtrováním, geoprostorovými dotazy a fulltextovým vyhledáváním. Redis slouží jako vyrovnávací paměť v operační paměti pro data o nemovitostech a výsledky vyhledávání.",
+        "Integrace map je nezbytná. Google Maps Platform nebo Mapbox poskytují značky nemovitostí, shlukování a geokódovací API. Náklady na mapová API se však mohou při produkčních objemech výrazně škálovat — počítejte s $2,000–$10,000+ měsíčně, jakmile dosáhnete desítek tisíc denně aktivních uživatelů. Pro virtuální prohlídky poskytují služby jako Matterport nebo API pro 3D skenování pohlcující vizualizaci nemovitostí."
+      ]
+    },
+    {
+      "heading": "Jak snížit náklady na vývoj realitní aplikace",
+      "paragraphs": [
+        "Nejúčinnějším způsobem snížení nákladů je začít s jediným trhem nebo regionem namísto budování pro globální měřítko hned od prvního dne. Realitní aplikace cílící na jedno město nebo region vyžaduje jednodušší infrastrukturu, nižší náklady na data a lépe zvladatelný proces budování vztahů s makléři. Mnoho úspěšných realitních platforem se spouštělo město po městě, ručně získalo svých prvních 50–100 makléřů a produkt iterovalo na základě reálných dat o inzerátech, než začalo škálovat technologii.",
+        "Využití spravovaných služeb pro vyhledávání a mapy odstraňuje značnou složitost infrastruktury. Elasticsearch Cloud poskytuje spravovanou vyhledávací infrastrukturu. Google Maps Platform nebo Mapbox poskytují mapové služby prostřednictvím API. Ačkoli si tyto služby účtují za volání API nebo za zpracovaná data, eliminují 150–300 hodin vývoje backendu a průběžnou správu infrastruktury.",
+        "Odložení pokročilých funkcí, jako jsou virtuální prohlídky, oceňování pomocí AI nebo prohlížení v AR/VR, do verze 2.0 výrazně snižuje počáteční rozsah vývoje. Spuštění se základními inzeráty nemovitostí, vyhledáváním a integrací map je pro MVP dostatečné. Pokročilé funkce lze přidat poté, co si ověříte, že uživatelé budou nemovitosti vyhledávat a makléři budou na vaší platformě inzerovat."
+      ]
+    },
+    {
+      "heading": "Strategie monetizace realitní aplikace",
+      "paragraphs": [
+        "Předplatné makléřů je hlavním modelem příjmů pro většinu realitních platforem. Zillow Premier Agent účtuje makléřům $20–$60+ měsíčně za PSČ za zvýrazněné umístění a generování leadů. Realtor.com účtuje podobné poplatky. Pro nové platformy soutěžící o makléře je osvědčenou strategií, jak přilákat nabídku od zavedených platforem, začít s nižšími poplatky za předplatné nebo s bezplatnými inzeráty.",
+        "Zvýrazněná umístění inzerátů generují dodatečné příjmy. Účtování poplatků majitelům nemovitostí nebo makléřům za prémiové umístění ve výsledcích vyhledávání, sponzorované inzeráty nebo bannerové reklamy vytváří reklamní inventář. Tento zdroj příjmů se stává hodnotnějším, jak vaše platforma roste a nemovitosti soutěží o pozornost kupujících.",
+        "Poplatky za generování leadů vytvářejí příjmy z úspěšných propojení. Účtování poplatku makléři (obvykle $50–$500), když se prostřednictvím vaší platformy úspěšně spojí s kupujícím, vytváří příjem provázaný s úspěchem makléře. Tento model však vyžaduje sledování propojení a správu zpracování plateb, což přidává provozní složitost."
+      ]
+    }
+  ]
+}
