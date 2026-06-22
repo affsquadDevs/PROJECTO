@@ -245,5 +245,13 @@
     "moreEstimatesHeading": "Więcej szacunków kosztów aplikacji",
     "moreEstimatesTitle": "Koszt stworzenia aplikacji takiej jak {name}",
     "breadcrumbCurrent": "Koszt stworzenia aplikacji takiej jak {name}"
+  },
+  "blogIndex": {
+    "heading": "Blog",
+    "costEstimate": "Cost Estimate",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}"
   }
 }

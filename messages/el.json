@@ -245,5 +245,13 @@
     "moreEstimatesHeading": "Περισσότερες Εκτιμήσεις Κόστους Εφαρμογών",
     "moreEstimatesTitle": "Κόστος Δημιουργίας μιας Εφαρμογής σαν το {name}",
     "breadcrumbCurrent": "Κόστος Δημιουργίας μιας Εφαρμογής σαν το {name}"
+  },
+  "blogIndex": {
+    "heading": "Blog",
+    "costEstimate": "Cost Estimate",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}"
   }
 }

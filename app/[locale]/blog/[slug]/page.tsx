@@ -2,9 +2,11 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { articles as articleList } from '@/data/articles';
-import { routing, type Locale } from '@/i18n/routing';
+import { getArticleMeta } from '@/data/i18n/articles';
+import { routing, defaultLocale, type Locale } from '@/i18n/routing';
 import { buildAlternates } from '@/i18n/metadata';
 import BlogArticleContent from './ArticleContent';
+import TranslatedArticle from '@/components/TranslatedArticle';
 
 // Only known article slugs are valid; everything else 404s.
 export const dynamicParams = false;
@@ -20,29 +22,20 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const article = articleList.find((a) => a.slug === slug && !a.isCostEstimate);
-  if (!article) return {};
+  const exists = articleList.some((a) => a.slug === slug && !a.isCostEstimate);
+  if (!exists) return {};
 
-  // Strip any existing brand suffix; the layout title template appends it once.
-  const title = article.title.replace(/\s*\|\s*Projec?k?to.*$/i, '').trim();
-  const description = article.excerpt;
+  const meta = getArticleMeta(slug, locale as Locale);
+  // Strip any brand suffix; the layout title template appends it once.
+  const title = meta.title.replace(/\s*\|\s*Projec?k?to.*$/i, '').trim();
+  const description = meta.excerpt;
 
   return {
     title,
     description,
     alternates: buildAlternates(locale as Locale, `/blog/${slug}`),
-    openGraph: {
-      images: ['/og-image.png'],
-      title,
-      description,
-      type: 'article',
-    },
-    twitter: {
-      images: ['/og-image.png'],
-      card: 'summary_large_image',
-      title,
-      description,
-    },
+    openGraph: { images: ['/og-image.png'], title, description, type: 'article' },
+    twitter: { images: ['/og-image.png'], card: 'summary_large_image', title, description },
   };
 }
 
@@ -56,5 +49,7 @@ export default async function BlogArticlePage({
   const exists = articleList.some((a) => a.slug === slug && !a.isCostEstimate);
   if (!exists) notFound();
 
-  return <BlogArticleContent slug={slug} />;
+  // English renders from the original rich JSX; other locales from translated HTML.
+  if (locale === defaultLocale) return <BlogArticleContent slug={slug} />;
+  return <TranslatedArticle slug={slug} locale={locale as Locale} />;
 }

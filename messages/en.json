@@ -24,6 +24,14 @@
   "languageSwitcher": {
     "label": "Language"
   },
+  "blogIndex": {
+    "heading": "Blog",
+    "costEstimate": "Cost Estimate",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}"
+  },
   "footer": {
     "tagline": "Professional software project cost estimation and planning tool.",
     "navHeading": "Navigation",

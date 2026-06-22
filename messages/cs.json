@@ -245,5 +245,13 @@
     "moreEstimatesHeading": "Další odhady nákladů na aplikace",
     "moreEstimatesTitle": "Kolik stojí vývoj aplikace jako {name}",
     "breadcrumbCurrent": "Kolik stojí vývoj aplikace jako {name}"
+  },
+  "blogIndex": {
+    "heading": "Blog",
+    "costEstimate": "Cost Estimate",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}"
   }
 }

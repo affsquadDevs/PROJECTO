@@ -245,5 +245,13 @@
     "moreEstimatesHeading": "Більше оцінок вартості застосунків",
     "moreEstimatesTitle": "Вартість створення застосунку на кшталт {name}",
     "breadcrumbCurrent": "Вартість створення застосунку на кшталт {name}"
+  },
+  "blogIndex": {
+    "heading": "Blog",
+    "costEstimate": "Cost Estimate",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}"
   }
 }

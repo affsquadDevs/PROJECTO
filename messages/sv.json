@@ -245,5 +245,13 @@
     "moreEstimatesHeading": "Fler uppskattningar av appkostnad",
     "moreEstimatesTitle": "Kostnad för att bygga en app som {name}",
     "breadcrumbCurrent": "Kostnad för att bygga en app som {name}"
+  },
+  "blogIndex": {
+    "heading": "Blog",
+    "costEstimate": "Cost Estimate",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}"
   }
 }

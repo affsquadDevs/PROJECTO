@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { articles } from '@/data/articles';
+import { getArticleMeta } from '@/data/i18n/articles';
+import { getLocalizedApp } from '@/data/i18n/cost';
 import { routing, type Locale } from '@/i18n/routing';
 import { buildAlternates } from '@/i18n/metadata';
-import BlogPageClient from './BlogPageClient';
+import BlogPageClient, { type BlogListItem } from './BlogPageClient';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -29,5 +32,25 @@ export default async function BlogPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <BlogPageClient />;
+  const tc = await getTranslations('costPage');
+
+  // Build a localized listing: cost-estimate entries derive title/excerpt from the
+  // cost translations; regular articles from the article overlay.
+  const list: BlogListItem[] = articles.map((a) => {
+    if (a.isCostEstimate) {
+      const app = getLocalizedApp(a.slug, locale as Locale);
+      return {
+        slug: a.slug,
+        isCostEstimate: true,
+        date: a.date,
+        heroImage: a.heroImage,
+        title: app ? tc('heroTitle', { name: app.appName }) : a.title,
+        excerpt: app?.description ?? a.excerpt,
+      };
+    }
+    const meta = getArticleMeta(a.slug, locale as Locale);
+    return { slug: a.slug, isCostEstimate: false, date: a.date, heroImage: a.heroImage, title: meta.title, excerpt: meta.excerpt };
+  });
+
+  return <BlogPageClient articles={list} />;
 }

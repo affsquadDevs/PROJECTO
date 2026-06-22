@@ -245,5 +245,13 @@
     "moreEstimatesHeading": "Weitere App-Kostenschätzungen",
     "moreEstimatesTitle": "Kosten für die Entwicklung einer App wie {name}",
     "breadcrumbCurrent": "Kosten für die Entwicklung einer App wie {name}"
+  },
+  "blogIndex": {
+    "heading": "Blog",
+    "costEstimate": "Cost Estimate",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+    "pageInfo": "Page {current} of {total}"
   }
 }
