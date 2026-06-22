@@ -1,31 +1,35 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import { appEstimates, getAppEstimateBySlug, getAllAppSlugs } from '@/data/appEstimates';
 import type { AppEstimate, CostBreakdownItem, TimelinePhase, FaqItem } from '@/data/appEstimates';
 import { appContent } from '@/data/appContent';
+import { routing, type Locale } from '@/i18n/routing';
+import { buildAlternates } from '@/i18n/metadata';
+import { formatMoney } from '@/i18n/currency';
 
 // ─── Force static generation ─────────────────────────────────────────
 export const dynamicParams = false;
 
-// ─── Static Generation ───────────────────────────────────────────────
+// ─── Static Generation (locale × app slug) ───────────────────────────
 export function generateStaticParams() {
   const slugs = getAllAppSlugs();
-  return slugs.map((slug) => ({ slug }));
+  return routing.locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
 }
 
 // ─── Dynamic SEO Metadata ────────────────────────────────────────────
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const app = getAppEstimateBySlug(slug);
   if (!app) return {};
 
   const title = `Cost to Build ${app.displayName} Like App in 2026 | Projecto Calculator`;
-  const description = `Learn how much it costs to build ${app.displayName} like app. Detailed cost breakdown, team size, tech stack, timeline and estimated budget from $${(app.totalCostMin / 1000).toFixed(0)}K to $${(app.totalCostMax / 1000).toFixed(0)}K. Free cost calculator included.`;
+  const description = `Learn how much it costs to build ${app.displayName} like app. Detailed cost breakdown, team size, tech stack, timeline and estimated budget from ${formatMoney(app.totalCostMin, locale as Locale)} to ${formatMoney(app.totalCostMax, locale as Locale)}. Free cost calculator included.`;
 
   return {
     title,
@@ -34,7 +38,6 @@ export async function generateMetadata({
       images: ['/og-image.png'],
       title,
       description,
-      url: `https://projecto-calculator.com/cost-to-build/${app.slug}`,
       siteName: 'Projecto Calculator',
       type: 'article',
     },
@@ -44,42 +47,26 @@ export async function generateMetadata({
       title,
       description,
     },
-    alternates: {
-      canonical: `https://projecto-calculator.com/cost-to-build/${app.slug}`,
-    },
+    alternates: buildAlternates(locale as Locale, `/cost-to-build/${slug}`),
   };
-}
-
-// ─── Helper: format currency ─────────────────────────────────────────
-function formatCurrency(value: number): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(value);
 }
 
 // ─── Page Component ──────────────────────────────────────────────────
 export default async function CostToBuildPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  
-  // Debug: log the slug to see what we're receiving
-  if (process.env.NODE_ENV === 'development') {
-    console.log('[CostToBuildPage] Received slug:', slug);
-    console.log('[CostToBuildPage] Available slugs:', getAllAppSlugs());
-  }
-  
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+
   const app = getAppEstimateBySlug(slug);
   if (!app) {
-    if (process.env.NODE_ENV === 'development') {
-      console.error('[CostToBuildPage] App not found for slug:', slug);
-    }
     notFound();
   }
+
+  // Locale-aware currency formatter (converts USD source data → local currency).
+  const formatCurrency = (value: number) => formatMoney(value, locale as Locale);
 
   const sections = appContent[app.slug] ?? [];
   const publishDate = '2026-03-08';

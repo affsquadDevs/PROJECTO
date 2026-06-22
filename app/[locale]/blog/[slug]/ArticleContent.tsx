@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
 import * as Fi from 'react-icons/fi';
 import { SiFacebook, SiInstagram, SiThreads, SiYoutube } from 'react-icons/si';

@@ -1,50 +1,60 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import { notFound } from 'next/navigation';
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import { buildAlternates, SITE, BRAND } from '@/i18n/metadata';
 import GoogleTagManager from '@/components/GoogleTagManager';
-import './globals.css';
+import '../globals.css';
 
-const inter = Inter({ subsets: ['latin', 'cyrillic'] });
+const inter = Inter({ subsets: ['latin', 'latin-ext', 'cyrillic', 'greek'] });
 
-const SITE = 'https://projecto-calculator.com';
-const BRAND = 'Projecto Calculator';
 const ADSENSE_CLIENT = 'ca-pub-2980943706375055';
 
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE),
-  title: {
-    default: 'Projecto Calculator — Software Development Cost Calculator',
-    template: '%s',
-  },
-  description:
-    'Estimate software development costs for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects. Calculate budget, timeline, and team requirements in minutes.',
-  applicationName: BRAND,
-  alternates: { canonical: '/' },
-  icons: {
-    icon: '/icon.svg',
-    apple: '/logo.png',
-  },
-  openGraph: {
-    type: 'website',
-    siteName: BRAND,
-    url: SITE,
-    title: 'Projecto Calculator — Software Development Cost Calculator',
-    description:
-      'Estimate software development cost, timeline, and team for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: BRAND }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Projecto Calculator — Software Development Cost Calculator',
-    description:
-      'Estimate software development cost, timeline, and team for software projects.',
-    images: ['/og-image.png'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
-  },
-};
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'meta' });
+  const title = t('homeTitle');
+  const description = t('homeDescription');
+
+  return {
+    metadataBase: new URL(SITE),
+    title: { default: title, template: `%s | ${BRAND}` },
+    description,
+    applicationName: BRAND,
+    alternates: buildAlternates(locale as any, ''),
+    icons: { icon: '/icon.svg', apple: '/logo.png' },
+    openGraph: {
+      type: 'website',
+      siteName: BRAND,
+      locale,
+      url: SITE,
+      title,
+      description,
+      images: [{ url: '/og-image.png', width: 1200, height: 630, alt: BRAND }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/og-image.png'],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+    },
+  };
+}
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -52,13 +62,19 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
+  setRequestLocale(locale);
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         {/* Google Consent Mode v2 — default everything to denied until the user opts in (EEA/UK requirement for ads). */}
         <script
@@ -84,9 +100,7 @@ export default function RootLayout({
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
         />
-        {/* Google Funding Choices — Google-certified CMP (IAB TCF v2). Renders the
-            GDPR/consent message configured in AdSense → Privacy & messaging, and
-            relays the choice into Consent Mode above. */}
+        {/* Google Funding Choices — Google-certified CMP (IAB TCF v2). */}
         <script
           async
           src={`https://fundingchoicesmessages.google.com/i/${ADSENSE_CLIENT}?ers=1`}
@@ -105,12 +119,7 @@ export default function RootLayout({
               '@id': `${SITE}/#organization`,
               name: BRAND,
               url: `${SITE}/`,
-              description:
-                'Estimate software development costs for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects. Calculate budget, timeline, and team requirements in minutes.',
-              logo: {
-                '@type': 'ImageObject',
-                url: `${SITE}/logo.png`,
-              },
+              logo: { '@type': 'ImageObject', url: `${SITE}/logo.png` },
               sameAs: [
                 'https://www.facebook.com/people/Projecto-Calculator/61586748986123/',
                 'https://www.instagram.com/projecto_calculator/',
@@ -131,39 +140,33 @@ export default function RootLayout({
               url: `${SITE}/`,
               applicationCategory: 'BusinessApplication',
               operatingSystem: 'Web',
-              description:
-                'Estimate software development costs for SaaS, apps, marketplaces, healthcare, fintech, and e-commerce projects. Calculate budget, timeline, and team requirements in minutes. Configure team, design scope, features, tech stack, QA, and buffers to generate a cost and timeline estimate.',
               offers: {
                 '@type': 'Offer',
                 price: '0',
                 priceCurrency: 'USD',
                 availability: 'https://schema.org/InStock',
               },
-              creator: {
-                '@type': 'Organization',
-                '@id': `${SITE}/#organization`,
-              },
-              publisher: {
-                '@type': 'Organization',
-                '@id': `${SITE}/#organization`,
-              },
+              creator: { '@type': 'Organization', '@id': `${SITE}/#organization` },
+              publisher: { '@type': 'Organization', '@id': `${SITE}/#organization` },
               image: `${SITE}/og-image.png`,
-              inLanguage: 'en',
+              inLanguage: locale,
             }),
           }}
         />
       </head>
       <body className={inter.className}>
-        <GoogleTagManager />
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NHQZVH2P"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-        {children}
+        <NextIntlClientProvider>
+          <GoogleTagManager />
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-NHQZVH2P"
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            />
+          </noscript>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ import Step6Additional from '@/components/steps/Step6Additional';
 import Step7Summary from '@/components/steps/Step7Summary';
 import { trackCalcStarted } from '@/utils/gtm';
 import * as FiIcons from 'react-icons/fi';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { SiFacebook, SiInstagram, SiThreads, SiYoutube } from 'react-icons/si';
 
 const FiArrowLeft = FiIcons.FiArrowLeft;
