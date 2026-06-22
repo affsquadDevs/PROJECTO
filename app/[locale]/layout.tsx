@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
-import { routing } from '@/i18n/routing';
+import { routing, isIndexed } from '@/i18n/routing';
 import { buildAlternates, SITE, BRAND } from '@/i18n/metadata';
 import GoogleTagManager from '@/components/GoogleTagManager';
 import '../globals.css';
@@ -49,9 +49,10 @@ export async function generateMetadata({
       images: ['/og-image.png'],
     },
     robots: {
-      index: true,
+      // Staged rollout: only indexed locales are indexable; others ship noindex.
+      index: isIndexed(locale),
       follow: true,
-      googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+      googleBot: { index: isIndexed(locale), follow: true, 'max-image-preview': 'large' },
     },
   };
 }

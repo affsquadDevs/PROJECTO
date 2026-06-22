@@ -1,4 +1,4 @@
-import { locales, defaultLocale, type Locale } from './routing';
+import { locales, defaultLocale, indexedLocales, type Locale } from './routing';
 
 export const SITE = 'https://projecto-calculator.com';
 export const BRAND = 'Projecto Calculator';
@@ -12,11 +12,12 @@ export function localeUrl(locale: Locale, path = ''): string {
     : `${SITE}/${locale}${clean}`;
 }
 
-// canonical (current locale) + hreflang alternates for every locale + x-default.
+// canonical (current locale) + hreflang alternates. During the staged rollout we
+// only advertise hreflang among indexed locales (avoids hreflang→noindex conflicts).
 export function buildAlternates(locale: Locale, path = '') {
   const languages: Record<string, string> = {
     'x-default': localeUrl(defaultLocale, path),
   };
-  for (const l of locales) languages[l] = localeUrl(l, path);
+  for (const l of indexedLocales) languages[l] = localeUrl(l, path);
   return { canonical: localeUrl(locale, path), languages };
 }
