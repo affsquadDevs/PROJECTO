@@ -1,0 +1,170 @@
+{
+  "category": "Recruiting e Lavoro",
+  "description": "Un portale di annunci di lavoro come LinkedIn Jobs richiede offerte di lavoro, profili dei candidati, ricerca e matching, monitoraggio delle candidature e dashboard per i datori di lavoro.",
+  "introText": "I portali di annunci di lavoro mettono in contatto milioni di persone in cerca di lavoro con i datori di lavoro: LinkedIn Jobs elabora milioni di candidature ogni mese. Realizzare un portale di annunci di lavoro richiede offerte di lavoro, profili dei candidati, ricerca avanzata e matching, monitoraggio delle candidature, dashboard per i datori di lavoro, parsing dei curriculum e sistemi di notifica. La complessità aumenta con funzionalità come i test di competenze, i colloqui video e il matching basato su AI.",
+  "keyFeatures": [
+    "Offerte di lavoro e pubblicazione annunci",
+    "Profili dei candidati e curriculum",
+    "Ricerca avanzata e filtri",
+    "Sistema di monitoraggio delle candidature",
+    "Dashboard per il datore di lavoro",
+    "Dashboard per il candidato",
+    "Parsing dei curriculum e matching",
+    "Notifiche via email e push",
+    "Test di competenze",
+    "Analisi e reportistica"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Design UI/UX",
+      "description": "Offerte di lavoro, profili dei candidati, dashboard"
+    },
+    {
+      "category": "Sviluppo Frontend",
+      "description": "App web e app mobile"
+    },
+    {
+      "category": "Sviluppo Backend",
+      "description": "Database delle offerte, motore di ricerca, API"
+    },
+    {
+      "category": "Motore di Ricerca",
+      "description": "Elasticsearch, matching delle offerte, filtri"
+    },
+    {
+      "category": "Parsing dei Curriculum",
+      "description": "Parsing dei curriculum e algoritmi di matching"
+    },
+    {
+      "category": "Monitoraggio delle Candidature",
+      "description": "Funzionalità ATS, pipeline dei candidati"
+    },
+    {
+      "category": "Sistema di Notifiche",
+      "description": "Notifiche via email e push"
+    },
+    {
+      "category": "QA e Testing",
+      "description": "Test di accuratezza della ricerca, validazione del matching"
+    },
+    {
+      "category": "DevOps e Infrastruttura",
+      "description": "Database delle offerte e infrastruttura di ricerca"
+    }
+  ],
+  "complexityFactors": [
+    "Acquisizione e gestione dei dati sulle offerte di lavoro",
+    "Parsing dei curriculum e algoritmi di matching",
+    "Marketplace a due lati (datori di lavoro e candidati)",
+    "Complessità del sistema di monitoraggio delle candidature",
+    "Accuratezza di ricerca e filtri",
+    "Onboarding di datori di lavoro e candidati",
+    "Matching delle offerte in tempo reale"
+  ],
+  "timeline": [
+    {
+      "phase": "Analisi e Pianificazione",
+      "duration": "2–3 settimane",
+      "description": "Struttura dei dati sulle offerte, requisiti di matching e definizione dell'ambito delle funzionalità."
+    },
+    {
+      "phase": "Design UI/UX",
+      "duration": "3–5 settimane",
+      "description": "Progettazione di offerte di lavoro, profili dei candidati e dashboard."
+    },
+    {
+      "phase": "Sviluppo Backend",
+      "duration": "5–10 settimane",
+      "description": "Realizzazione del database delle offerte, del motore di ricerca e dell'API."
+    },
+    {
+      "phase": "Sviluppo Frontend",
+      "duration": "5–8 settimane",
+      "description": "Sviluppo dell'app web e delle app mobile con le funzionalità per le offerte di lavoro."
+    },
+    {
+      "phase": "Parsing dei Curriculum",
+      "duration": "3–5 settimane",
+      "description": "Implementazione del parsing dei curriculum e degli algoritmi di matching."
+    },
+    {
+      "phase": "Monitoraggio delle Candidature",
+      "duration": "3–4 settimane",
+      "description": "Realizzazione delle funzionalità ATS e della pipeline dei candidati."
+    },
+    {
+      "phase": "Testing e QA",
+      "duration": "2–4 settimane",
+      "description": "Test di accuratezza della ricerca e validazione del matching."
+    },
+    {
+      "phase": "Deployment e Lancio",
+      "duration": "1–2 settimane",
+      "description": "Deployment in produzione e soft launch."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Quanto costa realizzare un portale di annunci di lavoro?",
+      "answer": "Un portale di annunci di lavoro completo costa $50,000–$150,000. Un MVP con offerte di lavoro, profili dei candidati e ricerca di base può essere realizzato per $25,000–$60,000 in 2–4 mesi."
+    },
+    {
+      "question": "Quanto tempo serve per realizzare un portale di annunci di lavoro?",
+      "answer": "Lo sviluppo completo richiede 4–10 mesi. Un MVP con le funzionalità principali di ricerca lavoro può essere pronto in 2–4 mesi."
+    },
+    {
+      "question": "Mi serve il parsing dei curriculum per l'MVP?",
+      "answer": "No, puoi iniziare con il caricamento manuale dei curriculum e aggiungere il parsing nella versione 2.0. Tuttavia, il parsing dei curriculum migliora notevolmente il matching dei candidati e l'esperienza utente."
+    },
+    {
+      "question": "Qual è la sfida più grande nei portali di annunci di lavoro?",
+      "answer": "Costruire un marketplace a due lati con offerte sufficienti ad attrarre i candidati e candidati sufficienti ad attrarre i datori di lavoro. Questo richiede un'attività di marketing significativa ed effetti di rete."
+    },
+    {
+      "question": "Come guadagnano i portali di annunci di lavoro?",
+      "answer": "I portali di annunci di lavoro ricavano tipicamente entrate da abbonamenti per i datori di lavoro, costi per la pubblicazione degli annunci, offerte in evidenza e funzionalità premium per i candidati. Alcuni applicano anche un costo per l'accesso ai database dei candidati."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Cos'è un portale di annunci di lavoro come LinkedIn Jobs?",
+      "paragraphs": [
+        "Un portale di annunci di lavoro come LinkedIn Jobs è una piattaforma che mette in contatto chi cerca lavoro con i datori di lavoro, consentendo alle aziende di pubblicare offerte mentre i candidati cercano, si candidano e monitorano le proprie candidature. LinkedIn Jobs stesso elabora milioni di candidature ogni mese, a dimostrazione sia della portata dell'opportunità sia della sfida del marketplace a due lati necessaria per realizzare un prodotto competitivo. Realizzare un portale di annunci di lavoro richiede offerte di lavoro, profili dei candidati, ricerca avanzata e matching, monitoraggio delle candidature, dashboard per i datori di lavoro, parsing dei curriculum e sistemi di notifica.",
+        "La sfida tecnica principale di un portale di annunci di lavoro è costruire un marketplace a due lati con offerte sufficienti ad attrarre i candidati e candidati sufficienti ad attrarre i datori di lavoro. Questo classico problema dell'uovo e della gallina richiede un'attività di marketing significativa ed effetti di rete. L'algoritmo di ricerca e matching deve mettere in contatto efficacemente i candidati con le opportunità pertinenti, fornendo al contempo ai datori di lavoro candidati qualificati. Questo richiede un'architettura backend sofisticata con motori di ricerca, algoritmi di raccomandazione e sistemi di notifica in tempo reale.",
+        "I portali di annunci di lavoro affrontano sfide operative uniche che vanno oltre la pura complessità tecnica. La qualità dei dati sulle offerte è fondamentale: annunci obsoleti, pubblicazioni duplicate o offerte spam compromettono la fiducia degli utenti. Mantenere relazioni con i datori di lavoro è essenziale per l'accesso agli annunci e per le entrate. L'accuratezza del parsing dei curriculum varia notevolmente, richiedendo un continuo affinamento degli algoritmi. Questi fattori richiedono sia soluzioni tecniche sia processi operativi che vanno oltre la piattaforma stessa."
+      ]
+    },
+    {
+      "heading": "Perché realizzare un portale di annunci di lavoro nel 2025?",
+      "paragraphs": [
+        "Il mercato globale del recruiting online continua a crescere, con i portali di annunci di lavoro e i network professionali che conquistano quote di mercato a discapito dei metodi di recruiting tradizionali. Sebbene LinkedIn, Indeed e Glassdoor dominino la ricerca di lavoro generica, esistono opportunità significative nelle nicchie verticali. I portali focalizzati su settori specifici (lavori tech, sanità, finanza), livelli di competenza (entry-level, executive) o tipologie di lavoro (lavoro da remoto, freelance, a contratto) hanno conquistato con successo quote di mercato offrendo un matching migliore per audience specializzate.",
+        "L'espansione geografica resta una grande opportunità. Mentre la ricerca di lavoro è matura in Nord America e nell'Europa occidentale, molti mercati internazionali presentano meno concorrenza e una crescente adozione online. I portali di annunci di lavoro locali che comprendono i mercati del lavoro regionali, le aspettative salariali e le pratiche di assunzione possono competere efficacemente contro le piattaforme globali.",
+        "I nuovi formati di lavoro creano nuove opportunità. Le piattaforme per il lavoro da remoto, i marketplace della gig economy e il matching basato sulle competenze rappresentano tutti innovazioni che i portali di annunci di lavoro tradizionali non supportano bene. Realizzare una piattaforma ottimizzata per questi formati può conquistare audience di early adopter prima che le piattaforme più grandi si adattino."
+      ]
+    },
+    {
+      "heading": "Stack tecnologico consigliato per un portale di annunci di lavoro",
+      "paragraphs": [
+        "Per lo sviluppo mobile, React Native o Flutter sono le scelte più convenienti, poiché consentono di utilizzare un unico codebase per iOS e Android. Per il web, Next.js o Remix offrono un eccellente server-side rendering per la SEO, fondamentale per la scoperta delle offerte e per il traffico organico proveniente dalle ricerche di chi cerca lavoro.",
+        "L'architettura backend dei portali di annunci di lavoro è incentrata su ricerca e matching. Node.js o Python sono scelte comuni per il livello API. Per il database, PostgreSQL gestisce offerte di lavoro, profili dei candidati e candidature. Elasticsearch fornisce funzionalità di ricerca avanzata con filtri a faccette, ricerca full-text e ranking per rilevanza. Redis funge da cache in memoria per i dati sulle offerte e i risultati di ricerca.",
+        "Il parsing dei curriculum è una sfida significativa. Realizzare un parsing dei curriculum personalizzato è complesso, quindi l'utilizzo di servizi come Sovren, RChilli o Affinda consente il parsing dei curriculum tramite API. Sebbene questi servizi applichino un costo per ogni curriculum elaborato ($0.10–$0.50 per curriculum), eliminano 100–200 ore di sviluppo e la manutenzione continua degli algoritmi."
+      ]
+    },
+    {
+      "heading": "Come ridurre i costi di sviluppo di un portale di annunci di lavoro",
+      "paragraphs": [
+        "La riduzione dei costi più incisiva consiste nell'utilizzo di servizi gestiti per la ricerca e il parsing dei curriculum. Elasticsearch Cloud fornisce un'infrastruttura di ricerca gestita. Servizi di parsing dei curriculum come Sovren o RChilli forniscono il parsing tramite API. Sebbene questi servizi applichino un costo per ogni chiamata API, eliminano 200–400 ore di sviluppo backend e la gestione continua dell'infrastruttura.",
+        "Rimandare gli algoritmi di matching avanzati alla versione 2.0 riduce notevolmente l'ambito di sviluppo iniziale. Lanciare con una semplice ricerca per parole chiave e filtri di base (località, retribuzione, tipologia di lavoro) è sufficiente per un MVP. Gli algoritmi di matching basati su machine learning che apprendono dai dati delle candidature richiedono una quantità significativa di dati di addestramento per essere efficaci: realizzarli prima di avere utenti è un'ottimizzazione prematura.",
+        "Iniziare con un singolo mercato o settore invece di costruire per una scala globale fin dal primo giorno riduce la complessità e consente di costruire relazioni con i datori di lavoro in modo incrementale. Molti portali di annunci di lavoro di successo sono stati lanciati settore per settore o città per città, effettuando manualmente l'onboarding dei primi 50–100 datori di lavoro e iterando il prodotto sulla base di dati reali sulle offerte prima di scalare la tecnologia."
+      ]
+    },
+    {
+      "heading": "Strategie di monetizzazione per un portale di annunci di lavoro",
+      "paragraphs": [
+        "Gli abbonamenti per i datori di lavoro sono il modello di ricavo principale per la maggior parte dei portali di annunci di lavoro. LinkedIn Recruiter applica un costo di $99.99–$825+ al mese per l'accesso ai database dei candidati e la pubblicazione degli annunci. Indeed applica un costo di $5–$10 per annuncio pubblicato oppure $300+ al mese per pubblicazioni illimitate. Per le nuove piattaforme che competono per i datori di lavoro, iniziare con tariffe di abbonamento più basse o con un modello pay-per-post è una strategia collaudata per attrarre l'offerta dalle piattaforme consolidate.",
+        "Le offerte di lavoro in evidenza generano entrate aggiuntive. Applicare un costo ai datori di lavoro per il posizionamento premium nei risultati di ricerca, gli annunci sponsorizzati o i banner pubblicitari crea inventario pubblicitario. Questo flusso di entrate diventa più prezioso man mano che la piattaforma cresce e le offerte competono per l'attenzione dei candidati.",
+        "Le funzionalità premium per i candidati generano entrate da chi cerca lavoro. Applicare un costo ai candidati per filtri di ricerca avanzati, monitoraggio delle candidature o visibilità del curriculum genera entrate dagli utenti più coinvolti. Tuttavia, questo modello può creare attrito nel processo di ricerca lavoro, quindi va implementato con attenzione per evitare di ridurre il valore della piattaforma."
+      ]
+    }
+  ]
+}

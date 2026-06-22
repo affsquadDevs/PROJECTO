@@ -1,0 +1,171 @@
+{
+  "appName": "Job Board",
+  "category": "Recruitment & Jobs",
+  "description": "A job board like LinkedIn Jobs requires job listings, candidate profiles, search and matching, application tracking, and employer dashboards.",
+  "introText": "Job boards connect millions of job seekers with employers, with LinkedIn Jobs processing millions of applications monthly. Building a job board requires job listings, candidate profiles, advanced search and matching, application tracking, employer dashboards, resume parsing, and notification systems. The complexity increases with features like skill assessments, video interviews, and AI-powered matching.",
+  "keyFeatures": [
+    "Job listings and posting",
+    "Candidate profiles and resumes",
+    "Advanced search and filters",
+    "Application tracking system",
+    "Employer dashboard",
+    "Candidate dashboard",
+    "Resume parsing and matching",
+    "Email and push notifications",
+    "Skill assessments",
+    "Analytics and reporting"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX Design",
+      "description": "Job listings, candidate profiles, dashboards"
+    },
+    {
+      "category": "Frontend Development",
+      "description": "Web app and mobile apps"
+    },
+    {
+      "category": "Backend Development",
+      "description": "Job database, search engine, API"
+    },
+    {
+      "category": "Search Engine",
+      "description": "Elasticsearch, job matching, filters"
+    },
+    {
+      "category": "Resume Parsing",
+      "description": "Resume parsing and matching algorithms"
+    },
+    {
+      "category": "Application Tracking",
+      "description": "ATS features, candidate pipeline"
+    },
+    {
+      "category": "Notification System",
+      "description": "Email and push notifications"
+    },
+    {
+      "category": "QA & Testing",
+      "description": "Search accuracy testing, matching validation"
+    },
+    {
+      "category": "DevOps & Infrastructure",
+      "description": "Job database and search infrastructure"
+    }
+  ],
+  "complexityFactors": [
+    "Job data acquisition and management",
+    "Resume parsing and matching algorithms",
+    "Two-sided marketplace (employers and candidates)",
+    "Application tracking system complexity",
+    "Search and filtering accuracy",
+    "Employer and candidate onboarding",
+    "Real-time job matching"
+  ],
+  "timeline": [
+    {
+      "phase": "Discovery & Planning",
+      "duration": "2–3 weeks",
+      "description": "Job data structure, matching requirements, and feature scoping."
+    },
+    {
+      "phase": "UI/UX Design",
+      "duration": "3–5 weeks",
+      "description": "Designing job listings, candidate profiles, and dashboards."
+    },
+    {
+      "phase": "Backend Development",
+      "duration": "5–10 weeks",
+      "description": "Building job database, search engine, and API."
+    },
+    {
+      "phase": "Frontend Development",
+      "duration": "5–8 weeks",
+      "description": "Developing web app and mobile apps with job features."
+    },
+    {
+      "phase": "Resume Parsing",
+      "duration": "3–5 weeks",
+      "description": "Implementing resume parsing and matching algorithms."
+    },
+    {
+      "phase": "Application Tracking",
+      "duration": "3–4 weeks",
+      "description": "Building ATS features and candidate pipeline."
+    },
+    {
+      "phase": "Testing & QA",
+      "duration": "2–4 weeks",
+      "description": "Search accuracy testing and matching validation."
+    },
+    {
+      "phase": "Deployment & Launch",
+      "duration": "1–2 weeks",
+      "description": "Production deployment and soft launch."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much does it cost to build a job board?",
+      "answer": "A full-featured job board costs $50,000–$150,000. An MVP with job listings, candidate profiles, and basic search can be built for $25,000–$60,000 in 2–4 months."
+    },
+    {
+      "question": "How long does it take to build a job board?",
+      "answer": "Full development takes 4–10 months. An MVP with core job search features can be ready in 2–4 months."
+    },
+    {
+      "question": "Do I need resume parsing for MVP?",
+      "answer": "No, you can start with manual resume uploads and add parsing in version 2.0. However, resume parsing significantly improves candidate matching and user experience."
+    },
+    {
+      "question": "What is the biggest challenge in job boards?",
+      "answer": "Building a two-sided marketplace with enough jobs to attract candidates and enough candidates to attract employers. This requires significant marketing and network effects."
+    },
+    {
+      "question": "How do job boards make money?",
+      "answer": "Job boards typically earn revenue from employer subscriptions, job posting fees, featured listings, and premium candidate features. Some also charge for access to candidate databases."
+    }
+  ],
+  "content": [
+    {
+      "heading": "What Is a Job Board Like LinkedIn Jobs?",
+      "paragraphs": [
+        "A job board like LinkedIn Jobs is a platform that connects job seekers with employers, enabling companies to post job openings while candidates search, apply, and track applications. LinkedIn Jobs itself processes millions of applications monthly, demonstrating both the scale of opportunity and the two-sided marketplace challenge required to build a competitive product. Building a job board requires job listings, candidate profiles, advanced search and matching, application tracking, employer dashboards, resume parsing, and notification systems.",
+        "The core technical challenge of a job board is building a two-sided marketplace with enough jobs to attract candidates and enough candidates to attract employers. This chicken-and-egg problem requires significant marketing and network effects. The search and matching algorithm must effectively connect candidates with relevant opportunities while providing employers with qualified applicants. This requires sophisticated backend architecture with search engines, recommendation algorithms, and real-time notification systems.",
+        "Job boards face unique operational challenges beyond pure technical complexity. Job data quality is critical — outdated listings, duplicate postings, or spam jobs damage user trust. Maintaining relationships with employers is essential for listing access and revenue. Resume parsing accuracy varies significantly, requiring ongoing algorithm refinement. These factors require both technical solutions and operational processes that extend beyond the platform itself."
+      ]
+    },
+    {
+      "heading": "Why Build a Job Board in 2025?",
+      "paragraphs": [
+        "The global online recruitment market continues to grow, with job boards and professional networks capturing market share from traditional recruitment methods. While LinkedIn, Indeed, and Glassdoor dominate general job search, significant opportunities exist in niche verticals. Job boards focused on specific industries (tech jobs, healthcare, finance), skill levels (entry-level, executive), or job types (remote work, freelance, contract) have successfully carved out market share by offering better matching for specialized audiences.",
+        "Geographic expansion remains a major opportunity. While job search is mature in North America and Western Europe, many international markets have less competition and growing online adoption. Local job boards that understand regional job markets, salary expectations, and hiring practices can compete effectively against global platforms.",
+        "Emerging job formats create new opportunities. Remote work platforms, gig economy marketplaces, and skill-based matching all represent innovations that traditional job boards don't support well. Building a platform optimized for these formats can capture early adopter audiences before larger platforms adapt."
+      ]
+    },
+    {
+      "heading": "Recommended Tech Stack for a Job Board",
+      "paragraphs": [
+        "For mobile development, React Native or Flutter are the most cost-effective choices, allowing a single codebase to target both iOS and Android. For web, Next.js or Remix provide excellent server-side rendering for SEO, which is critical for job discovery and organic search traffic from job seekers.",
+        "The backend architecture for job boards centers on search and matching. Node.js or Python are common choices for the API layer. For the database, PostgreSQL handles job listings, candidate profiles, and applications. Elasticsearch provides advanced search capabilities with faceted filtering, full-text search, and relevance ranking. Redis serves as an in-memory cache for job data and search results.",
+        "Resume parsing is a significant challenge. Building custom resume parsing is complex, so using services like Sovren, RChilli, or Affinda provides resume parsing through APIs. While these services charge per resume parsed ($0.10–$0.50 per resume), they eliminate 100–200 hours of development and ongoing algorithm maintenance."
+      ]
+    },
+    {
+      "heading": "How to Reduce Development Costs for a Job Board",
+      "paragraphs": [
+        "The most impactful cost reduction is using managed services for search and resume parsing. Elasticsearch Cloud provides managed search infrastructure. Resume parsing services like Sovren or RChilli provide parsing through APIs. While these services charge per API call, they eliminate 200–400 hours of backend development and ongoing infrastructure management.",
+        "Deferring advanced matching algorithms to version 2.0 significantly reduces initial development scope. Launching with simple keyword-based search and basic filters (location, salary, job type) is sufficient for MVP. Machine learning-based matching algorithms that learn from application data require significant training data to be effective — building them before you have users is premature optimization.",
+        "Starting with a single market or industry instead of building for global scale from day one reduces complexity and allows you to build relationships with employers incrementally. Many successful job boards launched industry-by-industry or city-by-city, manually onboarding their first 50–100 employers and iterating the product based on real job data before scaling the technology."
+      ]
+    },
+    {
+      "heading": "Monetization Strategies for a Job Board",
+      "paragraphs": [
+        "Employer subscriptions are the primary revenue model for most job boards. LinkedIn Recruiter charges $99.99–$825+ per month for access to candidate databases and job posting. Indeed charges $5–$10 per job posting or $300+ per month for unlimited postings. For new platforms competing for employers, starting with lower subscription fees or pay-per-post pricing is a proven strategy to attract supply from incumbent platforms.",
+        "Featured job placements generate additional revenue. Charging employers for premium placement in search results, sponsored listings, or banner ads creates advertising inventory. This revenue stream becomes more valuable as your platform grows and jobs compete for candidate attention.",
+        "Candidate premium features create revenue from job seekers. Charging candidates for advanced search filters, application tracking, or resume visibility creates revenue from engaged users. However, this model can create friction in the job search process, so it must be implemented carefully to avoid reducing platform value."
+      ]
+    }
+  ]
+}

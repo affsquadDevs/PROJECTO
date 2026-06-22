@@ -1,0 +1,170 @@
+{
+  "category": "Reclutamiento y empleo",
+  "description": "Un portal de empleo como LinkedIn Jobs requiere ofertas de trabajo, perfiles de candidatos, búsqueda y emparejamiento, seguimiento de candidaturas y paneles para empleadores.",
+  "introText": "Los portales de empleo conectan a millones de personas que buscan trabajo con las empresas: LinkedIn Jobs procesa millones de candidaturas al mes. Crear un portal de empleo requiere ofertas de trabajo, perfiles de candidatos, búsqueda y emparejamiento avanzados, seguimiento de candidaturas, paneles para empleadores, análisis de currículums y sistemas de notificaciones. La complejidad aumenta con funciones como pruebas de competencias, entrevistas en vídeo y emparejamiento basado en IA.",
+  "keyFeatures": [
+    "Ofertas y publicación de empleo",
+    "Perfiles de candidatos y currículums",
+    "Búsqueda y filtros avanzados",
+    "Sistema de seguimiento de candidaturas",
+    "Panel para empleadores",
+    "Panel para candidatos",
+    "Análisis y emparejamiento de currículums",
+    "Notificaciones por email y push",
+    "Pruebas de competencias",
+    "Analítica e informes"
+  ],
+  "costBreakdown": [
+    {
+      "category": "Diseño UI/UX",
+      "description": "Ofertas de empleo, perfiles de candidatos, paneles"
+    },
+    {
+      "category": "Desarrollo frontend",
+      "description": "Aplicación web y aplicaciones móviles"
+    },
+    {
+      "category": "Desarrollo backend",
+      "description": "Base de datos de empleos, motor de búsqueda, API"
+    },
+    {
+      "category": "Motor de búsqueda",
+      "description": "Elasticsearch, emparejamiento de empleos, filtros"
+    },
+    {
+      "category": "Análisis de currículums",
+      "description": "Algoritmos de análisis y emparejamiento de currículums"
+    },
+    {
+      "category": "Seguimiento de candidaturas",
+      "description": "Funciones de ATS, flujo de candidatos"
+    },
+    {
+      "category": "Sistema de notificaciones",
+      "description": "Notificaciones por email y push"
+    },
+    {
+      "category": "QA y testing",
+      "description": "Pruebas de precisión de búsqueda, validación del emparejamiento"
+    },
+    {
+      "category": "DevOps e infraestructura",
+      "description": "Infraestructura de base de datos de empleos y búsqueda"
+    }
+  ],
+  "complexityFactors": [
+    "Obtención y gestión de datos de empleo",
+    "Algoritmos de análisis y emparejamiento de currículums",
+    "Marketplace de dos caras (empleadores y candidatos)",
+    "Complejidad del sistema de seguimiento de candidaturas",
+    "Precisión de la búsqueda y el filtrado",
+    "Onboarding de empleadores y candidatos",
+    "Emparejamiento de empleos en tiempo real"
+  ],
+  "timeline": [
+    {
+      "phase": "Análisis y planificación",
+      "duration": "2–3 semanas",
+      "description": "Estructura de los datos de empleo, requisitos de emparejamiento y definición del alcance de las funciones."
+    },
+    {
+      "phase": "Diseño UI/UX",
+      "duration": "3–5 semanas",
+      "description": "Diseño de ofertas de empleo, perfiles de candidatos y paneles."
+    },
+    {
+      "phase": "Desarrollo backend",
+      "duration": "5–10 semanas",
+      "description": "Creación de la base de datos de empleos, el motor de búsqueda y la API."
+    },
+    {
+      "phase": "Desarrollo frontend",
+      "duration": "5–8 semanas",
+      "description": "Desarrollo de la aplicación web y las aplicaciones móviles con funciones de empleo."
+    },
+    {
+      "phase": "Análisis de currículums",
+      "duration": "3–5 semanas",
+      "description": "Implementación de los algoritmos de análisis y emparejamiento de currículums."
+    },
+    {
+      "phase": "Seguimiento de candidaturas",
+      "duration": "3–4 semanas",
+      "description": "Creación de las funciones de ATS y el flujo de candidatos."
+    },
+    {
+      "phase": "Testing y QA",
+      "duration": "2–4 semanas",
+      "description": "Pruebas de precisión de búsqueda y validación del emparejamiento."
+    },
+    {
+      "phase": "Despliegue y lanzamiento",
+      "duration": "1–2 semanas",
+      "description": "Despliegue en producción y lanzamiento suave."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Cuánto cuesta crear un portal de empleo?",
+      "answer": "Un portal de empleo con todas las funciones cuesta entre $50,000 y $150,000. Un MVP con ofertas de empleo, perfiles de candidatos y búsqueda básica puede crearse por $25,000–$60,000 en 2–4 meses."
+    },
+    {
+      "question": "¿Cuánto se tarda en crear un portal de empleo?",
+      "answer": "El desarrollo completo tarda entre 4 y 10 meses. Un MVP con las funciones esenciales de búsqueda de empleo puede estar listo en 2–4 meses."
+    },
+    {
+      "question": "¿Necesito análisis de currículums para el MVP?",
+      "answer": "No, puedes empezar con la subida manual de currículums y añadir el análisis en la versión 2.0. No obstante, el análisis de currículums mejora notablemente el emparejamiento de candidatos y la experiencia de usuario."
+    },
+    {
+      "question": "¿Cuál es el mayor reto de los portales de empleo?",
+      "answer": "Crear un marketplace de dos caras con suficientes ofertas para atraer candidatos y suficientes candidatos para atraer empleadores. Esto requiere un marketing considerable y efectos de red."
+    },
+    {
+      "question": "¿Cómo ganan dinero los portales de empleo?",
+      "answer": "Los portales de empleo suelen generar ingresos mediante suscripciones de empleadores, tarifas por publicar ofertas, anuncios destacados y funciones premium para candidatos. Algunos también cobran por el acceso a bases de datos de candidatos."
+    }
+  ],
+  "content": [
+    {
+      "heading": "¿Qué es un portal de empleo como LinkedIn Jobs?",
+      "paragraphs": [
+        "Un portal de empleo como LinkedIn Jobs es una plataforma que conecta a las personas que buscan trabajo con los empleadores, permitiendo a las empresas publicar ofertas mientras los candidatos buscan, se postulan y hacen seguimiento de sus candidaturas. El propio LinkedIn Jobs procesa millones de candidaturas al mes, lo que demuestra tanto la escala de la oportunidad como el reto del marketplace de dos caras que supone crear un producto competitivo. Crear un portal de empleo requiere ofertas de trabajo, perfiles de candidatos, búsqueda y emparejamiento avanzados, seguimiento de candidaturas, paneles para empleadores, análisis de currículums y sistemas de notificaciones.",
+        "El principal reto técnico de un portal de empleo es crear un marketplace de dos caras con suficientes ofertas para atraer candidatos y suficientes candidatos para atraer empleadores. Este problema del huevo y la gallina requiere un marketing considerable y efectos de red. El algoritmo de búsqueda y emparejamiento debe conectar eficazmente a los candidatos con las oportunidades relevantes, a la vez que ofrece a los empleadores candidatos cualificados. Esto requiere una arquitectura backend sofisticada con motores de búsqueda, algoritmos de recomendación y sistemas de notificación en tiempo real.",
+        "Los portales de empleo se enfrentan a retos operativos propios que van más allá de la pura complejidad técnica. La calidad de los datos de empleo es crítica: las ofertas obsoletas, las publicaciones duplicadas o los empleos spam dañan la confianza de los usuarios. Mantener relaciones con los empleadores es esencial para el acceso a las ofertas y para los ingresos. La precisión del análisis de currículums varía notablemente, lo que exige un refinamiento continuo de los algoritmos. Estos factores requieren tanto soluciones técnicas como procesos operativos que van más allá de la propia plataforma."
+      ]
+    },
+    {
+      "heading": "¿Por qué crear un portal de empleo en 2025?",
+      "paragraphs": [
+        "El mercado global del reclutamiento online sigue creciendo, y los portales de empleo y las redes profesionales le ganan cuota de mercado a los métodos de reclutamiento tradicionales. Aunque LinkedIn, Indeed y Glassdoor dominan la búsqueda de empleo generalista, existen oportunidades significativas en nichos verticales. Los portales de empleo centrados en sectores específicos (empleos tecnológicos, sanidad, finanzas), niveles de cualificación (nivel inicial, ejecutivo) o tipos de empleo (trabajo remoto, freelance, por contrato) se han hecho con cuota de mercado ofreciendo un mejor emparejamiento para públicos especializados.",
+        "La expansión geográfica sigue siendo una gran oportunidad. Aunque la búsqueda de empleo está madura en Norteamérica y Europa Occidental, muchos mercados internacionales tienen menos competencia y una adopción online creciente. Los portales de empleo locales que entienden los mercados laborales regionales, las expectativas salariales y las prácticas de contratación pueden competir eficazmente frente a las plataformas globales.",
+        "Los formatos de empleo emergentes generan nuevas oportunidades. Las plataformas de trabajo remoto, los marketplaces de la economía gig y el emparejamiento basado en competencias representan innovaciones que los portales de empleo tradicionales no soportan bien. Crear una plataforma optimizada para estos formatos puede captar a los públicos pioneros antes de que las plataformas más grandes se adapten."
+      ]
+    },
+    {
+      "heading": "Stack tecnológico recomendado para un portal de empleo",
+      "paragraphs": [
+        "Para el desarrollo móvil, React Native o Flutter son las opciones más rentables, ya que permiten que una única base de código cubra tanto iOS como Android. Para la web, Next.js o Remix ofrecen un excelente renderizado del lado del servidor para SEO, algo crítico para el descubrimiento de empleos y el tráfico de búsqueda orgánica procedente de quienes buscan trabajo.",
+        "La arquitectura backend de los portales de empleo gira en torno a la búsqueda y el emparejamiento. Node.js o Python son opciones habituales para la capa de API. Para la base de datos, PostgreSQL gestiona las ofertas de empleo, los perfiles de candidatos y las candidaturas. Elasticsearch aporta capacidades de búsqueda avanzada con filtrado por facetas, búsqueda de texto completo y ordenación por relevancia. Redis funciona como caché en memoria para los datos de empleo y los resultados de búsqueda.",
+        "El análisis de currículums es un reto importante. Crear un análisis de currículums propio es complejo, así que usar servicios como Sovren, RChilli o Affinda proporciona análisis de currículums mediante APIs. Aunque estos servicios cobran por currículum analizado ($0.10–$0.50 por currículum), eliminan entre 100 y 200 horas de desarrollo y el mantenimiento continuo de los algoritmos."
+      ]
+    },
+    {
+      "heading": "Cómo reducir los costes de desarrollo de un portal de empleo",
+      "paragraphs": [
+        "La reducción de costes con mayor impacto es usar servicios gestionados para la búsqueda y el análisis de currículums. Elasticsearch Cloud proporciona infraestructura de búsqueda gestionada. Los servicios de análisis de currículums como Sovren o RChilli ofrecen el análisis mediante APIs. Aunque estos servicios cobran por llamada a la API, eliminan entre 200 y 400 horas de desarrollo backend y la gestión continua de la infraestructura.",
+        "Posponer los algoritmos de emparejamiento avanzados a la versión 2.0 reduce notablemente el alcance del desarrollo inicial. Lanzar con una búsqueda sencilla basada en palabras clave y filtros básicos (ubicación, salario, tipo de empleo) es suficiente para un MVP. Los algoritmos de emparejamiento basados en machine learning, que aprenden de los datos de candidaturas, requieren muchos datos de entrenamiento para ser eficaces: crearlos antes de tener usuarios es una optimización prematura.",
+        "Empezar por un único mercado o sector en lugar de construir para una escala global desde el primer día reduce la complejidad y permite establecer relaciones con los empleadores de forma gradual. Muchos portales de empleo de éxito se lanzaron sector a sector o ciudad a ciudad, incorporando manualmente a sus primeros 50–100 empleadores e iterando el producto a partir de datos de empleo reales antes de escalar la tecnología."
+      ]
+    },
+    {
+      "heading": "Estrategias de monetización para un portal de empleo",
+      "paragraphs": [
+        "Las suscripciones de empleadores son el principal modelo de ingresos de la mayoría de los portales de empleo. LinkedIn Recruiter cobra entre $99.99 y $825+ al mes por el acceso a bases de datos de candidatos y la publicación de ofertas. Indeed cobra $5–$10 por oferta publicada o $300+ al mes por publicaciones ilimitadas. Para las plataformas nuevas que compiten por los empleadores, empezar con cuotas de suscripción más bajas o un precio de pago por publicación es una estrategia probada para atraer oferta desde las plataformas establecidas.",
+        "Las posiciones de empleo destacadas generan ingresos adicionales. Cobrar a los empleadores por una colocación premium en los resultados de búsqueda, ofertas patrocinadas o banners publicitarios crea inventario publicitario. Esta fuente de ingresos cobra más valor a medida que tu plataforma crece y las ofertas compiten por la atención de los candidatos.",
+        "Las funciones premium para candidatos generan ingresos a partir de quienes buscan trabajo. Cobrar a los candidatos por filtros de búsqueda avanzados, seguimiento de candidaturas o visibilidad del currículum genera ingresos de los usuarios más comprometidos. No obstante, este modelo puede crear fricción en el proceso de búsqueda de empleo, así que debe implementarse con cuidado para no reducir el valor de la plataforma."
+      ]
+    }
+  ]
+}

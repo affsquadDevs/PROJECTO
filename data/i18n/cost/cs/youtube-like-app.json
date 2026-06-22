@@ -1,0 +1,194 @@
+{
+  "category": "Streamování videa a obsah",
+  "description": "Videoplatforma jako YouTube vyžaduje nahrávání videa, transkódování, adaptivní streamování, správu obsahu, uživatelské kanály, komentáře, doporučování a monetizační funkce.",
+  "introText": "Videoplatformy jako YouTube zcela proměnily způsob konzumace obsahu – na samotný YouTube se každou minutu nahraje přes 500 hodin videa. Vytvoření platformy ve stylu YouTube vyžaduje infrastrukturu pro nahrávání videa, transkódovací pipeline, adaptivní streamování, systémy pro správu obsahu, uživatelské kanály, funkce pro zapojení diváků (komentáře, lajky, odběry), doporučovací algoritmy a monetizační nástroje. Technická náročnost je značná, zejména u zpracování a distribuce videa ve velkém měřítku.",
+  "keyFeatures": [
+    "Nahrávání a zpracování videa",
+    "Transkódování videa (více rozlišení)",
+    "Adaptivní streamování s proměnným datovým tokem (HLS/DASH)",
+    "Videopřehrávač s ovládáním přehrávání",
+    "Uživatelské kanály a profily",
+    "Kategorizace a vyhledávání videí",
+    "Komentáře a funkce pro zapojení diváků",
+    "Odběry a oznámení",
+    "Doporučování videí",
+    "Analytický panel pro tvůrce",
+    "Monetizace (reklamy, předplatné)",
+    "Možnost živého vysílání"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX design",
+      "description": "Videopřehrávač, stránky kanálů, rozhraní pro nahrávání"
+    },
+    {
+      "category": "Vývoj frontendu",
+      "description": "Webová aplikace, mobilní aplikace, videopřehrávač"
+    },
+    {
+      "category": "Vývoj backendu",
+      "description": "Správa obsahu, API, uživatelský systém"
+    },
+    {
+      "category": "Zpracování videa",
+      "description": "Transkódovací pipeline, nastavení kódování"
+    },
+    {
+      "category": "Infrastruktura pro streamování videa",
+      "description": "Nastavení CDN, adaptivní streamování"
+    },
+    {
+      "category": "Správa obsahu",
+      "description": "Metadata videí, kategorizace, vyhledávání"
+    },
+    {
+      "category": "Funkce pro zapojení diváků",
+      "description": "Komentáře, lajky, odběry, oznámení"
+    },
+    {
+      "category": "Doporučovací systém",
+      "description": "Vývoj algoritmu, integrace strojového učení"
+    },
+    {
+      "category": "Analytika a monetizace",
+      "description": "Panel pro tvůrce, integrace reklam"
+    },
+    {
+      "category": "QA a testování",
+      "description": "Testování kvality videa, zátěžové testování"
+    },
+    {
+      "category": "DevOps a infrastruktura",
+      "description": "Hostování videa, CDN, monitoring"
+    }
+  ],
+  "complexityFactors": [
+    "Transkódování a zpracování videa ve velkém měřítku (náročné na CPU)",
+    "Adaptivní streamování s proměnným datovým tokem pro různé podmínky sítě",
+    "Náklady na CDN pro distribuci videa (mohou být $1,000–$10,000+/mo)",
+    "Náklady na úložiště videa (velké soubory, více rozlišení)",
+    "Vývoj doporučovacího algoritmu a integrace strojového učení",
+    "Moderování obsahu a správa autorských práv",
+    "Škálovatelnost pro zvládnutí milionů zhlédnutí videí denně"
+  ],
+  "timeline": [
+    {
+      "phase": "Analýza a plánování",
+      "duration": "2–4 weeks",
+      "description": "Návrh architektury videa, strategie transkódování a stanovení priorit funkcí."
+    },
+    {
+      "phase": "UI/UX design",
+      "duration": "4–6 weeks",
+      "description": "Návrh videopřehrávače, stránek kanálů, rozhraní pro nahrávání a obrazovek mobilní aplikace."
+    },
+    {
+      "phase": "Nastavení video infrastruktury",
+      "duration": "4–8 weeks",
+      "description": "Nastavení nahrávání videa, transkódovací pipeline a integrace CDN."
+    },
+    {
+      "phase": "Vývoj backendu",
+      "duration": "6–12 weeks",
+      "description": "Vytvoření systému pro správu obsahu, API, uživatelských kanálů a funkcí pro zapojení diváků."
+    },
+    {
+      "phase": "Vývoj frontendu",
+      "duration": "6–10 weeks",
+      "description": "Vývoj videopřehrávače, webové aplikace a mobilních aplikací."
+    },
+    {
+      "phase": "Doporučovací systém",
+      "duration": "4–8 weeks",
+      "description": "Vytvoření algoritmu pro doporučování videí a funkcí personalizace."
+    },
+    {
+      "phase": "Funkce pro zapojení diváků",
+      "duration": "3–5 weeks",
+      "description": "Implementace komentářů, lajků, odběrů a oznámení."
+    },
+    {
+      "phase": "Analytika a monetizace",
+      "duration": "3–5 weeks",
+      "description": "Vytvoření analytického panelu pro tvůrce a monetizačních nástrojů."
+    },
+    {
+      "phase": "Testování a QA",
+      "duration": "4–6 weeks",
+      "description": "Testování kvality videa, zátěžové testování a optimalizace výkonu."
+    },
+    {
+      "phase": "Nasazení a spuštění",
+      "duration": "2–3 weeks",
+      "description": "Produkční nasazení, konfigurace CDN a nastavení monitoringu."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kolik stojí vývoj aplikace ve stylu YouTube?",
+      "answer": "Plnohodnotná videoplatforma jako YouTube stojí $80,000–$250,000. MVP s nahráváním videa, přehráváním, kanály a základními funkcemi pro zapojení diváků lze vytvořit za $35,000–$80,000 během 3–6 měsíců."
+    },
+    {
+      "question": "Jak dlouho trvá vytvoření videoplatformy?",
+      "answer": "Kompletní vývoj trvá 6–15 měsíců podle rozsahu funkcí. MVP se základní funkčností pro práci s videem může být hotové za 3–6 měsíců."
+    },
+    {
+      "question": "Jaké jsou průběžné náklady na video infrastrukturu?",
+      "answer": "Náklady na hostování a distribuci videa jsou výrazné: CDN pro streamování ($500–$10,000+/mo podle objemu provozu), úložiště videa ($200–$2,000/mo), transkódovací služby ($300–$3,000/mo) a hostování databáze ($200–$1,500/mo). Náklady dramaticky rostou s počtem zhlédnutí videí."
+    },
+    {
+      "question": "Mám použít službu pro hostování videa, nebo si vytvořit vlastní?",
+      "answer": "Pro MVP se doporučuje využít spravované služby (Mux, Cloudflare Stream, Vimeo OTT). Ty řeší transkódování, CDN i infrastrukturu přehrávače. Vytvoření vlastní video infrastruktury přidá 3–6 měsíců a $20,000–$50,000+ k vývojovým nákladům."
+    },
+    {
+      "question": "Potřebuji pro MVP doporučovací algoritmus?",
+      "answer": "Ne, můžete spustit s jednoduchým procházením podle kategorií a trendujícími videi. Doporučovací algoritmy lze přidat ve verzi 2.0, jakmile budete mít data o sledování pro trénování modelů."
+    },
+    {
+      "question": "Jaké formáty a rozlišení videa bych měl podporovat?",
+      "answer": "Pro MVP podporujte běžné formáty (MP4, WebM) a 3–4 rozlišení (1080p, 720p, 480p, 360p). Plnohodnotné platformy podporují 8K, HDR a více kodeků, což ovšem výrazně zvyšuje náročnost i náklady."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Co je videoplatforma jako YouTube?",
+      "paragraphs": [
+        "Videoplatforma jako YouTube je služba pro hostování a streamování obsahu, která umožňuje uživatelům nahrávat, sdílet a sledovat videa. Na samotný YouTube se každou minutu nahraje přes 500 hodin videa a denně obslouží miliardy zhlédnutí. Vytvoření platformy ve stylu YouTube vyžaduje infrastrukturu pro nahrávání videa, transkódovací pipeline pro převod videí do více rozlišení, adaptivní streamování pro různé podmínky sítě, systémy pro správu obsahu, uživatelské kanály, funkce pro zapojení diváků (komentáře, lajky, odběry), doporučovací algoritmy a monetizační nástroje.",
+        "Technicky nejnáročnějším aspektem videoplatformy je zpracování a distribuce videa. Když uživatel nahraje video, musí být transkódováno do více rozlišení (1080p, 720p, 480p, 360p) a formátů (HLS, DASH), aby bylo možné adaptivní streamování s proměnným datovým tokem. To umožňuje přehrávači automaticky zvolit nejlepší kvalitu podle rychlosti sítě diváka a zajistit plynulé přehrávání. Transkódování videa je náročné na CPU a časově nákladné – zpracování desetiminutového videa do všech požadovaných formátů může trvat 30–60 minut. To vyžaduje specializovanou infrastrukturu a značné výpočetní zdroje.",
+        "Správa obsahu u videoplatforem je mnohem složitější než u platforem založených na textu. Každé video vyžaduje metadata (název, popis, štítky, kategorie, náhled), metriky zapojení (zhlédnutí, lajky, komentáře), informace o tvůrci, nastavení monetizace a stav moderování obsahu. Platforma musí zvládat vyhledávání videí, kategorizaci, doporučování, algoritmy trendů a analytiku pro tvůrce. Vytvoření škálovatelného systému pro správu obsahu, který zvládne miliony videí a miliardy zhlédnutí, vyžaduje pečlivý návrh databáze a strategie kešování."
+      ]
+    },
+    {
+      "heading": "Proč vytvářet videoplatformu v roce 2025?",
+      "paragraphs": [
+        "Globální trh se streamováním videa nadále roste a specializované videoplatformy nacházejí úspěch v úzce zaměřených obsahových kategoriích. Zatímco YouTube dominuje obecnému videoobsahu, vertikálně zaměřené platformy si vybudovaly významné publikum. Twitch vládne živým herním přenosům. Vimeo slouží profesionálním tvůrcům a firmám. Dailymotion se zaměřuje na evropské trhy. Vzdělávací platformy jako Coursera a Khan Academy hostují strukturované videokurzy. Každá vertikála má jedinečné požadavky, které obecné platformy nedokážou plně pokrýt.",
+        "Platformy pro kreativní ekonomiku jsou významnou růstovou oblastí – tvůrci hledají platformy, které nabízejí lepší sdílení příjmů, větší kontrolu nad obsahem a specializované nástroje pro jejich oblast. Sdílení příjmů na YouTube ve výši 45–55 % přimělo mnoho tvůrců hledat alternativy. Platformy nabízející sdílení příjmů 70–90 %, přímou podporu od fanoušků nebo specializované monetizační nástroje mohou přilákat zavedené tvůrce. Vytvoření platformy zaměřené v první řadě na tvůrce s lepší ekonomikou a nástroji představuje významnou příležitost.",
+        "Podnikové a B2B videoplatformy slouží firmám, které potřebují hostovat video pro školení, marketing, ukázky produktů nebo interní komunikaci. Tyto platformy si účtují prémiové ceny ($50–$500+ za měsíc na organizaci) ve srovnání se spotřebitelskými videoplatformami. Funkce jako pokročilá analytika, white-labeling, SSO autentizace a certifikace souladu s předpisy ospravedlňují vyšší ceny. Trh B2B videoplatforem je méně přesycený než spotřebitelské video a nabízí lepší jednotkovou ekonomiku."
+      ]
+    },
+    {
+      "heading": "Doporučený technologický stack pro platformu ve stylu YouTube",
+      "paragraphs": [
+        "Pro frontend se u videoplatforem doporučuje Next.js, protože jednotlivé stránky videí musí být indexovatelné pro SEO kvůli organickému objevování. Vykreslování na straně serveru zajišťuje, že metadata videí, popisy a náhledy jsou procházitelné vyhledávači. Pro videopřehrávač poskytují Video.js nebo Shaka Player podporu adaptivního streamování s protokoly HLS a DASH. Pro mobilní aplikace lze použít React Native, i když pro MVP se doporučuje vývoj zaměřený primárně na web, aby se snížily počáteční náklady.",
+        "Zpracování videa je nejkritičtější backendovou komponentou. AWS MediaConvert, Azure Media Services nebo Mux poskytují spravované služby transkódování videa, které řeší převod formátů, generování rozlišení a vytváření adaptivního streamování. Vytvoření vlastní transkódovací infrastruktury přidává 200–500 hodin vývoje a vyžaduje průběžnou údržbu. Pro MVP se důrazně doporučuje využít spravované služby. Pro úložiště a distribuci videa poskytují škálovatelnou infrastrukturu AWS S3 s CDN CloudFront nebo specializované video CDN jako Cloudflare Stream.",
+        "Databázová architektura musí zvládat vysoké objemy čtení (dotazy na metadata videí) i zápisu (nová nahrání, metriky zapojení). PostgreSQL zpracovává transakční data (uživatelé, kanály, komentáře), zatímco Elasticsearch nebo Algolia pohánějí vyhledávání a objevování videí. Redis kešuje často přistupovaná metadata videí a seznamy trendů. Pro analytiku a doporučování ukládá datový sklad (Snowflake, BigQuery) chování při sledování pro trénování algoritmů. Doporučovací systém může začít jednoduše (podle kategorií, podle trendů) a postupně se vyvinout v personalizaci založenou na strojovém učení, jak se data o sledování hromadí."
+      ]
+    },
+    {
+      "heading": "Jak snížit náklady na vývoj videoplatformy",
+      "paragraphs": [
+        "Nejúčinnějším způsobem snížení nákladů je využití spravované video infrastruktury namísto vytváření vlastních systémů pro transkódování a distribuci. Služby jako Mux, Cloudflare Stream nebo Vimeo OTT poskytují kompletní hostování videa, transkódování, adaptivní streamování a infrastrukturu přehrávače prostřednictvím API. Přestože si tyto služby účtují za každý gigabajt úložiště a za doručenou minutu, eliminují 300–600 hodin vývoje video infrastruktury a snižují průběžnou provozní složitost. Pro ověření MVP jsou spravované služby nezbytné.",
+        "Odložení doporučovacího algoritmu na verzi 2.0 výrazně zmenšuje rozsah vývoje. Spuštění s jednoduchým procházením podle kategorií, trendujícími videi a funkcí vyhledávání je pro MVP dostačující. Doporučovací algoritmy vyžadují k efektivnímu trénování data o sledování – jejich vytváření dříve, než máte uživatele, je předčasná optimalizace. Mnoho úspěšných videoplatforem bylo spuštěno s ruční kurátorskou prací a jednoduchými algoritmy a doporučování založené na strojovém učení přidaly až po nashromáždění dat o sledování.",
+        "Spuštění bez živého vysílání snižuje náročnost i náklady. Živé vysílání vyžaduje další infrastrukturu (příjem přes RTMP, transkódování v reálném čase, distribuci s nízkou latencí), která přidává 200–400 hodin vývoje. Nahrávání a přehrávání předem nahraných videí je hlavní scénář použití, který ověřuje soulad produktu s trhem. Živé vysílání lze přidat ve verzi 2.0, jakmile si platforma vybuduje základnu tvůrců a diváckého publika."
+      ]
+    },
+    {
+      "heading": "Monetizační strategie pro videoplatformu",
+      "paragraphs": [
+        "Reklama je hlavním modelem příjmů pro spotřebitelské videoplatformy, přičemž platformy si obvykle berou 45–55 % příjmů z reklamy a zbytek sdílejí s tvůrci. Partnerský program YouTube sdílí s tvůrci 55 % příjmů z reklamy. Pro novou platformu soutěžící o tvůrce může nabídka vyššího podílu na příjmech (60–70 %) přilákat zavedené tvůrce. Příjmy z reklamy však vyžadují značný rozsah (miliony zhlédnutí měsíčně), aby generovaly smysluplný příjem, což z nich činí monetizační model spíše pro platformy v pozdější fázi než pro MVP.",
+        "Modely předplatného vytvářejí předvídatelné opakující se příjmy a lze je zavést v menším měřítku než reklamu. Platformy mohou nabízet prémiové předplatné, které odemyká sledování bez reklam, exkluzivní obsah nebo předčasný přístup. Případně programy předplatného tvůrců (jako YouTube Memberships) umožňují divákům platit tvůrcům přímo za exkluzivní obsah nebo výhody. Příjmy z předplatného mají v raných fázích obvykle lepší jednotkovou ekonomiku než reklama.",
+        "Monetizace založená na transakcích zahrnuje platbu za zhlédnutí prémiového obsahu, digitální zápůjčky nebo jednorázové nákupy. Tento model dobře funguje pro vzdělávací obsah, profesionální školení nebo exkluzivní akce. Transakční poplatky (obvykle 10–30 % z nákupní ceny) generují příjmy bez nutnosti reklamní infrastruktury. Pro specializované platformy s vysoce hodnotným obsahem může být monetizace založená na transakcích v raných fázích životaschopnější než reklama."
+      ]
+    }
+  ]
+}

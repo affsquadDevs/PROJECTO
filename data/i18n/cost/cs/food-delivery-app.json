@@ -1,0 +1,170 @@
+{
+  "category": "Služby na vyžádání",
+  "description": "Aplikace pro rozvoz jídla jako DoorDash vyžaduje seznamy restaurací, správu objednávek, sledování v reálném čase, zpracování plateb, přidělování řidičů a rozhraní pro různé role.",
+  "introText": "Aplikace pro rozvoz jídla se staly nepostradatelnými, přičemž DoorDash denně zpracovává miliony objednávek. Vybudování platformy pro rozvoz jídla vyžaduje správu restaurací, zpracování objednávek, sledování řidičů v reálném čase, integraci plateb a samostatná rozhraní pro zákazníky, restaurace a řidiče. Složitost roste s funkcemi, jako jsou plánované objednávky, skupinové objednávání a věrnostní programy.",
+  "keyFeatures": [
+    "Seznamy restaurací a jídelní lístky",
+    "Zadávání a správa objednávek",
+    "Sledování objednávky v reálném čase",
+    "Přidělování řidičů a optimalizace tras",
+    "Zpracování plateb (karty, digitální peněženky)",
+    "Push notifikace o stavu objednávky",
+    "Systém hodnocení a recenzí",
+    "Dashboard pro restaurace",
+    "Aplikace pro řidiče s navigací",
+    "Administrátorský panel pro správu objednávek"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX design",
+      "description": "Aplikace pro zákazníky, dashboard pro restaurace, aplikace pro řidiče"
+    },
+    {
+      "category": "Vývoj frontendu",
+      "description": "Tři mobilní aplikace (zákazník, restaurace, řidič)"
+    },
+    {
+      "category": "Vývoj backendu",
+      "description": "Správa objednávek, API, sledování v reálném čase"
+    },
+    {
+      "category": "Sledování v reálném čase",
+      "description": "GPS sledování, aktualizace stavu objednávek"
+    },
+    {
+      "category": "Integrace plateb",
+      "description": "Stripe, PayPal, platby v aplikaci"
+    },
+    {
+      "category": "Správa restaurací",
+      "description": "Správa jídelních lístků, zpracování objednávek"
+    },
+    {
+      "category": "Správa řidičů",
+      "description": "Onboarding řidičů, algoritmus přidělování"
+    },
+    {
+      "category": "QA a testování",
+      "description": "Testování průběhu objednávek, validace sledování v reálném čase"
+    },
+    {
+      "category": "DevOps a infrastruktura",
+      "description": "Škálovatelná infrastruktura pro zpracování objednávek"
+    }
+  ],
+  "complexityFactors": [
+    "Tři samostatné aplikace (zákazník, restaurace, řidič)",
+    "Sledování objednávek a aktualizace stavu v reálném čase",
+    "Přidělování řidičů a optimalizace tras",
+    "Onboarding restaurací a správa jídelních lístků",
+    "Zpracování plateb a výplaty řidičům",
+    "Škálovatelnost ve špičce (polední a večerní nápor)",
+    "Zpracování objednávek z více restaurací"
+  ],
+  "timeline": [
+    {
+      "phase": "Průzkum a plánování",
+      "duration": "2–3 týdny",
+      "description": "Návrh průběhu objednávek, strategie onboardingu restaurací a technická architektura."
+    },
+    {
+      "phase": "UI/UX design",
+      "duration": "4–6 týdnů",
+      "description": "Návrh rozhraní zákaznické aplikace, dashboardu pro restaurace a aplikace pro řidiče."
+    },
+    {
+      "phase": "Vývoj backendu",
+      "duration": "6–12 týdnů",
+      "description": "Vybudování systému správy objednávek, API a sledování v reálném čase."
+    },
+    {
+      "phase": "Vývoj frontendu",
+      "duration": "6–10 týdnů",
+      "description": "Vývoj tří mobilních aplikací s funkcemi pro správu objednávek."
+    },
+    {
+      "phase": "Sledování v reálném čase",
+      "duration": "3–5 týdnů",
+      "description": "Implementace GPS sledování a aktualizací stavu objednávek."
+    },
+    {
+      "phase": "Integrace plateb",
+      "duration": "2–3 týdny",
+      "description": "Integrace platebních bran a zpracování plateb."
+    },
+    {
+      "phase": "Testování a QA",
+      "duration": "3–5 týdnů",
+      "description": "Testování průběhu objednávek, validace sledování v reálném čase a zátěžové testování."
+    },
+    {
+      "phase": "Nasazení a spuštění",
+      "duration": "1–2 týdny",
+      "description": "Odeslání do app store a soft launch s pilotními restauracemi."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kolik stojí vývoj aplikace pro rozvoz jídla?",
+      "answer": "Plnohodnotná aplikace pro rozvoz jídla stojí $70,000–$200,000. MVP se základním objednáváním, sledováním a přidělováním řidičů lze vytvořit za $30,000–$70,000 během 3–5 měsíců."
+    },
+    {
+      "question": "Jak dlouho trvá vybudování platformy pro rozvoz jídla?",
+      "answer": "Kompletní vývoj trvá 5–12 měsíců. MVP s klíčovými funkcemi objednávání a sledování může být hotové za 3–5 měsíců."
+    },
+    {
+      "question": "Potřebuji samostatné aplikace pro zákazníky, restaurace a řidiče?",
+      "answer": "Ano, každý typ uživatele má odlišné potřeby. Můžete však začít se zákaznickou aplikací a webovými dashboardy pro restaurace a řidiče a nativní aplikace vyvinout později."
+    },
+    {
+      "question": "Co je největší výzvou při rozvozu jídla?",
+      "answer": "Onboarding restaurací a udržení dostatku řidičů. Potřebujete dostatek restaurací, abyste přilákali zákazníky, a dostatek řidičů, aby objednávky doručili rychle. To vyžaduje značné provozní úsilí nad rámec vývoje."
+    },
+    {
+      "question": "Jak aplikace pro rozvoz jídla vydělávají peníze?",
+      "answer": "Aplikace pro rozvoz jídla obvykle účtují restauracím provizi (15–30 % z hodnoty objednávky) a mohou zákazníkům účtovat poplatek za doručení. Některé aplikace také účtují restauracím za zvýhodněné umístění nebo reklamu."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Co je aplikace pro rozvoz jídla jako DoorDash?",
+      "paragraphs": [
+        "Aplikace pro rozvoz jídla jako DoorDash je třístranný marketplace, který prostřednictvím jediné platformy propojuje zákazníky, restaurace a doručovatele. Samotný DoorDash denně zpracovává miliony objednávek napříč tisíci měst, což dokládá jak rozsah příležitosti, tak provozní složitost nutnou k vytvoření konkurenceschopného produktu. Vybudování aplikace pro rozvoz jídla vyžaduje seznamy restaurací s jídelními lístky, zadávání a správu objednávek, sledování řidičů v reálném čase, zpracování plateb a samostatná rozhraní pro zákazníky, restaurace a řidiče.",
+        "Klíčovou technickou výzvou aplikace pro rozvoz jídla je souběžné řízení tří samostatných uživatelských cest. Zákazníci procházejí restaurace, zadávají objednávky a sledují doručení v reálném čase. Restaurace přijímají objednávky, připravují jídlo a spravují svůj jídelní lístek a dostupnost. Řidiči přijímají doručovací úkoly, navigují se do restaurací a k zákazníkům a dokončují doručení. Tyto tři toky musí být synchronizovány v reálném čase, přičemž aktualizace stavu objednávek se okamžitě propagují do všech tří rozhraní. To vyžaduje sofistikovanou backendovou architekturu s WebSocket spojeními, sledováním polohy v reálném čase a správou stavu objednávek řízenou událostmi.",
+        "Aplikace pro rozvoz jídla čelí jedinečným provozním výzvám nad rámec čistě technické složitosti. Onboarding restaurací vyžaduje značné obchodní úsilí a průběžnou správu vztahů. Dostatek řidičů je nutné udržovat prostřednictvím konkurenceschopných odměn a flexibilního rozvrhu. Špičky (oběd a večeře) vytvářejí náhlé nárůsty provozu, které mohou infrastrukturu zahltit, pokud není navržena pro škálování. Počasí, doprava a doby přípravy v restauracích vytvářejí variabilitu, která komplikuje přesné odhady doby doručení. Tyto faktory vyžadují jak technická řešení, tak provozní procesy přesahující samotnou aplikaci."
+      ]
+    },
+    {
+      "heading": "Proč budovat platformu pro rozvoz jídla v roce 2025?",
+      "paragraphs": [
+        "Globální trh s rozvozem jídla nadále roste a předpokládá se, že do roku 2025 dosáhnou tržby $200 billion. Zatímco DoorDash, Uber Eats a Grubhub dominují Severní Americe, významné příležitosti existují na regionálních trzích a v úzkých specializacích. Aplikace pro rozvoz jídla zaměřené na konkrétní kuchyně, stravovací preference (vegan, keto, halal) nebo typy jídel (snídaně, zdravá jídla, dezerty) si úspěšně získaly podíl na trhu díky lepší kurátorské nabídce pro specializované publikum.",
+        "Geografická expanze zůstává významnou příležitostí. Zatímco rozvoz jídla je ve velkých metropolích zaběhnutý, mnoho menších měst a příměstských trhů má nižší konkurenci. Lokální aplikace pro rozvoz jídla, které rozumějí regionálním ekosystémům restaurací, doručovací logistice a preferencím zákazníků, mohou efektivně konkurovat celostátním platformám. Integrace s lokálními platebními metodami, vztahy s restauracemi a doručovacími sítěmi vytváří smysluplnou diferenciaci.",
+        "B2B rozvoz jídla představuje nedostatečně obsloužený segment. Firemní catering, programy stravování v kancelářích a catering pro akce vyžadují odlišné workflow než spotřebitelský rozvoz jídla. Vybudování platformy optimalizované pro tyto případy použití — s fakturací, hromadnými objednávkami, plánovanými doručeními a správou nákladů — vytváří obhajitelnou niku s vyšší průměrnou hodnotou objednávky a předvídatelnějšími příjmy než spotřebitelský rozvoz."
+      ]
+    },
+    {
+      "heading": "Doporučený tech stack pro aplikaci pro rozvoz jídla",
+      "paragraphs": [
+        "Pro mobilní vývoj jsou React Native nebo Flutter nákladově nejefektivnější volbou pro zákaznickou aplikaci, protože umožňují jediným kódem cílit na iOS i Android. Aplikace pro řidiče však často těží z nativního vývoje (Swift pro iOS, Kotlin pro Android) kvůli potřebě přesného GPS sledování, aktualizací polohy na pozadí a integrace s navigačními aplikacemi. U MVP je pragmatickým přístupem začít s React Native pro všechny tři aplikace a výkon aplikace pro řidiče optimalizovat později.",
+        "Backendová architektura aplikací pro rozvoz jídla se soustředí na správu a sledování objednávek v reálném čase. Node.js je nejčastější volbou díky své architektuře řízené událostmi, která efektivně zvládá souběžná spojení v reálném čase s vysokou souběžností. Go se stále častěji používá pro výkonnostně kritické komponenty, jako je algoritmus přidělování řidičů. Pro databázi PostgreSQL zpracovává objednávky, restaurace a uživatelská data, zatímco Redis slouží jako in-memory cache pro aktivní objednávky a stav sledování v reálném čase. Pro komunikaci v reálném čase poskytují Socket.IO nebo AWS API Gateway WebSockets obousměrné toky událostí.",
+        "Mapové a geolokační služby jsou nezbytné pro sledování řidičů a optimalizaci tras. Google Maps Platform poskytuje navigaci s pokyny krok za krokem, dopravní data v reálném čase a geokódovací API. Náklady na mapové API však mohou při produkčních objemech výrazně narůst — počítejte s $5,000–$20,000+ měsíčně, jakmile dosáhnete desítek tisíc objednávek denně. Pro zpracování plateb Stripe Connect zvládá transakce mezi více stranami (platba zákazníka, výplata restauraci, provize platformy) s automatickým rozdělením poplatků, čímž odpadá nutnost budovat vlastní platební infrastrukturu."
+      ]
+    },
+    {
+      "heading": "Jak snížit náklady na vývoj aplikace pro rozvoz jídla",
+      "paragraphs": [
+        "Nejvýraznějším snížením nákladů je začít s jedním městem nebo regionem namísto budování pro globální škálu od prvního dne. Aplikace pro rozvoz jídla cílící na jedno město vyžaduje jednodušší infrastrukturu, nižší náklady na servery a lépe zvládnutelný proces onboardingu restaurací. Mnoho úspěšných platforem pro rozvoz jídla bylo spuštěno město po městě, přičemž ručně získaly svých prvních 50–100 restaurací a iterovaly produkt na základě reálných dat o objednávkách, než začaly škálovat technologii. Tento přístup udržuje počáteční rozsah vývoje malý, validaci product-market fitu rychlejší a burn rate nižší.",
+        "Odložení aplikace pro řidiče na pozdější fázi je úspora s vysokým dopadem. Můžete začít s doručováním zajišťovaným restauracemi (restaurace používají vlastní řidiče) nebo s doručovacími službami třetích stran a vyhrazenou aplikaci pro řidiče vytvořit až poté, co ověříte poptávku. Tím se eliminuje 200–400 hodin vývoje aplikace pro řidiče a umožní vám to nejprve se soustředit na klíčovou zkušenost zákazníků a restaurací.",
+        "Využití managed služeb pro zpracování plateb, push notifikace a SMS eliminuje značnou backendovou složitost. Stripe Connect zvládá platby mezi více stranami a automatické rozdělení poplatků. Twilio pohání SMS potvrzení objednávek a notifikace pro řidiče. Firebase Cloud Messaging zajišťuje push notifikace. Každá integrace stojí $2,000–$5,000 na implementaci, ale ušetří $10,000–$30,000 oproti budování stejné funkcionality vlastními silami."
+      ]
+    },
+    {
+      "heading": "Strategie monetizace platformy pro rozvoz jídla",
+      "paragraphs": [
+        "Primárním modelem příjmů aplikací pro rozvoz jídla je provize z každé objednávky, obvykle 15–30 % z hodnoty objednávky. DoorDash účtuje restauracím přibližně 20–30 % za objednávku, čímž pokrývá provoz platformy, odměny řidičům a ziskovou marži. Pro novou platformu soutěžící o restaurace je osvědčenou strategií začít s nižší sazbou provize 10–18 % a přilákat tak nabídku od zavedených platforem. Jak vaše síť restaurací roste a vaše reputace se zlepšuje, lze sazbu provize postupně zvyšovat.",
+        "Poplatky za doručení představují sekundární zdroj příjmů. Účtování $2–$5 zákazníkům za doručení (nad rámec provize restaurace) pomáhá pokrýt odměny řidičům a náklady na doručovací logistiku. Některé platformy nabízejí doručení zdarma u objednávek nad minimální hranicí ($15–$25), aby podpořily větší objednávky. Prémiové předplatné programy (DashPass, Uber Eats Pass), které nabízejí doručení zdarma a snížené servisní poplatky za měsíční poplatek ($9.99/month), vytvářejí předvídatelné opakované příjmy a zlepšují retenci zákazníků.",
+        "Reklama restaurací a zvýhodněné umístění generují další příjmy. Účtování restauracím za prémiové umístění ve výsledcích vyhledávání, sponzorované záznamy nebo bannerovou reklamu vytváří reklamní inventář, za který restaurace zaplatí, aby zvýšily svou viditelnost. Tento zdroj příjmů se stává hodnotnějším, jak vaše platforma roste a restaurace soutěží o pozornost zákazníků."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "category": "Recruiting & Stellenanzeigen",
+  "description": "Eine Jobbörse wie LinkedIn Jobs benötigt Stellenanzeigen, Kandidatenprofile, Suche und Matching, Bewerbungsverwaltung sowie Dashboards für Arbeitgeber.",
+  "introText": "Jobbörsen verbinden Millionen von Jobsuchenden mit Arbeitgebern – LinkedIn Jobs verarbeitet monatlich Millionen von Bewerbungen. Der Aufbau einer Jobbörse erfordert Stellenanzeigen, Kandidatenprofile, eine erweiterte Suche mit Matching, Bewerbungsverwaltung, Arbeitgeber-Dashboards, Lebenslauf-Parsing und Benachrichtigungssysteme. Die Komplexität steigt mit Funktionen wie Kompetenztests, Video-Interviews und KI-gestütztem Matching.",
+  "keyFeatures": [
+    "Stellenanzeigen und Veröffentlichung",
+    "Kandidatenprofile und Lebensläufe",
+    "Erweiterte Suche und Filter",
+    "Bewerbungsverwaltungssystem",
+    "Arbeitgeber-Dashboard",
+    "Kandidaten-Dashboard",
+    "Lebenslauf-Parsing und Matching",
+    "E-Mail- und Push-Benachrichtigungen",
+    "Kompetenztests",
+    "Analysen und Reporting"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX-Design",
+      "description": "Stellenanzeigen, Kandidatenprofile, Dashboards"
+    },
+    {
+      "category": "Frontend-Entwicklung",
+      "description": "Web-App und mobile Apps"
+    },
+    {
+      "category": "Backend-Entwicklung",
+      "description": "Jobdatenbank, Suchmaschine, API"
+    },
+    {
+      "category": "Suchmaschine",
+      "description": "Elasticsearch, Job-Matching, Filter"
+    },
+    {
+      "category": "Lebenslauf-Parsing",
+      "description": "Algorithmen für Lebenslauf-Parsing und Matching"
+    },
+    {
+      "category": "Bewerbungsverwaltung",
+      "description": "ATS-Funktionen, Kandidaten-Pipeline"
+    },
+    {
+      "category": "Benachrichtigungssystem",
+      "description": "E-Mail- und Push-Benachrichtigungen"
+    },
+    {
+      "category": "QA & Testing",
+      "description": "Tests zur Suchgenauigkeit, Validierung des Matchings"
+    },
+    {
+      "category": "DevOps & Infrastruktur",
+      "description": "Infrastruktur für Jobdatenbank und Suche"
+    }
+  ],
+  "complexityFactors": [
+    "Beschaffung und Verwaltung von Jobdaten",
+    "Algorithmen für Lebenslauf-Parsing und Matching",
+    "Zweiseitiger Marktplatz (Arbeitgeber und Kandidaten)",
+    "Komplexität des Bewerbungsverwaltungssystems",
+    "Genauigkeit von Suche und Filterung",
+    "Onboarding von Arbeitgebern und Kandidaten",
+    "Echtzeit-Job-Matching"
+  ],
+  "timeline": [
+    {
+      "phase": "Discovery & Planung",
+      "duration": "2–3 Wochen",
+      "description": "Struktur der Jobdaten, Matching-Anforderungen und Festlegung des Funktionsumfangs."
+    },
+    {
+      "phase": "UI/UX-Design",
+      "duration": "3–5 Wochen",
+      "description": "Gestaltung von Stellenanzeigen, Kandidatenprofilen und Dashboards."
+    },
+    {
+      "phase": "Backend-Entwicklung",
+      "duration": "5–10 Wochen",
+      "description": "Aufbau von Jobdatenbank, Suchmaschine und API."
+    },
+    {
+      "phase": "Frontend-Entwicklung",
+      "duration": "5–8 Wochen",
+      "description": "Entwicklung von Web-App und mobilen Apps mit Job-Funktionen."
+    },
+    {
+      "phase": "Lebenslauf-Parsing",
+      "duration": "3–5 Wochen",
+      "description": "Implementierung von Algorithmen für Lebenslauf-Parsing und Matching."
+    },
+    {
+      "phase": "Bewerbungsverwaltung",
+      "duration": "3–4 Wochen",
+      "description": "Aufbau der ATS-Funktionen und der Kandidaten-Pipeline."
+    },
+    {
+      "phase": "Testing & QA",
+      "duration": "2–4 Wochen",
+      "description": "Tests zur Suchgenauigkeit und Validierung des Matchings."
+    },
+    {
+      "phase": "Deployment & Launch",
+      "duration": "1–2 Wochen",
+      "description": "Produktiv-Deployment und Soft Launch."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Wie viel kostet die Entwicklung einer Jobbörse?",
+      "answer": "Eine voll ausgestattete Jobbörse kostet $50,000–$150,000. Ein MVP mit Stellenanzeigen, Kandidatenprofilen und einer einfachen Suche lässt sich für $25,000–$60,000 in 2–4 Monaten umsetzen."
+    },
+    {
+      "question": "Wie lange dauert die Entwicklung einer Jobbörse?",
+      "answer": "Die vollständige Entwicklung dauert 4–10 Monate. Ein MVP mit den wichtigsten Jobsuche-Funktionen kann in 2–4 Monaten fertig sein."
+    },
+    {
+      "question": "Brauche ich Lebenslauf-Parsing für das MVP?",
+      "answer": "Nein, Sie können mit manuellen Lebenslauf-Uploads starten und das Parsing in Version 2.0 ergänzen. Lebenslauf-Parsing verbessert jedoch das Kandidaten-Matching und die Nutzererfahrung erheblich."
+    },
+    {
+      "question": "Was ist die größte Herausforderung bei Jobbörsen?",
+      "answer": "Der Aufbau eines zweiseitigen Marktplatzes mit genügend Jobs, um Kandidaten anzuziehen, und genügend Kandidaten, um Arbeitgeber anzuziehen. Das erfordert erhebliches Marketing und Netzwerkeffekte."
+    },
+    {
+      "question": "Wie verdienen Jobbörsen Geld?",
+      "answer": "Jobbörsen erzielen ihre Einnahmen typischerweise aus Arbeitgeber-Abonnements, Gebühren für Stellenanzeigen, hervorgehobenen Anzeigen und Premium-Funktionen für Kandidaten. Manche verlangen außerdem Gebühren für den Zugang zu Kandidatendatenbanken."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Was ist eine Jobbörse wie LinkedIn Jobs?",
+      "paragraphs": [
+        "Eine Jobbörse wie LinkedIn Jobs ist eine Plattform, die Jobsuchende mit Arbeitgebern verbindet: Unternehmen können Stellenanzeigen veröffentlichen, während Kandidaten suchen, sich bewerben und ihre Bewerbungen verfolgen. LinkedIn Jobs selbst verarbeitet monatlich Millionen von Bewerbungen und verdeutlicht damit sowohl die Größe der Chance als auch die Herausforderung des zweiseitigen Marktplatzes, die für ein wettbewerbsfähiges Produkt zu meistern ist. Der Aufbau einer Jobbörse erfordert Stellenanzeigen, Kandidatenprofile, eine erweiterte Suche mit Matching, Bewerbungsverwaltung, Arbeitgeber-Dashboards, Lebenslauf-Parsing und Benachrichtigungssysteme.",
+        "Die zentrale technische Herausforderung einer Jobbörse besteht darin, einen zweiseitigen Marktplatz aufzubauen, der genügend Jobs bietet, um Kandidaten anzuziehen, und genügend Kandidaten, um Arbeitgeber anzuziehen. Dieses Henne-Ei-Problem erfordert erhebliches Marketing und Netzwerkeffekte. Der Such- und Matching-Algorithmus muss Kandidaten effektiv mit passenden Möglichkeiten verbinden und Arbeitgebern gleichzeitig qualifizierte Bewerber liefern. Dafür ist eine ausgereifte Backend-Architektur mit Suchmaschinen, Empfehlungsalgorithmen und Echtzeit-Benachrichtigungssystemen erforderlich.",
+        "Jobbörsen stehen vor besonderen operativen Herausforderungen, die über die rein technische Komplexität hinausgehen. Die Qualität der Jobdaten ist entscheidend – veraltete Anzeigen, doppelte Einträge oder Spam-Jobs schaden dem Vertrauen der Nutzer. Die Pflege der Beziehungen zu Arbeitgebern ist für den Zugang zu Anzeigen und für den Umsatz unerlässlich. Die Genauigkeit des Lebenslauf-Parsings schwankt erheblich und erfordert eine fortlaufende Verfeinerung der Algorithmen. Diese Faktoren verlangen sowohl technische Lösungen als auch operative Prozesse, die über die Plattform selbst hinausreichen."
+      ]
+    },
+    {
+      "heading": "Warum 2025 eine Jobbörse entwickeln?",
+      "paragraphs": [
+        "Der globale Markt für Online-Recruiting wächst weiter, wobei Jobbörsen und berufliche Netzwerke Marktanteile von traditionellen Recruiting-Methoden gewinnen. Während LinkedIn, Indeed und Glassdoor die allgemeine Jobsuche dominieren, bestehen erhebliche Chancen in Nischen-Segmenten. Jobbörsen mit Fokus auf bestimmte Branchen (Tech-Jobs, Gesundheitswesen, Finanzen), Qualifikationsstufen (Einstieg, Führungsebene) oder Beschäftigungsarten (Remote-Arbeit, Freelance, Vertrag) haben sich erfolgreich Marktanteile gesichert, indem sie ein besseres Matching für spezialisierte Zielgruppen bieten.",
+        "Die geografische Expansion bleibt eine große Chance. Während die Jobsuche in Nordamerika und Westeuropa ausgereift ist, herrscht in vielen internationalen Märkten weniger Wettbewerb bei wachsender Online-Akzeptanz. Lokale Jobbörsen, die regionale Arbeitsmärkte, Gehaltserwartungen und Einstellungspraktiken verstehen, können effektiv gegen globale Plattformen bestehen.",
+        "Neue Beschäftigungsformate schaffen neue Chancen. Plattformen für Remote-Arbeit, Marktplätze der Gig-Economy und kompetenzbasiertes Matching stellen allesamt Innovationen dar, die traditionelle Jobbörsen nur unzureichend unterstützen. Eine Plattform, die für diese Formate optimiert ist, kann Early Adopter erreichen, bevor größere Plattformen nachziehen."
+      ]
+    },
+    {
+      "heading": "Empfohlener Tech-Stack für eine Jobbörse",
+      "paragraphs": [
+        "Für die mobile Entwicklung sind React Native oder Flutter die kosteneffizientesten Optionen, da sie mit einer einzigen Codebasis sowohl iOS als auch Android abdecken. Für das Web bieten Next.js oder Remix hervorragendes serverseitiges Rendering für SEO, was für die Job-Auffindbarkeit und den organischen Suchtraffic von Jobsuchenden entscheidend ist.",
+        "Die Backend-Architektur von Jobbörsen dreht sich um Suche und Matching. Node.js oder Python sind gängige Optionen für die API-Schicht. Als Datenbank verwaltet PostgreSQL Stellenanzeigen, Kandidatenprofile und Bewerbungen. Elasticsearch bietet erweiterte Suchfunktionen mit facettierter Filterung, Volltextsuche und Relevanz-Ranking. Redis dient als In-Memory-Cache für Jobdaten und Suchergebnisse.",
+        "Das Lebenslauf-Parsing ist eine erhebliche Herausforderung. Ein eigenes Lebenslauf-Parsing zu entwickeln ist komplex, weshalb Dienste wie Sovren, RChilli oder Affinda das Parsing per API bereitstellen. Diese Dienste berechnen zwar pro geparsten Lebenslauf ($0.10–$0.50 pro Lebenslauf), ersparen jedoch 100–200 Stunden Entwicklung und die laufende Wartung der Algorithmen."
+      ]
+    },
+    {
+      "heading": "Wie sich die Entwicklungskosten einer Jobbörse senken lassen",
+      "paragraphs": [
+        "Die wirkungsvollste Kostensenkung ist die Nutzung von Managed Services für Suche und Lebenslauf-Parsing. Elasticsearch Cloud stellt eine verwaltete Suchinfrastruktur bereit. Lebenslauf-Parsing-Dienste wie Sovren oder RChilli bieten das Parsing per API. Diese Dienste berechnen zwar pro API-Aufruf, ersparen jedoch 200–400 Stunden Backend-Entwicklung und die laufende Verwaltung der Infrastruktur.",
+        "Das Verschieben fortgeschrittener Matching-Algorithmen auf Version 2.0 reduziert den anfänglichen Entwicklungsumfang erheblich. Ein Start mit einer einfachen schlüsselwortbasierten Suche und grundlegenden Filtern (Standort, Gehalt, Beschäftigungsart) reicht für ein MVP aus. Auf maschinellem Lernen basierende Matching-Algorithmen, die aus Bewerbungsdaten lernen, benötigen umfangreiche Trainingsdaten, um wirksam zu sein – sie zu entwickeln, bevor man Nutzer hat, ist verfrühte Optimierung.",
+        "Mit einem einzelnen Markt oder einer einzelnen Branche zu starten, anstatt von Tag eins an für globale Skalierung zu bauen, reduziert die Komplexität und ermöglicht es, Beziehungen zu Arbeitgebern Schritt für Schritt aufzubauen. Viele erfolgreiche Jobbörsen sind Branche für Branche oder Stadt für Stadt gestartet, haben ihre ersten 50–100 Arbeitgeber manuell onboardet und das Produkt anhand echter Jobdaten iteriert, bevor sie die Technologie skaliert haben."
+      ]
+    },
+    {
+      "heading": "Monetarisierungsstrategien für eine Jobbörse",
+      "paragraphs": [
+        "Arbeitgeber-Abonnements sind das primäre Umsatzmodell der meisten Jobbörsen. LinkedIn Recruiter berechnet $99.99–$825+ pro Monat für den Zugang zu Kandidatendatenbanken und das Veröffentlichen von Stellenanzeigen. Indeed berechnet $5–$10 pro Stellenanzeige oder $300+ pro Monat für unbegrenzte Anzeigen. Für neue Plattformen, die um Arbeitgeber konkurrieren, ist ein Start mit niedrigeren Abonnementgebühren oder Pay-per-Post-Preisen eine bewährte Strategie, um Angebot von etablierten Plattformen abzuwerben.",
+        "Hervorgehobene Stellenplatzierungen erzeugen zusätzlichen Umsatz. Indem man Arbeitgebern eine bevorzugte Platzierung in den Suchergebnissen, gesponserte Anzeigen oder Bannerwerbung in Rechnung stellt, entsteht Werbeinventar. Diese Einnahmequelle wird umso wertvoller, je mehr Ihre Plattform wächst und Jobs um die Aufmerksamkeit der Kandidaten konkurrieren.",
+        "Premium-Funktionen für Kandidaten erzeugen Umsatz aus Jobsuchenden. Indem man Kandidaten erweiterte Suchfilter, Bewerbungsverfolgung oder die Sichtbarkeit ihres Lebenslaufs in Rechnung stellt, entsteht Umsatz aus engagierten Nutzern. Dieses Modell kann jedoch Reibung im Bewerbungsprozess erzeugen und muss daher sorgfältig umgesetzt werden, um den Wert der Plattform nicht zu mindern."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "category": "Nábor a pracovní nabídky",
+  "description": "Pracovní portál jako LinkedIn Jobs vyžaduje inzeráty pracovních nabídek, profily uchazečů, vyhledávání a párování, sledování přihlášek a administraci pro zaměstnavatele.",
+  "introText": "Pracovní portály propojují miliony uchazečů o zaměstnání se zaměstnavateli, přičemž LinkedIn Jobs zpracovává měsíčně miliony přihlášek. Vybudování pracovního portálu vyžaduje inzeráty pracovních nabídek, profily uchazečů, pokročilé vyhledávání a párování, sledování přihlášek, administraci pro zaměstnavatele, parsování životopisů a notifikační systémy. Složitost roste s funkcemi, jako jsou hodnocení dovedností, videopohovory a párování s využitím AI.",
+  "keyFeatures": [
+    "Inzeráty a zveřejňování pracovních nabídek",
+    "Profily uchazečů a životopisy",
+    "Pokročilé vyhledávání a filtry",
+    "Systém pro sledování přihlášek",
+    "Administrace pro zaměstnavatele",
+    "Administrace pro uchazeče",
+    "Parsování a párování životopisů",
+    "E-mailové a push notifikace",
+    "Hodnocení dovedností",
+    "Analytika a reporting"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX design",
+      "description": "Inzeráty pracovních nabídek, profily uchazečů, administrační rozhraní"
+    },
+    {
+      "category": "Vývoj frontendu",
+      "description": "Webová aplikace a mobilní aplikace"
+    },
+    {
+      "category": "Vývoj backendu",
+      "description": "Databáze pracovních nabídek, vyhledávací jádro, API"
+    },
+    {
+      "category": "Vyhledávací jádro",
+      "description": "Elasticsearch, párování nabídek, filtry"
+    },
+    {
+      "category": "Parsování životopisů",
+      "description": "Algoritmy pro parsování a párování životopisů"
+    },
+    {
+      "category": "Sledování přihlášek",
+      "description": "Funkce ATS, pipeline uchazečů"
+    },
+    {
+      "category": "Notifikační systém",
+      "description": "E-mailové a push notifikace"
+    },
+    {
+      "category": "QA a testování",
+      "description": "Testování přesnosti vyhledávání, validace párování"
+    },
+    {
+      "category": "DevOps a infrastruktura",
+      "description": "Infrastruktura pro databázi nabídek a vyhledávání"
+    }
+  ],
+  "complexityFactors": [
+    "Získávání a správa dat o pracovních nabídkách",
+    "Algoritmy pro parsování a párování životopisů",
+    "Oboustranný trh (zaměstnavatelé a uchazeči)",
+    "Složitost systému pro sledování přihlášek",
+    "Přesnost vyhledávání a filtrování",
+    "Onboarding zaměstnavatelů a uchazečů",
+    "Párování pracovních nabídek v reálném čase"
+  ],
+  "timeline": [
+    {
+      "phase": "Průzkum a plánování",
+      "duration": "2–3 týdny",
+      "description": "Struktura dat o pracovních nabídkách, požadavky na párování a vymezení rozsahu funkcí."
+    },
+    {
+      "phase": "UI/UX design",
+      "duration": "3–5 týdnů",
+      "description": "Návrh inzerátů pracovních nabídek, profilů uchazečů a administračních rozhraní."
+    },
+    {
+      "phase": "Vývoj backendu",
+      "duration": "5–10 týdnů",
+      "description": "Vybudování databáze pracovních nabídek, vyhledávacího jádra a API."
+    },
+    {
+      "phase": "Vývoj frontendu",
+      "duration": "5–8 týdnů",
+      "description": "Vývoj webové a mobilních aplikací s funkcemi pracovního portálu."
+    },
+    {
+      "phase": "Parsování životopisů",
+      "duration": "3–5 týdnů",
+      "description": "Implementace algoritmů pro parsování a párování životopisů."
+    },
+    {
+      "phase": "Sledování přihlášek",
+      "duration": "3–4 týdny",
+      "description": "Vybudování funkcí ATS a pipeline uchazečů."
+    },
+    {
+      "phase": "Testování a QA",
+      "duration": "2–4 týdny",
+      "description": "Testování přesnosti vyhledávání a validace párování."
+    },
+    {
+      "phase": "Nasazení a spuštění",
+      "duration": "1–2 týdny",
+      "description": "Nasazení do produkce a tiché spuštění."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kolik stojí vybudování pracovního portálu?",
+      "answer": "Plně vybavený pracovní portál stojí $50,000–$150,000. MVP s inzeráty pracovních nabídek, profily uchazečů a základním vyhledáváním lze vytvořit za $25,000–$60,000 během 2–4 měsíců."
+    },
+    {
+      "question": "Jak dlouho trvá vybudování pracovního portálu?",
+      "answer": "Kompletní vývoj trvá 4–10 měsíců. MVP se základními funkcemi pro vyhledávání nabídek může být hotové za 2–4 měsíce."
+    },
+    {
+      "question": "Potřebuji pro MVP parsování životopisů?",
+      "answer": "Ne, můžete začít s manuálním nahráváním životopisů a parsování přidat ve verzi 2.0. Parsování životopisů však výrazně zlepšuje párování uchazečů a uživatelský komfort."
+    },
+    {
+      "question": "Jaká je největší výzva u pracovních portálů?",
+      "answer": "Vybudování oboustranného trhu s dostatkem nabídek, které přilákají uchazeče, a dostatkem uchazečů, kteří přilákají zaměstnavatele. To vyžaduje značný marketing a síťové efekty."
+    },
+    {
+      "question": "Jak pracovní portály vydělávají peníze?",
+      "answer": "Pracovní portály obvykle získávají příjmy z předplatného pro zaměstnavatele, poplatků za zveřejnění nabídek, zvýrazněných inzerátů a prémiových funkcí pro uchazeče. Některé si také účtují přístup do databází uchazečů."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Co je pracovní portál jako LinkedIn Jobs?",
+      "paragraphs": [
+        "Pracovní portál jako LinkedIn Jobs je platforma, která propojuje uchazeče o zaměstnání se zaměstnavateli a umožňuje firmám zveřejňovat pracovní nabídky, zatímco uchazeči vyhledávají, reagují a sledují své přihlášky. Samotný LinkedIn Jobs zpracovává měsíčně miliony přihlášek, což ukazuje jak rozsah příležitosti, tak výzvu oboustranného trhu, kterou je nutné zvládnout pro vybudování konkurenceschopného produktu. Vybudování pracovního portálu vyžaduje inzeráty pracovních nabídek, profily uchazečů, pokročilé vyhledávání a párování, sledování přihlášek, administraci pro zaměstnavatele, parsování životopisů a notifikační systémy.",
+        "Hlavní technickou výzvou pracovního portálu je vybudování oboustranného trhu s dostatkem nabídek, které přilákají uchazeče, a dostatkem uchazečů, kteří přilákají zaměstnavatele. Tento problém slepice a vejce vyžaduje značný marketing a síťové efekty. Algoritmus vyhledávání a párování musí účinně propojovat uchazeče s relevantními příležitostmi a zároveň poskytovat zaměstnavatelům kvalifikované kandidáty. To vyžaduje sofistikovanou backendovou architekturu s vyhledávacími jádry, doporučovacími algoritmy a notifikačními systémy v reálném čase.",
+        "Pracovní portály čelí specifickým provozním výzvám, které přesahují čistě technickou složitost. Kvalita dat o pracovních nabídkách je zásadní – zastaralé inzeráty, duplicitní příspěvky nebo spamové nabídky poškozují důvěru uživatelů. Udržování vztahů se zaměstnavateli je klíčové pro přístup k inzerátům a pro příjmy. Přesnost parsování životopisů se výrazně liší a vyžaduje průběžné vylepšování algoritmů. Tyto faktory vyžadují jak technická řešení, tak provozní procesy, které přesahují samotnou platformu."
+      ]
+    },
+    {
+      "heading": "Proč budovat pracovní portál v roce 2025?",
+      "paragraphs": [
+        "Globální trh online náboru nadále roste a pracovní portály a profesní sítě získávají podíl na trhu na úkor tradičních metod náboru. Zatímco LinkedIn, Indeed a Glassdoor dominují obecnému vyhledávání práce, významné příležitosti existují v úzce zaměřených vertikálách. Pracovní portály zaměřené na konkrétní obory (technické pozice, zdravotnictví, finance), úrovně dovedností (juniorní pozice, vrcholový management) nebo typy práce (práce na dálku, freelancing, smluvní práce) si úspěšně vydobyly podíl na trhu tím, že nabízejí lepší párování pro specializované publikum.",
+        "Významnou příležitostí zůstává geografická expanze. Zatímco vyhledávání práce je v Severní Americe a západní Evropě vyzrálé, mnoho mezinárodních trhů má menší konkurenci a rostoucí přijetí online služeb. Lokální pracovní portály, které rozumějí regionálním trhům práce, platovým očekáváním a zvyklostem při náboru, mohou efektivně konkurovat globálním platformám.",
+        "Nové formáty práce vytvářejí nové příležitosti. Platformy pro práci na dálku, marketplace gig ekonomiky a párování založené na dovednostech – to vše představuje inovace, které tradiční pracovní portály dobře nepodporují. Vybudování platformy optimalizované pro tyto formáty může zachytit první uživatele dříve, než se větší platformy přizpůsobí."
+      ]
+    },
+    {
+      "heading": "Doporučený technologický stack pro pracovní portál",
+      "paragraphs": [
+        "Pro mobilní vývoj jsou nejnákladově efektivnější volbou React Native nebo Flutter, které umožňují cílit z jediné codebase na iOS i Android současně. Pro web poskytují Next.js nebo Remix vynikající serverové vykreslování pro SEO, což je klíčové pro objevitelnost nabídek a organický návštěvnický provoz z vyhledávání ze strany uchazečů.",
+        "Backendová architektura pracovních portálů se soustředí kolem vyhledávání a párování. Pro vrstvu API jsou běžnou volbou Node.js nebo Python. Co se týče databáze, PostgreSQL spravuje inzeráty pracovních nabídek, profily uchazečů a přihlášky. Elasticsearch poskytuje pokročilé vyhledávací schopnosti s fasetovým filtrováním, fulltextovým vyhledáváním a řazením podle relevance. Redis slouží jako in-memory cache pro data o nabídkách a výsledky vyhledávání.",
+        "Parsování životopisů je významnou výzvou. Vybudování vlastního parsování životopisů je složité, a proto použití služeb jako Sovren, RChilli nebo Affinda poskytuje parsování životopisů prostřednictvím API. Ačkoli si tyto služby účtují za každý zpracovaný životopis ($0.10–$0.50 per resume), eliminují 100–200 hodin vývoje a průběžnou údržbu algoritmů."
+      ]
+    },
+    {
+      "heading": "Jak snížit náklady na vývoj pracovního portálu",
+      "paragraphs": [
+        "Nejvýraznějším snížením nákladů je využití spravovaných služeb pro vyhledávání a parsování životopisů. Elasticsearch Cloud poskytuje spravovanou vyhledávací infrastrukturu. Služby pro parsování životopisů jako Sovren nebo RChilli poskytují parsování prostřednictvím API. Ačkoli si tyto služby účtují za každé volání API, eliminují 200–400 hodin vývoje backendu a průběžnou správu infrastruktury.",
+        "Odložení pokročilých párovacích algoritmů na verzi 2.0 výrazně snižuje počáteční rozsah vývoje. Spuštění s jednoduchým vyhledáváním založeným na klíčových slovech a základními filtry (lokalita, plat, typ práce) je pro MVP dostačující. Párovací algoritmy založené na strojovém učení, které se učí z dat o přihláškách, vyžadují k efektivitě značné množství trénovacích dat – jejich budování dříve, než máte uživatele, je předčasná optimalizace.",
+        "Začít s jediným trhem nebo oborem namísto budování pro globální měřítko hned od prvního dne snižuje složitost a umožňuje vám budovat vztahy se zaměstnavateli postupně. Mnoho úspěšných pracovních portálů se spouštělo obor po oboru nebo město po městě, manuálně provádělo onboarding svých prvních 50–100 zaměstnavatelů a před škálováním technologie produkt iterovalo na základě reálných dat o nabídkách."
+      ]
+    },
+    {
+      "heading": "Strategie monetizace pracovního portálu",
+      "paragraphs": [
+        "Předplatné pro zaměstnavatele je primárním modelem příjmů pro většinu pracovních portálů. LinkedIn Recruiter si účtuje $99.99–$825+ per month za přístup do databází uchazečů a zveřejňování nabídek. Indeed si účtuje $5–$10 za zveřejnění nabídky nebo $300+ per month za neomezené zveřejňování. Pro nové platformy soutěžící o zaměstnavatele je osvědčenou strategií, jak přilákat nabídku od zavedených platforem, začít s nižšími poplatky za předplatné nebo s cenotvorbou typu platba za zveřejnění.",
+        "Zvýrazněné umístění nabídek generuje další příjmy. Účtování zaměstnavatelům za prémiové umístění ve výsledcích vyhledávání, sponzorované inzeráty nebo bannerovou reklamu vytváří reklamní inventář. Tento zdroj příjmů se stává hodnotnějším, jak vaše platforma roste a nabídky soutěží o pozornost uchazečů.",
+        "Prémiové funkce pro uchazeče vytvářejí příjmy od uchazečů o zaměstnání. Účtování uchazečům za pokročilé filtry vyhledávání, sledování přihlášek nebo viditelnost životopisu vytváří příjmy od angažovaných uživatelů. Tento model však může do procesu hledání práce vnášet překážky, a proto musí být implementován opatrně, aby nesnižoval hodnotu platformy."
+      ]
+    }
+  ]
+}

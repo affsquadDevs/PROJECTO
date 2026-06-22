@@ -1,0 +1,170 @@
+{
+  "category": "Rekrytering och jobb",
+  "description": "En jobbsajt som LinkedIn Jobs kräver jobbannonser, kandidatprofiler, sökning och matchning, ansökningshantering samt instrumentpaneler för arbetsgivare.",
+  "introText": "Jobbsajter kopplar samman miljontals arbetssökande med arbetsgivare, och LinkedIn Jobs hanterar miljontals ansökningar varje månad. Att bygga en jobbsajt kräver jobbannonser, kandidatprofiler, avancerad sökning och matchning, ansökningshantering, instrumentpaneler för arbetsgivare, CV-tolkning och notissystem. Komplexiteten ökar med funktioner som kompetenstester, videointervjuer och AI-driven matchning.",
+  "keyFeatures": [
+    "Jobbannonser och publicering",
+    "Kandidatprofiler och CV:n",
+    "Avancerad sökning och filter",
+    "System för ansökningshantering",
+    "Instrumentpanel för arbetsgivare",
+    "Instrumentpanel för kandidater",
+    "CV-tolkning och matchning",
+    "E-post- och push-notiser",
+    "Kompetenstester",
+    "Analys och rapportering"
+  ],
+  "costBreakdown": [
+    {
+      "category": "UI/UX-design",
+      "description": "Jobbannonser, kandidatprofiler, instrumentpaneler"
+    },
+    {
+      "category": "Frontendutveckling",
+      "description": "Webbapp och mobilappar"
+    },
+    {
+      "category": "Backendutveckling",
+      "description": "Jobbdatabas, sökmotor, API"
+    },
+    {
+      "category": "Sökmotor",
+      "description": "Elasticsearch, jobbmatchning, filter"
+    },
+    {
+      "category": "CV-tolkning",
+      "description": "CV-tolkning och matchningsalgoritmer"
+    },
+    {
+      "category": "Ansökningshantering",
+      "description": "ATS-funktioner, kandidatflöde"
+    },
+    {
+      "category": "Notissystem",
+      "description": "E-post- och push-notiser"
+    },
+    {
+      "category": "QA och testning",
+      "description": "Testning av sökprecision, validering av matchning"
+    },
+    {
+      "category": "DevOps och infrastruktur",
+      "description": "Infrastruktur för jobbdatabas och sökning"
+    }
+  ],
+  "complexityFactors": [
+    "Inhämtning och hantering av jobbdata",
+    "CV-tolkning och matchningsalgoritmer",
+    "Tvåsidig marknadsplats (arbetsgivare och kandidater)",
+    "Komplexitet i systemet för ansökningshantering",
+    "Precision i sökning och filtrering",
+    "Onboarding av arbetsgivare och kandidater",
+    "Jobbmatchning i realtid"
+  ],
+  "timeline": [
+    {
+      "phase": "Behovsanalys och planering",
+      "duration": "2–3 veckor",
+      "description": "Datastruktur för jobb, matchningskrav och avgränsning av funktioner."
+    },
+    {
+      "phase": "UI/UX-design",
+      "duration": "3–5 veckor",
+      "description": "Design av jobbannonser, kandidatprofiler och instrumentpaneler."
+    },
+    {
+      "phase": "Backendutveckling",
+      "duration": "5–10 veckor",
+      "description": "Byggande av jobbdatabas, sökmotor och API."
+    },
+    {
+      "phase": "Frontendutveckling",
+      "duration": "5–8 veckor",
+      "description": "Utveckling av webbapp och mobilappar med jobbfunktioner."
+    },
+    {
+      "phase": "CV-tolkning",
+      "duration": "3–5 veckor",
+      "description": "Implementering av CV-tolkning och matchningsalgoritmer."
+    },
+    {
+      "phase": "Ansökningshantering",
+      "duration": "3–4 veckor",
+      "description": "Byggande av ATS-funktioner och kandidatflöde."
+    },
+    {
+      "phase": "Testning och QA",
+      "duration": "2–4 veckor",
+      "description": "Testning av sökprecision och validering av matchning."
+    },
+    {
+      "phase": "Driftsättning och lansering",
+      "duration": "1–2 veckor",
+      "description": "Driftsättning i produktion och mjuk lansering."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Hur mycket kostar det att bygga en jobbsajt?",
+      "answer": "En fullfjädrad jobbsajt kostar $50,000–$150,000. En MVP med jobbannonser, kandidatprofiler och grundläggande sökning kan byggas för $25,000–$60,000 på 2–4 månader."
+    },
+    {
+      "question": "Hur lång tid tar det att bygga en jobbsajt?",
+      "answer": "Fullständig utveckling tar 4–10 månader. En MVP med grundläggande jobbsökfunktioner kan vara klar på 2–4 månader."
+    },
+    {
+      "question": "Behöver jag CV-tolkning för en MVP?",
+      "answer": "Nej, du kan börja med manuella CV-uppladdningar och lägga till tolkning i version 2.0. CV-tolkning förbättrar dock kandidatmatchningen och användarupplevelsen avsevärt."
+    },
+    {
+      "question": "Vad är den största utmaningen med jobbsajter?",
+      "answer": "Att bygga en tvåsidig marknadsplats med tillräckligt många jobb för att locka kandidater och tillräckligt många kandidater för att locka arbetsgivare. Detta kräver omfattande marknadsföring och nätverkseffekter."
+    },
+    {
+      "question": "Hur tjänar jobbsajter pengar?",
+      "answer": "Jobbsajter får vanligtvis intäkter från arbetsgivarprenumerationer, avgifter för jobbannonser, framhävda annonser och premiumfunktioner för kandidater. Vissa tar även betalt för tillgång till kandidatdatabaser."
+    }
+  ],
+  "content": [
+    {
+      "heading": "Vad är en jobbsajt som LinkedIn Jobs?",
+      "paragraphs": [
+        "En jobbsajt som LinkedIn Jobs är en plattform som kopplar samman arbetssökande med arbetsgivare, så att företag kan publicera lediga tjänster medan kandidater söker, ansöker och följer sina ansökningar. LinkedIn Jobs hanterar i sig miljontals ansökningar varje månad, vilket visar både möjlighetens omfattning och den tvåsidiga marknadsplatsens utmaning som krävs för att bygga en konkurrenskraftig produkt. Att bygga en jobbsajt kräver jobbannonser, kandidatprofiler, avancerad sökning och matchning, ansökningshantering, instrumentpaneler för arbetsgivare, CV-tolkning och notissystem.",
+        "Den centrala tekniska utmaningen med en jobbsajt är att bygga en tvåsidig marknadsplats med tillräckligt många jobb för att locka kandidater och tillräckligt många kandidater för att locka arbetsgivare. Detta hönan-och-ägget-problem kräver omfattande marknadsföring och nätverkseffekter. Sök- och matchningsalgoritmen måste effektivt koppla kandidater till relevanta möjligheter samtidigt som den ger arbetsgivare kvalificerade sökande. Detta kräver en avancerad backendarkitektur med sökmotorer, rekommendationsalgoritmer och notissystem i realtid.",
+        "Jobbsajter möter unika operativa utmaningar utöver den rent tekniska komplexiteten. Kvaliteten på jobbdata är avgörande – föråldrade annonser, dubbletter eller skräpannonser skadar användarnas förtroende. Att upprätthålla relationer med arbetsgivare är avgörande för tillgång till annonser och intäkter. Precisionen i CV-tolkning varierar avsevärt och kräver löpande förfining av algoritmerna. Dessa faktorer kräver både tekniska lösningar och operativa processer som sträcker sig bortom själva plattformen."
+      ]
+    },
+    {
+      "heading": "Varför bygga en jobbsajt 2025?",
+      "paragraphs": [
+        "Den globala marknaden för rekrytering online fortsätter att växa, och jobbsajter och professionella nätverk tar marknadsandelar från traditionella rekryteringsmetoder. Även om LinkedIn, Indeed och Glassdoor dominerar den allmänna jobbsökningen finns det betydande möjligheter i nischade segment. Jobbsajter inriktade på specifika branscher (techjobb, vård, finans), kompetensnivåer (instegsjobb, chefsnivå) eller jobbtyper (distansarbete, frilans, konsultuppdrag) har lyckats erövra marknadsandelar genom att erbjuda bättre matchning för specialiserade målgrupper.",
+        "Geografisk expansion är fortfarande en stor möjlighet. Även om jobbsökning är en mogen marknad i Nordamerika och Västeuropa har många internationella marknader mindre konkurrens och en växande digital användning. Lokala jobbsajter som förstår regionala arbetsmarknader, löneförväntningar och anställningsrutiner kan konkurrera effektivt mot globala plattformar.",
+        "Nya jobbformat skapar nya möjligheter. Plattformar för distansarbete, marknadsplatser för gigekonomin och kompetensbaserad matchning är alla innovationer som traditionella jobbsajter inte stöder väl. Att bygga en plattform som är optimerad för dessa format kan fånga tidiga användare innan de större plattformarna anpassar sig."
+      ]
+    },
+    {
+      "heading": "Rekommenderad teknikstack för en jobbsajt",
+      "paragraphs": [
+        "För mobilutveckling är React Native eller Flutter de mest kostnadseffektiva valen, eftersom de gör det möjligt att med en enda kodbas nå både iOS och Android. För webben erbjuder Next.js eller Remix utmärkt server-side-rendering för SEO, vilket är avgörande för jobbupptäckt och organisk söktrafik från arbetssökande.",
+        "Backendarkitekturen för jobbsajter kretsar kring sökning och matchning. Node.js eller Python är vanliga val för API-lagret. För databasen hanterar PostgreSQL jobbannonser, kandidatprofiler och ansökningar. Elasticsearch tillhandahåller avancerade sökfunktioner med facetterad filtrering, fritextsökning och relevansrankning. Redis fungerar som en in-memory-cache för jobbdata och sökresultat.",
+        "CV-tolkning är en betydande utmaning. Att bygga egen CV-tolkning är komplext, så att använda tjänster som Sovren, RChilli eller Affinda tillhandahåller CV-tolkning via API:er. Även om dessa tjänster tar betalt per tolkat CV ($0.10–$0.50 per CV) eliminerar de 100–200 timmars utveckling och löpande underhåll av algoritmer."
+      ]
+    },
+    {
+      "heading": "Så minskar du utvecklingskostnaderna för en jobbsajt",
+      "paragraphs": [
+        "Den mest verkningsfulla kostnadsminskningen är att använda hanterade tjänster för sökning och CV-tolkning. Elasticsearch Cloud tillhandahåller hanterad sökinfrastruktur. CV-tolkningstjänster som Sovren eller RChilli tillhandahåller tolkning via API:er. Även om dessa tjänster tar betalt per API-anrop eliminerar de 200–400 timmars backendutveckling och löpande infrastrukturhantering.",
+        "Att skjuta upp avancerade matchningsalgoritmer till version 2.0 minskar avsevärt den inledande utvecklingsomfattningen. Att lansera med enkel nyckelordsbaserad sökning och grundläggande filter (plats, lön, jobbtyp) räcker för en MVP. Maskininlärningsbaserade matchningsalgoritmer som lär sig av ansökningsdata kräver omfattande träningsdata för att vara effektiva – att bygga dem innan du har användare är förhastad optimering.",
+        "Att börja med en enda marknad eller bransch i stället för att bygga för global skala från dag ett minskar komplexiteten och låter dig bygga relationer med arbetsgivare stegvis. Många framgångsrika jobbsajter lanserade bransch för bransch eller stad för stad, registrerade manuellt sina första 50–100 arbetsgivare och itererade produkten utifrån verklig jobbdata innan de skalade upp tekniken."
+      ]
+    },
+    {
+      "heading": "Intäktsstrategier för en jobbsajt",
+      "paragraphs": [
+        "Arbetsgivarprenumerationer är den primära intäktsmodellen för de flesta jobbsajter. LinkedIn Recruiter tar $99.99–$825+ per månad för tillgång till kandidatdatabaser och jobbpublicering. Indeed tar $5–$10 per jobbannons eller $300+ per månad för obegränsade annonser. För nya plattformar som konkurrerar om arbetsgivare är det en beprövad strategi att börja med lägre prenumerationsavgifter eller betalning per annons för att locka utbud från etablerade plattformar.",
+        "Framhävda jobbplaceringar genererar ytterligare intäkter. Att ta betalt av arbetsgivare för premiumplacering i sökresultat, sponsrade annonser eller bannerannonser skapar annonsutrymme. Denna intäktskälla blir mer värdefull i takt med att din plattform växer och jobben konkurrerar om kandidaternas uppmärksamhet.",
+        "Premiumfunktioner för kandidater skapar intäkter från arbetssökande. Att ta betalt av kandidater för avancerade sökfilter, ansökningshantering eller CV-synlighet skapar intäkter från engagerade användare. Denna modell kan dock skapa friktion i jobbsökprocessen, så den måste implementeras varsamt för att inte minska plattformens värde."
+      ]
+    }
+  ]
+}
