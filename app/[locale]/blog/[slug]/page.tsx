@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { articles as articleList } from '@/data/articles';
 import { routing, type Locale } from '@/i18n/routing';
-import { buildAlternates, BRAND } from '@/i18n/metadata';
+import { buildAlternates } from '@/i18n/metadata';
 import BlogArticleContent from './ArticleContent';
 
 // Only known article slugs are valid; everything else 404s.
@@ -23,11 +23,8 @@ export async function generateMetadata({
   const article = articleList.find((a) => a.slug === slug && !a.isCostEstimate);
   if (!article) return {};
 
-  const alreadyBranded =
-    article.title.includes(BRAND) ||
-    article.title.includes('Projecto') ||
-    article.title.includes('Projekto');
-  const title = alreadyBranded ? article.title : `${article.title} | ${BRAND}`;
+  // Strip any existing brand suffix; the layout title template appends it once.
+  const title = article.title.replace(/\s*\|\s*Projec?k?to.*$/i, '').trim();
   const description = article.excerpt;
 
   return {
