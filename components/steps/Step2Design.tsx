@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useCalculatorStore } from '@/store/calculator';
 import { DesignComplexity } from '@/types/calculator';
 import * as FiIcons from 'react-icons/fi';
@@ -14,12 +15,13 @@ const FiTablet = FiIcons.FiTablet;
 const FiCheck = FiIcons.FiCheck;
 
 export default function Step2Design() {
+  const t = useTranslations('calculator');
   const { design, updateDesign } = useCalculatorStore();
 
   const complexityOptions: { value: DesignComplexity; label: string; description: string; icon: any }[] = [
-    { value: 'simple', label: 'Simple', description: '1-2 weeks, basic UI', icon: FiMonitor },
-    { value: 'medium', label: 'Medium', description: '3-4 weeks, custom design', icon: FiLayers },
-    { value: 'complex', label: 'Complex', description: '5-8 weeks, unique design', icon: FiBox },
+    { value: 'simple', label: t('design.complexitySimple'), description: t('design.complexitySimpleDesc'), icon: FiMonitor },
+    { value: 'medium', label: t('design.complexityMedium'), description: t('design.complexityMediumDesc'), icon: FiLayers },
+    { value: 'complex', label: t('design.complexityComplex'), description: t('design.complexityComplexDesc'), icon: FiBox },
   ];
 
   return (
@@ -27,15 +29,15 @@ export default function Step2Design() {
       <div className="flex items-center space-x-2">
         <FiLayers className="text-xl text-jira-blue" />
         <div>
-          <h2 className="text-lg font-semibold text-jira-darkBlue">Design & Mockups</h2>
+          <h2 className="text-lg font-semibold text-jira-darkBlue">{t('design.title')}</h2>
           <p className="text-jira-textSecondary text-xs">
-            Choose design complexity and additional services
+            {t('design.subtitle')}
           </p>
         </div>
       </div>
 
       <div className="card">
-        <label className="label text-xs">Design Complexity</label>
+        <label className="label text-xs">{t('design.complexityLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-2">
           {complexityOptions.map((option) => {
             const Icon = option.icon;
@@ -61,22 +63,22 @@ export default function Step2Design() {
       </div>
 
       <div className="card">
-        <label className="label text-xs">Number of Screens/Pages</label>
+        <label className="label text-xs">{t('design.screensLabel')}</label>
         <input
           type="number"
           value={design.screensCount}
           onChange={(e) => updateDesign({ screensCount: Number(e.target.value) })}
           className="input-field mt-1 text-sm"
           min="1"
-          placeholder="Enter number of screens"
+          placeholder={t('design.screensPlaceholder')}
         />
         <p className="text-xs text-jira-textSecondary mt-1">
-          Typical: Landing (3-5), Web App (10-20), Mobile App (15-30)
+          {t('design.screensHint')}
         </p>
       </div>
 
       <div className="card">
-        <label className="label text-xs">Additional Services</label>
+        <label className="label text-xs">{t('design.additionalServicesLabel')}</label>
         <div className="space-y-3 mt-2">
           <div className="p-3 hover:bg-gray-50 rounded transition-colors border border-transparent hover:border-jira-border">
             <label className="flex items-center space-x-3 cursor-pointer">
@@ -88,13 +90,13 @@ export default function Step2Design() {
               />
               <FiImage className="text-lg text-jira-textSecondary" />
               <div className="flex-1">
-                <div className="font-medium text-sm text-jira-darkBlue">Logo and Branding</div>
-                <div className="text-xs text-jira-textSecondary">Default: 36 hours</div>
+                <div className="font-medium text-sm text-jira-darkBlue">{t('design.logoTitle')}</div>
+                <div className="text-xs text-jira-textSecondary">{t('design.logoDefault')}</div>
               </div>
             </label>
             {design.includeLogo && (
               <div className="mt-2 ml-8">
-                <label className="label text-xs">Custom Hours (optional)</label>
+                <label className="label text-xs">{t('design.customHoursLabel')}</label>
                 <input
                   type="number"
                   value={design.customHours?.logo || ''}
@@ -124,13 +126,13 @@ export default function Step2Design() {
               />
               <FiBox className="text-lg text-jira-textSecondary" />
               <div className="flex-1">
-                <div className="font-medium text-sm text-jira-darkBlue">Icons and Illustrations</div>
-                <div className="text-xs text-jira-textSecondary">Default: 54 hours</div>
+                <div className="font-medium text-sm text-jira-darkBlue">{t('design.iconsTitle')}</div>
+                <div className="text-xs text-jira-textSecondary">{t('design.iconsDefault')}</div>
               </div>
             </label>
             {design.includeIcons && (
               <div className="mt-2 ml-8">
-                <label className="label text-xs">Custom Hours (optional)</label>
+                <label className="label text-xs">{t('design.customHoursLabel')}</label>
                 <input
                   type="number"
                   value={design.customHours?.icons || ''}
@@ -160,13 +162,13 @@ export default function Step2Design() {
               />
               <FiZap className="text-lg text-jira-textSecondary" />
               <div className="flex-1">
-                <div className="font-medium text-sm text-jira-darkBlue">Animations and Micro-interactions</div>
-                <div className="text-xs text-jira-textSecondary">Default: 70 hours</div>
+                <div className="font-medium text-sm text-jira-darkBlue">{t('design.animationsTitle')}</div>
+                <div className="text-xs text-jira-textSecondary">{t('design.animationsDefault')}</div>
               </div>
             </label>
             {design.includeAnimations && (
               <div className="mt-2 ml-8">
-                <label className="label text-xs">Custom Hours (optional)</label>
+                <label className="label text-xs">{t('design.customHoursLabel')}</label>
                 <input
                   type="number"
                   value={design.customHours?.animations || ''}
@@ -196,13 +198,13 @@ export default function Step2Design() {
               />
               <FiBox className="text-lg text-jira-textSecondary" />
               <div className="flex-1">
-                <div className="font-medium text-sm text-jira-darkBlue">3D Graphics</div>
-                <div className="text-xs text-jira-textSecondary">Default: 100 hours</div>
+                <div className="font-medium text-sm text-jira-darkBlue">{t('design.threeDTitle')}</div>
+                <div className="text-xs text-jira-textSecondary">{t('design.threeDDefault')}</div>
               </div>
             </label>
             {design.include3D && (
               <div className="mt-2 ml-8">
-                <label className="label text-xs">Custom Hours (optional)</label>
+                <label className="label text-xs">{t('design.customHoursLabel')}</label>
                 <input
                   type="number"
                   value={design.customHours?.threeD || ''}
@@ -225,7 +227,7 @@ export default function Step2Design() {
       </div>
 
       <div className="card">
-        <label className="label text-xs">Responsive Design</label>
+        <label className="label text-xs">{t('design.responsiveLabel')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-2">
           <label className="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded transition-colors border border-transparent hover:border-jira-border">
             <input
@@ -239,7 +241,7 @@ export default function Step2Design() {
               className="checkbox-field"
             />
             <FiSmartphone className="text-lg text-jira-textSecondary" />
-            <div className="font-medium text-sm text-jira-darkBlue">Mobile</div>
+            <div className="font-medium text-sm text-jira-darkBlue">{t('design.responsiveMobile')}</div>
           </label>
 
           <label className="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded transition-colors border border-transparent hover:border-jira-border">
@@ -254,7 +256,7 @@ export default function Step2Design() {
               className="checkbox-field"
             />
             <FiTablet className="text-lg text-jira-textSecondary" />
-            <div className="font-medium text-sm text-jira-darkBlue">Tablet</div>
+            <div className="font-medium text-sm text-jira-darkBlue">{t('design.responsiveTablet')}</div>
           </label>
 
           <label className="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded transition-colors border border-transparent hover:border-jira-border">
@@ -269,7 +271,7 @@ export default function Step2Design() {
               className="checkbox-field"
             />
             <FiMonitor className="text-lg text-jira-textSecondary" />
-            <div className="font-medium text-sm text-jira-darkBlue">Desktop</div>
+            <div className="font-medium text-sm text-jira-darkBlue">{t('design.responsiveDesktop')}</div>
           </label>
         </div>
       </div>

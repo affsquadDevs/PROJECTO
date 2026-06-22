@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import * as FiIcons from 'react-icons/fi';
 
 const FiChevronDown = FiIcons.FiChevronDown;
@@ -20,6 +21,7 @@ interface SelectProps {
 }
 
 export default function Select({ value, onChange, options, placeholder, className = '' }: SelectProps) {
+  const t = useTranslations('calculator');
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   
@@ -54,7 +56,7 @@ export default function Select({ value, onChange, options, placeholder, classNam
         className="w-full px-3 py-2 text-sm text-left bg-white border border-jira-border rounded hover:bg-gray-50 focus:border-jira-blue focus:ring-2 focus:ring-primary-100 outline-none transition-all flex items-center justify-between"
       >
         <span className={selectedOption ? 'text-jira-text' : 'text-gray-400'}>
-          {selectedOption ? selectedOption.label : placeholder || 'Select...'}
+          {selectedOption ? selectedOption.label : placeholder || t('selectPlaceholder')}
         </span>
         <FiChevronDown className={`text-jira-textSecondary transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </button>
