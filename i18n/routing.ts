@@ -19,10 +19,10 @@ export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = 'en';
 
-// Staged rollout: only these locales are indexable + listed in the sitemap/hreflang.
-// The other (machine-translated) locales ship live but noindex until reviewed.
-// To promote a locale, add its code here (e.g. add 'de') — that's the only change needed.
-export const indexedLocales: Locale[] = ['en'];
+// Locales that are indexable + listed in the sitemap/hreflang.
+// Full rollout: all locales are indexed. To pull a locale back to noindex (and out
+// of the sitemap/hreflang), remove its code from this list — that's the only change.
+export const indexedLocales: Locale[] = [...locales];
 
 export function isIndexed(locale: string): boolean {
   return (indexedLocales as string[]).includes(locale);
