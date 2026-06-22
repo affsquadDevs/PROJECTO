@@ -1,0 +1,34 @@
+name: IndexNow submit
+
+# Notify IndexNow (Bing, Yandex, Seznam, …) of the current sitemap URLs after every
+# push to main. Pushing to main is what deploys this project, so this fires exactly
+# when content changes go live — the model IndexNow is designed for. Best-effort:
+# a transient IndexNow hiccup never fails the workflow.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # allow manual runs from the Actions tab
+
+# Avoid overlapping runs if several pushes land quickly.
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Wait for the Vercel production deploy to go live
+        run: sleep 180
+
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          for i in 1 2 3 4; do
+            if node scripts/indexnow.mjs; then exit 0; fi
+            echo "IndexNow not ready yet (attempt $i) — retrying in 60s…"
+            sleep 60
+          done
+          echo "IndexNow submission did not succeed after retries (non-fatal)."
