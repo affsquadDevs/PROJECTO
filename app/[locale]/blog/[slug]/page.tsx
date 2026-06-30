@@ -5,7 +5,7 @@ import { articles as articleList } from '@/data/articles';
 import { getArticleMeta } from '@/data/i18n/articles';
 import { routing, defaultLocale, type Locale } from '@/i18n/routing';
 import { buildAlternates } from '@/i18n/metadata';
-import BlogArticleContent from './ArticleContent';
+import BlogArticleContent, { RICH_ENGLISH_SLUGS } from './ArticleContent';
 import TranslatedArticle from '@/components/TranslatedArticle';
 
 // Only known article slugs are valid; everything else 404s.
@@ -49,7 +49,10 @@ export default async function BlogArticlePage({
   const exists = articleList.some((a) => a.slug === slug && !a.isCostEstimate);
   if (!exists) notFound();
 
-  // English renders from the original rich JSX; other locales from translated HTML.
-  if (locale === defaultLocale) return <BlogArticleContent slug={slug} />;
+  // English renders from the original rich JSX where one exists; generated posts
+  // (and every non-default locale) render from the translated/HTML source.
+  if (locale === defaultLocale && RICH_ENGLISH_SLUGS.has(slug)) {
+    return <BlogArticleContent slug={slug} />;
+  }
   return <TranslatedArticle slug={slug} locale={locale as Locale} />;
 }
