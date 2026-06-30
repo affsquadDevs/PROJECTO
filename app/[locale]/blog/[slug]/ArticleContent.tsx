@@ -8182,3 +8182,8 @@ export default function BlogArticleContent({ slug }: { slug: string }) {
   );
 }
 
+// Slugs whose English body is hand-authored as rich JSX above. New (generated)
+// posts are NOT in this set and render their English body from the HTML source
+// (_source/index.json) via the shared TranslatedArticle path instead.
+export const RICH_ENGLISH_SLUGS = new Set(Object.keys(articles));
+
